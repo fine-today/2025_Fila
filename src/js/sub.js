@@ -11,7 +11,7 @@ $(function () {
     var trIndex = $(this).index() + 1;
 
     if (trIndex > 1) {
-      $(this).closest(".table").addClass("tr_over");
+      $(this).closest(".table").addClass("tr-over");
     }
   });
 
@@ -20,7 +20,7 @@ $(function () {
     var $this = $(this),
       thisId = $this.attr("data-pop"),
       $thisPop = $(`.popup[data-pop="${thisId}"]`);
-    $html.addClass("popup_open");
+    $html.addClass("popup-open");
     $thisPop.addClass("active");
     if ($thisPop.find(".dim").length < 1) {
       $thisPop.prepend('<button type="button" class="dim">닫기</button>');
@@ -33,7 +33,7 @@ $(function () {
     );
     $(document).on(
       "click",
-      ".popup.active .dim,.popup_close,[data-close]",
+      ".popup.active .dim,.popup-close,[data-close]",
       function () {
         var $this = $(this),
           $thisPop = $this.closest("[data-pop]"),
@@ -42,16 +42,16 @@ $(function () {
         $thisPop.removeClass("active");
         $thisPop.find(".dim").remove();
         $thisBtn.focus();
-        $html.removeClass("popup_open");
+        $html.removeClass("popup-open");
       }
     );
   }, 0);
 
   /* 아코디언 열고 닫기*/
-  $(".qna_item .question .qna_btn").on("click", function () {
+  $(".qna-item .question .qna-btn").on("click", function () {
     var $this = $(this),
       $Title = $this.parent(".question"),
-      $Item = $Title.parent(".qna_item"),
+      $Item = $Title.parent(".qna-item"),
       $Layer = $Title.siblings(".answer"),
       IsActive = $Item.is(".active");
     if (!IsActive) {
@@ -66,26 +66,26 @@ $(function () {
   });
 
   /* 서브탭메뉴 */
-  $(".tab_button").click(function () {
+  $(".tab-button").click(function () {
     var $this = $(this),
-      index = $this.closest(".tab_item").index(),
+      index = $this.closest(".tab-item").index(),
       tabBtnText = $this.text(),
-      $tab_panel = $this.closest(".tab_panel"),
-      $tabMenu = $this.closest(".tab_menu"),
-      $tabContent = $tabMenu.find(">.tab_content");
+      $tabPanel = $this.closest(".tab-panel"),
+      $tabMenu = $this.closest(".tab-menu"),
+      $tabContent = $tabMenu.find(">.tab-content");
     $this
       .attr("title", "선택됨")
-      .closest(".tab_item")
+      .closest(".tab-item")
       .addClass("active")
-      .siblings(".tab_item")
+      .siblings(".tab-item")
       .removeClass("active")
-      .find(".tab_button")
+      .find(".tab-button")
       .removeAttr("title");
-    $this.closest(".tab").find(">.tab_menu .tab_select span").text(tabBtnText);
+    $this.closest(".tab").find(">.tab-menu .tab-select span").text(tabBtnText);
     $tabContent
       .eq(index)
       .addClass("active")
-      .siblings(".tab_content")
+      .siblings(".tab-content")
       .removeClass("active");
   });
 
@@ -128,15 +128,15 @@ $(function () {
 
   /* 탬플릿 전체보기 */
   var $tab = $container.find(".tab.template"),
-    $tabAll = $tab.find(".tab_all"),
-    $tabContent = $tab.find(".tab_content");
+    $tabAll = $tab.find(".tab-all"),
+    $tabContent = $tab.find(".tab-content");
 
   $tabContent.addClass("active");
   $tabAll.click(function (event) {
     var $this = $(this);
 
     $this
-      .closest(".tab_item")
+      .closest(".tab-item")
       .addClass("active")
       .siblings()
       .removeClass("active");
@@ -155,7 +155,7 @@ $(function () {
   });
 
   //img mobile - 모바일에서 확대 아이콘 추가
-  var $imgMobile = $(".img_mobile");
+  var $imgMobile = $(".img-mobile");
   $(window).on("load resize", function () {
     $imgMobile.each(function () {
       var $this = $(this),
@@ -166,7 +166,7 @@ $(function () {
         var $elem = $(
           '<a href="' +
             $img.attr("src") +
-            '" class="zoom" target="_blank" title="이미지확대보기 새창"></a>'
+            '" class="zoom" target="-blank" title="이미지확대보기 새창"></a>'
         );
         $this.append($img).append($elem);
         var $zoom = $this.find(".zoom");
@@ -176,10 +176,10 @@ $(function () {
   });
 
   //셀렉트박스 디자인
-  var $select = $container.find(".style_select_box"),
+  var $select = $container.find(".style-select-box"),
     $selectAllButton = $select.find("button", "a"),
-    $selectAnchor = $select.find(".select_anchor"),
-    $selectList = $select.find(".search_list");
+    $selectAnchor = $select.find(".select-anchor"),
+    $selectList = $select.find(".search-list");
 
   $selectAnchor.click(function () {
     var $this = $(this),
@@ -187,30 +187,30 @@ $(function () {
 
     $this
       .attr("title", "선택됨")
-      .closest(".select_item")
+      .closest(".select-item")
       .addClass("active")
-      .siblings(".select_item")
+      .siblings(".select-item")
       .removeClass("active")
-      .find(".select_anchor")
+      .find(".select-anchor")
       .removeAttr("title");
     $this
-      .closest(".style_select_box")
-      .find(".search_select")
+      .closest(".style-select-box")
+      .find(".search-select")
       .text(selectButtonText);
     $selectList.addClass("active").siblings().removeClass("active");
   });
 
   $selectAllButton.click(function () {
     var $this = $(this),
-      $parentmenu = $this.parents(".style_select_box"),
+      $parentmenu = $this.parents(".style-select-box"),
       IsActive = $parentmenu.is(".active");
     if (!IsActive) {
       $this.attr("title", "열림");
-      $parentmenu.find(".search_list").stop().slideDown("250", "easeOutExpo");
+      $parentmenu.find(".search-list").stop().slideDown("250", "easeOutExpo");
       $parentmenu.addClass("active");
     } else {
       $this.removeAttr("title");
-      $parentmenu.find(".search_list").stop().slideUp("250", "easeOutExpo");
+      $parentmenu.find(".search-list").stop().slideUp("250", "easeOutExpo");
       $parentmenu.removeClass("active");
     }
   });

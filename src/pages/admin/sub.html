@@ -5,15 +5,42 @@
   </head>
   <body>
     <div id="container" class="sub">
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <header class="header">@@include('./include/header.html')</header>
       <div id="content">
-        <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
         <div id="main" class="main">
           @@include('./include/con-header.html',{depth1: 'Title 1dep',depth2:
           'Title 2dep'})
+
+          <div class="popup active" data-pop="pop1">
+            <button type="button" class="dim">닫기</button>
+            <div class="popup-wrap" style="width: 604px">
+              <div class="pop-inner">
+                <div class="popup-title-wrap">
+                  <h3 class="popup-title h0">자동 로그아웃 안내</h3>
+                </div>
+                <div class="popup-con">
+                  <div class="logout-pop">
+                    <h6>로그아웃까지 남은 시간</h6>
+                    <strong>NN초</strong>
+                    <p>
+                      개인 정보 보호를 위해 로그인 30분 후 자동으로 로그아웃
+                      됩니다.<br />
+                      계속 이용하시려면 로그인 시간을 연장해 주세요.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup-footer">
+                  <button type="button" class="btn">로그아웃</button>
+                  <button type="button" class="btn">로그인 시간 연장</button>
+                </div>
+
+                <input type="button" class="popup-close" value="닫기" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <footer class="footer">@@include('./include/footer.html')</footer>
     </div>
   </body>
 </html>

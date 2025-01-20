@@ -7,119 +7,119 @@
     <div class="accessibility">
       <a href="#content">본문 바로가기</a>
     </div>
-    <div id="container" class="de_us_12">
+    <div id="container" class="de-us-12">
       <!-- code substring 으로 key class 생성-->
       <header class="header">@@include('./include/header.html')</header>
       <div id="content">
         <div class="location">
-          @@include('./include/menu.html',{code : 'DE_US_12'})
+          @@include('./include/menu.html',{code : 'DE-US-12'})
         </div>
         <div class="wrap">
           @@include('./include/breadcrumb.html',{ 'depth1' : {title:'게시판',
           anchor : '#n'}, 'depth2': {title:'FAQ', anchor : '#n'}, 'depthCount' :
           2, }) @@include('./include/board-tab.html')
           <section class="section">
-            <div class="p-wrap bbs bbs__faq">
-              <ul class="p-accordion p-accordion--faq margin_t_5">
-                <li class="p-accordion__item">
-                  <div class="p-accordion__header">
+            <div class="p-wrap bbs bbs--faq">
+              <ul class="p-accordion p-accordion--faq margin-t-5">
+                <li class="p-accordion--item">
+                  <div class="p-accordion--header">
                     <span class="p-form-checkbox p-form-checkbox--single">
                       <input
                         type="checkbox"
                         name=""
                         id="a"
-                        class="p-form-checkbox__input empty"
+                        class="p-form-checkbox--input empty"
                       />
-                      <label for="a" class="p-form-checkbox__label"
+                      <label for="a" class="p-form-checkbox--label"
                         >{게시물제목} 선택
                       </label>
                     </span>
                     <a
                       href="#tab1-1"
-                      class="p-accordion__button active"
+                      class="p-accordion--button active"
                       data-accordion=""
                     >
-                      <span class="p-icon p-icon__question">질문</span>
-                      <span class="p-accordion__title"
+                      <span class="p-icon p-icon--question">질문</span>
+                      <span class="p-accordion--title"
                         >시료 정보 확인은 어떻게 하나요?
                       </span>
                     </a>
                   </div>
                   <div
                     id="tab1-1"
-                    class="p-accordion__body active"
+                    class="p-accordion--body active"
                     title="내용 열림"
                     aria-expanded="true"
                     style=""
                   >
-                    <span class="p-icon p-icon__answer">답변</span>
-                    <div class="p-accordion__content">
+                    <span class="p-icon p-icon--answer">답변</span>
+                    <div class="p-accordion--content">
                       시료정보는 마이페이지 > 데이터 수집 을 통해 확인
                       가능합니다.
                     </div>
-                    <!-- <div class="p-accordion__link-group">
+                    <!-- <div class="p-accordion--link-group">
                       <a href="" class="btn type3">수정</a>
                       <a href="" class="btn type2">삭제</a>
                     </div> -->
                   </div>
                 </li>
-                <li class="p-accordion__item">
-                  <div class="p-accordion__header">
+                <li class="p-accordion--item">
+                  <div class="p-accordion--header">
                     <span class="p-form-checkbox p-form-checkbox--single">
                       <input
                         type="checkbox"
                         name=""
                         id="b"
-                        class="p-form-checkbox__input empty"
+                        class="p-form-checkbox--input empty"
                       />
-                      <label for="b" class="p-form-checkbox__label"
+                      <label for="b" class="p-form-checkbox--label"
                         >{게시물제목} 선택
                       </label>
                     </span>
                     <a
                       href="#tab1-2"
-                      class="p-accordion__button"
+                      class="p-accordion--button"
                       data-accordion=""
                     >
-                      <span class="p-icon p-icon__question">질문</span>
-                      <span class="p-accordion__title">자주하는 질문</span>
+                      <span class="p-icon p-icon--question">질문</span>
+                      <span class="p-accordion--title">자주하는 질문</span>
                     </a>
                   </div>
-                  <div id="tab1-2" class="p-accordion__body" title="내용 숨김">
-                    <span class="p-icon p-icon__answer">답변</span>
-                    <div class="p-accordion__content">답변</div>
-                    <!-- <div class="p-accordion__link-group">
+                  <div id="tab1-2" class="p-accordion--body" title="내용 숨김">
+                    <span class="p-icon p-icon--answer">답변</span>
+                    <div class="p-accordion--content">답변</div>
+                    <!-- <div class="p-accordion--link-group">
                       <a href="" class="btn type3">수정</a>
                       <a href="" class="btn type2">삭제</a>
                     </div> -->
                   </div>
                 </li>
-                <li class="p-accordion__item">
-                  <div class="p-accordion__header">
+                <li class="p-accordion--item">
+                  <div class="p-accordion--header">
                     <span class="p-form-checkbox p-form-checkbox--single">
                       <input
                         type="checkbox"
                         name=""
                         id="c"
-                        class="p-form-checkbox__input empty"
+                        class="p-form-checkbox--input empty"
                       />
-                      <label for="c" class="p-form-checkbox__label"
+                      <label for="c" class="p-form-checkbox--label"
                         >{게시물제목} 선택
                       </label>
                     </span>
                     <a
                       href="#tab1-3"
-                      class="p-accordion__button"
+                      class="p-accordion--button"
                       data-accordion=""
                     >
-                      <span class="p-icon p-icon__question">질문</span>
-                      <span class="p-accordion__title">자주하는 질문</span>
+                      <span class="p-icon p-icon--question">질문</span>
+                      <span class="p-accordion--title">자주하는 질문</span>
                     </a>
                   </div>
-                  <div id="tab1-3" class="p-accordion__body" title="내용 숨김">
-                    <span class="p-icon p-icon__answer">답변</span>
-                    <div class="p-accordion__content">질문</div>
-                    <!-- <div class="p-accordion__link-group">
+                  <div id="tab1-3" class="p-accordion--body" title="내용 숨김">
+                    <span class="p-icon p-icon--answer">답변</span>
+                    <div class="p-accordion--content">질문</div>
+                    <!-- <div class="p-accordion--link-group">
                       <a href="" class="btn type3">수정</a>
                       <a href="" class="btn type2">삭제</a>
                     </div> -->
@@ -129,31 +129,31 @@
             </div>
             <div class="p-pagination" data-brl-use="NO">
               <div class="p-page">
-                <div class="p-page__control">
-                  <a href="#n" class="p-page__link prev-end"
+                <div class="p-page--control">
+                  <a href="#n" class="p-page--link prev-end"
                     ><span class="skip">처음 페이지</span></a
-                  ><a href="#n" class="p-page__link prev"
+                  ><a href="#n" class="p-page--link prev"
                     ><span class="skip">이전 10 페이지</span></a
-                  ><a href="#n" class="p-page__link prev-one">이전 페이지</a>
+                  ><a href="#n" class="p-page--link prev-one">이전 페이지</a>
                 </div>
-                <div class="p-page__link-group">
-                  <strong title="현재 1페이지" class="p-page__link active"
+                <div class="p-page--link-group">
+                  <strong title="현재 1페이지" class="p-page--link active"
                     >1</strong
-                  ><a href="#n" title="2페이지 이동" class="p-page__link">2</a
-                  ><a href="#n" title="3페이지 이동" class="p-page__link">3</a
-                  ><a href="#n" title="4페이지 이동" class="p-page__link">4</a
-                  ><a href="#n" title="5페이지 이동" class="p-page__link">5</a
-                  ><a href="#n" title="6페이지 이동" class="p-page__link">6</a
-                  ><a href="#n" title="7페이지 이동" class="p-page__link">7</a
-                  ><a href="#n" title="8페이지 이동" class="p-page__link">8</a
-                  ><a href="#n" title="9페이지 이동" class="p-page__link">9</a
-                  ><a href="0" title="10페이지 이동" class="p-page__link">10</a>
+                  ><a href="#n" title="2페이지 이동" class="p-page--link">2</a
+                  ><a href="#n" title="3페이지 이동" class="p-page--link">3</a
+                  ><a href="#n" title="4페이지 이동" class="p-page--link">4</a
+                  ><a href="#n" title="5페이지 이동" class="p-page--link">5</a
+                  ><a href="#n" title="6페이지 이동" class="p-page--link">6</a
+                  ><a href="#n" title="7페이지 이동" class="p-page--link">7</a
+                  ><a href="#n" title="8페이지 이동" class="p-page--link">8</a
+                  ><a href="#n" title="9페이지 이동" class="p-page--link">9</a
+                  ><a href="0" title="10페이지 이동" class="p-page--link">10</a>
                 </div>
-                <div class="p-page__control">
-                  <a href="#n" class="p-page__link next-one">다음 페이지</a>
-                  <a href="1" class="p-page__link next"
+                <div class="p-page--control">
+                  <a href="#n" class="p-page--link next-one">다음 페이지</a>
+                  <a href="1" class="p-page--link next"
                     ><span class="skip">다음 10 페이지</span></a
-                  ><a href="#n81" class="p-page__link next-end"
+                  ><a href="#n81" class="p-page--link next-end"
                     ><span class="skip">끝 페이지</span></a
                   >
                 </div>
@@ -168,7 +168,7 @@
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
       <script>
-        $(".tab_item").eq(0).addClass("active");
+        $(".tab-item").eq(0).addClass("active");
       </script>
     </div>
   </body>

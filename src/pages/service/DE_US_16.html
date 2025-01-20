@@ -7,20 +7,17 @@
     <div class="accessibility">
       <a href="#content">본문 바로가기</a>
     </div>
-    <div id="container" class="de_us_12">
+    <div id="container" class="de-us-12">
       <!-- code substring 으로 key class 생성-->
       <header class="header">@@include('./include/header.html')</header>
       <div id="content">
         <div class="location">
-          @@include('./include/menu.html',{code : 'DE_US_16'})
+          @@include('./include/menu.html',{code : 'DE-US-16'})
         </div>
         <div class="wrap">
-          @@include('./include/breadcrumb.html',{ 
-            'depth1' : {title:'게시판', anchor : '#n'}, 
-            'depth2': {title:'공지사항', anchor : '#n'}, 
-            'depthCount' : 2,
-          })
-          @@include('./include/board-tab.html')
+          @@include('./include/breadcrumb.html',{ 'depth1' : {title:'게시판',
+          anchor : '#n'}, 'depth2': {title:'공지사항', anchor : '#n'},
+          'depthCount' : 2, }) @@include('./include/board-tab.html')
           <section class="section">
             <form action="#n">
               <fieldset>
@@ -57,7 +54,7 @@
                         <th scope="col">조회수</th>
                       </tr>
                     </thead>
-                    <tbody class="align_center">
+                    <tbody class="align-center">
                       <tr>
                         <td>10</td>
                         <td>공지</td>
@@ -186,43 +183,43 @@
                 </div>
                 <div class="p-pagination" data-brl-use="NO">
                   <div class="p-page">
-                    <div class="p-page__control">
-                      <a href="#n" class="p-page__link prev-end"
+                    <div class="p-page--control">
+                      <a href="#n" class="p-page--link prev-end"
                         ><span class="skip">처음 페이지</span></a
-                      ><a href="#n" class="p-page__link prev"
+                      ><a href="#n" class="p-page--link prev"
                         ><span class="skip">이전 10 페이지</span></a
-                      ><a href="#n" class="p-page__link prev-one"
+                      ><a href="#n" class="p-page--link prev-one"
                         >이전 페이지</a
                       >
                     </div>
-                    <div class="p-page__link-group">
-                      <strong title="현재 1페이지" class="p-page__link active"
+                    <div class="p-page--link-group">
+                      <strong title="현재 1페이지" class="p-page--link active"
                         >1</strong
-                      ><a href="#n" title="2페이지 이동" class="p-page__link"
+                      ><a href="#n" title="2페이지 이동" class="p-page--link"
                         >2</a
-                      ><a href="#n" title="3페이지 이동" class="p-page__link"
+                      ><a href="#n" title="3페이지 이동" class="p-page--link"
                         >3</a
-                      ><a href="#n" title="4페이지 이동" class="p-page__link"
+                      ><a href="#n" title="4페이지 이동" class="p-page--link"
                         >4</a
-                      ><a href="#n" title="5페이지 이동" class="p-page__link"
+                      ><a href="#n" title="5페이지 이동" class="p-page--link"
                         >5</a
-                      ><a href="#n" title="6페이지 이동" class="p-page__link"
+                      ><a href="#n" title="6페이지 이동" class="p-page--link"
                         >6</a
-                      ><a href="#n" title="7페이지 이동" class="p-page__link"
+                      ><a href="#n" title="7페이지 이동" class="p-page--link"
                         >7</a
-                      ><a href="#n" title="8페이지 이동" class="p-page__link"
+                      ><a href="#n" title="8페이지 이동" class="p-page--link"
                         >8</a
-                      ><a href="#n" title="9페이지 이동" class="p-page__link"
+                      ><a href="#n" title="9페이지 이동" class="p-page--link"
                         >9</a
-                      ><a href="0" title="10페이지 이동" class="p-page__link"
+                      ><a href="0" title="10페이지 이동" class="p-page--link"
                         >10</a
                       >
                     </div>
-                    <div class="p-page__control">
-                      <a href="#n" class="p-page__link next-one">다음 페이지</a>
-                      <a href="1" class="p-page__link next"
+                    <div class="p-page--control">
+                      <a href="#n" class="p-page--link next-one">다음 페이지</a>
+                      <a href="1" class="p-page--link next"
                         ><span class="skip">다음 10 페이지</span></a
-                      ><a href="#n81" class="p-page__link next-end"
+                      ><a href="#n81" class="p-page--link next-end"
                         ><span class="skip">끝 페이지</span></a
                       >
                     </div>
@@ -254,7 +251,7 @@
                         <th scope="col">조회수</th>
                       </tr>
                     </thead>
-                    <tbody class="align_center">
+                    <tbody class="align-center">
                       <tr>
                         <td colspan="5">조회 결과가 존재하지 않습니다.</td>
                       </tr>
@@ -268,7 +265,7 @@
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
       <script>
-        $('.tab_item').eq(1).addClass('active');
+        $(".tab-item").eq(1).addClass("active");
       </script>
     </div>
   </body>

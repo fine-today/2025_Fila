@@ -8,23 +8,23 @@ var sourcemaps = require("gulp-sourcemaps");
 var paths = {
   dev: {
     src: "./src",
-    css: "./src/**/css/*.scss",
-    js: "./src/**/js/*.js",
-    html: ["./src/**/*.html", "!./src/site/public/include/*.html"],
+    css: "./src/css/*.scss",
+    js: "./src/js/*.js",
+    html: ["./src/**/*.html", "!./src/**/include/*"],
     resource: [
       "./src/**/*",
       "!./src/**/*.js",
-      "!./src/**/*.css",
-      "!./src/**/*.map",
       "!./src/**/*.scss",
       "!./src/**/*.html",
+      "!./src/**/include",
+      "!./src/**/include/**/",
+      "!./src/**/include/**/*.html",
     ],
   },
   dist: {
-    server: "./docs/2025_fila",
     src: "./docs",
-    css: "./docs",
-    js: "./docs",
+    css: "./docs/css",
+    js: "./docs/js",
     html: "./docs",
     resource: "./docs",
   },
@@ -44,7 +44,6 @@ function setHtml() {
     .pipe(
       fileinclude({
         prefix: "@@",
-        surffix: "##",
         basepath: "@file",
       })
     )

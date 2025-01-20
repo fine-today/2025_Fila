@@ -9,7 +9,7 @@
     @content;
   }
 }
-@mixin pc_only {
+@mixin pc-only {
   @media (min-width: 1200px) {
     @content;
   }
@@ -337,4 +337,4 @@ $colors: (
 
 // section {
 //   @include color(background-color, black);
-// } 
+// }

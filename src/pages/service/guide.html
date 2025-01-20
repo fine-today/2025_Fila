@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/sub-head.html',{'title' : '가이드'})
+    @@include('./include/head.html',{'title' : '가이드'})
   </head>
   <body>
     <div id="container">
@@ -9,42 +9,42 @@
 
       <div id="content">
         <div class="location">
-          @@include('./include/menu.html',{code : 'DE_US_16'})
+          @@include('./include/menu.html',{code : 'DE-US-16'})
         </div>
         <div class="wrap">
           @@include('./include/breadcrumb.html',{ depth1 : '게시판', depth2 :
           '공지사항', })
           <section class="section">
             <div class="tab">
-              <div class="tab_menu type2 depth6">
-                <button class="tab_select"><span>선택된 메뉴명</span></button>
-                <div class="tab_panel">
-                  <ul class="tab_list clearfix">
-                    <li class="tab_item active">
-                      <a href="" class="tab_anchor"><span>6차메뉴</span></a>
+              <div class="tab-menu type2 depth6">
+                <button class="tab-select"><span>선택된 메뉴명</span></button>
+                <div class="tab-panel">
+                  <ul class="tab-list clearfix">
+                    <li class="tab-item active">
+                      <a href="" class="tab-anchor"><span>6차메뉴</span></a>
                     </li>
-                    <li class="tab_item">
-                      <a href="" class="tab_anchor" target="_self"
+                    <li class="tab-item">
+                      <a href="" class="tab-anchor" target="-self"
                         ><span>6차메뉴</span></a
                       >
                     </li>
-                    <li class="tab_item">
-                      <a href="" class="tab_anchor" target="_self"
+                    <li class="tab-item">
+                      <a href="" class="tab-anchor" target="-self"
                         ><span>6차메뉴</span></a
                       >
                     </li>
-                    <li class="tab_item">
-                      <a href="" class="tab_anchor" target="_self"
+                    <li class="tab-item">
+                      <a href="" class="tab-anchor" target="-self"
                         ><span>6차메뉴</span></a
                       >
                     </li>
-                    <li class="tab_item">
-                      <a href="" class="tab_anchor" target="_self"
+                    <li class="tab-item">
+                      <a href="" class="tab-anchor" target="-self"
                         ><span>6차메뉴</span></a
                       >
                     </li>
-                    <li class="tab_item">
-                      <a href="" class="tab_anchor" target="_self"
+                    <li class="tab-item">
+                      <a href="" class="tab-anchor" target="-self"
                         ><span>6차메뉴</span></a
                       >
                     </li>
@@ -54,124 +54,124 @@
             </div>
 
             <div class="tab" copy-attr="yes">
-              <div class="tab_menu">
-                <button type="button" class="tab_select">
+              <div class="tab-menu">
+                <button type="button" class="tab-select">
                   <span>스텝박스</span>
                 </button>
-                <div class="tab_panel">
-                  <ul class="tab_list clearfix">
-                    <li class="tab_item active">
-                      <button type="button" class="tab_button" title="선택됨">
+                <div class="tab-panel">
+                  <ul class="tab-list clearfix">
+                    <li class="tab-item active">
+                      <button type="button" class="tab-button" title="선택됨">
                         <span>선택중인메뉴</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>4차메뉴는 탭메뉴</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>4차메뉴는 탭메뉴 4차메뉴는 탭메뉴 탭메뉴</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>4차메뉴는 탭메뉴</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>4차메뉴는 탭메뉴</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>4차메뉴는 탭메뉴</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>4차메뉴는 탭메뉴</span>
                       </button>
                     </li>
                   </ul>
                 </div>
-                <div class="tab_content active">1</div>
-                <div class="tab_content">2</div>
-                <div class="tab_content">3</div>
-                <div class="tab_content">4</div>
-                <div class="tab_content">5</div>
-                <div class="tab_content">6</div>
-                <div class="tab_content">7</div>
+                <div class="tab-content active">1</div>
+                <div class="tab-content">2</div>
+                <div class="tab-content">3</div>
+                <div class="tab-content">4</div>
+                <div class="tab-content">5</div>
+                <div class="tab-content">6</div>
+                <div class="tab-content">7</div>
               </div>
             </div>
 
             <div class="tab template">
-              <div class="tab_menu">
-                <button type="button" class="tab_select">
+              <div class="tab-menu">
+                <button type="button" class="tab-select">
                   <span>스텝박스</span>
                 </button>
-                <div class="tab_panel">
-                  <ul class="tab_list clearfix">
-                    <li class="tab_item active">
-                      <button type="button" title="선택됨" class="tab_all">
+                <div class="tab-panel">
+                  <ul class="tab-list clearfix">
+                    <li class="tab-item active">
+                      <button type="button" title="선택됨" class="tab-all">
                         <span>전체보기</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>제목</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>목록</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>포인트디자인</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>테이블</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>버튼스타일</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>폼 스타일</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>박스디자인</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>이미지박스</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>스텝박스</span>
                       </button>
                     </li>
-                    <li class="tab_item">
-                      <button type="button" class="tab_button">
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
                         <span>기타</span>
                       </button>
                     </li>
                   </ul>
                 </div>
-                <div id="a" class="tab_content active">
+                <div id="a" class="tab-content active">
                   <!--제목-->
                   <h3 copy-attr="yes">
                     내용 첫제목 H3<span class="subtitle"
@@ -190,12 +190,12 @@
                     따뜻한 불어 없는 이것이다. 우는 품으며, 이상이 그들은
                     청춘에서만 소담스러운 인생에 원대하고, 뿐이다. 끓는 그러므로
                     피어나는 못하다 것은 미인을 곳이 힘차게 교향악이다.
-                    <span class="em_point">타이틀포인트</span>
+                    <span class="em-point">타이틀포인트</span>
                   </p>
                   <br />
                   <a
                     href="#"
-                    target="_blank"
+                    target="-blank"
                     title="새창"
                     class="blank"
                     rel="noopener noreferrer"
@@ -204,7 +204,7 @@
                   >
                   <a
                     href="#"
-                    target="_blank"
+                    target="-blank"
                     title="다운로드"
                     class="down"
                     copy-attr="yes"
@@ -212,7 +212,7 @@
                   >
                 </div>
 
-                <div id="b" class="tab_content">
+                <div id="b" class="tab-content">
                   <!--목록-->
                   <h4>목록(ul/ol)</h4>
                   <h5>기본형 .bu</h5>
@@ -366,7 +366,7 @@
                     대통령은 국회에 출석하여 발언하거나 서한으로 의견...
                   </p>
                 </div>
-                <div id="c" class="tab_content">
+                <div id="c" class="tab-content">
                   <!--포인트디자인-->
                   <h4>주의사항</h4>
                   <p class="warning" title="안내사항" copy-attr="yes">
@@ -376,20 +376,20 @@
                     경고사항이 있을때 내용 넣기
                   </p>
                   <h4>안내경고 제목+내용</h4>
-                  <div class="warning_area" copy-attr="yes">
+                  <div class="warning-area" copy-attr="yes">
                     <p class="warning" title="안내사항">안내사항제목</p>
                     <p class="text">안내사항이 있을때 내용 넣기</p>
                   </div>
-                  <div class="warning_area" copy-attr="yes">
+                  <div class="warning-area" copy-attr="yes">
                     <p class="warning type2" title="경고사항">경고사항제목</p>
                     <p class="text">경고사항이 있을때 내용 넣기</p>
                   </div>
                 </div>
-                <div id="d" class="tab_content">
+                <div id="d" class="tab-content">
                   <!--테이블-->
                   <h4>테이블</h4>
                   <h5>기본 가로형</h5>
-                  <p class="table_unit" copy-attr="yes">
+                  <p class="table-unit" copy-attr="yes">
                     안내사항이 있을때 내용 넣기
                   </p>
                   <table class="table" copy-attr="yes">
@@ -507,7 +507,7 @@
                   </table>
 
                   <h5>
-                    가로2줄형 (tr_over는 스크립트로 붙으니 table이라고만 쓰시면
+                    가로2줄형 (tr-over는 스크립트로 붙으니 table이라고만 쓰시면
                     됩니다)
                   </h5>
                   <table class="table" copy-attr="yes">
@@ -554,9 +554,9 @@
                     </tbody>
                   </table>
 
-                  <h5>스크롤형 .table_scroll</h5>
-                  <div class="table_scroll" copy-attr="yes">
-                    <table class="table tr_over">
+                  <h5>스크롤형 .table-scroll</h5>
+                  <div class="table-scroll" copy-attr="yes">
+                    <table class="table tr-over">
                       <caption>
                         테이블제목 - 순으로 정보를 제공하고 있습니다.
                       </caption>
@@ -632,7 +632,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div id="e" class="tab_content">
+                <div id="e" class="tab-content">
                   <!--버튼스타일-->
                   <h4>버튼</h4>
                   <h5>일반버튼</h5>
@@ -659,9 +659,9 @@
                   <br />
                   <a
                     href=""
-                    target="_blank"
+                    target="-blank"
                     title="새창"
-                    class="ri_icon_btn small"
+                    class="ri-icon-btn small"
                     copy-attr="yes"
                   >
                     <span>바로가기</span>
@@ -669,9 +669,9 @@
                   </a>
                   <a
                     href=""
-                    target="_blank"
+                    target="-blank"
                     title="새창"
-                    class="ri_icon_btn"
+                    class="ri-icon-btn"
                     copy-attr="yes"
                   >
                     <span>바로가기</span>
@@ -679,9 +679,9 @@
                   </a>
                   <a
                     href=""
-                    target="_blank"
+                    target="-blank"
                     title="다운로드"
-                    class="ri_icon_btn small"
+                    class="ri-icon-btn small"
                     copy-attr="yes"
                   >
                     <span>다운로드</span>
@@ -689,9 +689,9 @@
                   </a>
                   <a
                     href=""
-                    target="_blank"
+                    target="-blank"
                     title="다운로드"
-                    class="ri_icon_btn"
+                    class="ri-icon-btn"
                     copy-attr="yes"
                   >
                     <span>다운로드</span>
@@ -699,9 +699,9 @@
                   </a>
                   <a
                     href=""
-                    target="_blank"
+                    target="-blank"
                     title="새창"
-                    class="ri_icon_btn"
+                    class="ri-icon-btn"
                     copy-attr="yes"
                   >
                     <span>검색하기</span>
@@ -709,16 +709,16 @@
                   </a>
                   <a
                     href=""
-                    target="_blank"
+                    target="-blank"
                     title="인쇄"
-                    class="ri_icon_btn"
+                    class="ri-icon-btn"
                     copy-attr="yes"
                   >
                     <span>인쇄하기</span>
                     <i class="ri-printer-line"></i>
                   </a>
                 </div>
-                <div id="f" class="tab_content">
+                <div id="f" class="tab-content">
                   <!--폼스타일-->
                   <h4>폼스타일</h4>
                   <h5>인풋 텍스트</h5>
@@ -746,10 +746,10 @@
                     <button type="button" class="show-hide"></button>
                   </div>
                   <!--
-                        <div class="input group_date" copy-attr='yes'>
+                        <div class="input group-date" copy-attr='yes'>
                             <input type="text" title="" placeholder="인풋박스">
-                            <div class="input_split">
-                                <button type="button" class="date_btn"><span>달력</span></button>
+                            <div class="input-split">
+                                <button type="button" class="date-btn"><span>달력</span></button>
                             </div>
                         </div>
                         -->
@@ -772,28 +772,28 @@
                     <option>옵션 3</option>
                   </select>
                   <h6>스타일셀렉트박스</h6>
-                  <div class="style_select_box" copy-attr="yes">
+                  <div class="style-select-box" copy-attr="yes">
                     <button
                       type="button"
                       title="하위메뉴 열기"
-                      class="search_select"
+                      class="search-select"
                     >
                       셀렉트박스 선택
                     </button>
-                    <div class="search_list">
+                    <div class="search-list">
                       <ul>
-                        <li class="select_item">
-                          <button type="button" class="select_anchor">
+                        <li class="select-item">
+                          <button type="button" class="select-anchor">
                             샐랙트 목록1
                           </button>
                         </li>
-                        <li class="select_item">
-                          <button type="button" class="select_anchor">
+                        <li class="select-item">
+                          <button type="button" class="select-anchor">
                             샐랙트 목록2
                           </button>
                         </li>
-                        <li class="select_item">
-                          <button type="button" class="select_anchor">
+                        <li class="select-item">
+                          <button type="button" class="select-anchor">
                             샐랙트 목록3
                           </button>
                         </li>
@@ -841,14 +841,14 @@
                     <label for="check3">체크 비활성 - checked</label>
                   </span>
                 </div>
-                <div id="g" class="tab_content">
+                <div id="g" class="tab-content">
                   <!--박스디자인-->
                   <h4>박스</h4>
 
                   <h5>.box.type1</h5>
                   <div class="box type1" copy-attr="yes">
-                    <div class="box_title">박스 안 타이틀</div>
-                    <p class="box_text">
+                    <div class="box-title">박스 안 타이틀</div>
+                    <p class="box-text">
                       심장의 무엇을 보이는 황금시대의 사는가 이것이다. 위하여
                       인생에 천고에 것이다.보라, 듣는다. 얼음 물방아 불러 대고,
                       얼음이 꾸며 것이다. 아름답고 낙원을 구하지 것이다. 하는
@@ -862,7 +862,7 @@
                   </div>
 
                   <h5>안내박스</h5>
-                  <div class="guide_box" copy-attr="yes">
+                  <div class="guide-box" copy-attr="yes">
                     <div class="cont">
                       <p>
                         심장의 무엇을 보이는 황금시대의 사는가 이것이다. 위하여
@@ -886,57 +886,57 @@
                     </div>
                   </div>
                 </div>
-                <div id="i" class="tab_content">
+                <div id="i" class="tab-content">
                   <!--스텝박스-->
                   <h4>스텝박스</h4>
                   <h5>가로형</h5>
                   <h6>.step</h6>
                   <div class="step" copy-attr="yes">
-                    <div class="step_wrap">
-                      <ol class="step_list">
-                        <li class="step_item">
-                          <div class="step_content">
+                    <div class="step-wrap">
+                      <ol class="step-list">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
-                            <div class="tit"><span>단계 타이틀</span></div>
-                            <div class="txt">단계 설명 설명입니다.</div>
-                          </div>
-                        </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
+                            <div class="tit"><span>단계 타이틀</span></div>
+                            <div class="txt">단계 설명 설명입니다.</div>
+                          </div>
+                        </li>
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
@@ -946,39 +946,39 @@
                   </div>
                   <h6>.step.row3</h6>
                   <div class="step row3" copy-attr="yes">
-                    <div class="step_wrap">
-                      <ol class="step_list">
-                        <li class="step_item">
-                          <div class="step_content">
+                    <div class="step-wrap">
+                      <ol class="step-list">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
-                            <div class="tit"><span>단계 타이틀</span></div>
-                            <div class="txt">단계 설명 설명입니다.</div>
-                          </div>
-                        </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
+                            <div class="tit"><span>단계 타이틀</span></div>
+                            <div class="txt">단계 설명 설명입니다.</div>
+                          </div>
+                        </li>
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
@@ -988,22 +988,22 @@
                   </div>
                   <h6>아이콘+텍스트 .step.type2</h6>
                   <div class="step type2" copy-attr="yes">
-                    <div class="step_wrap">
-                      <ol class="step_list">
-                        <li class="step_item">
-                          <div class="step_content">
+                    <div class="step-wrap">
+                      <ol class="step-list">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">
                               단계 설명 설명입니다.단계 설명 설명입니다.단계
@@ -1011,8 +1011,8 @@
                             </div>
                           </div>
                         </li>
-                        <li class="step_item">
-                          <div class="step_content">
+                        <li class="step-item">
+                          <div class="step-content">
                             <div class="tit"><span>단계 타이틀</span></div>
                             <div class="txt">단계 설명 설명입니다.</div>
                           </div>
@@ -1024,15 +1024,15 @@
                   <h5>세로형</h5>
                   <h6>.step.type3</h6>
                   <div class="step type3" copy-attr="yes">
-                    <div class="step_wrap">
-                      <ol class="step_list clearfix">
-                        <li class="step_box">
-                          <div class="step_item">
-                            <div class="step_content">
+                    <div class="step-wrap">
+                      <ol class="step-list clearfix">
+                        <li class="step-box">
+                          <div class="step-item">
+                            <div class="step-content">
                               <div class="title">단계 타이틀</div>
                             </div>
                           </div>
-                          <div class="step_process">
+                          <div class="step-process">
                             <ul class="bu">
                               <li>
                                 대통령은 국회에 출석하여 발언하거나 서한으로
@@ -1057,25 +1057,25 @@
                             </ul>
                           </div>
                         </li>
-                        <li class="step_box clearfix">
-                          <div class="step_item">
-                            <div class="step_content">
+                        <li class="step-box clearfix">
+                          <div class="step-item">
+                            <div class="step-content">
                               <div class="title">단계 타이틀</div>
                             </div>
                           </div>
-                          <div class="step_process">
+                          <div class="step-process">
                             <div class="text">
                               단계 설명 설명 입니다 설명설명입니다
                             </div>
                           </div>
                         </li>
-                        <li class="step_box clearfix">
-                          <div class="step_item">
-                            <div class="step_content">
+                        <li class="step-box clearfix">
+                          <div class="step-item">
+                            <div class="step-content">
                               <div class="title">단계 타이틀</div>
                             </div>
                           </div>
-                          <div class="step_process">
+                          <div class="step-process">
                             <div class="text">
                               단계 설명 설명 입니다 설명설명입니다
                             </div>
@@ -1091,13 +1091,13 @@
                             </ul>
                           </div>
                         </li>
-                        <li class="step_box clearfix">
-                          <div class="step_item">
-                            <div class="step_content">
+                        <li class="step-box clearfix">
+                          <div class="step-item">
+                            <div class="step-content">
                               <div class="title">단계 타이틀</div>
                             </div>
                           </div>
-                          <div class="step_process">
+                          <div class="step-process">
                             <div class="text">
                               단계 설명 설명 입니다 설명설명입니다
                             </div>
@@ -1107,7 +1107,7 @@
                     </div>
                   </div>
                 </div>
-                <div id="j" class="tab_content">
+                <div id="j" class="tab-content">
                   <!--기타-->
                   <h4>라인(.line .line2)</h4>
                   <div class="line"></div>
@@ -1116,7 +1116,7 @@
                   <h4>레이어 팝업</h4>
                   <button
                     type="button"
-                    class="btn small popup_btn"
+                    class="btn small popup-btn"
                     data-pop="pop1"
                   >
                     팝업버튼
@@ -1124,39 +1124,39 @@
 
                   <button
                     type="button"
-                    class="btn small popup_btn"
+                    class="btn small popup-btn"
                     data-pop="pop2"
                   >
                     alert
                   </button>
                   <div class="popup" data-pop="pop1">
-                    <div class="popup_wrap">
-                      <div class="pop_inner">
+                    <div class="popup-wrap">
+                      <div class="pop-inner">
                         <div class="popup-title-wrap">
                           <div class="sub-title">
                             <strong>Option 01</strong> 생체 인식률 평가를 위한
                             외부간섭요인 발생 시스템
                           </div>
-                          <h3 class="popup_title h0">여기는 팝업 타이틀</h3>
+                          <h3 class="popup-title h0">여기는 팝업 타이틀</h3>
                         </div>
-                        <div class="popup_con">
+                        <div class="popup-con">
                           여기는 팝업내용입니다 <br />
                           팝업버튼 바로아래에 .popup을 넣어주세요~
                         </div>
 
-                        <input type="button" class="popup_close" value="닫기" />
+                        <input type="button" class="popup-close" value="닫기" />
                       </div>
                     </div>
                   </div>
                   <div class="popup alert-pop" data-pop="pop2">
-                    <div class="popup_wrap">
-                      <div class="pop_inner">
+                    <div class="popup-wrap">
+                      <div class="pop-inner">
                         <div class="popup-title-wrap">
-                          <h3 class="popup_title h0">비밀번호 변경</h3>
+                          <h3 class="popup-title h0">비밀번호 변경</h3>
                         </div>
-                        <div class="popup_con">
+                        <div class="popup-con">
                           <p class="em-red">작성된 비밀번호 양식이 틀립니다.</p>
-                          <div class="popup_footer">
+                          <div class="popup-footer">
                             <button
                               type="button"
                               class="btn type2"
@@ -1167,7 +1167,7 @@
                           </div>
                         </div>
 
-                        <input type="button" class="popup_close" value="닫기" />
+                        <input type="button" class="popup-close" value="닫기" />
                       </div>
                     </div>
                   </div>
@@ -1183,17 +1183,17 @@
 
                     1. 복사할 코드에 attribute로 copy-attr='yes' 기입
                     2. <textarea id="ClipBoard" style="display:none"></textarea> html 파일에 넣기
-                    3. <div class="copy_clone" style="display:none;"></div> html 파일에 넣기
+                    3. <div class="copy-clone" style="display:none;"></div> html 파일에 넣기
 
                     */
 
                 $("[copy-attr='yes']").on("click", function () {
                   var findHtml = $(this).clone();
 
-                  $(".copy_clone").append(findHtml);
-                  $(".copy_clone *").removeAttr("copy-attr style");
+                  $(".copy-clone").append(findHtml);
+                  $(".copy-clone *").removeAttr("copy-attr style");
 
-                  var copyHtml = $(".copy_clone").html();
+                  var copyHtml = $(".copy-clone").html();
 
                   $("#ClipBoard")
                     .css("display", "block")
@@ -1204,7 +1204,7 @@
                   try {
                     succeed = document.execCommand("copy");
                     $("#ClipBoard").css("display", "none");
-                    $(".copy_clone").html("");
+                    $(".copy-clone").html("");
                   } catch (e) {
                     succeed = false;
                   }
@@ -1217,7 +1217,7 @@
             </div>
             <!-- //.template -->
             <textarea id="ClipBoard" style="display: none"></textarea>
-            <div class="copy_clone" style="display: none"></div>
+            <div class="copy-clone" style="display: none"></div>
           </section>
         </div>
       </div>
