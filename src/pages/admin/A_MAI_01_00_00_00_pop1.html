@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '메인 전시 등록'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_MAI_01_00_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: '메인 관리',depth2:
+          ''})
+
+          <div class="content-wrap">
+            <h3>홈 전시 관리</h3>
+            <div class="tab">
+              <div class="tab-menu">
+                <button type="button" class="tab-select">
+                  <span> 선택중인메뉴 </span>
+                </button>
+                <div class="tab-panel">
+                  <ul class="tab-list clearfix">
+                    <li class="tab-item active">
+                      <button type="button" class="tab-button" title="선택됨">
+                        <span>메인배너</span>
+                      </button>
+                    </li>
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
+                        <span>게더링</span>
+                      </button>
+                    </li>
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
+                        <span>띠배너</span>
+                      </button>
+                    </li>
+                    <li class="tab-item">
+                      <button type="button" class="tab-button">
+                        <span>매거진</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content active">
+                  @@include('./include/A_MAI_01_00_00_00_tab1.html')
+                  @@include('./include/popup/A_MAI_01_00_00_00_pop1.html',{active:true})
+                </div>
+                <div class="tab-content"></div>
+                <div class="tab-content"></div>
+                <div class="tab-content"></div>
+                <div class="tab-content"></div>
+                <div class="tab-content"></div>
+                <div class="tab-content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer"><a href="#n" class="btn">저장</a></footer>
+        <script>
+          window.on("load", function () {
+            setTimeout(() => {
+              $('.btn[data-pop="pop1"]').click();
+            }, 1000);
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

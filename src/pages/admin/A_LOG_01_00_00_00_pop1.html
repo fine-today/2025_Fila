@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '로그인 - admin'})
+    <link rel="stylesheet" href="../../css/login.css" />
+  </head>
+  <body>
+    <div id="container" class="login A_LOG_01_01_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content">
+        <div class="wrap">
+          <div class="login-wrap">
+            <h2>Misto Holdings 관리자 페이지</h2>
+            <div class="input-wrap">
+              <div class="input">
+                <input type="text" placeholder="이메일을 입력해 주세요." />
+                <p class="error">올바른 형식의 이메일을 입력해 주세요.</p>
+              </div>
+
+              <div class="input w100p">
+                <input
+                  type="password"
+                  class=""
+                  placeholder="비밀번호를 입력해 주세요."
+                />
+                <button type="button" class="show-hide"></button>
+              </div>
+
+              <span class="input check w100p">
+                <input type="checkbox" id="check1" />
+                <label for="check1">이메일 저장</label>
+              </span>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="btn w100p large">
+                <span>로그인</span>
+              </button>
+              <div class="align-center">
+                <button type="button" data-pop="pop2">비밀번호 찾기</button>
+              </div>
+              @@include('./include/popup/A_LOG_01_01_00_00_pop1.html',{})
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $('[data-pop="pop2"]').click();
+      </script>
+    </div>
+  </body>
+</html>
