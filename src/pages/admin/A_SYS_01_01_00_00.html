@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '메인 전시 등록'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_SYS_01_01_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: '메인 관리',depth2:
+          ''})
+
+          <div class="content-wrap">
+            <h3>메인 전시 등록</h3>
+            <section>
+              <h4>1. PC 영상 업로드</h4>
+              <article>
+                <div class="input file">
+                  <input type="file" placeholder="파일찾기" id="file1" />
+                  <label for="file1" class="btn">업로드</label>
+                </div>
+              </article>
+            </section>
+            <section class="margin-t-20">
+              <h4>2. MO 영상 업로드</h4>
+              <article>
+                <div class="input file">
+                  <input type="file" placeholder="파일찾기" id="file2" />
+                  <label for="file2" class="btn">업로드</label>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"><a href="#n" class="btn">저장</a></footer>
+    </div>
+  </body>
+</html>

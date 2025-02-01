@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : 'IR 자료 관리'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_MAI_01_02_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: 'IR 자료 관리',depth2:
+          '2024 IR 등록'})
+
+          <div class="content-wrap">
+            <h3>2024 IR 등록</h3>
+            <section>
+              <h4>[등록_KR]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">게시여부</th>
+                      <td>
+                        <div class="input-wrap">
+                          <span class="input">
+                            <input
+                              type="radio"
+                              name="radio"
+                              id="radio1"
+                              checked=""
+                            />
+                            <label for="radio1">게시글 공개</label>
+                          </span>
+                          <span class="input">
+                            <input type="radio" name="radio" id="radio2" />
+                            <label for="radio2">게시글 미공개</label>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제목</th>
+                      <td>
+                        <div class="input full-width">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">파일 업로드 (국문)</th>
+                      <td>
+                        <div class="input file">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="btn">파일첨부</label>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">파일 업로드 (영문)</th>
+                      <td>
+                        <div class="input file">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="btn">파일첨부</label>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section>
+              <h4>[등록_EN]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">게시여부</th>
+                      <td>
+                        <div class="input-wrap">
+                          <span class="input">
+                            <input
+                              type="radio"
+                              name="radio"
+                              id="radio1"
+                              checked=""
+                            />
+                            <label for="radio1">게시글 공개</label>
+                          </span>
+                          <span class="input">
+                            <input type="radio" name="radio" id="radio2" />
+                            <label for="radio2">게시글 미공개</label>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제목</th>
+                      <td>
+                        <div class="input full-width">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">파일 업로드 (국문)</th>
+                      <td>
+                        <div class="input file">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="btn">파일첨부</label>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">파일 업로드 (영문)</th>
+                      <td>
+                        <div class="input file">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="btn">파일첨부</label>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section>
+              <div class="bottom-btns">
+                <div class="left"></div>
+                <div class="right">
+                  <a href="#n" class="btn type2">목록</a>
+                  <a href="#n" class="btn">등록</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>

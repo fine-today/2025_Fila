@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '로그인 - admin'})
+    <link rel="stylesheet" href="../../css/login.css" />
+  </head>
+  <body>
+    <div id="container" class="login" data-page="A_LOG_01_02_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content">
+        <div class="wrap">
+          <div class="login-wrap">
+            <h2>비밀번호 변경</h2>
+            <div class="input-wrap">
+              <div class="input">
+                <span class="input-label required">새 비밀번호</span>
+                <input
+                  type="password"
+                  placeholder="새 비밀번호를 입력해 주세요."
+                />
+              </div>
+
+              <div class="input w100p">
+                <span class="input-label required">새 비밀번호 확인</span>
+                <input
+                  type="password"
+                  class=""
+                  placeholder="비밀번호를 한 번 더 입력해 주세요."
+                />
+              </div>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="btn w100p large">
+                <span>완료</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

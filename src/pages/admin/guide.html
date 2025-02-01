@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '가이드'})
+  </head>
+  <body>
+    <div id="container" class="sub">
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <header class="header">@@include('./include/header.html')</header>
+
+      <div id="content">
+        <div id="main" class="main">
+          <div class="location">
+            @@include('./include/breadcrumb.html',{depth1: 'Title 1dep',depth2:
+            'Title 2dep'})
+          </div>
+          <div class="wrap">
+            <section class="section">
+              <div class="tab">
+                <div class="tab-menu type2 depth6">
+                  <button class="tab-select"><span>선택된 메뉴명</span></button>
+                  <div class="tab-panel">
+                    <ul class="tab-list clearfix">
+                      <li class="tab-item active">
+                        <a href="" class="tab-anchor">
+                          <span>6차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a href="" class="tab-anchor" target="-self">
+                          <span>6차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a href="" class="tab-anchor" target="-self">
+                          <span>6차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a href="" class="tab-anchor" target="-self">
+                          <span>6차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a href="" class="tab-anchor" target="-self">
+                          <span>6차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a href="" class="tab-anchor" target="-self">
+                          <span>6차메뉴</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab" copy-attr="yes">
+                <div class="tab-menu">
+                  <button type="button" class="tab-select">
+                    <span>select</span>
+                  </button>
+                  <div class="tab-panel">
+                    <ul class="tab-list clearfix">
+                      <li class="tab-item active">
+                        <button type="button" class="tab-button" title="선택됨">
+                          <span>선택중인메뉴</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>4차메뉴는 탭메뉴</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>4차메뉴는 탭메뉴 4차메뉴는 탭메뉴 탭메뉴</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>4차메뉴는 탭메뉴</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>4차메뉴는 탭메뉴</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>4차메뉴는 탭메뉴</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>4차메뉴는 탭메뉴</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content active">1</div>
+                  <div class="tab-content">2</div>
+                  <div class="tab-content">3</div>
+                  <div class="tab-content">4</div>
+                  <div class="tab-content">5</div>
+                  <div class="tab-content">6</div>
+                  <div class="tab-content">7</div>
+                </div>
+              </div>
+
+              <div class="tab template">
+                <div class="tab-menu">
+                  <button type="button" class="tab-select">
+                    <span>스텝박스</span>
+                  </button>
+                  <div class="tab-panel">
+                    <ul class="tab-list clearfix">
+                      <!-- <li class="tab-item active">
+                        <button type="button" title="선택됨" class="tab-all">
+                          <span>전체보기</span>
+                        </button>
+                      </li> -->
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>제목</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>목록</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>테이블</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>버튼스타일</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>폼 스타일</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>박스디자인</span>
+                        </button>
+                      </li>
+                      <li class="tab-item">
+                        <button type="button" class="tab-button">
+                          <span>기타</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="a" class="tab-content active">
+                    @@include('./include/guide/typo.html')
+                  </div>
+                  <div id="b" class="tab-content">
+                    @@include('./include/guide/list.html')
+                  </div>
+                  <div id="d" class="tab-content">
+                    @@include('./include/guide/table.html')
+                  </div>
+                  <div id="e" class="tab-content">
+                    @@include('./include/guide/button.html')
+                  </div>
+                  <div id="f" class="tab-content">
+                    @@include('./include/guide/form.html')
+                  </div>
+                  <div id="g" class="tab-content">
+                    @@include('./include/guide/box.html')
+                  </div>
+                  <div id="j" class="tab-content">
+                    @@include('./include/guide/etc.html')
+                    <button type="button" class="btn" data-pop="pop3">
+                      따라다니는 팝업
+                    </button>
+                  </div>
+                </div>
+
+                <div class="popup following-pop" data-pop="pop3">
+                  <div class="popup-wrap">
+                    <div class="pop-inner">
+                      <div class="popup-title-wrap">
+                        <h3 class="popup-title h0">비밀번호 변경</h3>
+                      </div>
+                      <div class="popup-con">
+                        <span class="input">
+                          <input
+                            type="radio"
+                            name="radio"
+                            id="radio1"
+                            checked=""
+                          />
+                          <label for="radio1">노출</label>
+                        </span>
+                        <span class="input">
+                          <input type="radio" name="radio" id="radio2" />
+                          <label for="radio2">미노출</label>
+                        </span>
+                      </div>
+
+                      <input type="button" class="popup-close" value="닫기" />
+                    </div>
+                  </div>
+                </div>
+
+                <script>
+                  /*템플릿 코드 복사 코드
+
+                      @name code-copy
+                      * @author Kwon Oh Hwan
+                      * @since 2020-09-16
+
+                      1. 복사할 코드에 attribute로 copy-attr='yes' 기입
+                      2. <textarea id="ClipBoard" style="display:none"></textarea> html 파일에 넣기
+                      3. <div class="copy-clone" style="display:none;"></div> html 파일에 넣기
+
+                      */
+
+                  $("[copy-attr='yes']").on("click", function () {
+                    var findHtml = $(this).clone();
+
+                    $(".copy-clone").append(findHtml);
+                    $(".copy-clone *").removeAttr("copy-attr style");
+
+                    var copyHtml = $(".copy-clone").html();
+
+                    $("#ClipBoard")
+                      .css("display", "block")
+                      .val(copyHtml)
+                      .select();
+
+                    var succeed;
+                    try {
+                      succeed = document.execCommand("copy");
+                      $("#ClipBoard").css("display", "none");
+                      $(".copy-clone").html("");
+                    } catch (e) {
+                      succeed = false;
+                    }
+                    if (succeed) {
+                      alert("복사 되었습니다");
+                    }
+                    return false;
+                  });
+                </script>
+              </div>
+              <!-- //.template -->
+              <textarea id="ClipBoard" style="display: none"></textarea>
+              <div class="copy-clone" style="display: none"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
