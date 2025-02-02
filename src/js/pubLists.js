@@ -477,8 +477,21 @@ var PubLists = [
         etc: [""],
       },
       {
+        id: "A_ESG_01_02_00_00",
+        breadcrumb: "지속가능경영 > ESG정책 관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "/pages/admin/A_ESG_01_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
         id: "A_ESG_01_02_01_00",
-        breadcrumb: "지속가능경영 > 지속가능경영보고서 > 등록",
+        breadcrumb: "지속가능경영 > ESG정책 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -497,8 +510,8 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "완료+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_ESG_01_02_02_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -516,93 +529,93 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-REC-01-01-00-00",
+        id: "A_REC_01_01_00_00",
         breadcrumb: "채용 > 대시보드",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-REC-01-02-00-00",
-        breadcrumb: "채용 > 채용 공고",
+        id: "A_REC_01_02_00_00",
+        breadcrumb: "채용 > 채용 공고 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-REC-01-02-01-00",
+        id: "A_REC_01_02_01_00",
         breadcrumb: "채용 > 채용 공고 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_02_01_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-REC-01-02-02-00",
+        id: "A_REC_01_02_02_00",
         breadcrumb: "채용 > 채용 공고 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_02_02_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-REC-01-03-00-00",
-        breadcrumb: "채용 > 상시 인력풀",
+        id: "A_REC_01_03_00_00",
+        breadcrumb: "채용 > 상시 인력풀 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-REC-01-03-01-00",
+        id: "A_REC_01_03_01_00",
         breadcrumb: "채용 > 상시 인력풀 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_03_01_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-REC-01-03-02-00",
+        id: "A_REC_01_03_02_00",
         breadcrumb: "채용 > 상시 인력풀 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_REC_01_03_02_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -633,15 +646,15 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-MED-01-01-01-00",
+        id: "A_MED_01_00_00_00",
         breadcrumb: "미디어 > 보도자료 > 목록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "/pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "/pages/admin/A_MED_01_00_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -652,7 +665,8 @@ var PubLists = [
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
-        address: "/",
+        address:
+          "https://www.figma.com/design/UcggDxeMwE7K2cbGREtg2Z/FILA-(MOON-project)-%EA%B5%AC%EC%B6%95?node-id=838-21060&t=AWwTYEeAAFQieOlI-4",
         pubAddress: "/pages/admin/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",

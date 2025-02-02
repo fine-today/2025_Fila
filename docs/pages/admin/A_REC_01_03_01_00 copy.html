@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>ESG 정책 등록</title>
+<title>채용 공고 등록</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_ESG_01_02_01_00">
+    <div id="container" class="admin sub" data-page="A_MAI_01_02_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,7 +249,7 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">지속가능경영</li>
+    <li class="depth1">채용</li>
     <li class="depth2">
       <i
         ><svg
@@ -267,14 +267,14 @@
           />
         </svg>
       </i>
-      ESG 정책 등록
+      채용공고 등록
     </li>
   </ol>
 </div>
 
 
           <div class="content-wrap">
-            <h3>ESG 정책 등록</h3>
+            <h3>채용 공고 등록</h3>
             <section>
               <h4>[등록_KR]</h4>
               <div class="table-wrap write">
@@ -296,52 +296,71 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">공개</label>
+                            <label for="radio1">게시글 공개</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">미공개</label>
+                            <label for="radio2">게시글 미공개</label>
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">제목</th>
+                      <th scope="row">Title</th>
                       <td>
-                        <span class="input full-width"
-                          ><input type="text"
-                        /></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">파일 업로드 (국문)</th>
-                      <td>
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일첨부</label>
-                        </div>
-                        <div class="row margin-t-8">
-                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        <div class="input full-width w100p">
+                          <input type="text" />
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드 (영문)</th>
+                      <th scope="row">그룹</th>
                       <td>
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일첨부</label>
+                        <span class="input">
+                          <select title="" class="w180">
+                            <option>셀렉트 목록</option>
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        모집 인원<br />
+                        (예시 : 0명)
+                      </th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
                         </div>
-                        <div class="row margin-t-8">
-                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        근무지<br />
+                        (예시 : 본사 소재지)
+                      </th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">업무내용</th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <textarea title="" rows="5"></textarea>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">필요역량 및 자격조건</th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <textarea title="" rows="5"></textarea>
                         </div>
                       </td>
                     </tr>
@@ -349,80 +368,7 @@
                 </table>
               </div>
             </section>
-            <section>
-              <h4>[등록_EN]</h4>
-              <div class="table-wrap write">
-                <table class="table">
-                  <caption></caption>
-                  <colgroup>
-                    <col style="width: 15%" />
-                    <col style="width: auto" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="row">게시여부</th>
-                      <td>
-                        <div class="input-wrap">
-                          <span class="input">
-                            <input
-                              type="radio"
-                              name="radio"
-                              id="radio1"
-                              checked=""
-                            />
-                            <label for="radio1">공개</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">미공개</label>
-                          </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">제목</th>
-                      <td>
-                        <span class="input full-width"
-                          ><input type="text"
-                        /></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">파일 업로드 (국문)</th>
-                      <td>
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일첨부</label>
-                        </div>
-                        <div class="row margin-t-8">
-                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">파일 업로드 (영문)</th>
-                      <td>
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일첨부</label>
-                        </div>
-                        <div class="row margin-t-8">
-                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
+            <!-- 채용은 영문 없음 -->
 
             <section>
               <div class="bottom-btns">

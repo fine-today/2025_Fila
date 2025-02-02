@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '채용 공고 등록'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_MAI_01_02_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{ depth1: '채용', depth2:
+          '채용공고 등록'})
+
+          <div class="content-wrap">
+            <h3>채용 공고 등록</h3>
+            <section>
+              <h4>[등록_KR]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">게시여부</th>
+                      <td>
+                        <div class="input-wrap">
+                          <span class="input">
+                            <input
+                              type="radio"
+                              name="radio"
+                              id="radio1"
+                              checked=""
+                            />
+                            <label for="radio1">게시글 공개</label>
+                          </span>
+                          <span class="input">
+                            <input type="radio" name="radio" id="radio2" />
+                            <label for="radio2">게시글 미공개</label>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Title</th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">그룹</th>
+                      <td>
+                        <span class="input">
+                          <select title="" class="w180">
+                            <option>셀렉트 목록</option>
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        담당부서<br />
+                        (예시 : 전략기획팀)
+                      </th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        담당 업무<br />
+                        (예시 : PR 담당)
+                      </th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        고용 형태<br />
+                        (예시 : 정규직)
+                      </th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        모집 인원<br />
+                        (예시 : 0명)
+                      </th>
+                      <td>
+                        <div class="input full-width w100p">
+                          <input type="text" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일</th>
+                      <td>
+                        <div class="input file">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="btn">다운로드</label>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">시작일 ~ 종료일</th>
+                      <td>
+                        <div class="date-wrap">
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                              id="input1-1"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                          <span class="hypen">~</span>
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">내용</th>
+                      <td>
+                        <div
+                          class="editor"
+                          style="
+                            width: 100%;
+                            min-height: 500px;
+                            background-color: #ddd;
+                          "
+                        >
+                          <br />
+                          &nbsp; &nbsp; &nbsp; &nbsp;Editor영역
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <!-- 채용은 영문 없음 -->
+
+            <section>
+              <div class="bottom-btns">
+                <div class="left"></div>
+                <div class="right">
+                  <a href="#n" class="btn type2">목록</a>
+                  <a href="#n" class="btn">등록</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>

@@ -585,26 +585,64 @@ h2 {
 /*====== input file img 끝 ============*/
 /*========== card style ==========*/
 .card-wrap {
-  display: flex;
+  display: grid;
   width: 100%;
   gap: 20px;
   margin: 20px 0 40px;
   background-color: #fff;
   border-radius: 3px;
   padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
   .card {
     display: flex;
     flex-direction: column;
     height: 230px;
     padding: 30px 40px;
-    flex: 1;
-    max-width: calc(33.3333% - 13.3333px);
+    width: 100%;
     border: 1px solid #ddd;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    .header-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .sub-title {
+        font-size: 16px;
+        line-height: 1;
+        color: #999;
+        font-weight: 600;
+      }
+      h5 {
+        margin-top: 0;
+      }
+    }
     h5 {
       font-size: 20px;
       margin-bottom: 30px;
+    }
+    .info-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 16px;
+      color: #666;
+      .info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        span {
+          display: flex;
+          align-items: center;
+          position: relative;
+          &:not(:last-child)::after {
+            display: inline-block;
+            width: 1px;
+            height: 15px;
+            background-color: #ddd;
+            margin: 0 5px;
+          }
+        }
+      }
     }
     .down-wrap {
       display: flex;
@@ -625,6 +663,24 @@ h2 {
       font-size: 16px;
       line-height: 1.5;
     }
+  }
+  &[data-column="5"] {
+    grid-template-columns: repeat(5, 1fr);
+    .card {
+      padding: 40px 10px 40px 20px;
+    }
+  }
+}
+
+.list-title-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #999;
+  h4 {
+    margin-bottom: 0;
   }
 }
 
