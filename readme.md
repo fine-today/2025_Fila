@@ -2,4 +2,4 @@
 
 #root 경로 : /docs
 
-#server : https://fine-today.github.io/2025-Fila 접속
+#server : https://fine-today.github.io/2025_Fila 접속
