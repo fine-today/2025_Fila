@@ -654,12 +654,12 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_MED_01_00_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-MED-01-01-01-01",
+        id: "A_MED_01_01_00_00",
         breadcrumb: "미디어 > 보도자료 > 목록 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
@@ -667,8 +667,8 @@ var PubLists = [
         designAnchor: "",
         address:
           "https://www.figma.com/design/UcggDxeMwE7K2cbGREtg2Z/FILA-(MOON-project)-%EA%B5%AC%EC%B6%95?node-id=838-21060&t=AWwTYEeAAFQieOlI-4",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MED_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -738,41 +738,67 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-MED-01-02-01-00",
+        id: "A_MED_02_00_00_00",
         breadcrumb: "미디어 > 아카이브 > 목록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MED_02_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-MED-01-02-01-01",
-        breadcrumb: "미디어 > 아카이브 > 목록 > 등록",
+        id: "A_MED_02_01_00_00",
+        breadcrumb: "미디어 > 아카이브 > 목록 > 이미지",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MED_02_01_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-MED-01-02-01-02",
+        id: "A_MED_02_02_00_00",
+        breadcrumb: "미디어 > 아카이브 > 등록 > 동영상",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/AA_MED_02_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MED_02_02_00_00",
+        breadcrumb: "미디어 > 아카이브 > 등록 > 이미지",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MED_02_02_01_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MED_02_03_00_00",
         breadcrumb: "미디어 > 아카이브 > 목록 > 상세/수정/복사",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MED_02_03_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
