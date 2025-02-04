@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/head.html',{'title' : '대시보드'})
+    @@include('./include/head.html',{'title' : '채용현황'})
   </head>
   <body>
     <div id="container" class="admin sub" data-page="A_REC_01_01_00_00">
@@ -10,15 +10,13 @@
       <div id="content">
         <div id="main" class="main">
           @@include('./include/breadcrumb.html',{depth1: '채용',depth2:
-          '대시보드'})
+          '채용현황'})
 
           <div class="content-wrap">
-            <h3>대시보드</h3>
+            <h3>채용현황</h3>
             <section class="list-title-wrap">
               <h4>채용 중인 공고<span class="subtitle">13개 &gt;</span></h4>
-              <div class="text-right">
-                <button type="button" class="btn">등록</button>
-              </div>
+              <div class="text-right"></div>
             </section>
             <section>
               <div class="card-wrap" data-column="5">
@@ -147,6 +145,14 @@
                       <span>조회수 nnn,nnn</span>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="bottom-btns">
+                <div class="left"></div>
+                <div class="right">
+                  <a href="#n" class="btn">등록</a>
                 </div>
               </div>
             </section>

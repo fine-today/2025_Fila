@@ -1,7 +1,7 @@
 <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
     <li class="depth1">@@depth1</li>
-    @@if(context.depth2 !== '' || context.depth2 == null){
+    @@if(context.depth2){
     <li class="depth2">
       <i
         ><svg
@@ -21,7 +21,7 @@
       </i>
       @@depth2
     </li>
-    } @@if(context.depth3 !== '' || context.depth3 == null){
+    } @@if(context.depth3){
     <li class="depth2">
       <i
         ><svg

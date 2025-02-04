@@ -17,25 +17,7 @@
             <section class="search-box">
               <div class="row">
                 <span class="input">
-                  <label class="input-label" for="input1-1">그룹명</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <span class="input">
                   <label class="input-label" for="input1-1">게시여부</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <span class="input">
-                  <label class="input-label" for="input1-1">진행상태</label>
                   <select name="" id="" class="w200">
                     <option value="">전체</option>
                     <option value="">2</option>
@@ -60,12 +42,33 @@
                     <button type="button" class="date-icon">달력열기</button>
                   </span>
                 </div>
+                <span class="input">
+                  <label class="input-label" for="input1-1">그룹</label>
+                  <select name="" id="" class="w200">
+                    <option value="">전체</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </span>
+                <span class="input">
+                  <label class="input-label" for="input1-1">진행상태</label>
+                  <select name="" id="" class="w200">
+                    <option value="">전체</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </span>
               </div>
               <div class="row">
-                <span class="input full-width">
-                  <label for="" class="input-label">검색</label>
-                  <input type="text" placeholder="검색어 입력" />
-                </span>
+                <label for="" class="input-label">검색</label>
+                <div class="input-wrap w100p">
+                  <span class="input full-width">
+                    <input type="text" placeholder="검색어 입력" />
+                  </span>
+                  <button type="button" class="btn">검색</button>
+                </div>
               </div>
             </section>
             <section>
@@ -93,14 +96,14 @@
                   <thead>
                     <tr>
                       <th scope="col">No.</th>
-                      <th scope="col">Title</th>
+                      <th scope="col">제목</th>
                       <th scope="col">그룹</th>
                       <th scope="col">담당부서</th>
                       <th scope="col">시작일</th>
                       <th scope="col">종료일</th>
                       <th scope="col">진행상태</th>
-                      <th scope="col">게시여부</th>
                       <th scope="col">조회수</th>
+                      <th scope="col">게시여부</th>
                       <th scope="col">등록일시</th>
                     </tr>
                   </thead>
@@ -115,8 +118,8 @@
                       <td>2025. 01. 03</td>
                       <td>2025. 02. 03</td>
                       <td>채용 중</td>
-                      <td>o</td>
                       <td>nnn,nnn,nnn</td>
+                      <td>o</td>
                       <td>2023. 03. 06 00:00 ~ 9999. 12. 31 23:59</td>
                     </tr>
                   </tbody>

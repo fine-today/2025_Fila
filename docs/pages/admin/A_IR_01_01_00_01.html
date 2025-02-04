@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MAI_01_00_00_00">
+    <div id="container" class="admin sub" data-page="A_IR_01_01_00_01">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -271,26 +271,6 @@
       2024 IR 자료
     </li>
      
-    <li class="depth2">
-      <i
-        ><svg
-          width="14"
-          height="27"
-          viewBox="0 0 14 27"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M12.3744 13.5004L0 1.12605L0.707107 0.418945L13.7886 13.5004L0.707107 26.5819L0 25.8748L12.3744 13.5004Z"
-            fill="#4E5968"
-          />
-        </svg>
-      </i>
-      @@depth3
-    </li>
-    
   </ol>
 </div>
 
@@ -336,10 +316,13 @@
                 </div>
               </div>
               <div class="row">
-                <span class="input full-width">
-                  <label for="" class="input-label">검색</label>
-                  <input type="text" placeholder="검색어 입력" />
-                </span>
+                <label for="" class="input-label">검색</label>
+                <div class="input-wrap w100p">
+                  <span class="input full-width">
+                    <input type="text" placeholder="검색어 입력" />
+                  </span>
+                  <button type="button" class="btn">검색</button>
+                </div>
               </div>
             </section>
             <div class="tab">
@@ -376,35 +359,32 @@
                     <col style="width: 150px" />
                     <col style="width: 10%" />
                     <col style="width: 10%" />
-                    <col style="width: 10%" />
                     <col style="width: 20%" />
                   </colgroup>
                   <thead>
                     <tr>
-                      <th scope="col">No.</th>
-                      <th scope="col">분기</th>
-                      <th scope="col">분류</th>
-                      <th scope="col">파일</th>
-                      <th scope="col">게시언어</th>
+                      <th scope="col">번호</th>
+                      <th scope="col">제목</th>
+                      <th scope="col">등록일(표시용)</th>
+                      <th scope="col">첨부파일</th>
+                      <th scope="col">언어</th>
                       <th scope="col">게시여부</th>
-                      <th scope="col">다운로드 수</th>
                       <th scope="col">등록일시</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>15</td>
-                      <td>Q3</td>
                       <td class="subject">
                         <a href="">IR Book</a>
                       </td>
+                      <td>2024. 02. 19</td>
                       <td class="subject">
                         <a href="#n">파일명.확장자</a>
                       </td>
                       <td>KR</td>
                       <td>o</td>
-                      <td>nnn,nnn,nnn</td>
-                      <td>2023. 03. 06 00:00 ~ 9999. 12. 31 23:59</td>
+                      <td>YYYY.MM.DD 24:00:00</td>
                     </tr>
                   </tbody>
                 </table>
