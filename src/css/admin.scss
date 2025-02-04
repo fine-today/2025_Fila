@@ -263,23 +263,29 @@ p {
     background-color: #f9fafb;
     padding: 70px 57px;
     .breadcrumb-wrap {
-      padding-bottom: 50px;
+      padding-bottom: 20px;
     }
     .breadcrumb {
       display: flex;
-      gap: 26px;
+      gap: 5px;
       li {
         display: flex;
-        gap: 26px;
+        gap: 5px;
         &.depth1 {
           font-weight: 700;
-          font-size: 36px;
+          font-size: 16px;
         }
         &.depth2 {
           font-weight: 400;
-          font-size: 36px;
+          font-size: 16px;
           i {
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            position: relative;
             svg {
+              width: 16px;
+              height: 16px;
               vertical-align: baseline;
             }
           }
@@ -291,6 +297,10 @@ p {
       height: 400px;
       width: 100%;
     }
+  }
+  h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
   .find-wrap {
     display: flex;
