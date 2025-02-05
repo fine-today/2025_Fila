@@ -298,27 +298,32 @@
         <option value="">4</option>
       </select>
     </span>
-    <div class="date-wrap">
+    <div class="input-box">
       <label class="input-label" for="input1-1">등록일</label>
-      <span class="input date">
-        <input type="text" title="" placeholder="yyyy-mm-dd" id="input1-1" />
-        <button type="button" class="date-icon">달력열기</button>
-      </span>
-      <span class="hypen">~</span>
-      <span class="input date">
-        <input type="text" title="" placeholder="yyyy-mm-dd" />
-        <button type="button" class="date-icon">달력열기</button>
+      <span class="date-wrap">
+        <span class="input date">
+          <input type="text" title="" placeholder="yyyy-mm-dd" id="input1-1" />
+          <button type="button" class="date-icon">달력열기</button>
+        </span>
+        <span class="hypen">~</span>
+        <span class="input date">
+          <input type="text" title="" placeholder="yyyy-mm-dd" />
+          <button type="button" class="date-icon">달력열기</button>
+        </span>
       </span>
     </div>
   </div>
   <div class="row">
-    <span class="input full-width">
-      <label for="" class="input-label">내용</label>
-      <input type="text" />
-    </span>
-  </div>
-  <div class="row right">
-    <button type="button" class="btn">검색</button>
+    <div class="input-box w100p">
+      <label for="" class="input-label">검색</label>
+      <span class="input-wrap w100p">
+        <span class="input full-width">
+          <input type="text" placeholder="검색어 입력" />
+          <span class="limit">nn/nn</span>
+        </span>
+        <button type="button" class="btn">검색</button>
+      </span>
+    </div>
   </div>
 </div>
 <div class="table-unit">
@@ -335,8 +340,8 @@
       <col style="width: 50px" />
       <col />
       <col style="width: 200px" />
-      <col style="width: 150px" />
-      <col style="width: 70px" />
+      <col style="width: 23%" />
+      <col style="width: 100px" />
       <col style="width: 150px" />
     </colgroup>
     <thead>

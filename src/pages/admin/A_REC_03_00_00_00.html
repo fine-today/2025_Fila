@@ -4,7 +4,7 @@
     @@include('./include/head.html',{'title' : '상시 인력풀 관리'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_REC_01_02_00_00">
+    <div id="container" class="admin sub" data-page="A_REC_03_00_00_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
@@ -25,21 +25,23 @@
                     <option value="">4</option>
                   </select>
                 </span>
-                <div class="date-wrap">
+                <div class="input-box">
                   <label class="input-label" for="input1-1">등록일</label>
-                  <span class="input date">
-                    <input
-                      type="text"
-                      title=""
-                      placeholder="yyyy-mm-dd"
-                      id="input1-1"
-                    />
-                    <button type="button" class="date-icon">달력열기</button>
-                  </span>
-                  <span class="hypen">~</span>
-                  <span class="input date">
-                    <input type="text" title="" placeholder="yyyy-mm-dd" />
-                    <button type="button" class="date-icon">달력열기</button>
+                  <span class="date-wrap">
+                    <span class="input date">
+                      <input
+                        type="text"
+                        title=""
+                        placeholder="yyyy-mm-dd"
+                        id="input1-1"
+                      />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
+                    <span class="hypen">~</span>
+                    <span class="input date">
+                      <input type="text" title="" placeholder="yyyy-mm-dd" />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
                   </span>
                 </div>
 
@@ -54,12 +56,15 @@
                 </span>
               </div>
               <div class="row">
-                <label for="" class="input-label">검색</label>
-                <div class="input-wrap w100p">
-                  <span class="input full-width">
-                    <input type="text" placeholder="검색어 입력" />
+                <div class="input-box w100p">
+                  <label for="" class="input-label">검색</label>
+                  <span class="input-wrap w100p">
+                    <span class="input full-width">
+                      <input type="text" placeholder="검색어 입력" />
+                      <span class="limit">nn/nn</span>
+                    </span>
+                    <button type="button" class="btn">검색</button>
                   </span>
-                  <button type="button" class="btn">검색</button>
                 </div>
               </div>
             </section>
@@ -102,8 +107,8 @@
                       <td>Misto holdings</td>
                       <td>0명</td>
                       <td>본사 소재지</td>
-                      <td>o</td>
-                      <td>2023. 03. 06 00:00 ~ 9999. 12. 31 23:59</td>
+                      <td>Y</td>
+                      <td>2023. 03. 06 00:00</td>
                     </tr>
                   </tbody>
                 </table>

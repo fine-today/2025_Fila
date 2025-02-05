@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>메인 전시 등록</title>
+<title>IR 자료 관리</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MAI_01_01_00_00">
+    <div id="container" class="admin sub" data-page="A_IR_01_01_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,193 +249,200 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">메인 관리</li>
+    <li class="depth1">IR 자료 관리</li>
+    
+    <li class="depth2">
+      <i
+        ><svg
+          width="14"
+          height="27"
+          viewBox="0 0 14 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.3744 13.5004L0 1.12605L0.707107 0.418945L13.7886 13.5004L0.707107 26.5819L0 25.8748L12.3744 13.5004Z"
+            fill="#4E5968"
+          />
+        </svg>
+      </i>
+      2024 IR 등록
+    </li>
      
   </ol>
 </div>
 
 
           <div class="content-wrap">
-            <h3>메인배너 전시 등록</h3>
+            <h3>2024 IR 등록</h3>
             <section>
-              <h4>메인배너 정보</h4>
+              <h4>[등록_KR]</h4>
               <div class="table-wrap write">
                 <table class="table">
                   <caption></caption>
                   <colgroup>
                     <col style="width: 15%" />
-                    <col />
+                    <col style="width: auto" />
                   </colgroup>
                   <tbody>
                     <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >전시 명</label
-                        >
-                      </th>
+                      <th scope="row">게시여부</th>
                       <td>
-                        <div class="input full-width">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
+                        <div class="input-wrap">
+                          <span class="input">
+                            <input
+                              type="radio"
+                              name="radio"
+                              id="radio1"
+                              checked=""
+                            />
+                            <label for="radio1">Yes</label>
+                          </span>
+                          <span class="input">
+                            <input type="radio" name="radio" id="radio2" />
+                            <label for="radio2">No</label>
+                          </span>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required">노출</label>
-                      </th>
+                      <th scope="row">구분</th>
                       <td>
-                        <span class="input margin-r-12">
-                          <input type="radio" name="radio1" id="radio1-1" />
-                          <label for="radio1-1">노출</label>
-                        </span>
-
-                        <div class="date-wrap">
-                          <span class="input date">
-                            <input
-                              type="text"
-                              title=""
-                              placeholder="yyyy-mm-dd"
-                              id="input1-1"
-                            />
-                            <button type="button" class="date-icon">
-                              달력열기
-                            </button>
-                          </span>
-                          <span class="input">
-                            <select name="" id="">
-                              <option value="">1</option>
-                              <option value="">2</option>
-                            </select>
-                          </span>
-                          <span class="input">
-                            <select name="" id="">
-                              <option value="">1</option>
-                              <option value="">2</option>
-                            </select>
-                          </span>
-                          <span class="hypen">~</span>
-                          <span class="input date">
-                            <input
-                              type="text"
-                              title=""
-                              placeholder="yyyy-mm-dd"
-                            />
-                            <button type="button" class="date-icon">
-                              달력열기
-                            </button>
-                          </span>
-                          <span class="input">
-                            <select name="" id="">
-                              <option value="">1</option>
-                              <option value="">2</option>
-                            </select>
-                          </span>
-                          <span class="input">
-                            <select name="" id="">
-                              <option value="">1</option>
-                              <option value="">2</option>
-                            </select>
-                          </span>
-                        </div>
-
-                        <span class="input margin-r-12">
-                          <input type="checkbox" name="check1" id="check1-2" />
-                          <label for="check1-2">상시</label>
-                        </span>
                         <span class="input">
-                          <input type="radio" name="radio1" id="radio1-2" />
-                          <label for="radio1-2">노출안함</label>
+                          <select title="" class="w180">
+                            <option>셀렉트 목록</option>
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                          </select>
                         </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >이동링크</label
-                        >
-                      </th>
+                      <th scope="row">분기</th>
                       <td>
-                        <div class="row input-wrap">
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">내부 상세 링크</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">내부 링크</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">외부 링크</label>
-                          </span>
-                        </div>
-                        <div class="row margin-t-8">
-                          <span class="input">
-                            <select name="" id="">
-                              <option value="">선택</option>
-                            </select>
-                          </span>
-                          <span class="input full-width">
-                            <input type="text" />
-                            <span class="limit">nn/nn</span>
-                          </span>
-                        </div>
+                        <span class="input">
+                          <select title="" class="w180">
+                            <option>셀렉트 목록</option>
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                          </select>
+                        </span>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            <section class="margin-t-20">
-              <div class="table-wrap write">
-                <table class="table">
-                  <caption></caption>
-                  <colgroup>
-                    <col style="width: 15%" />
-                    <col />
-                  </colgroup>
-                  <tbody>
                     <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >메인배너 이미지</label
-                        >
-                      </th>
+                      <th scope="row">첨부파일</th>
                       <td>
-                        <div class="input file img">
+                        <div class="input file">
                           <input
                             type="file"
                             placeholder="파일찾기"
                             id="file1"
                           />
-                          <label for="file1" class="img-link"></label>
+                          <label for="file1" class="btn">파일첨부</label>
                         </div>
-                        <div class="input-img-show margin-t-12">
-                          <img src="../../images/admin/dumy.png" alt="" />
-                          <button type="button" class="img-show-close">
-                            첨부파일 이미지 삭제
-                          </button>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
                         </div>
-                        <p class="margin-t-12">
-                          000*000, 최대 1개까지 등록 가능<br />
-                          jpg, png, webp 최대 10MB
-                        </p>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-            <section class="bottom-btns">
-              <div class="left"></div>
-              <div class="right">
-                <button type="button" class="btn">등록</button>
+            <section>
+              <h4>[등록_EN]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">게시여부</th>
+                      <td>
+                        <div class="input-wrap">
+                          <span class="input">
+                            <input
+                              type="radio"
+                              name="radio"
+                              id="radio1"
+                              checked=""
+                            />
+                            <label for="radio1">Yes</label>
+                          </span>
+                          <span class="input">
+                            <input type="radio" name="radio" id="radio2" />
+                            <label for="radio2">No</label>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">구분</th>
+                      <td>
+                        <span class="input">
+                          <select title="" class="w180">
+                            <option>셀렉트 목록</option>
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">분기</th>
+                      <td>
+                        <span class="input">
+                          <select title="" class="w180">
+                            <option>셀렉트 목록</option>
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일</th>
+                      <td>
+                        <div class="input file">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="btn">파일첨부</label>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section>
+              <div class="bottom-btns">
+                <div class="left"></div>
+                <div class="right">
+                  <a href="#n" class="btn type2">목록</a>
+                  <a href="#n" class="btn">등록</a>
+                </div>
               </div>
             </section>
           </div>
         </div>
       </div>
+      <footer id="footer"></footer>
     </div>
   </body>
 </html>

@@ -10,7 +10,7 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>ESG 정책 등록</title>
+<title>ESG 정책 상세/수정</title>
 
   </head>
   <body>
@@ -268,7 +268,7 @@
           />
         </svg>
       </i>
-      ESG 정책 등록
+      ESG 정책 상세/수정
     </li>
      
   </ol>
@@ -276,7 +276,7 @@
 
 
           <div class="content-wrap">
-            <h3>ESG 정책 등록</h3>
+            <h3>ESG 정책 상세/수정</h3>
             <section>
               <h4>[수정/상세_KR]</h4>
               <div class="table-wrap write">
@@ -298,11 +298,11 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">공개</label>
+                            <label for="radio1">Yes</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">미공개</label>
+                            <label for="radio2">No</label>
                           </span>
                         </div>
                       </td>
@@ -310,17 +310,18 @@
                     <tr>
                       <th scope="row">제목</th>
                       <td>
-                        <span class="input full-width"
-                          ><input type="text"
-                        /></span>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드 (국문)</th>
+                      <th scope="row">첨부파일 (국문)</th>
                       <td>
                         <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
                           <div class="input file">
-                            <a href="" class="down">파일명.pdf</a>
                             <input
                               type="file"
                               placeholder="파일찾기"
@@ -339,11 +340,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드 (영문)</th>
+                      <th scope="row">첨부파일 (영문)</th>
                       <td>
                         <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
                           <div class="input file">
-                            <a href="" class="down">파일명.pdf</a>
                             <input
                               type="file"
                               placeholder="파일찾기"
@@ -386,11 +387,11 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">공개</label>
+                            <label for="radio1">Yes</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">미공개</label>
+                            <label for="radio2">No</label>
                           </span>
                         </div>
                       </td>
@@ -399,12 +400,13 @@
                       <th scope="row">제목</th>
                       <td>
                         <span class="input full-width"
-                          ><input type="text"
-                        /></span>
+                          ><input type="text" />
+                          <span class="limit">nn/nn</span></span
+                        >
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드 (국문)</th>
+                      <th scope="row">첨부파일 (국문)</th>
                       <td>
                         <div class="input-wrap">
                           <a href="" class="down">파일명.pdf</a>
@@ -427,7 +429,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드 (영문)</th>
+                      <th scope="row">첨부파일 (영문)</th>
                       <td>
                         <div class="input-wrap">
                           <a href="" class="down">파일명.pdf</a>

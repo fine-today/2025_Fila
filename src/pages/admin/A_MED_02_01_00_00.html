@@ -10,7 +10,7 @@
       <div id="content">
         <div id="main" class="main">
           @@include('./include/breadcrumb.html',{depth1:
-          '아카이브 관리',depth2:''})
+          '아카이브관리',depth2:''})
 
           <div class="content-wrap">
             <h3>아카이브 관리</h3>
@@ -34,21 +34,23 @@
                     <option value="">4</option>
                   </select>
                 </span>
-                <div class="date-wrap">
+                <div class="input-box">
                   <label class="input-label" for="input1-1">등록일</label>
-                  <span class="input date">
-                    <input
-                      type="text"
-                      title=""
-                      placeholder="yyyy-mm-dd"
-                      id="input1-1"
-                    />
-                    <button type="button" class="date-icon">달력열기</button>
-                  </span>
-                  <span class="hypen">~</span>
-                  <span class="input date">
-                    <input type="text" title="" placeholder="yyyy-mm-dd" />
-                    <button type="button" class="date-icon">달력열기</button>
+                  <span class="date-wrap">
+                    <span class="input date">
+                      <input
+                        type="text"
+                        title=""
+                        placeholder="yyyy-mm-dd"
+                        id="input1-1"
+                      />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
+                    <span class="hypen">~</span>
+                    <span class="input date">
+                      <input type="text" title="" placeholder="yyyy-mm-dd" />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
                   </span>
                 </div>
                 <span class="input">
@@ -62,13 +64,16 @@
                 </span>
               </div>
               <div class="row">
-                <label for="" class="input-label">검색</label>
-                <span class="input-wrap w100p">
-                  <span class="input full-width">
-                    <input type="text" placeholder="검색어 입력" />
+                <div class="input-box w100p">
+                  <label for="" class="input-label">검색</label>
+                  <span class="input-wrap w100p">
+                    <span class="input full-width">
+                      <input type="text" placeholder="검색어 입력" />
+                      <span class="limit">nn/nn</span>
+                    </span>
+                    <button type="button" class="btn">검색</button>
                   </span>
-                  <button type="button" class="btn">검색</button>
-                </span>
+                </div>
               </div>
             </section>
 
@@ -88,7 +93,7 @@
                   </ul>
                 </div>
               </div>
-            </ㄴ>
+            </section>
 
             <section>
               <article class="table-unit">
@@ -126,8 +131,8 @@
                     <tr>
                       <td>15</td>
                       <td class="subject">
-                          <a href="">IR Book</a>
-                        </td>
+                        <a href="">IR Book</a>
+                      </td>
                       <td>
                         <div class="img-mask">
                           <img src="../../images/admin/dumy.png" alt="" />

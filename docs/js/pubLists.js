@@ -204,53 +204,53 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A_IR_01_01_00_01",
+        id: "A_IR_02_00_00_00",
         breadcrumb: "IR 자료 > 목록(추가자료)",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_IR_01_01_00_01.html",
+        pubAddress: "./pages/admin/A_IR_02_00_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_IR_01_01_01_00",
+        id: "A_IR_01_01_00_00",
         breadcrumb: "IR 자료 > 목록 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_IR_01_01_01_00.html",
+        pubAddress: "./pages/admin/A_IR_01_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_IR_01_01_01_01", // 임시
+        id: "A_IR_02_01_00_00", // 임시
         breadcrumb: "IR 자료 > 목록 > 추가등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_IR_01_01_01_01.html",
+        pubAddress: "./pages/admin/A_IR_02_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_IR_01_01_02_00",
+        id: "A_IR_01_02_00_00",
         breadcrumb: "IR 자료 > 목록 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_IR_01_01_02_00.html",
+        pubAddress: "./pages/admin/A_IR_01_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -542,79 +542,79 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A_REC_01_02_00_00",
+        id: "A_REC_02_00_00_00",
         breadcrumb: "채용 > 채용 공고 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_02_00_00.html",
+        pubAddress: "./pages/admin/A_REC_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_REC_01_02_01_00",
+        id: "A_REC_02_01_00_00",
         breadcrumb: "채용 > 채용 공고 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_02_01_00.html",
+        pubAddress: "./pages/admin/A_REC_02_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_REC_01_02_02_00",
+        id: "A_REC_02_02_00_00",
         breadcrumb: "채용 > 채용 공고 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_02_02_00.html",
+        pubAddress: "./pages/admin/A_REC_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_REC_01_03_00_00",
+        id: "A_REC_03_00_00_00",
         breadcrumb: "채용 > 상시 인력풀 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_03_00_00.html",
+        pubAddress: "./pages/admin/A_REC_03_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_REC_01_03_01_00",
+        id: "A_REC_03_01_00_00",
         breadcrumb: "채용 > 상시 인력풀 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_03_01_00.html",
+        pubAddress: "./pages/admin/A_REC_03_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_REC_01_03_02_00",
+        id: "A_REC_03_02_00_00",
         breadcrumb: "채용 > 상시 인력풀 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_03_02_00.html",
+        pubAddress: "./pages/admin/A_REC_03_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -771,7 +771,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/AA_MED_02_02_00_00.html",
+        pubAddress: "./pages/admin/A_MED_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],

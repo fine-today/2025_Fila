@@ -34,31 +34,38 @@
                     <option value="">4</option>
                   </select>
                 </span>
-                <div class="date-wrap">
+                <div class="input-box">
                   <label class="input-label" for="input1-1">등록일</label>
-                  <span class="input date">
-                    <input
-                      type="text"
-                      title=""
-                      placeholder="yyyy-mm-dd"
-                      id="input1-1"
-                    />
-                    <button type="button" class="date-icon">달력열기</button>
-                  </span>
-                  <span class="hypen">~</span>
-                  <span class="input date">
-                    <input type="text" title="" placeholder="yyyy-mm-dd" />
-                    <button type="button" class="date-icon">달력열기</button>
+                  <span class="date-wrap">
+                    <span class="input date">
+                      <input
+                        type="text"
+                        title=""
+                        placeholder="yyyy-mm-dd"
+                        id="input1-1"
+                      />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
+                    <span class="hypen">~</span>
+                    <span class="input date">
+                      <input type="text" title="" placeholder="yyyy-mm-dd" />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
                   </span>
                 </div>
               </div>
               <div class="row">
-                <label for="" class="input-label">검색</label>
-                <div class="input-wrap w100p">
-                  <span class="input full-width">
-                    <input type="text" placeholder="검색어 입력" />
-                  </span>
-                  <button type="button" class="btn">검색</button>
+                <div class="input-box w100p">
+                  <label for="" class="input-label">검색</label>
+                  <div class="input-wrap w100p">
+                    <span class="input full-width">
+                      <input type="text" placeholder="검색어 입력" /><span
+                        class="limit"
+                        >nn/nn</span
+                      >
+                    </span>
+                    <button type="button" class="btn">검색</button>
+                  </div>
                 </div>
               </div>
             </section>
@@ -87,7 +94,7 @@
                       <th scope="col">제목</th>
                       <th scope="col">파일 (국문)</th>
                       <th scope="col">파일 (영문)</th>
-                      <th scope="col">언어</th>
+                      <th scope="col">게시 언어</th>
                       <th scope="col">다운로드 수</th>
                       <th scope="col">게시여부</th>
                       <th scope="col">등록일시</th>
@@ -100,15 +107,15 @@
                         <a href="">IR Book</a>
                       </td>
                       <td class="subject">
-                        <a href="#n">파일명.확장자</a>
+                        <a href="#n" class="down">파일명.확장자</a>
                       </td>
                       <td class="subject">
-                        <a href="#n">파일명.확장자</a>
+                        <a href="#n" class="down">파일명.확장자</a>
                       </td>
                       <td>KR</td>
                       <td>nnn,nnn,nnn</td>
-                      <td>o</td>
-                      <td>2023. 03. 06 00:00 ~ 9999. 12. 31 23:59</td>
+                      <td>Y</td>
+                      <td>2023. 03. 06 00:00</td>
                     </tr>
                   </tbody>
                 </table>

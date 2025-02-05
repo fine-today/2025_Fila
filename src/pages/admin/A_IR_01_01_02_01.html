@@ -28,14 +28,14 @@
                     <col style="width: auto" />
                   </colgroup>
                   <tbody>
-                    <tr>
+                    <!-- <tr>
                       <th scope="row">작성자</th>
                       <td>작성자명</td>
                       <th scope="row">등록일시</th>
                       <td>YYYY.MM.DD hh:mm:ss</td>
                       <th scope="row">다운로드 수</th>
                       <td>nnn,nnn,nnn</td>
-                    </tr>
+                    </tr> -->
                     <tr>
                       <th scope="row">게시여부</th>
                       <td colspan="5">
@@ -47,11 +47,11 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">게시글 공개</label>
+                            <label for="radio1">Yes</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">게시글 미공개</label>
+                            <label for="radio2">No</label>
                           </span>
                         </div>
                       </td>
@@ -60,8 +60,9 @@
                       <th scope="row">제목</th>
                       <td colspan="5">
                         <span class="input full-width"
-                          ><input type="text"
-                        /></span>
+                          ><input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
                       </td>
                     </tr>
                     <tr>
@@ -85,13 +86,19 @@
                     <tr>
                       <th scope="row">첨부파일</th>
                       <td colspan="5">
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일 업로드</label>
+                        <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
+                          <div class="input file">
+                            <input
+                              type="file"
+                              placeholder="파일찾기"
+                              id="file1"
+                            />
+                            <label for="file1" class="btn">파일첨부</label>
+                          </div>
+                          <button type="button" class="icon-btn delete-btn">
+                            삭제
+                          </button>
                         </div>
                         <div class="row margin-t-8">
                           PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
@@ -116,14 +123,14 @@
                     <col style="width: auto" />
                   </colgroup>
                   <tbody>
-                    <tr>
+                    <!-- <tr>
                       <th scope="row">작성자</th>
                       <td>작성자명</td>
                       <th scope="row">등록일시</th>
                       <td>YYYY.MM.DD hh:mm:ss</td>
                       <th scope="row">다운로드 수</th>
                       <td>nnn,nnn,nnn</td>
-                    </tr>
+                    </tr> -->
                     <tr>
                       <th scope="row">게시여부</th>
                       <td colspan="5">
@@ -135,11 +142,11 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">게시글 공개</label>
+                            <label for="radio1">Yes</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">게시글 미공개</label>
+                            <label for="radio2">No</label>
                           </span>
                         </div>
                       </td>
@@ -148,8 +155,9 @@
                       <th scope="row">제목</th>
                       <td colspan="5">
                         <span class="input full-width"
-                          ><input type="text"
-                        /></span>
+                          ><input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
                       </td>
                     </tr>
                     <tr>
@@ -173,13 +181,19 @@
                     <tr>
                       <th scope="row">첨부파일</th>
                       <td colspan="5">
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일 업로드</label>
+                        <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
+                          <div class="input file">
+                            <input
+                              type="file"
+                              placeholder="파일찾기"
+                              id="file1"
+                            />
+                            <label for="file1" class="btn">파일첨부</label>
+                          </div>
+                          <button type="button" class="icon-btn delete-btn">
+                            삭제
+                          </button>
                         </div>
                         <div class="row margin-t-8">
                           PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.

@@ -129,32 +129,25 @@ h6,
   text-decoration: none;
 }
 .down {
-  padding-right: 24px;
   padding-bottom: 4px;
   font-size: 16px;
-  color: #222226;
+  color: #6b7684;
+  text-decoration: underline;
+  &::before {
+    display: inline-flex;
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    background: url(/images/common/file-gray.svg) no-repeat center center;
+    background-size: 18px 18px;
+  }
 }
 .down:link,
 .down:visited,
 .down:active {
-  color: #222226;
-  text-decoration: none;
-}
-.down:before {
-  display: block;
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 18px;
-  height: 15px;
-}
-.down:after {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: calc(100% - 22px);
-  height: 1px;
+  color: #6b7684;
 }
 /*버튼*/
 .btn + .btn {
@@ -868,7 +861,7 @@ p.blt.type3:before {
     input[type="text"],
     input[type="password"],
     input[type="number"] {
-      width: 150px;
+      width: 200px;
     }
   }
   th,
@@ -953,6 +946,9 @@ p.blt.type3:before {
     }
     .subject {
       text-align: left;
+      a {
+        text-decoration: underline;
+      }
     }
     .text-left {
       text-align: left;
@@ -2552,6 +2548,13 @@ i.required {
   flex-direction: column;
   gap: 15px;
   position: relative;
+  .limit {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    font-size: 16px;
+    color: #999;
+  }
   &.full-width {
     width: 100%;
     input[type="text"],

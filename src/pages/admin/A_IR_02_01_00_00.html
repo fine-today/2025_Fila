@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/head.html',{'title' : 'IR 자료 관리'})
+    @@include('./include/head.html',{'title' : '2024 IR 추가 자료 등록'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MAI_01_02_00_00">
+    <div id="container" class="admin sub" data-page="A_IR_02_01_00_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
         <div id="main" class="main">
           @@include('./include/breadcrumb.html',{depth1: 'IR 자료 관리',depth2:
-          '2024 IR 등록'})
+          '2024 IR 추가 자료 등록'})
 
           <div class="content-wrap">
-            <h3>2024 IR 등록</h3>
+            <h3>2024 IR 추가 자료 등록</h3>
             <section>
               <h4>[등록_KR]</h4>
               <div class="table-wrap write">
@@ -35,43 +35,44 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">게시글 공개</label>
+                            <label for="radio1">Yes</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">게시글 미공개</label>
+                            <label for="radio2">No</label>
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">구분</th>
+                      <th scope="row">제목</th>
                       <td>
-                        <span class="input">
-                          <select title="" class="w180">
-                            <option>셀렉트 목록</option>
-                            <option>옵션 1</option>
-                            <option>옵션 2</option>
-                            <option>옵션 3</option>
-                          </select>
+                        <span class="input full-width"
+                          ><input type="text" />
+                          <span class="limit">nn/nn</span>
                         </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">분기</th>
+                      <th scope="row">등록일(표시용)</th>
                       <td>
-                        <span class="input">
-                          <select title="" class="w180">
-                            <option>셀렉트 목록</option>
-                            <option>옵션 1</option>
-                            <option>옵션 2</option>
-                            <option>옵션 3</option>
-                          </select>
-                        </span>
+                        <div class="date-wrap">
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                              id="input1-1"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드</th>
+                      <th scope="row">첨부파일</th>
                       <td>
                         <div class="input file">
                           <input
@@ -79,7 +80,7 @@
                             placeholder="파일찾기"
                             id="file1"
                           />
-                          <label for="file1" class="btn">파일첨부</label>
+                          <label for="file1" class="btn">파일 업로드</label>
                         </div>
                         <div class="row margin-t-8">
                           PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
@@ -111,43 +112,44 @@
                               id="radio1"
                               checked=""
                             />
-                            <label for="radio1">게시글 공개</label>
+                            <label for="radio1">Yes</label>
                           </span>
                           <span class="input">
                             <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">게시글 미공개</label>
+                            <label for="radio2">No</label>
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">구분</th>
+                      <th scope="row">제목</th>
                       <td>
-                        <span class="input">
-                          <select title="" class="w180">
-                            <option>셀렉트 목록</option>
-                            <option>옵션 1</option>
-                            <option>옵션 2</option>
-                            <option>옵션 3</option>
-                          </select>
+                        <span class="input full-width"
+                          ><input type="text" />
+                          <span class="limit">nn/nn</span>
                         </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">분기</th>
+                      <th scope="row">등록일(표시용)</th>
                       <td>
-                        <span class="input">
-                          <select title="" class="w180">
-                            <option>셀렉트 목록</option>
-                            <option>옵션 1</option>
-                            <option>옵션 2</option>
-                            <option>옵션 3</option>
-                          </select>
-                        </span>
+                        <div class="date-wrap">
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                              id="input1-1"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </div>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">파일 업로드</th>
+                      <th scope="row">첨부파일</th>
                       <td>
                         <div class="input file">
                           <input
@@ -155,7 +157,7 @@
                             placeholder="파일찾기"
                             id="file1"
                           />
-                          <label for="file1" class="btn">파일첨부</label>
+                          <label for="file1" class="btn">파일 업로드</label>
                         </div>
                         <div class="row margin-t-8">
                           PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
