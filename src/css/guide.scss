@@ -954,6 +954,14 @@ p.blt.type3:before {
       text-align: left;
     }
   }
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 2.5em;
+  }
 
   /* 세로형 테이블 1*/
   &.type1 tbody tr:first-child th,

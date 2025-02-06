@@ -56,140 +56,72 @@ var PubLists = [
         etc: [""],
       },
       {
-        // 추가 메뉴????
-        id: "A_SYS_01_01_00_00",
-        breadcrumb: "메인 전시 등록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_SYS_01_01_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        // 추가 메뉴????
         id: "A_MAI_01_00_00_00",
-        breadcrumb: "홈 전시 관리 > 메인배너",
+        breadcrumb: "메인관리 > 메인 배너 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_MAI_01_00_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        // 추가 메뉴????
-        id: "A_MAI_01_00_00_00_pop1",
+        id: "A_MAI_01_01_00_00",
+        breadcrumb: "메인관리 > 메인 배너 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_01_02_00_00",
+        breadcrumb: "홈 전시 관리 > 메인 배너 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_01_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_01_03_00_00",
         breadcrumb: "홈 전시 관리 > 메인배너 > 메인배너 정렬순서 설정",
         type: "popup",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MAI_01_00_00_00_pop1.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MAI_01_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        // 추가 메뉴????
-        id: "A_MAI_01_01_00_00",
-        breadcrumb: "홈 전시 관리 > 메인배너 > 등록",
-        type: "popup",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MAI_01_01_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        // 추가 메뉴????
-        id: "A_MAI_01_02_00_00",
-        breadcrumb: "홈 전시 관리 > 메인배너 > 상세/수정",
-        type: "popup",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MAI_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-BAN-01-00-00-00",
-        breadcrumb: "배너 관리",
+        id: "A_MAI_02_00_00_00",
+        breadcrumb: "메인 브랜드 관리 > 목록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MAI_02_00_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
-        id: "A-BAN-01-01-00-00",
-        breadcrumb: "배너 관리 > 메인 배너 관리",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-BAN-01-01-01-00",
-        breadcrumb: "배너 관리 > 메인 배너 관리 > 목록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-BAN-01-01-02-00",
-        breadcrumb: "배너 관리 > 메인 배너 관리 > 배너 등록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-BAN-01-01-03-00",
-        breadcrumb: "배너 관리 > 메인 배너 관리 > 상세/수정",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
+
+      /*============================= */
       {
         id: "A_IR_01_00_00_00",
         breadcrumb: "IR 자료(목록)",
@@ -660,7 +592,7 @@ var PubLists = [
       },
       {
         id: "A_MED_01_01_00_00",
-        breadcrumb: "미디어 > 보도자료 > 목록 > 등록",
+        breadcrumb: "미디어 > 보도자료 > 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -673,15 +605,15 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-MED-01-01-01-02",
-        breadcrumb: "미디어 > 보도자료 > 목록 > 상세/수정/복사",
+        id: "A_MED_01_02_00_00",
+        breadcrumb: "미디어 > 보도자료 > 상세/수정/복사",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MED_01_02_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -791,14 +723,14 @@ var PubLists = [
       },
       {
         id: "A_MED_02_03_00_00",
-        breadcrumb: "미디어 > 아카이브 > 목록 > 상세/수정/복사",
+        breadcrumb: "미디어 > 아카이브 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_MED_02_03_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -830,15 +762,41 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-MED-01-02-04-00",
-        breadcrumb: "미디어 > 아카이브 > CI/BI",
+        id: "A_MED_03_00_00_00",
+        breadcrumb: "CI/BI 관리 > 목록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_MED_03_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MED_03_01_00_00",
+        breadcrumb: "CI/BI 관리 > CI/BI 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MED_03_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MED_03_02_00_00",
+        breadcrumb: "CI/BI 관리 > CI/BI 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MED_03_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -856,53 +814,118 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-SYS-01-01-00-00",
+        id: "A_SYS_01_01_00_00",
         breadcrumb: "관리자 계정 관리 > 목록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_SYS_01_01_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-SYS-01-01-01-00",
-        breadcrumb: "관리자 계정 관리 > 목록 > 등록",
+        id: "A_SYS_01_01_01_00",
+        breadcrumb: "관리자 계정 관리 > 관리자 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
+        pubAddress: "./pages/admin/A_SYS_01_01_01_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-SYS-01-01-02-00",
+        id: "A_SYS_01_01_02_00",
         breadcrumb: "관리자 계정 관리 > 목록 > 상세 / 삭제",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
+        pubAddress: "./pages/admin/A_SYS_01_01_02_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-SYS-01-02-00-00",
+        id: "A_SYS_01_02_00_00",
         breadcrumb: "관리자 계정 관리 > 사용자 정보 수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
+        pubAddress: "./pages/admin/A_SYS_01_02_00_00.html",
+        complete: "대기", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_SEO_01_00_00_00",
+        breadcrumb: "SEO관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_SYS_01_02_00_00.html",
+        complete: "대기", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_00_00_00",
+        breadcrumb: "메인 브랜드 관리 > 브랜드 관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_00_00_00.html",
+        complete: "대기", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_01_00_00",
+        breadcrumb: "메인 브랜드 관리 > 브랜드 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_01_00_00.html",
+        complete: "대기", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_02_00_00",
+        breadcrumb: "메인 브랜드 관리 > 브랜드 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_02_00_00.html",
+        complete: "대기", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_03_00_00",
+        breadcrumb: "메인 브랜드 관리 > 브랜드 정렬 순서 설정",
+        type: "레이어팝업",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_03_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],

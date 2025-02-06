@@ -605,7 +605,9 @@
         <footer id="footer"><a href="#n" class="btn">저장</a></footer>
         <script>
           window.on("load", function () {
-            $('[data-pop="pop1"]').click();
+            setTimeout(() => {
+              $('.btn[data-pop="pop1"]').click();
+            }, 1000);
           });
         </script>
       </div>

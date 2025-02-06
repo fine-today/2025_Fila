@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>영상 상세/수정</title>
+<title>보도자료 상세/수정</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MED_02_01_01_00">
+    <div id="container" class="admin sub" data-page="A_MED_01_01_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,7 +249,7 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">아카이브관리</li>
+    <li class="depth1">보도자료관리</li>
     
     <li class="depth2">
       <i
@@ -268,7 +268,7 @@
           />
         </svg>
       </i>
-      영상 상세/수정
+      보도자료 상세/수정
     </li>
      
   </ol>
@@ -276,7 +276,7 @@
 
 
           <div class="content-wrap">
-            <h3>영상 상세/수정</h3>
+            <h3>보도자료 상세/수정</h3>
             <section>
               <h4>[수정/상세_KR]</h4>
               <div class="table-wrap write">
@@ -304,6 +304,21 @@
                     </tr>
                     <tr>
                       <th scope="row">
+                        <label for="" class="input-label">구분</label>
+                      </th>
+                      <td>
+                        <span class="input">
+                          <select name="" id="" class="w200">
+                            <option value="">전체</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
                         <label for="" class="input-label">연도</label>
                       </th>
                       <td>
@@ -324,17 +339,6 @@
                       <td>
                         <span class="input full-width">
                           <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label">동영상 URL</label>
-                      </th>
-                      <td>
-                        <span class="input full-width">
-                          <input type="text" placeholder="http://" />
                           <span class="limit">nn/nn</span>
                         </span>
                       </td>
@@ -367,17 +371,36 @@
                     </tr>
                     <tr>
                       <th scope="row">
+                        <label for="" class="input-label">등록일(표시용)</label>
+                      </th>
+                      <td>
+                        <div class="date-wrap">
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                              id="input1-1"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
                         <label for="" class="input-label">내용</label>
                       </th>
                       <td>
-                        <div class="editor">에디터 자리</div>
+                        <div class="editor"></div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-
             <section>
               <h4>[수정/상세_EN]</h4>
               <div class="table-wrap write">
@@ -405,6 +428,21 @@
                     </tr>
                     <tr>
                       <th scope="row">
+                        <label for="" class="input-label">구분</label>
+                      </th>
+                      <td>
+                        <span class="input">
+                          <select name="" id="" class="w200">
+                            <option value="">전체</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
                         <label for="" class="input-label">연도</label>
                       </th>
                       <td>
@@ -425,17 +463,6 @@
                       <td>
                         <span class="input full-width">
                           <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label">동영상 URL</label>
-                      </th>
-                      <td>
-                        <span class="input full-width">
-                          <input type="text" placeholder="http://" />
                           <span class="limit">nn/nn</span>
                         </span>
                       </td>
@@ -468,10 +495,30 @@
                     </tr>
                     <tr>
                       <th scope="row">
+                        <label for="" class="input-label">등록일(표시용)</label>
+                      </th>
+                      <td>
+                        <div class="date-wrap">
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                              id="input1-1"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
                         <label for="" class="input-label">내용</label>
                       </th>
                       <td>
-                        <div class="editor">에디터 자리</div>
+                        <div class="editor"></div>
                       </td>
                     </tr>
                   </tbody>
