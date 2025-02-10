@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/head.html',{'title' : '메인 브랜드 관리'})
+    @@include('./include/head.html',{'title' : '공지 팝업 관리'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MAI_01_00_00_00">
+    <div id="container" class="admin sub" data-page="A_MAI_03_00_00_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
         <div id="main" class="main">
           @@include('./include/breadcrumb.html',{depth1: '메인 관리',depth2:
-          '메인 브랜드 관리'})
+          '공지 팝업 관리'})
 
           <div class="content-wrap">
-            <h3>메인 브랜드 관리</h3>
+            <h3>공지 팝업 관리</h3>
             <div class="search-box">
               <div class="row">
+                <span class="input">
+                  <label class="input-label" for="input1-1">게시언어</label>
+                  <select name="" id="">
+                    <option value="">전체</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </span>
                 <span class="input">
                   <label class="input-label" for="input1-1">게시여부</label>
                   <select name="" id="">
@@ -71,22 +80,22 @@
                   <col style="width: 50px" />
                   <col />
                   <col style="width: 200px" />
+                  <col style="width: 10%" />
                   <col style="width: 15%" />
                   <col style="width: 15%" />
-                  <col style="width: 10%" />
-                  <col style="width: 10%" />
-                  <col style="width: 150px" />
-                  <col style="width: 200px" />
+                  <col style="width: 6%" />
+                  <col style="width: 6%" />
+                  <col style="width: 15%" />
                 </colgroup>
                 <thead>
                   <tr>
                     <th scope="col">번호</th>
-                    <th scope="col">브랜드명 (KR)</th>
-                    <th scope="col">브랜드명 (EN)</th>
-                    <th scope="col">내용 (KR)</th>
-                    <th scope="col">내용 (EN)</th>
-                    <th scope="col">로고 이미지</th>
-                    <th scope="col">화보 이미지</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">이미지</th>
+                    <th scope="col">이동 URL</th>
+                    <th scope="col">시작일시</th>
+                    <th scope="col">종료일시</th>
+                    <th scope="col">게시 언어</th>
                     <th scope="col">게시 여부</th>
                     <th scope="col">등록일시</th>
                   </tr>
@@ -97,33 +106,19 @@
                     <td class="subject">
                       <a href="">3회 5대 샤또 와인 시음회 안내</a>
                     </td>
+                    <td>
+                      <div class="img-mask">
+                        <img src="../../images/admin/dumy.png" alt="" />
+                      </div>
+                    </td>
                     <td class="subject">
-                      <a href="">3회 5대 샤또 와인 시음회 안내</a>
+                      <a href="">http://www.abcd1234.com</a>
                     </td>
-                    <td>
-                      <div class="ellipsis line2">
-                        내용을 노출합니다. 내용을 노출합니다. 내용을 노출합니다.
-                        내용을 노출합니다. 내용을 노출합니다. 내용을 노출합니다.
-                      </div>
-                    </td>
-                    <td>
-                      <div class="ellipsis line2">
-                        내용을 노출합니다. 내용을 노출합니다. 내용을 노출합니다.
-                        내용을 노출합니다. 내용을 노출합니다. 내용을 노출합니다.
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img-mask">
-                        <img src="../../images/admin/dumy.png" alt="" />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="img-mask">
-                        <img src="../../images/admin/dumy.png" alt="" />
-                      </div>
-                    </td>
+                    <td>YYYY.MM.DD 24:00:00</td>
+                    <td>YYYY.MM.DD 24:00:00</td>
+                    <td>KR</td>
                     <td>Y</td>
-                    <td>2023. 03. 06</td>
+                    <td>YYYY.MM.DD 24:00:00</td>
                   </tr>
                 </tbody>
               </table>
@@ -161,9 +156,7 @@
                 </div>
               </div>
               <div class="right">
-                <button type="button" class="btn" data-pop="pop1">
-                  정렬순서설정
-                </button>
+                <button type="button" class="btn">정렬순서설정</button>
                 <button type="button" class="btn">등록</button>
               </div>
             </div>

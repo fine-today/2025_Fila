@@ -116,7 +116,98 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_MAI_02_00_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_02_01_00_00",
+        breadcrumb: "메인 브랜드 관리 > 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_02_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_02_02_00_00",
+        breadcrumb: "메인 브랜드 관리 > 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_02_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_02_03_00_00",
+        breadcrumb: "메인 브랜드 관리 > 메인 브랜드 정렬 순서 설정",
+        type: "popup",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_02_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_03_00_00_00",
+        breadcrumb: "메인 브랜드 관리 > 공지 팝업 관리",
+        type: "popup",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_03_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_03_01_00_00",
+        breadcrumb: "메인 브랜드 관리 > 공지 팝업 등록",
+        type: "popup",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_03_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_03_02_00_00",
+        breadcrumb: "메인 브랜드 관리 > 공지 팝업 상세/수정",
+        type: "popup",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_03_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_MAI_03_03_00_00",
+        breadcrumb: "메인 브랜드 관리 > 공지 팝업 정렬 순서 설정",
+        type: "popup",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_MAI_03_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },

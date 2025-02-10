@@ -264,6 +264,13 @@ a.btn {
     background: url(../images/common/delete-icon.svg) no-repeat center center;
     background-size: 20px 20px;
   }
+  &.more-btn::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/common/more-icon.svg) no-repeat center center;
+    background-size: 20px 20px;
+  }
 }
 
 /*버튼 활성화*/
@@ -1981,7 +1988,7 @@ html.popup-open body {
 }
 .popup .popup-title-wrap {
   margin: 12px 0 40px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   border-bottom: 3px solid #37516d;
   padding-right: 34px;
 }
@@ -1990,6 +1997,8 @@ html.popup-open body {
   line-height: 21.48px;
   font-weight: 400;
   color: #8b95a1;
+  margin-top: 10px;
+  margin-bottom: -15px;
   strong {
     font-weight: 700;
   }
@@ -1998,6 +2007,7 @@ html.popup-open body {
   font-size: 28px;
   line-height: 33.41px;
   color: #0b6dcf;
+  margin-bottom: 0 !important;
 }
 
 .popup-footer {

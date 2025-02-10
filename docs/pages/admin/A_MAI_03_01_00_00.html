@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>2024 IR 추가 자료 등록</title>
+<title>공지 팝업 등록</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_IR_02_01_00_00">
+    <div id="container" class="admin sub" data-page="A_MAI_03_01_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,7 +249,7 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">IR 자료 관리</li>
+    <li class="depth1">메인 관리</li>
     
     <li class="depth2">
       <i
@@ -268,7 +268,7 @@
           />
         </svg>
       </i>
-      2024 IR 추가 자료 등록
+      공지 팝업 등록
     </li>
      
   </ol>
@@ -276,7 +276,7 @@
 
 
           <div class="content-wrap">
-            <h3>2024 IR 추가 자료 등록</h3>
+            <h3>공지 팝업 등록</h3>
             <section>
               <h4>[등록_KR]</h4>
               <div class="table-wrap write">
@@ -284,42 +284,75 @@
                   <caption></caption>
                   <colgroup>
                     <col style="width: 15%" />
-                    <col style="width: auto" />
+                    <col />
                   </colgroup>
                   <tbody>
                     <tr>
-                      <th scope="row">게시여부</th>
+                      <th scope="row">
+                        <label for="" class="input-label">게시 여부</label>
+                      </th>
                       <td>
-                        <div class="input-wrap">
-                          <span class="input">
-                            <input
-                              type="radio"
-                              name="radio"
-                              id="radio1"
-                              checked=""
-                            />
-                            <label for="radio1">Yes</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">No</label>
-                          </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">제목</th>
-                      <td>
-                        <span class="input full-width"
-                          ><input type="text" />
-                          <span class="limit">nn/nn</span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">Yes</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">No</label>
                         </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">등록일(표시용)</th>
+                      <th scope="row">
+                        <label for="" class="input-label">제목</label>
+                      </th>
                       <td>
-                        <div class="date-wrap">
+                        <div class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">이미지</label>
+                      </th>
+                      <td>
+                        <div class="input file img">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="img-link"></label>
+                        </div>
+                        <div class="input-img-show margin-t-12">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                          <button type="button" class="img-show-close">
+                            첨부파일 이미지 삭제
+                          </button>
+                        </div>
+                        <p class="margin-t-12">
+                          000*000, 최대 1개까지 등록 가능<br />
+                          jpg, png, webp 최대 10MB
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">이동 URL</label>
+                      </th>
+                      <td>
+                        <div class="input full-width">
+                          <input type="text" value="http://" />
+                          <span class="limit">nn/nn</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">시작일시 ~ 종료일시</th>
+                      <td>
+                        <span class="date-wrap">
                           <span class="input date">
                             <input
                               type="text"
@@ -331,27 +364,18 @@
                               달력열기
                             </button>
                           </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">첨부파일</th>
-                      <td>
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일첨부</label>
-                        </div>
-                        <button type="button" class="icon-btn more-btn">
-                          추가
-                        </button>
-                        <div class="row margin-t-8">
-                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
-                        </div>
-                        <div class="row">* 최대 10개 등록</div>
+                          <span class="hypen">~</span>
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </span>
                       </td>
                     </tr>
                   </tbody>
@@ -365,42 +389,75 @@
                   <caption></caption>
                   <colgroup>
                     <col style="width: 15%" />
-                    <col style="width: auto" />
+                    <col />
                   </colgroup>
                   <tbody>
                     <tr>
-                      <th scope="row">게시여부</th>
+                      <th scope="row">
+                        <label for="" class="input-label">게시 여부</label>
+                      </th>
                       <td>
-                        <div class="input-wrap">
-                          <span class="input">
-                            <input
-                              type="radio"
-                              name="radio"
-                              id="radio1"
-                              checked=""
-                            />
-                            <label for="radio1">Yes</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">No</label>
-                          </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">제목</th>
-                      <td>
-                        <span class="input full-width"
-                          ><input type="text" />
-                          <span class="limit">nn/nn</span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">Yes</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">No</label>
                         </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">등록일(표시용)</th>
+                      <th scope="row">
+                        <label for="" class="input-label">제목</label>
+                      </th>
                       <td>
-                        <div class="date-wrap">
+                        <div class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">이미지</label>
+                      </th>
+                      <td>
+                        <div class="input file img">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="img-link"></label>
+                        </div>
+                        <div class="input-img-show margin-t-12">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                          <button type="button" class="img-show-close">
+                            첨부파일 이미지 삭제
+                          </button>
+                        </div>
+                        <p class="margin-t-12">
+                          000*000, 최대 1개까지 등록 가능<br />
+                          jpg, png, webp 최대 10MB
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">이동 URL</label>
+                      </th>
+                      <td>
+                        <div class="input full-width">
+                          <input type="text" value="http://" />
+                          <span class="limit">nn/nn</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">시작일시 ~ 종료일시</th>
+                      <td>
+                        <span class="date-wrap">
                           <span class="input date">
                             <input
                               type="text"
@@ -412,47 +469,34 @@
                               달력열기
                             </button>
                           </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">첨부파일</th>
-                      <td>
-                        <div class="input file">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="btn">파일첨부</label>
-                        </div>
-                        <button type="button" class="icon-btn more-btn">
-                          추가
-                        </button>
-                        <div class="row margin-t-8">
-                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
-                        </div>
-                        <div class="row">* 최대 10개 등록</div>
+                          <span class="hypen">~</span>
+                          <span class="input date">
+                            <input
+                              type="text"
+                              title=""
+                              placeholder="yyyy-mm-dd"
+                            />
+                            <button type="button" class="date-icon">
+                              달력열기
+                            </button>
+                          </span>
+                        </span>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-
-            <section>
-              <div class="bottom-btns">
-                <div class="left"></div>
-                <div class="right">
-                  <a href="#n" class="btn type2">목록</a>
-                  <a href="#n" class="btn">등록</a>
-                </div>
+            <section class="bottom-btns">
+              <div class="left"></div>
+              <div class="right">
+                <button type="button" class="btn type2">목록</button>
+                <button type="button" class="btn">등록</button>
               </div>
             </section>
           </div>
         </div>
       </div>
-      <footer id="footer"></footer>
     </div>
   </body>
 </html>

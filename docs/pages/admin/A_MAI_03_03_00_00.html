@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>보도자료 관리</title>
+<title>공지 팝업 정렬 순서 설정</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MED_01_00_00_00">
+    <div id="container" class="admin sub" data-page="A_MAI_03_03_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,180 +249,112 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">보도자료관리</li>
+    <li class="depth1">메인 관리</li>
+    
+    <li class="depth2">
+      <i
+        ><svg
+          width="14"
+          height="27"
+          viewBox="0 0 14 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.3744 13.5004L0 1.12605L0.707107 0.418945L13.7886 13.5004L0.707107 26.5819L0 25.8748L12.3744 13.5004Z"
+            fill="#4E5968"
+          />
+        </svg>
+      </i>
+      공지 팝업 정렬 순서 설정
+    </li>
      
   </ol>
 </div>
 
 
           <div class="content-wrap">
-            <h3>보도자료 관리</h3>
-            <section class="search-box">
-              <div class="row">
-                <span class="input">
-                  <label class="input-label" for="input1-1">게시언어</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <span class="input">
-                  <label class="input-label" for="input1-1">게시여부</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <div class="input-box">
-                  <label class="input-label" for="input1-1">등록일</label>
-                  <span class="date-wrap">
-                    <span class="input date">
-                      <input
-                        type="text"
-                        title=""
-                        placeholder="yyyy-mm-dd"
-                        id="input1-1"
-                      />
-                      <button type="button" class="date-icon">달력열기</button>
-                    </span>
-                    <span class="hypen">~</span>
-                    <span class="input date">
-                      <input type="text" title="" placeholder="yyyy-mm-dd" />
-                      <button type="button" class="date-icon">달력열기</button>
-                    </span>
-                  </span>
+            <h3>공지 팝업 정렬 순서 설정</h3>
+            <!-- pop -->
+            <button type="button" class="btn" data-pop="pop1">
+              공지 팝업 정렬 순서 설정
+            </button>
+
+            <div
+              class="popup active"
+              data-pop="pop1"
+              data-page="A_MAI_02_03_00_00"
+            >
+              <div class="popup-wrap">
+                <div class="pop-inner">
+                  <div class="popup-title-wrap">
+                    <h3 class="popup-title h0">공지 팝업 정렬 순서 설정</h3>
+                    <div class="sub-title">
+                      공지 팝업은 최대 2개에 한해 노출됩니다.
+                    </div>
+                  </div>
+                  <div class="popup-con">
+                    <div class="table-wrap">
+                      <table class="table">
+                        <caption>
+                          공지 팝업 정렬 순서 설정
+                        </caption>
+                        <colgroup>
+                          <col style="width: auto" />
+                          <col style="width: 15%" />
+                          <col style="width: 150px" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">브랜드명 (EN)</th>
+                            <th scope="col">화보 이미지</th>
+                            <th scope="col">순서</th>
+                            <th scope="col">시작일시</th>
+                            <th scope="col">종료일시</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subject">
+                              3회 5대 샤또 와인 시음회 안내
+                            </td>
+                            <td>
+                              <div class="img-mask">
+                                <img src="../../images/admin/dumy.png" alt="" />
+                              </div>
+                            </td>
+                            <td>
+                              <span class="input">
+                                <select name="" id="">
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                </select>
+                              </span>
+                            </td>
+                            <td>YYYY.MM.DD 24:00:00</td>
+                            <td>YYYY.MM.DD 24:00:00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="bottom-btns">
+                      <div class="left"></div>
+                      <div class="right">
+                        <button type="button" class="btn">저장</button>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="button" class="popup-close" value="닫기" />
                 </div>
-                <span class="input">
-                  <label class="input-label" for="input1-1">구분</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <span class="input">
-                  <label class="input-label" for="input1-1">연도</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
               </div>
-              <div class="row">
-                <div class="input-box w100p">
-                  <label for="" class="input-label">검색</label>
-                  <span class="input-wrap w100p">
-                    <span class="input full-width">
-                      <input type="text" placeholder="검색어 입력" />
-                      <span class="limit">nn/nn</span>
-                    </span>
-                    <button type="button" class="btn">검색</button>
-                  </span>
-                </div>
-              </div>
-            </section>
-            <section>
-              <article class="table-unit">
-                <div class="left"></div>
-                <div class="right">총NN건</div>
-              </article>
-              <article class="table-wrap">
-                <table class="table text-center">
-                  <caption>
-                    상시 인력풀 관리
-                  </caption>
-                  <colgroup>
-                    <col style="width: 50px" />
-                    <col />
-                    <col style="width: 200px" />
-                    <col style="width: 150px" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 15%" />
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">번호</th>
-                      <th scope="col">구분</th>
-                      <th scope="col">제목</th>
-                      <th scope="col">썸네일</th>
-                      <th scope="col">게시용 등록일</th>
-                      <th scope="col">연도</th>
-                      <th scope="col">게시언어</th>
-                      <th scope="col">조회수</th>
-                      <th scope="col">게시여부</th>
-                      <th scope="col">등록일시</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>15</td>
-                      <td>Misto holdings</td>
-                      <td class="subject">
-                        <a href="">IR Book</a>
-                      </td>
-                      <td>
-                        <div class="img-mask">
-                          <img src="../../images/admin/dumy.png" alt="" />
-                        </div>
-                      </td>
-                      <td>2023. 03. 06 00:00</td>
-                      <td>2024</td>
-                      <td>EN</td>
-                      <td>nnn,nnn</td>
-                      <td>Y</td>
-                      <td>2023. 03. 06 00:00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-              <article class="pagination">
-                <div class="left"></div>
-                <div class="page">
-                  <div class="page-control">
-                    <a href="#n" class="page-link prev-end"
-                      ><span class="skip">처음 페이지</span></a
-                    ><a href="#n" class="page-link prev"
-                      ><span class="skip">이전 10 페이지</span></a
-                    ><a href="#n" class="page-link prev-one">이전 페이지</a>
-                  </div>
-                  <div class="page-link-group">
-                    <strong title="현재 1페이지" class="page-link active"
-                      >1</strong
-                    ><a href="#n" title="2페이지 이동" class="page-link">2</a
-                    ><a href="#n" title="3페이지 이동" class="page-link">3</a
-                    ><a href="#n" title="4페이지 이동" class="page-link">4</a
-                    ><a href="#n" title="5페이지 이동" class="page-link">5</a
-                    ><a href="#n" title="6페이지 이동" class="page-link">6</a
-                    ><a href="#n" title="7페이지 이동" class="page-link">7</a
-                    ><a href="#n" title="8페이지 이동" class="page-link">8</a
-                    ><a href="#n" title="9페이지 이동" class="page-link">9</a
-                    ><a href="#n" title="10페이지 이동" class="page-link">10</a>
-                  </div>
-                  <div class="page-control">
-                    <a href="#n" class="page-link next-one">다음 페이지</a>
-                    <a href="#n" class="page-link next"
-                      ><span class="skip">다음 10 페이지</span></a
-                    ><a href="#n" class="page-link next-end"
-                      ><span class="skip">끝 페이지</span></a
-                    >
-                  </div>
-                </div>
-                <div class="right">
-                  <button type="button" class="btn">등록</button>
-                </div>
-              </article>
-            </section>
+            </div>
+            <!-- pop -->
           </div>
         </div>
       </div>

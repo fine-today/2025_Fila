@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>메인 전시 등록</title>
+<title>메인 브랜드 상세/수정</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_SYS_01_01_00_00">
+    <div id="container" class="admin sub" data-page="A_MAI_02_03_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -250,35 +250,121 @@
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
     <li class="depth1">메인 관리</li>
+    
+    <li class="depth2">
+      <i
+        ><svg
+          width="14"
+          height="27"
+          viewBox="0 0 14 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.3744 13.5004L0 1.12605L0.707107 0.418945L13.7886 13.5004L0.707107 26.5819L0 25.8748L12.3744 13.5004Z"
+            fill="#4E5968"
+          />
+        </svg>
+      </i>
+      메인 브랜드 상세/수정
+    </li>
      
   </ol>
 </div>
 
 
           <div class="content-wrap">
-            <h3>메인 전시 등록</h3>
-            <section>
-              <h4>1. PC 영상 업로드</h4>
-              <article>
-                <div class="input file">
-                  <input type="file" placeholder="파일찾기" id="file1" />
-                  <label for="file1" class="btn">업로드</label>
+            <h3>메인 브랜드 상세/수정</h3>
+            <!-- pop -->
+            <button type="button" class="btn" data-pop="pop1">
+              메인 브랜드 정렬 순서 설정
+            </button>
+
+            <div
+              class="popup active"
+              data-pop="pop1"
+              data-page="A_MAI_02_03_00_00"
+            >
+              <div class="popup-wrap">
+                <div class="pop-inner">
+                  <div class="popup-title-wrap">
+                    <h3 class="popup-title h0">메인 브랜드 정렬 순서 설정</h3>
+                    <div class="sub-title">
+                      메인 브랜드는 PC는 최대 9개, 모바일은 6개에 한해
+                      노출됩니다.
+                    </div>
+                  </div>
+                  <div class="popup-con">
+                    <div class="table-wrap">
+                      <table class="table">
+                        <caption>
+                          메인 브랜드 정렬 순서 설정
+                        </caption>
+                        <colgroup>
+                          <col style="width: auto" />
+                          <col style="width: auto" />
+                          <col style="width: 15%" />
+                          <col style="width: 15%" />
+                          <col style="width: 150px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">브랜드명 (KR)</th>
+                            <th scope="col">브랜드명 (EN)</th>
+                            <th scope="col">로고 이미지</th>
+                            <th scope="col">화보 이미지</th>
+                            <th scope="col">순서</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subject">
+                              3회 5대 샤또 와인 시음회 안내
+                            </td>
+                            <td class="subject">
+                              3회 5대 샤또 와인 시음회 안내
+                            </td>
+                            <td>
+                              <div class="img-mask">
+                                <img src="../../images/admin/dumy.png" alt="" />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="img-mask">
+                                <img src="../../images/admin/dumy.png" alt="" />
+                              </div>
+                            </td>
+                            <td>
+                              <span class="input">
+                                <select name="" id="">
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                </select>
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="bottom-btns">
+                      <div class="left"></div>
+                      <div class="right">
+                        <button type="button" class="btn">저장</button>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="button" class="popup-close" value="닫기" />
                 </div>
-              </article>
-            </section>
-            <section class="margin-t-20">
-              <h4>2. MO 영상 업로드</h4>
-              <article>
-                <div class="input file">
-                  <input type="file" placeholder="파일찾기" id="file2" />
-                  <label for="file2" class="btn">업로드</label>
-                </div>
-              </article>
-            </section>
+              </div>
+            </div>
+            <!-- pop -->
           </div>
         </div>
       </div>
-      <footer id="footer"><a href="#n" class="btn">저장</a></footer>
     </div>
   </body>
 </html>
