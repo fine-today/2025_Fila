@@ -115,26 +115,26 @@
                   function setDesignCompleteType() {
                     if (design == "대기") {
                       designCompleteType =
-                        '<button type="button" class="btn btn1">대기</button>';
+                        '<button type="button" class="btn type3">대기</button>';
                     } else if (design == "진행중") {
-                      designCompleteType = `<button type="button" class="btn btn2">대기</button>`;
+                      designCompleteType = `<button type="button" class="btn">진행중</button>`;
                     } else if (design == "완료") {
-                      designCompleteType = `<a href="${designAnchor}" class="btn btn3">완료</a>`;
+                      designCompleteType = `<a href="${designAnchor}" class="btn type2">완료</a>`;
                     } else if (design == "없음") {
-                      designCompleteType = `<button type="button" class="btn btn1" disabled>없음</button>`;
+                      designCompleteType = `<button type="button" class="btn" disabled>없음</button>`;
                     }
                   }
                   var completeType = null;
                   function setcompleteType() {
                     if (complete == "대기") {
                       completeType =
-                        '<button type="button" class="btn btn1">대기</button>';
+                        '<button type="button" class="btn type3">대기</button>';
                     } else if (complete == "진행중") {
                       completeType =
-                        '<button type="button" class="btn btn3">진행중</button>';
+                        '<button type="button" class="btn">진행중</button>';
                     } else if (complete == "완료") {
                       completeType =
-                        '<button type="button" class="btn btn2">완료</button>';
+                        '<button type="button" class="btn type2">완료</button>';
                     }
                   }
                   setDesignCompleteType();
