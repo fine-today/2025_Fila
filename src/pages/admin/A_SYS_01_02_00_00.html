@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '사용자 정보 수정'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_SYS_01_02_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1:
+          '관리자계정관리',depth2: '사용자 정보 수정'})
+
+          <div class="content-wrap">
+            <h3>사용자 정보 수정 (본인 계정만 가능)</h3>
+            <section>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required">이름</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >이메일</label
+                        >
+                      </th>
+                      <td>fila@fila.com</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >비밀번호</label
+                        >
+                      </th>
+                      <td>
+                        <button type="button" class="btn">비밀번호 변경</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >비밀번호</label
+                        >
+                      </th>
+                      <td>
+                        초기 비밀번호는 이메일 (@앞 모든 글자) + 휴대폰번호
+                        뒷자리(4자리)로 설정됩니다.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >휴대폰번호</label
+                        >
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <div class="bottom-btns">
+              <div class="left"></div>
+              <div class="right">
+                <a href="#n" class="btn type2">취소</a>
+                <a href="#n" class="btn">저장</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/head.html',{'title' : '보도자료 상세/수정'})
+    @@include('./include/head.html',{'title' : '이미지 상세/수정'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MED_01_01_00_00">
+    <div id="container" class="admin sub" data-page="A_NEW_02_02_02_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
         <div id="main" class="main">
-          @@include('./include/breadcrumb.html',{depth1: '보도자료관리',depth2:
-          '보도자료 상세/수정'})
+          @@include('./include/breadcrumb.html',{depth1: '아카이브관리',depth2:
+          '이미지 상세/수정'})
 
           <div class="content-wrap">
-            <h3>보도자료 상세/수정</h3>
+            <h3>이미지 상세/수정</h3>
             <section>
               <h4>[수정/상세_KR]</h4>
               <div class="table-wrap write">
@@ -41,21 +41,6 @@
                     </tr>
                     <tr>
                       <th scope="row">
-                        <label for="" class="input-label">구분</label>
-                      </th>
-                      <td>
-                        <span class="input">
-                          <select name="" id="" class="w200">
-                            <option value="">전체</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                          </select>
-                        </span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
                         <label for="" class="input-label">연도</label>
                       </th>
                       <td>
@@ -108,36 +93,17 @@
                     </tr>
                     <tr>
                       <th scope="row">
-                        <label for="" class="input-label">등록일(표시용)</label>
-                      </th>
-                      <td>
-                        <div class="date-wrap">
-                          <span class="input date">
-                            <input
-                              type="text"
-                              title=""
-                              placeholder="yyyy-mm-dd"
-                              id="input1-1"
-                            />
-                            <button type="button" class="date-icon">
-                              달력열기
-                            </button>
-                          </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
                         <label for="" class="input-label">내용</label>
                       </th>
                       <td>
-                        <div class="editor"></div>
+                        <div class="editor">에디터 자리</div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
+
             <section>
               <h4>[수정/상세_EN]</h4>
               <div class="table-wrap write">
@@ -165,21 +131,6 @@
                     </tr>
                     <tr>
                       <th scope="row">
-                        <label for="" class="input-label">구분</label>
-                      </th>
-                      <td>
-                        <span class="input">
-                          <select name="" id="" class="w200">
-                            <option value="">전체</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                          </select>
-                        </span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
                         <label for="" class="input-label">연도</label>
                       </th>
                       <td>
@@ -232,30 +183,10 @@
                     </tr>
                     <tr>
                       <th scope="row">
-                        <label for="" class="input-label">등록일(표시용)</label>
-                      </th>
-                      <td>
-                        <div class="date-wrap">
-                          <span class="input date">
-                            <input
-                              type="text"
-                              title=""
-                              placeholder="yyyy-mm-dd"
-                              id="input1-1"
-                            />
-                            <button type="button" class="date-icon">
-                              달력열기
-                            </button>
-                          </span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
                         <label for="" class="input-label">내용</label>
                       </th>
                       <td>
-                        <div class="editor"></div>
+                        <div class="editor">에디터 자리</div>
                       </td>
                     </tr>
                   </tbody>
@@ -263,12 +194,10 @@
               </div>
             </section>
             <div class="bottom-btns">
-              <div class="left">
-                <a href="#n" class="btn type3">삭제</a>
-              </div>
+              <div class="left"></div>
               <div class="right">
-                <a href="#n" class="btn type2">취소</a>
-                <a href="#n" class="btn">저장</a>
+                <a href="#n" class="btn type2">목록</a>
+                <a href="#n" class="btn">등록</a>
               </div>
             </div>
           </div>

@@ -1,69 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/head.html',{'title' : '보도자료 관리'})
+    @@include('./include/head.html',{'title' : '관리자 계정 관리'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MED_01_00_00_00">
+    <div id="container" class="admin sub" data-page="A_SYS_01_01_00_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
         <div id="main" class="main">
-          @@include('./include/breadcrumb.html',{depth1:
-          '보도자료관리',depth2:''})
+          @@include('./include/breadcrumb.html',{depth1: '관리자 계정 관리'})
 
           <div class="content-wrap">
-            <h3>보도자료 관리</h3>
+            <h3>관리자 계정 관리</h3>
             <section class="search-box">
               <div class="row">
                 <span class="input">
-                  <label class="input-label" for="input1-1">게시언어</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <span class="input">
-                  <label class="input-label" for="input1-1">게시여부</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <div class="input-box">
-                  <label class="input-label" for="input1-1">등록일</label>
-                  <span class="date-wrap">
-                    <span class="input date">
-                      <input
-                        type="text"
-                        title=""
-                        placeholder="yyyy-mm-dd"
-                        id="input1-1"
-                      />
-                      <button type="button" class="date-icon">달력열기</button>
-                    </span>
-                    <span class="hypen">~</span>
-                    <span class="input date">
-                      <input type="text" title="" placeholder="yyyy-mm-dd" />
-                      <button type="button" class="date-icon">달력열기</button>
-                    </span>
-                  </span>
-                </div>
-                <span class="input">
-                  <label class="input-label" for="input1-1">구분</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
-                <span class="input">
-                  <label class="input-label" for="input1-1">연도</label>
+                  <label class="input-label" for="input1-1">내용</label>
                   <select name="" id="" class="w200">
                     <option value="">전체</option>
                     <option value="">2</option>
@@ -85,6 +38,7 @@
                 </div>
               </div>
             </section>
+
             <section>
               <article class="table-unit">
                 <div class="left"></div>
@@ -92,53 +46,45 @@
               </article>
               <article class="table-wrap">
                 <table class="table text-center">
-                  <caption>
-                    상시 인력풀 관리
-                  </caption>
+                  <caption></caption>
                   <colgroup>
                     <col style="width: 50px" />
                     <col />
-                    <col style="width: 200px" />
-                    <col style="width: 150px" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
-                    <col style="width: 8%" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
                     <col style="width: 15%" />
                   </colgroup>
                   <thead>
                     <tr>
                       <th scope="col">번호</th>
-                      <th scope="col">구분</th>
-                      <th scope="col">제목</th>
-                      <th scope="col">썸네일</th>
-                      <th scope="col">게시용 등록일</th>
-                      <th scope="col">연도</th>
-                      <th scope="col">게시언어</th>
-                      <th scope="col">조회수</th>
-                      <th scope="col">게시여부</th>
-                      <th scope="col">등록일시</th>
+                      <th scope="col">이름</th>
+                      <th scope="col">이메일</th>
+                      <th scope="col">최근 로그인</th>
+                      <th scope="col">등록 / 삭제일</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>15</td>
-                      <td>Misto holdings</td>
                       <td class="subject">
-                        <a href="">IR Book</a>
+                        <a href="">홍길*</a>
                       </td>
-                      <td>
-                        <div class="img-mask">
-                          <img src="../../images/admin/dumy.png" alt="" />
-                        </div>
+                      <td class="subject">
+                        <a href="" class="down">Fila@Flia.com</a>
                       </td>
-                      <td>2023. 03. 06 00:00</td>
-                      <td>2024</td>
-                      <td>EN</td>
-                      <td>nnn,nnn</td>
-                      <td>Y</td>
-                      <td>2023. 03. 06 00:00</td>
+                      <td>YYYY.MM.DD 24:00:00</td>
+                      <td>YYYY.MM.DD 24:00:00</td>
+                    </tr>
+                    <tr class="delete-line">
+                      <td>15</td>
+                      <td class="subject">
+                        <a href="">홍길*</a>
+                      </td>
+                      <td class="subject">
+                        <a href="" class="down">Fila@Flia.com</a>
+                      </td>
+                      <td>YYYY.MM.DD 24:00:00</td>
+                      <td class="em-red">YYYY.MM.DD 24:00:00</td>
                     </tr>
                   </tbody>
                 </table>

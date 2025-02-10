@@ -4,13 +4,13 @@
     @@include('./include/head.html',{'title' : '아카이브 관리'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MED_02_01_00_00">
+    <div id="container" class="admin sub" data-page="A_NEW_02_00_00_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
         <div id="main" class="main">
           @@include('./include/breadcrumb.html',{depth1:
-          '아카이브관리',depth2:''})
+          '뉴스룸',depth2:'아카이브 관리'})
 
           <div class="content-wrap">
             <h3>아카이브 관리</h3>
@@ -36,23 +36,22 @@
                 </span>
                 <div class="input-box">
                   <label class="input-label" for="input1-1">등록일</label>
-                  <span class="date-wrap">
-                    <span class="input date">
-                      <input
-                        type="text"
-                        title=""
-                        placeholder="yyyy-mm-dd"
-                        id="input1-1"
-                      />
-                      <button type="button" class="date-icon">달력열기</button>
-                    </span>
-                    <span class="hypen">~</span>
-                    <span class="input date">
-                      <input type="text" title="" placeholder="yyyy-mm-dd" />
-                      <button type="button" class="date-icon">달력열기</button>
-                    </span>
+                <div class="date-wrap">
+                  <span class="input date">
+                    <input
+                      type="text"
+                      title=""
+                      placeholder="yyyy-mm-dd"
+                      id="input1-1"
+                    />
+                    <button type="button" class="date-icon">달력열기</button>
                   </span>
-                </div>
+                  <span class="hypen">~</span>
+                  <span class="input date">
+                    <input type="text" title="" placeholder="yyyy-mm-dd" />
+                    <button type="button" class="date-icon">달력열기</button>
+                  </span>
+                </div></div>
                 <span class="input">
                   <label class="input-label" for="input1-1">연도</label>
                   <select name="" id="" class="w200">
@@ -69,7 +68,7 @@
                   <span class="input-wrap w100p">
                     <span class="input full-width">
                       <input type="text" placeholder="검색어 입력" />
-                      <span class="limit">nn/nn</span>
+<span class="limit">nn/nn</span>
                     </span>
                     <button type="button" class="btn">검색</button>
                   </span>
@@ -82,10 +81,10 @@
                 <button class="tab-select"><span>선택된 메뉴명</span></button>
                 <div class="tab-panel">
                   <ul class="tab-list clearfix">
-                    <li class="tab-item">
+                    <li class="tab-item active">
                       <a href="" class="tab-anchor"> <span>영상</span></a>
                     </li>
-                    <li class="tab-item active">
+                    <li class="tab-item">
                       <a href="" class="tab-anchor" target="-self"
                         ><span>이미지</span></a
                       >
@@ -93,7 +92,7 @@
                   </ul>
                 </div>
               </div>
-            </section>
+            </ㄴ>
 
             <section>
               <article class="table-unit">
@@ -108,17 +107,21 @@
                   <colgroup>
                     <col style="width: 50px" />
                     <col />
+                    <col style="width: 200px" />
                     <col style="width: 150px" />
                     <col style="width: 8%" />
                     <col style="width: 8%" />
                     <col style="width: 8%" />
                     <col style="width: 8%" />
-                    <col style="width: 25%" />
+                    <col style="width: 8%" />
+                    <col style="width: 15%" />
                   </colgroup>
                   <thead>
                     <tr>
                       <th scope="col">번호</th>
                       <th scope="col">제목</th>
+                      <th scope="col">서브문구</th>
+                      <th scope="col">URL</th>
                       <th scope="col">썸네일</th>
                       <th scope="col">연도</th>
                       <th scope="col">게시언어</th>
@@ -131,7 +134,11 @@
                     <tr>
                       <td>15</td>
                       <td class="subject">
-                        <a href="">IR Book</a>
+                          <a href="">제목제목제목제목</a>
+                        </td>
+                        <td>서브서브서브서브문구문구문구문구문구문구서브문구서브문구</td>
+                        <td class="subject">
+                        <a href="http://www.youtube.com">http://www.youtube.com</a>
                       </td>
                       <td>
                         <div class="img-mask">
@@ -142,7 +149,7 @@
                       <td>EN</td>
                       <td>NNN</td>
                       <td>N</td>
-                      <td>2023. 03. 06 00:00</td>
+                      <td>YYYY.MM.DD 24:00:00</td>
                     </tr>
                   </tbody>
                 </table>

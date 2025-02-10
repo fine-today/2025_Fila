@@ -109,7 +109,7 @@ var PubLists = [
       },
       {
         id: "A_MAI_02_00_00_00",
-        breadcrumb: "메인 브랜드 관리 > 목록",
+        breadcrumb: "메인 브랜드 관리 > 브랜드 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -260,7 +260,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_BRD_01_03_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -596,7 +596,10 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+
+      /*===========  지속가능경영 ============== */
+
+      /* {
         id: "A-REC-01-00-00-00",
         breadcrumb: "채용",
         type: "page",
@@ -608,16 +611,29 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "A_REC_01_01_00_00",
+        id: "A_REC_02_00_00_00",
         breadcrumb: "채용 > 대시보드",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_REC_01_01_00_00.html",
+        pubAddress: "./pages/admin/A_REC_02_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_02_00_00_00_n",
+        breadcrumb: "채용 > 대시보드(없음)",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_02_00_00_00_n.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -700,278 +716,174 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
+      /*===========  뉴스룸 ============== */
       {
-        id: "A-MED-01-00-00-00",
-        breadcrumb: "미디어",
+        id: "A_NEW_01_00_00_00",
+        breadcrumb: "뉴스룸 > 보도자료 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-MED-01-01-00-00",
-        breadcrumb: "미디어 > 보도자료",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_MED_01_00_00_00",
-        breadcrumb: "미디어 > 보도자료 > 목록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MED_01_00_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_01_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_01_01_00_00",
-        breadcrumb: "미디어 > 보도자료 > 등록",
+        id: "A_NEW_01_01_00_00",
+        breadcrumb: "뉴스룸 > 보도자료 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address:
           "https://www.figma.com/design/UcggDxeMwE7K2cbGREtg2Z/FILA-(MOON-project)-%EA%B5%AC%EC%B6%95?node-id=838-21060&t=AWwTYEeAAFQieOlI-4",
-        pubAddress: "./pages/admin/A_MED_01_01_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_01_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_01_02_00_00",
-        breadcrumb: "미디어 > 보도자료 > 상세/수정/복사",
+        id: "A_NEW_01_02_00_00",
+        breadcrumb: "뉴스룸 > 보도자료 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MED_01_02_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_01_02_00_00.html",
         complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-MED-01-01-02-00",
-        breadcrumb: "미디어 > 보도자료 > 기업 (sorting)",
+        id: "A_NEW_02_00_00_00",
+        breadcrumb: "뉴스룸 > 아카이브 관리 > 영상",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-MED-01-01-03-00",
-        breadcrumb: "미디어 > 보도자료 > 브랜드 (sorting)",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-MED-01-01-04-00",
-        breadcrumb: "미디어 > 보도자료 > 지속가능경영 (sorting)",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-MED-01-02-00-00",
-        breadcrumb: "미디어 > 아카이브",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_MED_02_00_00_00",
-        breadcrumb: "미디어 > 아카이브 > 목록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MED_02_00_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_02_01_00_00",
-        breadcrumb: "미디어 > 아카이브 > 목록 > 이미지",
+        id: "A_NEW_02_02_00_00",
+        breadcrumb: "뉴스룸 > 아카이브 관리 > 이미지",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MED_02_01_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_MED_02_02_00_00",
-        breadcrumb: "미디어 > 아카이브 > 등록 > 동영상",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MED_02_02_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_02_02_00_00",
-        breadcrumb: "미디어 > 아카이브 > 등록 > 이미지",
+        id: "A_NEW_02_01_01_00",
+        breadcrumb: "뉴스룸 > 아카이브 관리 > 영상 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MED_02_02_01_00.html",
+        pubAddress: "./pages/admin/A_NEW_02_01_01_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_02_03_00_00",
-        breadcrumb: "미디어 > 아카이브 > 상세/수정",
+        id: "A_NEW_02_02_01_00",
+        breadcrumb: "뉴스룸 > 아카이브 관리 > 이미지 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MED_02_03_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_02_02_01_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-MED-01-02-02-00",
-        breadcrumb: "미디어 > 아카이브 > 홍보영상",
-        title: " ",
+        id: "A_NEW_02_01_02_00",
+        breadcrumb: "뉴스룸 > 아카이브 관리 > 영상 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A-MED-01-02-03-00",
-        breadcrumb: "미디어 > 아카이브 > 이미지",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_MED_03_00_00_00",
-        breadcrumb: "CI/BI 관리 > 목록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MED_03_00_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_02_01_02_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_03_01_00_00",
+        id: "A_NEW_02_02_02_00",
+        breadcrumb: "뉴스룸 > 아카이브 관리 > 이미지 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_NEW_02_02_02_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_NEW_03_00_00_00",
+        breadcrumb: "뉴스룸 > CI/BI 관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_NEW_03_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_NEW_03_01_00_00",
         breadcrumb: "CI/BI 관리 > CI/BI 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MED_03_01_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_03_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_MED_03_02_00_00",
-        breadcrumb: "CI/BI 관리 > CI/BI 상세/수정",
+        id: "A_NEW_03_02_00_00",
+        breadcrumb: "뉴스룸 > CI/BI 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MED_03_02_00_00.html",
+        pubAddress: "./pages/admin/A_NEW_03_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-SYS-01-00-00-00",
+        id: "A_SYS_01_01_00_00",
         breadcrumb: "관리자 계정 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_SYS_01_01_00_00",
-        breadcrumb: "관리자 계정 관리 > 목록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
         pubAddress: "./pages/admin/A_SYS_01_01_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -984,20 +896,20 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_SYS_01_01_01_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
         id: "A_SYS_01_01_02_00",
-        breadcrumb: "관리자 계정 관리 > 목록 > 상세 / 삭제",
+        breadcrumb: "관리자 계정 관리 > 관리자 상세",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_SYS_01_01_02_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1010,7 +922,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_SYS_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1023,59 +935,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_SYS_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_MAI_02_00_00_00",
-        breadcrumb: "메인 브랜드 관리 > 브랜드 관리",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_MAI_02_00_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_BRD_01_01_00_00",
-        breadcrumb: "메인 브랜드 관리 > 브랜드 등록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_BRD_01_01_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_BRD_01_02_00_00",
-        breadcrumb: "메인 브랜드 관리 > 브랜드 상세/수정",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_BRD_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_BRD_01_03_00_00",
-        breadcrumb: "메인 브랜드 관리 > 브랜드 정렬 순서 설정",
-        type: "레이어팝업",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_BRD_01_03_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },

@@ -603,6 +603,12 @@ h2 {
   border-radius: 3px;
   padding: 20px;
   grid-template-columns: repeat(3, 1fr);
+  &.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px);
+  }
   .card {
     display: flex;
     flex-direction: column;

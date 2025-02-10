@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>상시 인력풀 등록</title>
+<title>관리자 계정 관리</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_REC_03_01_00_00">
+    <div id="container" class="admin sub" data-page="A_SYS_01_01_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,147 +249,130 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">채용</li>
-    
-    <li class="depth2">
-      <i
-        ><svg
-          width="14"
-          height="27"
-          viewBox="0 0 14 27"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M12.3744 13.5004L0 1.12605L0.707107 0.418945L13.7886 13.5004L0.707107 26.5819L0 25.8748L12.3744 13.5004Z"
-            fill="#4E5968"
-          />
-        </svg>
-      </i>
-      상시인력풀 등록
-    </li>
+    <li class="depth1">관리자 계정 관리</li>
      
   </ol>
 </div>
 
 
           <div class="content-wrap">
-            <h3>상시 인력풀 등록</h3>
+            <h3>관리자 계정 관리</h3>
+            <section class="search-box">
+              <div class="row">
+                <span class="input">
+                  <label class="input-label" for="input1-1">내용</label>
+                  <select name="" id="" class="w200">
+                    <option value="">전체</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </span>
+              </div>
+              <div class="row">
+                <div class="input-box w100p">
+                  <label for="" class="input-label">검색</label>
+                  <span class="input-wrap w100p">
+                    <span class="input full-width">
+                      <input type="text" placeholder="검색어 입력" />
+                      <span class="limit">nn/nn</span>
+                    </span>
+                    <button type="button" class="btn">검색</button>
+                  </span>
+                </div>
+              </div>
+            </section>
+
             <section>
-              <h4>[등록_KR]</h4>
-              <div class="table-wrap write">
-                <table class="table">
+              <article class="table-unit">
+                <div class="left"></div>
+                <div class="right">총NN건</div>
+              </article>
+              <article class="table-wrap">
+                <table class="table text-center">
                   <caption></caption>
                   <colgroup>
+                    <col style="width: 50px" />
+                    <col />
                     <col style="width: 15%" />
-                    <col style="width: auto" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
                   </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col">이름</th>
+                      <th scope="col">이메일</th>
+                      <th scope="col">최근 로그인</th>
+                      <th scope="col">등록 / 삭제일</th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">게시여부</th>
-                      <td>
-                        <div class="input-wrap">
-                          <span class="input">
-                            <input
-                              type="radio"
-                              name="radio"
-                              id="radio1"
-                              checked=""
-                            />
-                            <label for="radio1">Yes</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">No</label>
-                          </span>
-                        </div>
+                      <td>15</td>
+                      <td class="subject">
+                        <a href="">홍길*</a>
                       </td>
+                      <td class="subject">
+                        <a href="" class="down">Fila@Flia.com</a>
+                      </td>
+                      <td>YYYY.MM.DD 24:00:00</td>
+                      <td>YYYY.MM.DD 24:00:00</td>
                     </tr>
-                    <tr>
-                      <th scope="row">제목</th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
+                    <tr class="delete-line">
+                      <td>15</td>
+                      <td class="subject">
+                        <a href="">홍길*</a>
                       </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">그룹</th>
-                      <td>
-                        <span class="input">
-                          <select title="" class="w180">
-                            <option>셀렉트 목록</option>
-                            <option>옵션 1</option>
-                            <option>옵션 2</option>
-                            <option>옵션 3</option>
-                          </select>
-                        </span>
+                      <td class="subject">
+                        <a href="" class="down">Fila@Flia.com</a>
                       </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        모집 인원<br />
-                        (예시 : 0명)
-                      </th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        근무지<br />
-                        (예시 : 본사 소재지)
-                      </th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">업무내용</th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <textarea title="" rows="5"></textarea>
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">필요역량 및 자격조건</th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <textarea title="" rows="5"></textarea>
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
+                      <td>YYYY.MM.DD 24:00:00</td>
+                      <td class="em-red">YYYY.MM.DD 24:00:00</td>
                     </tr>
                   </tbody>
                 </table>
-              </div>
-            </section>
-            <!-- 채용은 영문 없음 -->
-
-            <section>
-              <div class="bottom-btns">
+              </article>
+              <article class="pagination">
                 <div class="left"></div>
-                <div class="right">
-                  <a href="#n" class="btn type2">목록</a>
-                  <a href="#n" class="btn">등록</a>
+                <div class="page">
+                  <div class="page-control">
+                    <a href="#n" class="page-link prev-end"
+                      ><span class="skip">처음 페이지</span></a
+                    ><a href="#n" class="page-link prev"
+                      ><span class="skip">이전 10 페이지</span></a
+                    ><a href="#n" class="page-link prev-one">이전 페이지</a>
+                  </div>
+                  <div class="page-link-group">
+                    <strong title="현재 1페이지" class="page-link active"
+                      >1</strong
+                    ><a href="#n" title="2페이지 이동" class="page-link">2</a
+                    ><a href="#n" title="3페이지 이동" class="page-link">3</a
+                    ><a href="#n" title="4페이지 이동" class="page-link">4</a
+                    ><a href="#n" title="5페이지 이동" class="page-link">5</a
+                    ><a href="#n" title="6페이지 이동" class="page-link">6</a
+                    ><a href="#n" title="7페이지 이동" class="page-link">7</a
+                    ><a href="#n" title="8페이지 이동" class="page-link">8</a
+                    ><a href="#n" title="9페이지 이동" class="page-link">9</a
+                    ><a href="#n" title="10페이지 이동" class="page-link">10</a>
+                  </div>
+                  <div class="page-control">
+                    <a href="#n" class="page-link next-one">다음 페이지</a>
+                    <a href="#n" class="page-link next"
+                      ><span class="skip">다음 10 페이지</span></a
+                    ><a href="#n" class="page-link next-end"
+                      ><span class="skip">끝 페이지</span></a
+                    >
+                  </div>
                 </div>
-              </div>
+                <div class="right">
+                  <button type="button" class="btn">등록</button>
+                </div>
+              </article>
             </section>
           </div>
         </div>
       </div>
-      <footer id="footer"></footer>
     </div>
   </body>
 </html>

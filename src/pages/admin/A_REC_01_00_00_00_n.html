@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '채용현황'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_REC_01_00_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: '채용',depth2:
+          '채용현황'})
+
+          <div class="content-wrap">
+            <h3>채용현황</h3>
+            <section class="list-title-wrap">
+              <h4>채용 중인 공고<span class="subtitle">0개 &gt;</span></h4>
+              <div class="text-right"></div>
+            </section>
+            <section>
+              <div class="card-wrap empty" data-column="5">
+                <p>채용 중인 공고가 없습니다.</p>
+              </div>
+            </section>
+            <section>
+              <div class="bottom-btns">
+                <div class="left"></div>
+                <div class="right">
+                  <a href="#n" class="btn">등록</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>

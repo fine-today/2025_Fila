@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>메인 브랜드 등록</title>
+<title>사용자 정보 수정</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_MAI_02_01_00_00">
+    <div id="container" class="admin sub" data-page="A_SYS_01_02_00_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,7 +249,7 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">메인 관리</li>
+    <li class="depth1">관리자계정관리</li>
     
     <li class="depth2">
       <i
@@ -268,7 +268,7 @@
           />
         </svg>
       </i>
-      메인 브랜드 등록
+      사용자 정보 수정
     </li>
      
   </ol>
@@ -276,7 +276,7 @@
 
 
           <div class="content-wrap">
-            <h3>메인 브랜드 등록</h3>
+            <h3>사용자 정보 수정 (본인 계정만 가능)</h3>
             <section>
               <div class="table-wrap write">
                 <table class="table">
@@ -288,141 +288,72 @@
                   <tbody>
                     <tr>
                       <th scope="row">
-                        <label for="" class="input-label required"
-                          >게시 여부</label
-                        >
+                        <label for="" class="input-label required">이름</label>
                       </th>
                       <td>
-                        <span class="input margin-r-12">
-                          <input type="radio" name="radio1" id="radio1-1" />
-                          <label for="radio1-1">Yes</label>
-                        </span>
-                        <span class="input margin-r-12">
-                          <input type="radio" name="radio1" id="radio1-1" />
-                          <label for="radio1-1">No</label>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
                         </span>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         <label for="" class="input-label required"
-                          >브랜드명 (KR)</label
+                          >이메일</label
+                        >
+                      </th>
+                      <td>fila@fila.com</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >비밀번호</label
                         >
                       </th>
                       <td>
-                        <div class="input full-width">
+                        <button type="button" class="btn">비밀번호 변경</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >비밀번호</label
+                        >
+                      </th>
+                      <td>
+                        초기 비밀번호는 이메일 (@앞 모든 글자) + 휴대폰번호
+                        뒷자리(4자리)로 설정됩니다.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label required"
+                          >휴대폰번호</label
+                        >
+                      </th>
+                      <td>
+                        <span class="input full-width">
                           <input type="text" />
                           <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >브랜드명 (EN)</label
-                        >
-                      </th>
-                      <td>
-                        <div class="input full-width">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >내용 (KR)</label
-                        >
-                      </th>
-                      <td>
-                        <div class="input full-width">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >내용 (EN)</label
-                        >
-                      </th>
-                      <td>
-                        <div class="input full-width">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >로고 이미지</label
-                        >
-                      </th>
-                      <td>
-                        <div class="input file img">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="img-link"></label>
-                        </div>
-                        <div class="input-img-show margin-t-12">
-                          <img src="../../images/admin/dumy.png" alt="" />
-                          <button type="button" class="img-show-close">
-                            첨부파일 이미지 삭제
-                          </button>
-                        </div>
-                        <p class="margin-t-12">
-                          000*000, 최대 1개까지 등록 가능<br />
-                          jpg, png, webp 최대 10MB
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <label for="" class="input-label required"
-                          >화보 이미지</label
-                        >
-                      </th>
-                      <td>
-                        <div class="input file img">
-                          <input
-                            type="file"
-                            placeholder="파일찾기"
-                            id="file1"
-                          />
-                          <label for="file1" class="img-link"></label>
-                        </div>
-                        <div class="input-img-show margin-t-12">
-                          <img src="../../images/admin/dumy.png" alt="" />
-                          <button type="button" class="img-show-close">
-                            첨부파일 이미지 삭제
-                          </button>
-                        </div>
-                        <p class="margin-t-12">
-                          000*000, 최대 1개까지 등록 가능<br />
-                          jpg, png, webp 최대 10MB
-                        </p>
+                        </span>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-            <section class="bottom-btns">
+            <div class="bottom-btns">
               <div class="left"></div>
               <div class="right">
-                <button type="button" class="btn type2">목록</button>
-                <button type="button" class="btn">등록</button>
+                <a href="#n" class="btn type2">취소</a>
+                <a href="#n" class="btn">저장</a>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>
+      <footer id="footer"></footer>
     </div>
   </body>
 </html>
