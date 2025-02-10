@@ -25,20 +25,20 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_LOG_01_00_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_LOG_01_00_00_00",
+        id: "A_LOG_01_01_00_00",
         breadcrumb: "로그인 > 비밀번호 찾기",
         type: "팝업",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_LOG_01_00_00_00_pop1.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_LOG_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -211,8 +211,61 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
+      /*==============  브랜드 관리 ============ */
+      {
+        id: "A_BRD_01_00_00_00",
+        breadcrumb: "브랜드 관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_01_00_00",
+        breadcrumb: "브랜드 관리 > 브랜드 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_02_00_00",
+        breadcrumb: "브랜드 관리 > 브랜드 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_BRD_01_03_00_00",
+        breadcrumb: "브랜드 관리 > 브랜드 정렬 순서 설정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_BRD_01_03_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
 
-      /*============================= */
+      /*===========  IR ============== */
       {
         id: "A_IR_01_00_00_00",
         breadcrumb: "IR 자료(목록)",
@@ -235,13 +288,13 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_IR_02_00_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
         id: "A_IR_01_01_00_00",
-        breadcrumb: "IR 자료 > 목록 > 등록",
+        breadcrumb: "IR 자료 > 2024 IR 자료 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -254,7 +307,7 @@ var PubLists = [
       },
       {
         id: "A_IR_02_01_00_00", // 임시
-        breadcrumb: "IR 자료 > 목록 > 추가등록",
+        breadcrumb: "IR 자료 > 추가등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -279,7 +332,7 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A_IR_01_01_02_01",
+        id: "A_IR_02_02_00_00",
         breadcrumb: "IR 자료 > 목록 > 추가 자료 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
@@ -291,7 +344,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "A-IR-01-02-00-00",
         breadcrumb: "IR 자료 > IR Book",
         type: "page",
@@ -355,7 +408,9 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
+
+      /*===========  기업지배구조 ============== */
       {
         id: "A_COR_01_00_00_00",
         breadcrumb: "기업지배구조",
@@ -369,7 +424,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "A-COR-01-01-00-00",
         breadcrumb: "기업지배구조 > 등록",
         type: "page",
@@ -381,9 +436,9 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "A_COR_01_02_00_00",
+        id: "A_COR_02_00_00_00",
         breadcrumb: "기업지배구조 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
@@ -395,7 +450,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "123",
         breadcrumb: "기업지배구조 > 정관",
         type: "page",
@@ -433,7 +488,10 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
+
+      /*===========  지속가능경영 ============== */
+
       {
         id: "A_ESG_01_00_00_00",
         breadcrumb: "지속가능경영",
@@ -970,14 +1028,14 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A_BRD_01_00_00_00",
+        id: "A_MAI_02_00_00_00",
         breadcrumb: "메인 브랜드 관리 > 브랜드 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_BRD_01_00_00_00.html",
+        pubAddress: "./pages/admin/A_MAI_02_00_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],

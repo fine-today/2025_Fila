@@ -658,11 +658,19 @@ h2 {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      div.down-anchor {
+        text-decoration: none;
+        color: #999;
+        &::before {
+          display: none;
+        }
+      }
       .down-anchor {
         font-size: 16px;
         line-height: 1.5;
         margin-right: 10px;
         text-decoration: underline;
+
         &::before {
           display: inline-flex;
           position: relative;

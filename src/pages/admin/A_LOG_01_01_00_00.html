@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : '로그인 - admin'})
+    <link rel="stylesheet" href="../../css/login.css" />
+  </head>
+  <body>
+    <div id="container" class="login A_LOG_01_01_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content">
+        <div class="wrap">
+          <div class="align-center">
+            <button type="button" class="btn" data-pop="pop2">
+              비밀번호 찾기
+            </button>
+          </div>
+          @@include('./include/popup/A_LOG_01_01_00_00_pop1.html',{})
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
