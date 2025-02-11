@@ -316,6 +316,20 @@
                           엔터 입력시 키워드가 등록됩니다. <br />키워드는
                           10개까지 등록 가능합니다.
                         </div>
+                        <div class="margin-t-12">
+                          <button type="button" class="btn type2 close">
+                            키워드1
+                          </button>
+                          <button type="button" class="btn type2 close">
+                            키워드2
+                          </button>
+                          <button type="button" class="btn type2 close">
+                            키워드3
+                          </button>
+                          <button type="button" class="btn type2 close">
+                            키워드4
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -328,6 +342,12 @@
                 <a href="#n" class="btn">수정</a>
               </div>
             </div>
+
+            <script>
+              $(".btn.close").on("click", function () {
+                $(this).remove();
+              });
+            </script>
           </div>
         </div>
       </div>

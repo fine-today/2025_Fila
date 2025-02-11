@@ -320,7 +320,7 @@ var PubLists = [
       },
       {
         id: "A_IR_01_02_00_00",
-        breadcrumb: "IR 자료 > 목록 > 상세/수정",
+        breadcrumb: "IR 자료 > 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -333,13 +333,13 @@ var PubLists = [
       },
       {
         id: "A_IR_02_02_00_00",
-        breadcrumb: "IR 자료 > 목록 > 추가 자료 상세/수정",
+        breadcrumb: "IR 자료 > 추가 자료 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_IR_01_01_02_01.html",
+        pubAddress: "./pages/admin/A_IR_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -519,47 +519,8 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A_ESG_01_01_00_00",
-        breadcrumb: "지속가능경영 > 지속가능경영보고서 상세/수정",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_ESG_01_01_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_ESG_02_00_00_00",
-        breadcrumb: "지속가능경영 > ESG 정책 관리",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_ESG_02_00_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_ESG_02_00_00_00",
-        breadcrumb: "지속가능경영 > ESG 정책 관리",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_ESG_02_00_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
         id: "A_ESG_01_02_00_00",
-        breadcrumb: "지속가능경영 > ESG정책 관리",
+        breadcrumb: "지속가능경영 > 지속가능경영보고서 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -571,34 +532,154 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A_ESG_01_02_01_00",
-        breadcrumb: "지속가능경영 > ESG정책 등록",
+        id: "A_ESG_02_00_00_00",
+        breadcrumb: "지속가능경영 > ESG 정책 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_ESG_01_02_01_00.html",
+        pubAddress: "./pages/admin/A_ESG_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A_ESG_01_02_02_00",
+        id: "A_ESG_02_01_00_00",
+        breadcrumb: "지속가능경영 > ESG 정책 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_ESG_02_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_ESG_02_02_00_00",
         breadcrumb: "지속가능경영 > ESG 정책 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_ESG_01_02_02_00.html",
+        pubAddress: "./pages/admin/A_ESG_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
 
+      /*===========  채용 ============== */
       {
-        id: "A_NEW_01_00_00_00",
+        id: "A_REC_01_00_00_00",
+        breadcrumb: "채용 > 채용 현황",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_01_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_01_00_00_00_n",
+        breadcrumb: "채용 > 채용 현황 empty",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_01_00_00_00_n.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_02_00_00_00",
+        breadcrumb: "채용 > 채용 공고 관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_02_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_02_01_00_00",
+        breadcrumb: "채용 > 채용 공고 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_02_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_02_02_00_00",
+        breadcrumb: "채용 > 채용 공고 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_02_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_03_00_00_00",
+        breadcrumb: "채용 > 상시 인력풀 관리",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_03_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_03_01_00_00",
+        breadcrumb: "채용 > 상시 인력풀 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_03_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "A_REC_03_02_00_00",
+        breadcrumb: "채용 > 상시 인력풀 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_REC_03_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      /*===========  뉴스룸 ============== */
+
+      {
+        id: " ",
         breadcrumb: "뉴스룸 > 보도자료 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
@@ -814,7 +895,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_SYS_01_02_00_00.html",
+        pubAddress: "./pages/admin/A_SEO_01_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],

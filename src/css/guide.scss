@@ -175,6 +175,20 @@ h6,
   text-align: center;
   transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   white-space: nowrap;
+  &.close {
+    padding-right: 36px;
+    &::after {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 8px);
+      width: 16px;
+      height: 16px;
+      background: url(../images/common/close-icon.svg) no-repeat center center;
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 a.btn {
   &:visited,
