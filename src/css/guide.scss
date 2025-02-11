@@ -571,6 +571,9 @@ p.blt.type3:before {
   position: relative;
   font-size: 0;
   line-height: 24px;
+  &.type2 {
+    margin-bottom: 10px;
+  }
 }
 .tab-menu .tab-select {
   display: none;
@@ -886,6 +889,9 @@ p.blt.type3:before {
     .input {
       vertical-align: middle;
     }
+    &.em-red {
+      color: #ff0000;
+    }
   }
   th {
     color: #fff;
@@ -941,6 +947,12 @@ p.blt.type3:before {
       th,
       td {
         text-align: center;
+      }
+    }
+    tr.delete-line {
+      th,
+      td {
+        background-color: #ddd;
       }
     }
     th {

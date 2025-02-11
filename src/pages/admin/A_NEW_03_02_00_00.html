@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : 'CI/BI 상세/수정'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_NEW_03_02_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: 'CI/BI 관리',depth2:
+          'CI/BI 상세/수정'})
+
+          <div class="content-wrap">
+            <h3>CI/BI 상세/수정</h3>
+            <section>
+              <h4>[수정/상세_KR]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">게시 여부</label>
+                      </th>
+                      <td>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">YES</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-2" />
+                          <label for="radio1-2">NO</label>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">제목</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일(AI)</th>
+                      <td colspan="5">
+                        <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
+                          <div class="input file">
+                            <input
+                              type="file"
+                              placeholder="파일찾기"
+                              id="file1"
+                            />
+                            <label for="file1" class="btn">파일첨부</label>
+                          </div>
+                          <button type="button" class="icon-btn delete-btn">
+                            삭제
+                          </button>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일(PNG)</th>
+                      <td colspan="5">
+                        <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
+                          <div class="input file">
+                            <input
+                              type="file"
+                              placeholder="파일찾기"
+                              id="file1"
+                            />
+                            <label for="file1" class="btn">파일첨부</label>
+                          </div>
+                          <button type="button" class="icon-btn delete-btn">
+                            삭제
+                          </button>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">썸네일</label>
+                      </th>
+                      <td>
+                        <div class="input file img">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="img-link"></label>
+                        </div>
+                        <div class="input-img-show margin-t-12">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                          <button type="button" class="img-show-close">
+                            첨부파일 이미지 삭제
+                          </button>
+                        </div>
+                        <p class="margin-t-12">
+                          360*450 (디자인 따라 변경 가능 있음)<br />
+                          최대 1개 등록 가능<br />
+                          jpg, jpeg, png 최대 10MB
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section>
+              <h4>[수정/상세_EN]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">게시 여부</label>
+                      </th>
+                      <td>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">YES</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-2" />
+                          <label for="radio1-2">NO</label>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">제목</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일(AI)</th>
+                      <td colspan="5">
+                        <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
+                          <div class="input file">
+                            <input
+                              type="file"
+                              placeholder="파일찾기"
+                              id="file1"
+                            />
+                            <label for="file1" class="btn">파일첨부</label>
+                          </div>
+                          <button type="button" class="icon-btn delete-btn">
+                            삭제
+                          </button>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일(PNG)</th>
+                      <td colspan="5">
+                        <div class="input-wrap">
+                          <a href="" class="down">파일명.pdf</a>
+                          <div class="input file">
+                            <input
+                              type="file"
+                              placeholder="파일찾기"
+                              id="file1"
+                            />
+                            <label for="file1" class="btn">파일첨부</label>
+                          </div>
+                          <button type="button" class="icon-btn delete-btn">
+                            삭제
+                          </button>
+                        </div>
+                        <div class="row margin-t-8">
+                          PDF 확장자 및 NN mb 이하의 파일만 업로드가 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">썸네일</label>
+                      </th>
+                      <td>
+                        <div class="input file img">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="img-link"></label>
+                        </div>
+                        <div class="input-img-show margin-t-12">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                          <button type="button" class="img-show-close">
+                            첨부파일 이미지 삭제
+                          </button>
+                        </div>
+                        <p class="margin-t-12">
+                          360*450 (디자인 따라 변경 가능 있음)<br />
+                          최대 1개 등록 가능<br />
+                          jpg, jpeg, png 최대 10MB
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <div class="bottom-btns">
+              <div class="left">
+                <a href="#n" class="btn type3">삭제</a>
+              </div>
+              <div class="right">
+                <a href="#n" class="btn type2">취소</a>
+                <a href="#n" class="btn">저장</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>

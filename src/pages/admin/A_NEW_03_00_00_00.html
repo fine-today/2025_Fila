@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    @@include('./include/head.html',{'title' : '상시 인력풀 관리'})
+    @@include('./include/head.html',{'title' : 'CI/BI 관리'})
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_REC_03_00_00_00">
+    <div id="container" class="admin sub" data-page="A_NEW_03_00_00_00">
       <header class="header">@@include('./include/header.html')</header>
       <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
       <div id="content">
         <div id="main" class="main">
-          @@include('./include/breadcrumb.html',{depth1: '채용',depth2:
-          '상시인력풀 관리'})
+          @@include('./include/breadcrumb.html',{depth1: '뉴스룸',depth2:
+          'CI/BI관리'})
 
           <div class="content-wrap">
-            <h3>상시 인력풀 관리</h3>
+            <h3>CI/BI 관리</h3>
             <section class="search-box">
               <div class="row">
+                <span class="input">
+                  <label class="input-label" for="input1-1">게시언어</label>
+                  <select name="" id="" class="w200">
+                    <option value="">전체</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </span>
                 <span class="input">
                   <label class="input-label" for="input1-1">게시여부</label>
                   <select name="" id="" class="w200">
@@ -44,16 +53,6 @@
                     </span>
                   </span>
                 </div>
-
-                <span class="input">
-                  <label class="input-label" for="input1-1">그룹</label>
-                  <select name="" id="" class="w200">
-                    <option value="">전체</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                  </select>
-                </span>
               </div>
               <div class="row">
                 <div class="input-box w100p">
@@ -68,6 +67,7 @@
                 </div>
               </div>
             </section>
+
             <section>
               <article class="table-unit">
                 <div class="left"></div>
@@ -76,24 +76,28 @@
               <article class="table-wrap">
                 <table class="table text-center">
                   <caption>
-                    상시 인력풀 관리
+                    아카이브 관리
                   </caption>
                   <colgroup>
                     <col style="width: 50px" />
                     <col />
-                    <col style="width: 200px" />
-                    <col style="width: 150px" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
                     <col style="width: 8%" />
                     <col style="width: 8%" />
-                    <col style="width: 25%" />
+                    <col style="width: 8%" />
+                    <col style="width: 15%" />
                   </colgroup>
                   <thead>
                     <tr>
                       <th scope="col">번호</th>
                       <th scope="col">제목</th>
-                      <th scope="col">그룹</th>
-                      <th scope="col">모집인원</th>
-                      <th scope="col">근무지</th>
+                      <th scope="col">파일 (Ai)</th>
+                      <th scope="col">파일 (PNG)</th>
+                      <th scope="col">썸네일</th>
+                      <th scope="col">언어</th>
+                      <th scope="col">다운로드 수</th>
                       <th scope="col">게시여부</th>
                       <th scope="col">등록일시</th>
                     </tr>
@@ -102,12 +106,22 @@
                     <tr>
                       <td>15</td>
                       <td class="subject">
-                        <a href="">IR Book</a>
+                        <a href="">CI/BI 제목</a>
                       </td>
-                      <td>Misto holdings</td>
-                      <td>0명</td>
-                      <td>본사 소재지</td>
-                      <td>Y</td>
+                      <td class="subject">
+                        <a href="" class="down">Brand_logo.ai</a>
+                      </td>
+                      <td class="subject">
+                        <a href="" class="down">Brand_logo.png</a>
+                      </td>
+                      <td>
+                        <div class="img-mask">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                        </div>
+                      </td>
+                      <td>EN</td>
+                      <td>NNN</td>
+                      <td>N</td>
                       <td>YYYY.MM.DD 24:00:00</td>
                     </tr>
                   </tbody>

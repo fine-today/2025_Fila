@@ -10,11 +10,11 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/sub.js"></script>
-<title>상시 인력풀 등록</title>
+<title>아카이브 관리</title>
 
   </head>
   <body>
-    <div id="container" class="admin sub" data-page="A_REC_03_01_00_00">
+    <div id="container" class="admin sub" data-page="A_NEW_02_02_01_00">
       <header class="header"><div class="login-info">
   <div class="site"><strong>관리자명</strong>님이 로그인 되었습니다.</div>
 </div>
@@ -249,7 +249,7 @@
         <div id="main" class="main">
           <div class="breadcrumb-wrap">
   <ol class="breadcrumb">
-    <li class="depth1">채용</li>
+    <li class="depth1">아카이브관리</li>
     
     <li class="depth2">
       <i
@@ -268,7 +268,7 @@
           />
         </svg>
       </i>
-      상시인력풀 등록
+      이미지 등록
     </li>
      
   </ol>
@@ -276,7 +276,7 @@
 
 
           <div class="content-wrap">
-            <h3>상시 인력풀 등록</h3>
+            <h3>이미지 등록</h3>
             <section>
               <h4>[등록_KR]</h4>
               <div class="table-wrap write">
@@ -284,108 +284,185 @@
                   <caption></caption>
                   <colgroup>
                     <col style="width: 15%" />
-                    <col style="width: auto" />
+                    <col />
                   </colgroup>
                   <tbody>
                     <tr>
-                      <th scope="row">게시여부</th>
+                      <th scope="row">
+                        <label for="" class="input-label">게시 여부</label>
+                      </th>
                       <td>
-                        <div class="input-wrap">
-                          <span class="input">
-                            <input
-                              type="radio"
-                              name="radio"
-                              id="radio1"
-                              checked=""
-                            />
-                            <label for="radio1">Yes</label>
-                          </span>
-                          <span class="input">
-                            <input type="radio" name="radio" id="radio2" />
-                            <label for="radio2">No</label>
-                          </span>
-                        </div>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">YES</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-2" />
+                          <label for="radio1-2">NO</label>
+                        </span>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">제목</th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">그룹</th>
+                      <th scope="row">
+                        <label for="" class="input-label">연도</label>
+                      </th>
                       <td>
                         <span class="input">
-                          <select title="" class="w180">
-                            <option>셀렉트 목록</option>
-                            <option>옵션 1</option>
-                            <option>옵션 2</option>
-                            <option>옵션 3</option>
+                          <select name="" id="" class="w200">
+                            <option value="">전체</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
                           </select>
                         </span>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
-                        모집 인원<br />
-                        (예시 : 0명)
+                        <label for="" class="input-label">제목</label>
                       </th>
                       <td>
-                        <div class="input full-width w100p">
+                        <span class="input full-width">
                           <input type="text" />
                           <span class="limit">nn/nn</span>
-                        </div>
+                        </span>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">
-                        근무지<br />
-                        (예시 : 본사 소재지)
+                        <label for="" class="input-label">썸네일</label>
                       </th>
                       <td>
-                        <div class="input full-width w100p">
-                          <input type="text" />
-                          <span class="limit">nn/nn</span>
+                        <div class="input file img">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="img-link"></label>
                         </div>
+                        <div class="input-img-show margin-t-12">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                          <button type="button" class="img-show-close">
+                            첨부파일 이미지 삭제
+                          </button>
+                        </div>
+                        <p class="margin-t-12">
+                          360*450 (디자인 따라 변경 가능 있음)<br />
+                          최대 1개 등록 가능<br />
+                          jpg, jpeg, png 최대 10MB
+                        </p>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">업무내용</th>
+                      <th scope="row">
+                        <label for="" class="input-label">내용</label>
+                      </th>
                       <td>
-                        <div class="input full-width w100p">
-                          <textarea title="" rows="5"></textarea>
-                          <span class="limit">nn/nn</span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">필요역량 및 자격조건</th>
-                      <td>
-                        <div class="input full-width w100p">
-                          <textarea title="" rows="5"></textarea>
-                          <span class="limit">nn/nn</span>
-                        </div>
+                        <div class="editor">에디터 자리</div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-            <!-- 채용은 영문 없음 -->
 
             <section>
-              <div class="bottom-btns">
-                <div class="left"></div>
-                <div class="right">
-                  <a href="#n" class="btn type2">목록</a>
-                  <a href="#n" class="btn">등록</a>
-                </div>
+              <h4>[등록_EN]</h4>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">게시 여부</label>
+                      </th>
+                      <td>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">YES</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-2" />
+                          <label for="radio1-2">NO</label>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">연도</label>
+                      </th>
+                      <td>
+                        <span class="input">
+                          <select name="" id="" class="w200">
+                            <option value="">전체</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">제목</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">썸네일</label>
+                      </th>
+                      <td>
+                        <div class="input file img">
+                          <input
+                            type="file"
+                            placeholder="파일찾기"
+                            id="file1"
+                          />
+                          <label for="file1" class="img-link"></label>
+                        </div>
+                        <div class="input-img-show margin-t-12">
+                          <img src="../../images/admin/dumy.png" alt="" />
+                          <button type="button" class="img-show-close">
+                            첨부파일 이미지 삭제
+                          </button>
+                        </div>
+                        <p class="margin-t-12">
+                          360*450 (디자인 따라 변경 가능 있음)<br />
+                          최대 1개 등록 가능<br />
+                          jpg, jpeg, png 최대 10MB
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">내용</label>
+                      </th>
+                      <td>
+                        <div class="editor">에디터 자리</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </section>
+            <div class="bottom-btns">
+              <div class="left"></div>
+              <div class="right">
+                <a href="#n" class="btn type2">목록</a>
+                <a href="#n" class="btn">등록</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

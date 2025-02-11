@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : 'SEO관리'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_SYS_01_01_01_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: 'SEO관리'})
+
+          <div class="content-wrap">
+            <h3>SEO관리</h3>
+            <section>
+              <div class="table-wrap write">
+                <table class="table">
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">검색 허용 여부</label>
+                      </th>
+                      <td>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-1" />
+                          <label for="radio1-1">YES</label>
+                        </span>
+                        <span class="input margin-r-12">
+                          <input type="radio" name="radio1" id="radio1-2" />
+                          <label for="radio1-2">NO</label>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">사이트명</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">설명 문구</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <label for="" class="input-label">키워드</label>
+                      </th>
+                      <td>
+                        <span class="input full-width">
+                          <input type="text" />
+                          <span class="limit">nn/nn</span>
+                        </span>
+                        <div class="margin-t-12">
+                          엔터 입력시 키워드가 등록됩니다. <br />키워드는
+                          10개까지 등록 가능합니다.
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <div class="bottom-btns">
+              <div class="left"></div>
+              <div class="right">
+                <a href="#n" class="btn">수정</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>
