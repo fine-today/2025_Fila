@@ -264,7 +264,10 @@ p {
     background-color: #f9fafb;
     padding: 70px 57px;
     .breadcrumb-wrap {
+      display: flex;
+      justify-content: flex-end;
       padding-bottom: 20px;
+      margin-bottom: -40px;
     }
     .breadcrumb {
       display: flex;

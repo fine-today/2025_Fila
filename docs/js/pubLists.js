@@ -519,41 +519,41 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "A-ESG-01-01-01-00",
-        breadcrumb: "지속가능경영 > 지속가능경영보고서 > 목록",
+        id: "A_ESG_01_01_00_00",
+        breadcrumb: "지속가능경영 > 지속가능경영보고서 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_ESG_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-ESG-01-01-03-00",
-        breadcrumb: "지속가능경영 > 지속가능경영보고서 > 상세/수정",
+        id: "A_ESG_02_00_00_00",
+        breadcrumb: "지속가능경영 > ESG 정책 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_ESG_02_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "A-ESG-01-02-00-00",
-        breadcrumb: "지속가능경영 > ESG정책",
+        id: "A_ESG_02_00_00_00",
+        breadcrumb: "지속가능경영 > ESG 정책 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/admin/A_ESG_02_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -585,7 +585,7 @@ var PubLists = [
       },
       {
         id: "A_ESG_01_02_02_00",
-        breadcrumb: "지속가능경영 > ESG정책 > 등록 / 상세 / 삭제",
+        breadcrumb: "지속가능경영 > ESG 정책 상세/수정",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",

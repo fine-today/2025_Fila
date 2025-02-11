@@ -154,4 +154,21 @@
       }
     }
   }
+  .login-pop {
+    .popup-con {
+      .input-wrap {
+        display: flex;
+        flex-direction: column;
+        .input {
+          &.w100p {
+            width: 100%;
+          }
+          input {
+            height: 60px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }

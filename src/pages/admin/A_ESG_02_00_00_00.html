@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('./include/head.html',{'title' : 'ESG 정책 관리'})
+  </head>
+  <body>
+    <div id="container" class="admin sub" data-page="A_ESG_02_00_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <aside id="menu" class="menu">@@include('./include/menu.html')</aside>
+      <div id="content">
+        <div id="main" class="main">
+          @@include('./include/breadcrumb.html',{depth1: '지속가능경영',depth2:
+          'ESG 정책 관리'})
+
+          <div class="content-wrap">
+            <h3>ESG 정책 관리</h3>
+            <section class="search-box">
+              <div class="row">
+                <span class="input">
+                  <label class="input-label" for="input1-1">게시여부</label>
+                  <select name="" id="" class="w200">
+                    <option value="">전체</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </span>
+                <div class="input-box">
+                  <label class="input-label" for="input1-1">등록일</label>
+                  <span class="date-wrap">
+                    <span class="input date">
+                      <input
+                        type="text"
+                        title=""
+                        placeholder="yyyy-mm-dd"
+                        id="input1-1"
+                      />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span>
+                    <span class="hypen">~</span>
+                    <span class="input date">
+                      <input type="text" title="" placeholder="yyyy-mm-dd" />
+                      <button type="button" class="date-icon">달력열기</button>
+                    </span></span
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-box w100p">
+                  <label for="" class="input-label">검색</label>
+                  <span class="input-wrap w100p">
+                    <span class="input full-width">
+                      <input type="text" placeholder="검색어 입력" />
+                      <span class="limit">nn/nn</span>
+                    </span>
+                    <button type="button" class="btn">검색</button>
+                  </span>
+                </div>
+              </div>
+            </section>
+            <section>
+              <article class="table-unit">
+                <div class="left"></div>
+                <div class="right">총NN건</div>
+              </article>
+              <article class="table-wrap">
+                <table class="table text-center">
+                  <caption>
+                    dslakjflsakfj
+                  </caption>
+                  <colgroup>
+                    <col style="width: 50px" />
+                    <col />
+                    <col style="width: 200px" />
+                    <col style="width: 170px" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 20%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col">제목 (국문)</th>
+                      <th scope="col">제목 (영문)</th>
+                      <th scope="col">첨부파일 (KR)</th>
+                      <th scope="col">첨부파일 (EN)</th>
+                      <th scope="col">게시 여부</th>
+                      <th scope="col">등록일시</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15</td>
+                      <td class="subject">
+                        <a href="">2024 지속가능경영보고서</a>
+                      </td>
+                      <td class="subject">
+                        <a href="">2024 Sustainable management report</a>
+                      </td>
+                      <td class="subject">
+                        <a href="#n" class="down">파일명.확장자</a>
+                      </td>
+                      <td class="subject">
+                        <a href="#n" class="down">파일명.확장자</a>
+                      </td>
+                      <td>Y</td>
+                      <td>YYYY.MM.DD 24:00:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+              <article class="pagination">
+                <div class="left"></div>
+                <div class="page">
+                  <div class="page-control">
+                    <a href="#n" class="page-link prev-end"
+                      ><span class="skip">처음 페이지</span></a
+                    ><a href="#n" class="page-link prev"
+                      ><span class="skip">이전 10 페이지</span></a
+                    ><a href="#n" class="page-link prev-one">이전 페이지</a>
+                  </div>
+                  <div class="page-link-group">
+                    <strong title="현재 1페이지" class="page-link active"
+                      >1</strong
+                    ><a href="#n" title="2페이지 이동" class="page-link">2</a
+                    ><a href="#n" title="3페이지 이동" class="page-link">3</a
+                    ><a href="#n" title="4페이지 이동" class="page-link">4</a
+                    ><a href="#n" title="5페이지 이동" class="page-link">5</a
+                    ><a href="#n" title="6페이지 이동" class="page-link">6</a
+                    ><a href="#n" title="7페이지 이동" class="page-link">7</a
+                    ><a href="#n" title="8페이지 이동" class="page-link">8</a
+                    ><a href="#n" title="9페이지 이동" class="page-link">9</a
+                    ><a href="#n" title="10페이지 이동" class="page-link">10</a>
+                  </div>
+                  <div class="page-control">
+                    <a href="#n" class="page-link next-one">다음 페이지</a>
+                    <a href="#n" class="page-link next"
+                      ><span class="skip">다음 10 페이지</span></a
+                    ><a href="#n" class="page-link next-end"
+                      ><span class="skip">끝 페이지</span></a
+                    >
+                  </div>
+                </div>
+                <div class="right">
+                  <button type="button" class="btn">등록</button>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
