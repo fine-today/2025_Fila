@@ -494,7 +494,7 @@ var PubLists = [
 
       {
         id: "A_ESG_01_00_00_00",
-        breadcrumb: "지속가능경영",
+        breadcrumb: "지속가능경영 > 지속가능경영보고서 관리",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -507,7 +507,7 @@ var PubLists = [
       },
       {
         id: "A_ESG_01_01_00_00",
-        breadcrumb: "지속가능경영 > 지속가능경영보고서",
+        breadcrumb: "지속가능경영 > 지속가능경영보고서 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -596,110 +596,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
-        id: "A-REC-01-00-00-00",
-        breadcrumb: "채용",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_01_01_00_00",
-        breadcrumb: "채용 > 대시보드",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_01_01_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_02_00_00_00",
-        breadcrumb: "채용 > 채용 공고 관리",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_02_00_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_02_01_00_00",
-        breadcrumb: "채용 > 채용 공고 > 등록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_02_01_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_02_02_00_00",
-        breadcrumb: "채용 > 채용 공고 > 상세/수정",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_02_02_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_03_00_00_00",
-        breadcrumb: "채용 > 상시 인력풀 관리",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_03_00_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_03_01_00_00",
-        breadcrumb: "채용 > 상시 인력풀 > 등록",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_03_01_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "A_REC_03_02_00_00",
-        breadcrumb: "채용 > 상시 인력풀 > 상세/수정",
-        type: "page",
-        design: "없음", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/admin/A_REC_03_02_00_00.html",
-        complete: "완료", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
+
       {
         id: "A-MED-01-00-00-00",
         breadcrumb: "미디어",
