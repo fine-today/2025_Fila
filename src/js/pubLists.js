@@ -445,7 +445,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_COR_01_02_00_00.html",
+        pubAddress: "./pages/admin/A_COR_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -714,7 +714,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/admin/A_NEW_01_02_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
