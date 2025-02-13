@@ -1,18 +1,273 @@
+var $logo = `<h1 class="logo"><a href="/">
+  <svg
+    width="106"
+    height="40"
+    viewBox="0 0 106 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0-1008-26420)">
+      <path
+        d="M6.27513 31.3489H0.921345C0.63916 31.3489 0.5 31.2094 0.5 30.9266L0.693278 19.7403L0.5 9.00731C0.5 8.72445 0.63916 8.58496 0.921345 8.58496H9.35598C9.59564 8.58496 9.75027 8.69733 9.82758 8.92594L14.5474 22.1775L18.7802 8.92594C18.8652 8.69733 19.0276 8.58496 19.2673 8.58496H27.5241C27.8063 8.58496 27.9454 8.72445 27.9454 9.00731L27.7521 19.7403L27.9454 30.9266C27.9454 31.2094 27.8063 31.3489 27.5241 31.3489H21.0995C20.8173 31.3489 20.6782 31.2094 20.6782 30.9266V21.139L20.9062 17.7254L16.6735 31.0118C16.5962 31.2404 16.4338 31.3528 16.1864 31.3528H11.5632C11.3235 31.3528 11.1689 31.2404 11.0916 31.0118L6.46841 17.8533L6.69648 21.139V30.9266C6.69648 31.2094 6.55732 31.3489 6.27513 31.3489Z"
+        fill="black"
+      />
+      <path
+        d="M37.3968 31.3489H30.9723C30.7017 31.3489 30.5664 31.2094 30.5664 30.9266L30.779 20.1936L30.5664 9.00731C30.5664 8.72445 30.7017 8.58496 30.9723 8.58496H37.3968C37.6674 8.58496 37.8027 8.72445 37.8027 9.00731L37.5901 20.1936L37.8027 30.9266C37.8027 31.2094 37.6674 31.3489 37.3968 31.3489Z"
+        fill="black"
+      />
+      <path
+        d="M51.077 32C48.9471 32 47.1071 31.7055 45.5609 31.1127C44.0146 30.5237 42.7738 29.6597 41.8383 28.5283C40.9029 27.3968 40.296 26.0252 40.0138 24.4211C39.9597 24.1188 40.0911 23.9677 40.4042 23.9677H46.7631C47.0105 23.9677 47.1689 24.0917 47.2347 24.3397C47.3854 24.9364 47.6367 25.4246 47.9884 25.8043C48.3402 26.184 48.7847 26.4592 49.3182 26.6335C49.8516 26.8079 50.474 26.8931 51.1775 26.8931C51.8811 26.8931 52.4184 26.835 52.89 26.7226C53.3616 26.6103 53.7172 26.4282 53.9607 26.1763C54.2042 25.9283 54.3241 25.6028 54.3241 25.1999C54.3241 24.6923 54.0728 24.2932 53.5703 24.0142C53.0678 23.7314 52.4029 23.5066 51.5757 23.34C50.7484 23.1734 49.84 22.999 48.8505 22.8208C47.8609 22.6426 46.8713 22.4023 45.8817 22.104C44.8921 21.8056 43.9837 21.391 43.1565 20.8602C42.3293 20.3294 41.6644 19.6242 41.1619 18.7446C40.6594 17.865 40.4081 16.7569 40.4081 15.4123C40.4081 13.9399 40.7792 12.6458 41.5175 11.5337C42.2597 10.4217 43.3575 9.55376 44.8187 8.93381C46.2799 8.30998 48.0967 8 50.2691 8C52.0743 8 53.7095 8.22473 55.1745 8.6742C56.6395 9.12367 57.8533 9.84824 58.8159 10.844C59.7784 11.8398 60.4162 13.1689 60.7293 14.8273C60.795 15.1295 60.6713 15.2845 60.3543 15.2845H53.9646C53.7249 15.2845 53.5742 15.1527 53.5084 14.8931C53.377 14.3313 53.0446 13.8973 52.5034 13.5912C51.9622 13.289 51.2278 13.134 50.2962 13.134C49.5153 13.134 48.8698 13.2502 48.3479 13.4827C47.8299 13.7152 47.5671 14.1182 47.5671 14.6955C47.5671 15.1721 47.8222 15.5441 48.3286 15.8076C48.8389 16.0749 49.5076 16.288 50.3387 16.4508C51.1698 16.6135 52.0859 16.784 53.0871 16.9622C54.0883 17.1405 55.0895 17.3768 56.0868 17.6713C57.0879 17.9658 58.0041 18.3687 58.8352 18.8918C59.6663 19.411 60.3389 20.1007 60.8453 20.9571C61.3517 21.8134 61.6068 22.8905 61.6068 24.1924C61.6068 25.8508 61.1932 27.2612 60.3659 28.4275C59.5387 29.5938 58.3365 30.4772 56.7632 31.0856C55.19 31.6939 53.2881 31.9961 51.0616 31.9961L51.077 32Z"
+        fill="black"
+      />
+      <path
+        d="M75.0088 31.3489H68.4219C68.1397 31.3489 68.0005 31.2094 68.0005 30.9266L68.1938 19.8371L68.0972 13.626H62.2563C61.9741 13.626 61.835 13.4865 61.835 13.2036V9.00731C61.835 8.72445 61.9741 8.58496 62.2563 8.58496H81.1705C81.4526 8.58496 81.5918 8.72445 81.5918 9.00731V13.2036C81.5918 13.4865 81.4526 13.626 81.1705 13.626H75.3296L75.233 19.8371L75.4262 30.9266C75.4262 31.2094 75.2871 31.3489 75.0049 31.3489H75.0088Z"
+        fill="black"
+      />
+      <path
+        d="M93.2384 31.9342C90.7606 31.9342 88.6075 31.4149 86.7752 30.3804C84.9429 29.3459 83.5243 27.9316 82.5154 26.1453C81.5103 24.3552 81.0078 22.3287 81.0078 20.0659C81.0078 17.6597 81.5065 15.5519 82.4999 13.7424C83.4934 11.9329 84.9082 10.5225 86.7404 9.51505C88.5727 8.50762 90.7374 8.00391 93.2384 8.00391C95.7394 8.00391 97.8384 8.496 99.6784 9.48405C101.518 10.4721 102.949 11.867 103.969 13.6726C104.99 15.4782 105.504 17.6093 105.504 20.0698C105.504 22.3249 105.001 24.3475 103.996 26.1337C102.991 27.9238 101.569 29.3381 99.7287 30.3765C97.8887 31.4188 95.7278 31.938 93.2384 31.938V31.9342ZM93.3041 26.6684C94.3865 26.6684 95.2794 26.4011 95.9868 25.8625C96.6942 25.3239 97.2238 24.5645 97.5756 23.5764C97.9273 22.5883 98.1013 21.4182 98.1013 20.0659C98.1013 18.7136 97.9273 17.5086 97.5833 16.4895C97.2354 15.4705 96.7058 14.68 95.9868 14.1143C95.2678 13.5525 94.3517 13.2696 93.2384 13.2696C92.1251 13.2696 91.2283 13.5409 90.5132 14.0833C89.7981 14.6258 89.2685 15.4046 88.9245 16.4159C88.5766 17.4311 88.4065 18.6478 88.4065 20.0659C88.4065 21.4104 88.592 22.5767 88.9593 23.5609C89.3265 24.549 89.8715 25.3123 90.5982 25.8547C91.3211 26.3972 92.2256 26.6684 93.308 26.6684H93.3041Z"
+        fill="black"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0-1008-26420">
+        <rect
+          width="105"
+          height="24"
+          fill="white"
+          transform="translate(0.5 8)"
+        />
+      </clipPath>
+    </defs>
+  </svg></a></h1>`;
+
 $(function () {
-  //menu
-  var $menu = $(".depth1"),
-    $menuItem = $menu.find(".depth-item"),
-    $menuAnchor = $menu.find(".depth-anchor");
-  $menuItem.each(function (i, elem) {
-    var $elem = $(elem);
-    if ($elem.find(".depth-list").length > 0) {
-      $elem.addClass("has");
+  var $document = $(document);
+  // MENU List
+  var MENU = [
+    {
+      id: "0",
+      title: "Misto",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "We Are Misto",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "연혁",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "브랜드",
+          anchor: "#n",
+          active: true,
+        },
+      ],
+    },
+    {
+      id: "1",
+      title: "Investors",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "재무정보",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "공시정보",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "주주총회",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "주주환원",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "IR자료",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "기업지배구조",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "2",
+      title: "Sustainability   ",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "ESG Highlights",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "ESG 평가정보",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "지속가능경영보고서",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "ESG 정책",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    { id: "logo", title: "logo", anchor: "#n", active: false },
+    {
+      id: "3",
+      title: "Careers",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "문화",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "인사제도와 복지",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "채용공고",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "4",
+      title: "Newsroom",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "보도자료",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "아카이브",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "CI / BI",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "5",
+      title: "Contact",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "제보채널",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "오시는길",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+  ];
+
+  //menu 생성
+  var $menu = $(".depth1");
+  var $menuList = $menu.find(">.depth-list");
+  MENU.forEach(function (elem, i) {
+    var { id, title, anchor, sub, active } = elem;
+    var $depth1 = $(`
+      <li class="depth-item depth1-item"${
+        id === "logo" ? ' data-logo="true"' : ""
+      }>
+        
+          ${
+            id === "logo"
+              ? $logo
+              : `
+                <a class="depth-anchor depth1-anchor" href="${anchor}">
+                  <span>${title}</span>
+                </a>
+              `
+          }
+        </a>
+      </li>`);
+    if (!!sub) {
+      $depth1.addClass("has");
+      var activeFlag = false;
+      var $depth2 = $(`<div class="depth depth2"></div>`);
+      var $depth2List = $(`<ul class="depth-list depth2-list"></ul>`);
+      sub.forEach(function (subElem, index) {
+        var { id, title, anchor, active } = subElem;
+        var $depth2 = $(`
+          <li class="depth-item depth2-item${active ? " actived" : ""}">
+            <a class="depth-anchor depth2-anchor" href="${anchor}" ${`title="${
+          active ? "현재 위치" : ""
+        }"`}>
+              <span>${title}</span>
+            </a>
+          </li>`);
+        if (active) activeFlag = true;
+        $depth2List.append($depth2);
+      });
+      if (activeFlag) $depth1.addClass("actived");
+      $depth2.append($depth2List);
+      $depth1.append($depth2);
     }
-    if ($elem.hasClass("actived")) {
-      $elem.find(">.depth-anchor").attr("title", "현재 위치");
-      $elem.parents(".depth-item").addClass("actived");
-    }
+    $menuList.append($depth1);
   });
+
+  /* footer 설정 보류
   $menuItem.each(function (i, elem) {
     var $elem = $(elem);
     if ($elem.closest("#footer").length < 0) {
@@ -20,59 +275,40 @@ $(function () {
         $elem.parents(".depth-item").find(".depth-list");
       }
     }
-  });
-  $menuItem.on("mouseover", function () {
+  });*/
+
+  // mouseover event
+  $document.on("mouseover", "#menu .depth-item", function () {
     var $this = $(this),
       $thisAnchor = $this.find(">.depth-anchor");
-    // location'만' 적용
-    if ($this.closest(".location").length > 0) {
-      $this.addClass("active");
-      $this.siblings().removeClass("active");
-      if ($thisAnchor.hasClass("depth1-anchor")) {
-        $thisAnchor.removeAttr("href");
+    console.log("mouseover");
+    var $headerMenu = $(".header .depth1"),
+      $headerMenuItem = $headerMenu.find(".depth-item");
+    $headerMenu.find(".actived > .depth-anchor").removeAttr("title");
+    // $headerMenuItem.removeClass("active");
+    $this.addClass("active");
+    $this.parents(".depth-item").addClass("active");
+    $this.siblings().removeClass("active");
+    $headerMenuItem.each(function (i, item) {
+      var $item = $(item),
+        $thisItemList = $item.find(">.depth-list");
+      if ($item.hasClass("has") && $item.hasClass("active")) {
+        // $thisItemList.css("display", "flex");
+        $item.find(">.depth-anchor").attr("title", "열림");
+      } else {
+        $thisItemList.removeAttr("title");
       }
-      if ($thisAnchor.hasClass("depth2-anchor")) {
-        $(".location .depth1-item.active .depth2-item").each(function (
-          i,
-          depth2Item
-        ) {
-          var $depth2Item = $(depth2Item);
-          if ($depth2Item.hasClass("has") && $depth2Item.hasClass("active")) {
-            $depth2Item.find(">.depth3-anchor").attr("title", "열림");
-          }
-        });
-      } 
-    } else if ($this.closest("header.header").length > 0) {
-      var $headerMenu = $(".header .depth1"),
-        $headerMenuItem = $headerMenu.find(".depth-item");
-      $headerMenu.find(".actived > .depth-anchor").removeAttr("title");
-      // $headerMenuItem.removeClass("active");
-      $this.addClass("active");
-      $this.parents(".depth-item").addClass("active");
-      $this.siblings().removeClass("active");
-      $headerMenuItem.each(function (i, item) {
-        var $item = $(item),
-          $thisItemList = $item.find(">.depth-list");
-        if ($item.hasClass("has") && $item.hasClass("active")) {
-          // $thisItemList.css("display", "flex");
-          $item.find(">.depth-anchor").attr("title", "열림");
-        } else {
-          $thisItemList.removeAttr("title");
-        }
-      });
-    } 
+    });
   });
-  $menuAnchor.on('click', function(e){
-    if ($(this).closest("header.header").length > 0){
-      if($(this).closest('.depth-item').hasClass('has')){
-        console.log(1)
+  $document.on("click", "#menu .depth-anchor", function (e) {
+    if ($(this).closest("header.header").length > 0) {
+      if ($(this).closest(".depth-item").hasClass("has")) {
         e.preventDefault();
       }
     }
-    
-  })
-  
-  $menuItem.on("mouseleave", function () {
+  });
+
+  $document.on("mouseleave", "#menu .depth-item", function () {
     var $this = $(this),
       $thisItem = $this.closest(".depth-item");
     $thisItem.removeClass("active");

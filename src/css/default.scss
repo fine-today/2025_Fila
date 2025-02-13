@@ -81,6 +81,19 @@
     url(../fonts/pretendard/retendard-Thin.subset.woff) format("woff");
 }
 
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --c-gray-10: #fafafa;
+  --c-gray-20: #eeeeee;
+  --c-gray-30: #dddddd;
+  --c-gray-40: #bfbfc7;
+  --c-gray-50: #a0a2a8;
+  --c-gray-60: #70737c;
+  --c-gray-70: #27292e;
+  --c-brand: #ff0000;
+}
+
 article,
 aside,
 details,
@@ -424,57 +437,104 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  letter-spacing: -0.02em;
 }
 
+.h1 {
+  font-size: 6.4rem;
+  line-height: 1.2;
+  &.sm {
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+  &.xs {
+    font-size: 3.8rem;
+    line-height: 1.2;
+  }
+}
 h2,
 .h2 {
-  @include title(h2);
+  font-size: 4.8rem;
+  line-height: 1.4;
+  &.sm {
+    font-size: 4.2rem;
+    line-height: 1.4;
+  }
+  &.xs {
+    font-size: 3.2rem;
+    line-height: 1.4;
+  }
 }
 h3,
 .h3 {
-  @include title(h3);
+  font-size: 4.2rem;
+  &.sm {
+    font-size: 3.8rem;
+    line-height: 1.3;
+  }
+  &.xs {
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
 }
 h4,
 .h4 {
-  @include title(h4);
+  font-size: 2.4rem;
+  line-height: 1.5;
+  &.xs {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
 }
 h5,
 .h5 {
-  @include title(h5);
+  font-size: 2rem;
+  line-height: 1.5;
+  &.xs {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
 }
 h6,
 .h6 {
-  @include title(p1, 700);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  &.xs {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
 }
-.p1 {
-  @include title(p1);
+p,
+.p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+
+  &.xs {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+  &.type2 {
+    &.sm {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+    }
+    &.xs {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
 }
-.p1-bold {
-  @include title(p1, 700);
-}
-.p2 {
-  @include title(p2);
-}
-.p2-bold {
-  @include title(p2, 700);
-}
-.p3 {
-  @include title(p3);
-}
-.p3-bold {
-  @include title(p3, 700);
-}
-.caption1 {
-  @include title(caption1);
-}
-.caption1-bold {
-  @include title(caption1, 700);
-}
-.caption2 {
-  @include title(caption2);
-}
-.caption2-bold {
-  @include title(caption2, 700);
+footer {
+  p,
+  .p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    &.xs {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @for $i from 0 through 10 {
