@@ -11,7 +11,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/main/index.html",
+        pubAddress: "./pages/service/main.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],

@@ -42,6 +42,8 @@ var $logo = `<h1 class="logo"><a href="/">
 
 $(function () {
   var $document = $(document);
+  var $html = $("html");
+  var $body = $("body");
   // MENU List
   var MENU = [
     {
@@ -278,10 +280,28 @@ $(function () {
   });*/
 
   // mouseover event
+  $document.on("mouseover", "#menu", function () {
+    $html.attr("data-menu-open", "true");
+    var depth2Height = 0;
+    $(".depth2").each(function () {
+      var $this = $(this);
+      var thisHeight = $this.outerHeight();
+      if (depth2Height < thisHeight) {
+        depth2Height = thisHeight;
+      }
+    });
+    var headerHeight = $(".header").outerHeight();
+    $(".header .menu-wrap").height(headerHeight + depth2Height);
+  });
+  $document.on("mouseleave", "#menu", function () {
+    $html.attr("data-menu-open", "false");
+    var headerHeight = $(".header").outerHeight();
+    $(".header .menu-wrap").height(headerHeight);
+  });
+
   $document.on("mouseover", "#menu .depth-item", function () {
     var $this = $(this),
       $thisAnchor = $this.find(">.depth-anchor");
-    console.log("mouseover");
     var $headerMenu = $(".header .depth1"),
       $headerMenuItem = $headerMenu.find(".depth-item");
     $headerMenu.find(".actived > .depth-anchor").removeAttr("title");
