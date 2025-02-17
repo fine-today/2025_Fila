@@ -25,6 +25,11 @@
     @content;
   }
 }
+@mixin only-lg {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}
 
 @mixin hidden {
   display: block;

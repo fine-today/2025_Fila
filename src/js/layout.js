@@ -1,4 +1,4 @@
-var $logo = `<h1 class="logo"><a href="/">
+var $logo = `
   <svg
     width="106"
     height="40"
@@ -38,12 +38,13 @@ var $logo = `<h1 class="logo"><a href="/">
         />
       </clipPath>
     </defs>
-  </svg></a></h1>`;
+  </svg>`;
 
 $(function () {
   var $document = $(document);
   var $html = $("html");
   var $body = $("body");
+  var $window = $(window);
   // MENU List
   var MENU = [
     {
@@ -229,13 +230,11 @@ $(function () {
   MENU.forEach(function (elem, i) {
     var { id, title, anchor, sub, active } = elem;
     var $depth1 = $(`
-      <li class="depth-item depth1-item"${
-        id === "logo" ? ' data-logo="true"' : ""
-      }>
+      <li class="depth-item depth1-item ${id === "logo" ? "logo" : ""}">
         
           ${
             id === "logo"
-              ? $logo
+              ? `<a href="/" class="logo-anchor">${$logo}</a>`
               : `
                 <a class="depth-anchor depth1-anchor" href="${anchor}">
                   <span>${title}</span>
@@ -269,19 +268,12 @@ $(function () {
     $menuList.append($depth1);
   });
 
-  /* footer 설정 보류
-  $menuItem.each(function (i, elem) {
-    var $elem = $(elem);
-    if ($elem.closest("#footer").length < 0) {
-      if ($elem.hasClass("actived")) {
-        $elem.parents(".depth-item").find(".depth-list");
-      }
-    }
-  });*/
+  $(".header .menu-wrap").prepend();
 
   // mouseover event
-  $document.on("mouseover", "#menu", function () {
+  $document.on("mouseover focusin", "#menu", function () {
     $html.attr("data-menu-open", "true");
+    // 높이값 저장
     var depth2Height = 0;
     $(".depth2").each(function () {
       var $this = $(this);
@@ -293,46 +285,81 @@ $(function () {
     var headerHeight = $(".header").outerHeight();
     $(".header .menu-wrap").height(headerHeight + depth2Height);
   });
-  $document.on("mouseleave", "#menu", function () {
+  $document.on("mouseleave focusout", "#menu", function () {
     $html.attr("data-menu-open", "false");
     var headerHeight = $(".header").outerHeight();
     $(".header .menu-wrap").height(headerHeight);
   });
 
-  $document.on("mouseover", "#menu .depth-item", function () {
-    var $this = $(this),
-      $thisAnchor = $this.find(">.depth-anchor");
-    var $headerMenu = $(".header .depth1"),
-      $headerMenuItem = $headerMenu.find(".depth-item");
-    $headerMenu.find(".actived > .depth-anchor").removeAttr("title");
-    // $headerMenuItem.removeClass("active");
-    $this.addClass("active");
-    $this.parents(".depth-item").addClass("active");
-    $this.siblings().removeClass("active");
-    $headerMenuItem.each(function (i, item) {
-      var $item = $(item),
-        $thisItemList = $item.find(">.depth-list");
-      if ($item.hasClass("has") && $item.hasClass("active")) {
-        // $thisItemList.css("display", "flex");
-        $item.find(">.depth-anchor").attr("title", "열림");
-      } else {
-        $thisItemList.removeAttr("title");
-      }
-    });
+  $document.on("mouseover focusin", "#menu .depth-item", function () {
+    if ($window.outerWidth() > 1200) {
+      var $this = $(this),
+        $thisAnchor = $this.find(">.depth-anchor");
+      var $headerMenu = $(".header .depth1"),
+        $headerMenuItem = $headerMenu.find(".depth-item");
+      $headerMenu.find(".actived > .depth-anchor").removeAttr("title");
+      // $headerMenuItem.removeClass("active");
+      $this.addClass("active");
+      $this.parents(".depth-item").addClass("active");
+      $this.siblings().removeClass("active");
+      $headerMenuItem.each(function (i, item) {
+        var $item = $(item),
+          $thisItemList = $item.find(">.depth-list");
+        if ($item.hasClass("has") && $item.hasClass("active")) {
+          // $thisItemList.css("display", "flex");
+          $item.find(">.depth-anchor").attr("title", "열림");
+        } else {
+          $thisItemList.removeAttr("title");
+        }
+      });
+    }
   });
+  // 반응형 클릭 설정
   $document.on("click", "#menu .depth-anchor", function (e) {
-    if ($(this).closest("header.header").length > 0) {
-      if ($(this).closest(".depth-item").hasClass("has")) {
-        e.preventDefault();
+    var $this = $(this),
+      $thisItem = $this.closest(".depth-item");
+    if ($thisItem.hasClass("has")) {
+      e.preventDefault();
+      $thisItem.addClass("active");
+      $thisItem.siblings().removeClass("active");
+    }
+    if ($this) {
+    }
+  });
+
+  // 메뉴 오픈
+  var $menuBtn = $(".header .menu-btn");
+  $menuBtn.on("click", function () {
+    var $this = $(this);
+    $this.toggleClass("active");
+    if ($this.hasClass("active")) {
+      $html.attr("data-menu-open", "true");
+      $this.attr("title", "메뉴 열림");
+    } else {
+      $html.attr("data-menu-open", "false");
+      $this.removeAttr("title");
+    }
+  });
+
+  //logo focus 문제해결
+  $(".header > .logo").on("focusin", function () {
+    $(".depth1 .logo > a").attr("tab-index", 0).focus();
+  });
+  $document.on("keydown", function (e) {
+    if (e.key === "Tab") {
+      var $focusElem = $(":focus");
+      if ($focusElem.hasClass("logo-anchor") || $focusElem.hasClass("logo")) {
+        $focusElem.attr("tabindex", -1);
+        setTimeout(() => {
+          $(
+            ".depth1 .depth1-list:first-child .depth1-item:first-child >.depth1-anchor:first-child"
+          ).focus();
+        }, 0);
       }
     }
   });
 
-  $document.on("mouseleave", "#menu .depth-item", function () {
-    var $this = $(this),
-      $thisItem = $this.closest(".depth-item");
-    $thisItem.removeClass("active");
-  });
+  $window.on("resize", function () {});
 
   // FAQ board
   setTimeout(function () {
