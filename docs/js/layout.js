@@ -225,8 +225,9 @@ $(function () {
   ];
 
   //menu 생성
-  var $menu = $(".depth1");
+  var $menu = $("#menu");
   var $menuList = $menu.find(">.depth-list");
+  var $footerMenuList = $("#footer-menu > .depth-list");
   MENU.forEach(function (elem, i) {
     var { id, title, anchor, sub, active } = elem;
     var $depth1 = $(`
@@ -265,10 +266,27 @@ $(function () {
       $depth2.append($depth2List);
       $depth1.append($depth2);
     }
+    var cloneDepth1 = $depth1.clone();
     $menuList.append($depth1);
-  });
+    $footerMenuList.append(cloneDepth1);
 
-  $(".header .menu-wrap").prepend();
+    //footer menu-height
+    const setFooterHeight = () => {
+      var $depth1 = $footerMenuList.find(".depth1-item");
+      var menuHeight = 0;
+      $depth1.each(function () {
+        var $this = $(this);
+        if ($this.hasClass("has")) {
+          var depth2Height = $this.find(".depth2").outerHeight();
+          if (menuHeight < depth2Height) {
+            menuHeight = depth2Height;
+          }
+        }
+      });
+      $footerMenuList.height(menuHeight);
+    };
+    setFooterHeight();
+  });
 
   // mouseover event
   $document.on("mouseover focusin", "#menu", function () {
@@ -317,13 +335,29 @@ $(function () {
   // 반응형 클릭 설정
   $document.on("click", "#menu .depth-anchor", function (e) {
     var $this = $(this),
-      $thisItem = $this.closest(".depth-item");
-    if ($thisItem.hasClass("has")) {
-      e.preventDefault();
-      $thisItem.addClass("active");
-      $thisItem.siblings().removeClass("active");
-    }
-    if ($this) {
+      $thisItem = $this.closest(".depth-item"),
+      $thisList = $this.closest(".depth-list"),
+      $slblingItem = $thisList.find(">.depth-item"),
+      openFlag = false;
+    if ($window.outerWidth() < 1201) {
+      if ($thisItem.hasClass("has")) {
+        e.preventDefault();
+        $thisItem.toggleClass("active");
+        $thisItem.siblings().removeClass("active actived");
+      }
+      $slblingItem.each(function () {
+        if ($(this).hasClass("active")) {
+          $(this).find(">.depth").slideDown(200);
+          openFlag = true;
+        } else {
+          $(this).find(">.depth").slideUp(200);
+        }
+      });
+      if (openFlag) {
+        $menu.removeClass("all-close");
+      } else {
+        $menu.addClass("all-close");
+      }
     }
   });
 

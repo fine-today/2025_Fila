@@ -1,6 +1,7 @@
 @use "./_mixin" as *;
 @use "./default" as *;
 @use "./header" as *;
+@use "./footer" as *;
 
 #container {
   background-color: var(--c-white);

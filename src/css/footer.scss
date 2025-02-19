@@ -1,0 +1,63 @@
+@use "./_mixin" as *;
+
+.footer {
+  background-color: var(--c-black);
+  padding: 60px 0;
+  .depth1 {
+  }
+  .depth1-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .depth1-item {
+    position: relative;
+    .depth1-anchor {
+      color: var(--c-white);
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 700;
+    }
+    &.logo {
+      display: none;
+    }
+  }
+  .depth2 {
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+  .depth2-list {
+  }
+  .depth2-item {
+    .depth2-anchor {
+      color: #70737c;
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 600;
+      white-space: nowrap;
+      span {
+        position: relative;
+        &::before {
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          width: 0;
+          height: 1px;
+          transition: all 0.2s;
+        }
+      }
+    }
+    &:hover {
+      .depth2-anchor {
+        color: var(--c-white);
+        span {
+          &::before {
+            width: 100%;
+            background-color: var(--c-white);
+          }
+        }
+      }
+    }
+  }
+}
