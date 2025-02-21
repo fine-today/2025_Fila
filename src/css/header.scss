@@ -31,6 +31,8 @@
       width: 0;
       height: 0;
       opacity: 0;
+      a {
+      }
     }
     #menu {
       display: flex;
@@ -48,6 +50,9 @@
       .depth1-item {
         &.logo {
           position: static;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           svg {
             overflow: auto;
             display: inline-block;
@@ -88,13 +93,14 @@
               bottom: 0;
               width: 0;
               height: 1px;
-              background-color: var(--c-black);
+              background-color: var(--c-brand);
               transition: all 0.1s;
             }
           }
         }
         &:hover {
           .depth2-anchor {
+            color: var(--c-brand);
             span::before {
               width: 100%;
             }

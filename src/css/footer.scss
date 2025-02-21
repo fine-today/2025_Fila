@@ -3,59 +3,153 @@
 .footer {
   background-color: var(--c-black);
   padding: 60px 0;
-  .depth1 {
-  }
-  .depth1-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .depth1-item {
-    position: relative;
-    .depth1-anchor {
-      color: var(--c-white);
-      font-size: 16px;
-      line-height: 1.8;
-      font-weight: 700;
+  @include only-lg {
+    .depth1 {
     }
-    &.logo {
-      display: none;
+    .depth1-list {
+      display: flex;
+      justify-content: space-between;
     }
-  }
-  .depth2 {
-    position: absolute;
-    top: 45px;
-    left: 0;
-  }
-  .depth2-list {
-  }
-  .depth2-item {
-    .depth2-anchor {
-      color: #70737c;
-      font-size: 16px;
-      line-height: 1.8;
-      font-weight: 600;
-      white-space: nowrap;
-      span {
-        position: relative;
-        &::before {
-          display: block;
-          position: absolute;
-          left: 0;
-          bottom: -1px;
-          width: 0;
-          height: 1px;
-          transition: all 0.2s;
+    .depth1-item {
+      position: relative;
+      .depth1-anchor {
+        color: var(--c-white);
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 700;
+      }
+      &.logo {
+        display: none;
+      }
+    }
+    .depth2 {
+      position: absolute;
+      top: 45px;
+      left: 0;
+    }
+    .depth2-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .depth2-item {
+      width: 100%;
+      .depth2-anchor {
+        width: 100%;
+        color: #70737c;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 600;
+        white-space: nowrap;
+        padding-bottom: 3px;
+        span {
+          position: relative;
+          &::before {
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 1px;
+            transition: all 0.2s;
+          }
+        }
+      }
+      &:hover {
+        .depth2-anchor {
+          color: var(--c-white);
+          span {
+            &::before {
+              width: 100%;
+              background-color: var(--c-white);
+            }
+          }
         }
       }
     }
-    &:hover {
+    .footer-info-wrap {
+      padding-top: 101px;
+    }
+  }
+  .footer-info-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    .footer-info {
+      color: #70737c;
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: 500;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &.no-devider {
+        margin-right: 12px;
+      }
+      &:not(:last-child):not(.no-devider)::after {
+        display: inline-flex;
+        width: 1px;
+        height: 12px;
+        background-color: #70737c;
+        margin: 0 8px;
+      }
+    }
+  }
+  @include md {
+    .depth1-list {
+      height: auto !important;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .depth1-item {
+      width: 100%;
+      .depth1-anchor {
+        font-size: 48px;
+        line-height: 1.4;
+        font-weight: 600;
+        color: #70737c;
+      }
+      &.active {
+        .depth1-anchor {
+          color: var(--c-white);
+        }
+      }
+      &.logo {
+        display: none;
+      }
+    }
+    .depth2 {
+    }
+    .depth2-item {
+      padding-top: 20px;
+      display: flex;
+      gap: 10px;
       .depth2-anchor {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.6;
         color: var(--c-white);
-        span {
-          &::before {
-            width: 100%;
-            background-color: var(--c-white);
+      }
+    }
+    .footer-info-wrap {
+      padding-top: 81px;
+    }
+    .footer-info-box {
+      position: relative;
+      .footer-info {
+        &:not(:last-child):nth-child(2) {
+          width: calc(100% - 100px);
+          &::after {
+            display: none;
           }
+        }
+        &:nth-child(3) {
+        }
+        &.copy {
+          position: absolute;
+          right: 40px;
+          bottom: 0;
         }
       }
     }
