@@ -1,6 +1,7 @@
 @use "./_mixin" as *;
 
 .header {
+  grid-area: header;
   position: relative;
   z-index: 110;
   height: 100px;
@@ -25,7 +26,9 @@
   .menu-btn {
     display: none;
   }
-  @include only-lg {
+}
+@include only-lg {
+  .header {
     > .logo {
       position: absolute;
       width: 0;
@@ -122,33 +125,39 @@
         flex-direction: column;
         font-size: 1.6rem;
         line-height: 1.8;
-        font-weight: 700;
-        color: var(--c-white);
-        span {
-          transition: all 0.1s;
+        transition: all 0.1s;
+        > a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.6rem;
+          line-height: 1.8;
+          font-weight: 700;
+          height: 32px;
+          color: var(--c-white);
         }
       }
       &:hover .lang-wrap {
-        span {
-          transform: translateY(-1.8em);
+        transform: translateY(-32px);
+        > a {
         }
       }
     }
   }
-}
-/* menu-open */
-[data-menu-open="true"] {
-  #container {
-    position: relative;
-    &::before {
-      display: block;
-      position: fixed;
-      z-index: 10;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
+  /* menu-open */
+  [data-menu-open="true"] {
+    #container {
+      position: relative;
+      &::before {
+        display: block;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
     }
   }
 }
@@ -171,23 +180,27 @@
       height: 29px;
       display: flex;
       justify-content: flex-start;
-      span {
+      .lang-wrap {
         display: flex;
         align-items: center;
-        position: relative;
-        font-size: 18px;
-        line-height: 1.6;
-        font-weight: 600;
-        color: #bfbfc7;
-        &:not(:last-child)::after {
-          display: inline-block;
-          width: 1px;
-          height: 14px;
-          background-color: rgba(238, 238, 238);
-          margin: 0 10px;
-        }
-        &.active {
-          color: var(--c-black);
+        > a {
+          display: flex;
+          align-items: center;
+          position: relative;
+          font-size: 18px;
+          line-height: 1.6;
+          font-weight: 600;
+          color: #bfbfc7;
+          &:not(:last-child)::after {
+            display: inline-block;
+            width: 1px;
+            height: 14px;
+            background-color: rgba(238, 238, 238);
+            margin: 0 10px;
+          }
+          &.active {
+            color: var(--c-black);
+          }
         }
       }
     }
@@ -209,22 +222,28 @@
       &::before {
         display: none;
       }
+      #menu.delay {
+        .depth1-item .depth1-anchor {
+          color: var(--c-black);
+        }
+      }
     }
     .menu-btn {
       display: inline-flex;
       align-items: center;
       position: absolute;
-      top: 0;
+      top: calc(50% - 12px);
       right: 40px;
-      height: 90px;
+      height: 24px;
       z-index: 100;
     }
     #menu {
       grid-area: menu;
+      padding-top: 30px;
       &.all-close {
         .depth1-item {
           .depth1-anchor {
-            color: var(--c-black);
+            color: #bfbfc7;
           }
         }
       }
@@ -238,22 +257,30 @@
       }
 
       .depth1-item {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         width: 100%;
         &.logo {
           display: none;
         }
         .depth1-anchor {
-          font-size: 48px;
+          width: 100%;
+          font-size: 32px;
           line-height: 1.4;
-          font-weight: 700;
+          font-weight: 600;
           color: #bfbfc7;
+          transition: all 0.2s;
         }
         &.active {
           .depth1-anchor {
-            color: var(--c-black);
+            color: var(--c-brand);
           }
         }
         &.actived {
+          .depth1-anchor {
+            color: var(--c-brand);
+          }
           > .depth {
             display: block;
           }
@@ -266,15 +293,17 @@
         gap: 10px;
         flex-wrap: wrap;
         .depth2-anchor {
-          font-size: 18px;
+          width: 100%;
+          font-size: 17px;
           line-height: 1.6;
-          font-weight: 700;
+          font-weight: 600;
           color: var(--c-black);
         }
       }
     }
   }
   [data-menu-open="true"] {
+    overflow: hidden;
     .menu-wrap {
       transform: translateX(0);
     }

@@ -4,15 +4,21 @@
 @use "./footer" as *;
 
 #container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 90px 1fr auto;
+  grid-template-areas: "header" "content" "footer";
   background-color: var(--c-white);
 }
 #content {
+  grid-area: content;
   position: relative;
   padding-bottom: 40px;
 }
 .wrap {
   max-width: 1400px;
   width: 100%;
+  position: relative;
   @include lg {
     padding: 0 100px;
   }
@@ -25,4 +31,59 @@
 }
 
 .footer {
+}
+@include md {
+  #container {
+    grid-template-rows: 70px 1fr auto;
+  }
+}
+
+/* content-header */
+.content-header {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  .header-title {
+    @include h1;
+  }
+  @include sm {
+    padding-top: 80px;
+    .header-title {
+      @include h1(sm);
+    }
+  }
+  @include xs {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .header-title {
+      @include h1(xs);
+    }
+    .depth-tab {
+      margin-top: 20px;
+    }
+  }
+}
+/* depth tab */
+
+.depth-tab,
+.tab {
+  margin-top: 30px;
+  .tab-list {
+    display: flex;
+  }
+  .tab-btn {
+    padding: 10px 20px;
+    @include h6;
+    border-radius: 50px;
+    color: #bfbfc7;
+    background-color: transparent;
+    border-color: transparent;
+    span {
+    }
+    &.active {
+      background-color: var(--c-brand);
+      color: var(--c-white);
+      span {
+      }
+    }
+  }
 }

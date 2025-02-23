@@ -6,15 +6,6 @@ $(function () {
     $container = $("#container"),
     $footer = $("#footer");
 
-  //테이블 thead tr 두 개 이상 스타일
-  $(".table thead tr").each(function () {
-    var trIndex = $(this).index() + 1;
-
-    if (trIndex > 1) {
-      $(this).closest(".table").addClass("tr-over");
-    }
-  });
-
   //레이어팝업
   $("[data-pop]:not('.popup')").on("click", function () {
     var $this = $(this),
@@ -49,7 +40,7 @@ $(function () {
     );
     $(document).on(
       "click",
-      ".popup.active .dim,.popup-close,[data-close]",
+      ".popup.active .dim,.pop-close,[data-close]",
       function () {
         var $this = $(this),
           $thisPop = $this.closest("[data-pop]"),
@@ -82,27 +73,21 @@ $(function () {
   });
 
   /* 서브탭메뉴 */
-  $(".tab-button").click(function () {
+  $(".tab-btn").click(function () {
     var $this = $(this),
-      index = $this.closest(".tab-item").index(),
-      tabBtnText = $this.text(),
-      $tabPanel = $this.closest(".tab-panel"),
-      $tabMenu = $this.closest(".tab-menu"),
-      $tabContent = $tabMenu.find(">.tab-content");
-    $this
-      .attr("title", "선택됨")
-      .closest(".tab-item")
-      .addClass("active")
-      .siblings(".tab-item")
-      .removeClass("active")
-      .find(".tab-button")
-      .removeAttr("title");
-    $this.closest(".tab").find(">.tab-menu .tab-select span").text(tabBtnText);
-    $tabContent
-      .eq(index)
-      .addClass("active")
-      .siblings(".tab-content")
-      .removeClass("active");
+      index = $this.attr("data-index"),
+      $tab = $this.closest(".tab"),
+      $tabCon = $tab.find(".tab-con"),
+      $tabConActive = $tab.find(`.tab-con[data-index="${index}"]`);
+
+    $this.siblings().removeClass("active").removeAttr("title");
+    $this.attr("title", "선택됨").addClass("active");
+    if ($this.hasClass("all")) {
+      $tabCon.addClass("active").attr("title", "선택됨");
+    } else {
+      $tabCon.removeClass("active").removeAttr("title");
+      $tabConActive.addClass("active").attr("title", "선택됨");
+    }
   });
 
   //테이블.responsive 반응형

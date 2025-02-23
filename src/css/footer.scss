@@ -1,6 +1,7 @@
 @use "./_mixin" as *;
 
 .footer {
+  grid-area: footer;
   background-color: var(--c-black);
   padding: 60px 0;
   @include only-lg {
@@ -99,13 +100,17 @@
     .depth1-list {
       height: auto !important;
       display: flex;
-      gap: 20px;
+      gap: 10px;
       flex-wrap: wrap;
     }
     .depth1-item {
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       .depth1-anchor {
-        font-size: 48px;
+        width: 100%;
+        font-size: 32px;
         line-height: 1.4;
         font-weight: 600;
         color: #70737c;
@@ -120,12 +125,19 @@
       }
     }
     .depth2 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .depth2-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     .depth2-item {
-      padding-top: 20px;
-      display: flex;
-      gap: 10px;
+      display: block;
+      width: 100%;
       .depth2-anchor {
+        width: 100%;
         font-size: 18px;
         font-weight: 600;
         line-height: 1.6;

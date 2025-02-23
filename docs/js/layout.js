@@ -266,23 +266,20 @@ $(function () {
 
   // mouseover event
   $document.on("mouseover focusin", "#menu", function () {
-    $html.attr("data-menu-open", "true");
-    // 높이값 저장
-    var depth2Height = 0;
-    $(".depth2").each(function () {
-      var $this = $(this);
-      var thisHeight = $this.outerHeight();
-      if (depth2Height < thisHeight) {
-        depth2Height = thisHeight;
-      }
-    });
-    var headerHeight = $(".header").outerHeight();
-    $(".header .menu-wrap").height(headerHeight + depth2Height);
-  });
-  $document.on("mouseleave focusout", "#menu", function () {
-    $html.attr("data-menu-open", "false");
-    var headerHeight = $(".header").outerHeight();
-    $(".header .menu-wrap").height(headerHeight);
+    if ($window.outerWidth() > 1200) {
+      $html.attr("data-menu-open", "true");
+      // 높이값 저장
+      var depth2Height = 0;
+      $(".depth2").each(function () {
+        var $this = $(this);
+        var thisHeight = $this.outerHeight();
+        if (depth2Height < thisHeight) {
+          depth2Height = thisHeight;
+        }
+      });
+      var headerHeight = $(".header").outerHeight();
+      $(".header .menu-wrap").height(headerHeight + depth2Height);
+    }
   });
 
   $document.on("mouseover focusin", "#menu .depth-item", function () {
@@ -291,6 +288,7 @@ $(function () {
         $thisAnchor = $this.find(">.depth-anchor");
       var $headerMenu = $(".header .depth1"),
         $headerMenuItem = $headerMenu.find(".depth-item");
+      $(".depth2").removeAttr("style");
       $headerMenu.find(".actived > .depth-anchor").removeAttr("title");
       // $headerMenuItem.removeClass("active");
       $this.addClass("active");
@@ -308,18 +306,30 @@ $(function () {
       });
     }
   });
+
+  $document.on("mouseleave focusout", "#menu", function () {
+    if ($window.outerWidth() > 1200) {
+      $html.attr("data-menu-open", "false");
+      var headerHeight = $(".header").outerHeight();
+      $(".header .menu-wrap").height(headerHeight);
+    }
+  });
+
   // 반응형 클릭 설정
   $document.on("click", "#menu .depth-anchor", function (e) {
     var $this = $(this),
       $thisItem = $this.closest(".depth-item"),
+      $thisDepth1Item = $this.closest(".depth1-item"),
       $thisList = $this.closest(".depth-list"),
       $slblingItem = $thisList.find(">.depth-item"),
       openFlag = false;
     if ($window.outerWidth() < 1201) {
       if ($thisItem.hasClass("has")) {
         e.preventDefault();
+        $("#menu .depth-item").removeClass("active actived");
         $thisItem.toggleClass("active");
-        $thisItem.siblings().removeClass("active actived");
+        $thisDepth1Item.addClass("active");
+        $thisDepth1Item.siblings().removeClass("active actived");
       }
       $slblingItem.each(function () {
         if ($(this).hasClass("active")) {
@@ -330,24 +340,57 @@ $(function () {
         }
       });
       if (openFlag) {
-        $menu.removeClass("all-close");
-      } else {
         $menu.addClass("all-close");
+      } else {
+        $menu.removeClass("all-close");
       }
     }
   });
 
-  // 메뉴 오픈
+  // 메뉴 오픈(반응형 시)
   var $menuBtn = $(".header .menu-btn");
   $menuBtn.on("click", function () {
     var $this = $(this);
+    var $closeIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2377_130779)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1169 11.6727L3.82324 17.9664L5.23745 19.3806L11.5311 13.0869L17.9653 19.5212L19.3796 18.107L12.9453 11.6727L19.3796 5.23843L17.9653 3.82422L11.5311 10.2585L5.23745 3.96484L3.82324 5.37906L10.1169 11.6727Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_2377_130779">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>`;
+    var $openIcon = `<svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_2006_83360)">
+        <rect width="20" height="2" transform="translate(2 6)" fill="black" />
+        <rect width="20" height="2" transform="translate(2 16)" fill="black" />
+      </g>
+      <defs>
+        <clipPath id="clip0_2006_83360">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>`;
     $this.toggleClass("active");
     if ($this.hasClass("active")) {
       $html.attr("data-menu-open", "true");
       $this.attr("title", "메뉴 열림");
+      $this.find("i").html($closeIcon);
+      $menu.addClass("delay");
+      setTimeout(() => {
+        $menu.removeClass("delay");
+      }, 300);
     } else {
       $html.attr("data-menu-open", "false");
       $this.removeAttr("title");
+      $this.find("i").html($openIcon);
     }
   });
 
@@ -369,7 +412,12 @@ $(function () {
     }
   });
 
-  $window.on("resize", function () {});
+  $window.on("resize", function () {
+    $menuBtn.removeClass("active").removeAttr("title");
+    $html.removeAttr("data-menu-open");
+    $menu.find(".depth-item").removeClass("active");
+    $menu.find(".depth2").css("display", "none");
+  });
 
   //footer 반응형
   const setDefault = () => {

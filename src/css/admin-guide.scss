@@ -10,6 +10,16 @@
   word-break: keep-all;
 }
 
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  overflow: visible;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* 템플릿 복사 기능*/
 [copy-attr="yes"] {
   cursor: pointer;
