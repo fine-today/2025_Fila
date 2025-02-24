@@ -930,7 +930,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "A_MAI_03_03_00_00",
         breadcrumb: "메인 브랜드 관리 > 공지 팝업 정렬 순서 설정",
         type: "popup",
@@ -942,7 +942,7 @@ var PubLists = [
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       /*==============  브랜드 관리 ============ */
       {
         id: "A_BRD_01_00_00_00",
