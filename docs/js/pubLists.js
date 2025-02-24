@@ -104,7 +104,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/service/INV_01_01_01_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
