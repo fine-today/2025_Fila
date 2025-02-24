@@ -79,7 +79,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_01_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 h4 text 변경"],
       },
       {
         id: "A_MAI_01_02_00_00",
@@ -92,7 +92,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_01_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 h4 text 변경"],
       },
       {
         id: "A_MAI_01_03_00_00",
@@ -118,7 +118,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 table 변경(기획참조)"],
       },
       {
         id: "A_MAI_02_01_00_00",
@@ -131,7 +131,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_02_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 h4 text 변경, th 변경(기획 참조)"],
       },
       {
         id: "A_MAI_02_02_00_00",
@@ -144,7 +144,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 h4 text 변경, th 변경(기획 참조)"],
       },
       {
         id: "A_MAI_02_03_00_00",
@@ -183,7 +183,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_03_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, en table 삭제"],
       },
       {
         id: "A_MAI_03_02_00_00",
@@ -196,9 +196,9 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_03_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, en table 삭제"],
       },
-      /*{
+      {
         id: "A_MAI_03_03_00_00",
         breadcrumb: "메인 브랜드 관리 > 공지 팝업 정렬 순서 설정",
         type: "popup",
@@ -209,8 +209,8 @@ var PubLists = [
         pubAddress: "./pages/admin/A_MAI_03_03_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
-      },*/
+        etc: ["2/24 삭제"],
+      },
       /*==============  브랜드 관리 ============ */
       {
         id: "A_BRD_01_00_00_00",
@@ -223,7 +223,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_BRD_01_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시판 리스트 변경"],
       },
       {
         id: "A_BRD_01_01_00_00",
@@ -236,7 +236,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_BRD_01_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 일부 label 변경"],
       },
       {
         id: "A_BRD_01_02_00_00",
@@ -249,7 +249,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_BRD_01_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 일부 label 변경"],
       },
       {
         id: "A_BRD_01_03_00_00",
@@ -268,7 +268,7 @@ var PubLists = [
       /*===========  IR ============== */
       {
         id: "A_IR_01_00_00_00",
-        breadcrumb: "IR 자료(목록)",
+        breadcrumb: "IR 자료 > 2024 실적자료",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -277,11 +277,11 @@ var PubLists = [
         pubAddress: "./pages/admin/A_IR_01_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 title 변경"],
       },
       {
         id: "A_IR_02_00_00_00",
-        breadcrumb: "IR 자료 > 목록(추가자료)",
+        breadcrumb: "IR 자료 > 기타 IR 자료",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -290,11 +290,24 @@ var PubLists = [
         pubAddress: "./pages/admin/A_IR_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 title 변경"],
+      },
+      {
+        id: "A_IR_03_00_00_00",
+        breadcrumb: "IR 자료 > 영문공시자료",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_IR_03_00_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-02-24",
+        etc: ["2/24 신규"],
       },
       {
         id: "A_IR_01_01_00_00",
-        breadcrumb: "IR 자료 > 2024 IR 자료 등록",
+        breadcrumb: "IR 자료 > 2024 실적자료 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -303,11 +316,11 @@ var PubLists = [
         pubAddress: "./pages/admin/A_IR_01_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, title 변경"],
       },
       {
         id: "A_IR_02_01_00_00", // 임시
-        breadcrumb: "IR 자료 > 추가등록",
+        breadcrumb: "IR 자료 > 기타 IR 자료 등록",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -316,7 +329,22 @@ var PubLists = [
         pubAddress: "./pages/admin/A_IR_02_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: [
+          "2/24 title 변경, 게시언어 추가, multiple 첨부파일 아이콘 삭제, 첨부파일 제한 경고문 삭제",
+        ],
+      },
+      {
+        id: "A_IR_03_01_00_00", // 임시
+        breadcrumb: "IR 자료 > 영문공시자료 등록",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_IR_03_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: ["2/24 신규"],
       },
       {
         id: "A_IR_01_02_00_00",
@@ -329,7 +357,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_IR_01_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 title 변경, 게시언어 추가"],
       },
       {
         id: "A_IR_02_02_00_00",
@@ -342,7 +370,20 @@ var PubLists = [
         pubAddress: "./pages/admin/A_IR_02_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 title 변경, 게시언어 추가"],
+      },
+      {
+        id: "A_IR_03_02_00_00",
+        breadcrumb: "IR 자료 > 영문 공시 자료 상세/수정",
+        type: "page",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/admin/A_IR_03_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: ["2/24 신규"],
       },
       /*{
         id: "A-IR-01-02-00-00",
@@ -422,7 +463,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_COR_01_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 레이블 변경, EN 2건으로 변경"],
       },
       /*{
         id: "A-COR-01-01-00-00",
@@ -448,7 +489,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_COR_02_00_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 h4 title 변경, 레이블 변경, EN 2건으로 변경"],
       },
       /*{
         id: "123",
@@ -703,7 +744,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_01_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가"],
       },
       {
         id: "A_NEW_01_02_00_00",
@@ -716,7 +757,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_01_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가"],
       },
       {
         id: "A_NEW_02_00_00_00",
@@ -755,7 +796,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_02_01_01_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, EN 삭제"],
       },
       {
         id: "A_NEW_02_02_01_00",
@@ -768,7 +809,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_02_02_01_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, EN 삭제"],
       },
       {
         id: "A_NEW_02_01_02_00",
@@ -781,7 +822,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_02_01_02_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, EN 삭제"],
       },
       {
         id: "A_NEW_02_02_02_00",
@@ -794,7 +835,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_02_02_02_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, EN 삭제"],
       },
       {
         id: "A_NEW_03_00_00_00",
@@ -820,7 +861,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_03_01_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, EN 삭제"],
       },
       {
         id: "A_NEW_03_02_00_00",
@@ -833,7 +874,7 @@ var PubLists = [
         pubAddress: "./pages/admin/A_NEW_03_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["2/24 게시 언어 추가, EN 삭제"],
       },
       {
         id: "A_SYS_01_01_00_00",
