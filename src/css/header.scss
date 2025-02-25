@@ -26,6 +26,10 @@
   .menu-btn {
     display: none;
   }
+  [type="button"] {
+    border-color: transparent;
+    background-color: transparent;
+  }
 }
 @include only-lg {
   .header {

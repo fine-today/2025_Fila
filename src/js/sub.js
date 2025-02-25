@@ -1,7 +1,7 @@
 "use strict";
 
 $(function () {
-  var $windows = $(window),
+  var $window = $(window),
     $html = $("html"),
     $container = $("#container"),
     $footer = $("#footer");
@@ -72,7 +72,7 @@ $(function () {
     }
   });
 
-  /* 서브탭메뉴 */
+  /* 탭 */
   $(".tab-btn").click(function () {
     var $this = $(this),
       index = $this.attr("data-index"),
@@ -90,8 +90,37 @@ $(function () {
     }
   });
 
+  /* table */
+  var setResponsiveTable = function () {
+    var $tableWrap = $(".table-wrap");
+    $tableWrap.each(function () {
+      var $this = $(this),
+        $thisTable = $this.find(".table"),
+        thisBreakPoint = $this.attr("data-break"),
+        thisTableWidth = $this.attr("data-width");
+      if (thisBreakPoint === "xs") {
+        if ($window.outerWidth() <= 800) {
+          console.log(thisTableWidth);
+          $thisTable.css("minWidth", thisTableWidth + "px");
+        } else {
+          $thisTable.removeAttr("style");
+        }
+      } else if (thisBreakPoint === "sm") {
+        if ($window.outerWidth <= 1000) {
+          $thisTable.css("minWidth", thisTableWidth);
+        } else {
+          $thisTable.removeAttr("style");
+        }
+      }
+    });
+  };
+  setResponsiveTable();
+  $window.on("resize", function () {
+    setResponsiveTable();
+  });
+
   //테이블.responsive 반응형
-  $("table.table.responsive").each(function () {
+  /*$("table.table.responsive").each(function () {
     var RowSpanExist = $(this).find("td, th").is("[rowspan]"),
       TheadExist = $(this).find("thead").length;
     if (RowSpanExist == false && TheadExist != 0) {
@@ -125,27 +154,10 @@ $(function () {
           $(this).attr("data-content", TheadText);
         });
     }
-  });
-
-  /* 탬플릿 전체보기 */
-  var $tab = $container.find(".tab.template"),
-    $tabAll = $tab.find(".tab-all"),
-    $tabContent = $tab.find(".tab-content");
-
-  $tabContent.addClass("active");
-  $tabAll.click(function (event) {
-    var $this = $(this);
-
-    $this
-      .closest(".tab-item")
-      .addClass("active")
-      .siblings()
-      .removeClass("active");
-    $tabContent.addClass("active");
-  });
+  });*/
 
   //ol.num
-  $("ol.num").each(function () {
+  /*$("ol.num").each(function () {
     var $this = $(this),
       $ThisLi = $this.find(">li");
     $ThisLi.each(function () {
@@ -153,10 +165,10 @@ $(function () {
         ThisIndex = $this.index() + 1;
       $this.prepend('<i class="count">' + ThisIndex + "</i>");
     });
-  });
+  });*/
 
   //img mobile - 모바일에서 확대 아이콘 추가
-  var $imgMobile = $(".img-mobile");
+  /*var $imgMobile = $(".img-mobile");
   $(window).on("load resize", function () {
     $imgMobile.each(function () {
       var $this = $(this),
@@ -174,10 +186,10 @@ $(function () {
         $zoom.css("left", imgRight - $this.offset().left - $zoom.width());
       }
     });
-  });
+  });*/
 
   //셀렉트박스 디자인
-  var $select = $container.find(".select-box"),
+  /*  var $select = $container.find(".select-box"),
     $selectAllButton = $select.find("button", "a"),
     $selectAnchor = $select.find(".select-anchor"),
     $selectList = $select.find(".search-list");
@@ -211,10 +223,10 @@ $(function () {
       $parentmenu.find(".search-list").stop().slideUp("250", "easeOutExpo");
       $parentmenu.removeClass("active");
     }
-  });
+  });*/
 
   // password input
-  $(".password .show-hide").on("click", function () {
+  /*$(".password .show-hide").on("click", function () {
     var $this = $(this),
       $thisInput = $this.siblings("input"),
       $thisParent = $this.closest(".password");
@@ -224,7 +236,7 @@ $(function () {
     } else {
       $thisInput.attr("type", "password");
     }
-  });
+  });*/
 
   //datepicker
   $(".input.date>input").datepicker({
