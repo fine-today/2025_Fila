@@ -119,6 +119,16 @@ $(function () {
     setResponsiveTable();
   });
 
+  //box
+  $(".card-wrap").each(function () {
+    var $this = $(this),
+      thisTitleWidth = $this.attr("data-title-width"),
+      $thisList = $this.find(".card-list");
+    $thisItem = $this.find(".card-item");
+    $thisItem.find(".title").css("width", thisTitleWidth + "px");
+    $thisItem.find(".con").css("width", `calc(100% - ${thisTitleWidth}px`);
+  });
+
   //테이블.responsive 반응형
   /*$("table.table.responsive").each(function () {
     var RowSpanExist = $(this).find("td, th").is("[rowspan]"),
