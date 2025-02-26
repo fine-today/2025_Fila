@@ -1,19 +1,10 @@
 "use strict";
 
 $(function () {
-  var $windows = $(window),
+  var $window = $(window),
     $html = $("html"),
     $container = $("#container"),
     $footer = $("#footer");
-
-  //테이블 thead tr 두 개 이상 스타일
-  $(".table thead tr").each(function () {
-    var trIndex = $(this).index() + 1;
-
-    if (trIndex > 1) {
-      $(this).closest(".table").addClass("tr-over");
-    }
-  });
 
   //레이어팝업
   $("[data-pop]:not('.popup')").on("click", function () {
@@ -49,7 +40,7 @@ $(function () {
     );
     $(document).on(
       "click",
-      ".popup.active .dim,.popup-close,[data-close]",
+      ".popup.active .dim,.pop-close,[data-close]",
       function () {
         var $this = $(this),
           $thisPop = $this.closest("[data-pop]"),
@@ -81,32 +72,65 @@ $(function () {
     }
   });
 
-  /* 서브탭메뉴 */
-  $(".tab-button").click(function () {
+  /* 탭 */
+  $(".tab-btn").click(function () {
     var $this = $(this),
-      index = $this.closest(".tab-item").index(),
-      tabBtnText = $this.text(),
-      $tabPanel = $this.closest(".tab-panel"),
-      $tabMenu = $this.closest(".tab-menu"),
-      $tabContent = $tabMenu.find(">.tab-content");
-    $this
-      .attr("title", "선택됨")
-      .closest(".tab-item")
-      .addClass("active")
-      .siblings(".tab-item")
-      .removeClass("active")
-      .find(".tab-button")
-      .removeAttr("title");
-    $this.closest(".tab").find(">.tab-menu .tab-select span").text(tabBtnText);
-    $tabContent
-      .eq(index)
-      .addClass("active")
-      .siblings(".tab-content")
-      .removeClass("active");
+      index = $this.attr("data-index"),
+      $tab = $this.closest(".tab"),
+      $tabCon = $tab.find(".tab-con"),
+      $tabConActive = $tab.find(`.tab-con[data-index="${index}"]`);
+
+    $this.siblings().removeClass("active").removeAttr("title");
+    $this.attr("title", "선택됨").addClass("active");
+    if ($this.hasClass("all")) {
+      $tabCon.addClass("active").attr("title", "선택됨");
+    } else {
+      $tabCon.removeClass("active").removeAttr("title");
+      $tabConActive.addClass("active").attr("title", "선택됨");
+    }
+  });
+
+  /* table */
+  var setResponsiveTable = function () {
+    var $tableWrap = $(".table-wrap");
+    $tableWrap.each(function () {
+      var $this = $(this),
+        $thisTable = $this.find(".table"),
+        thisBreakPoint = $this.attr("data-break"),
+        thisTableWidth = $this.attr("data-width");
+      if (thisBreakPoint === "xs") {
+        if ($window.outerWidth() <= 800) {
+          console.log(thisTableWidth);
+          $thisTable.css("minWidth", thisTableWidth + "px");
+        } else {
+          $thisTable.removeAttr("style");
+        }
+      } else if (thisBreakPoint === "sm") {
+        if ($window.outerWidth <= 1000) {
+          $thisTable.css("minWidth", thisTableWidth);
+        } else {
+          $thisTable.removeAttr("style");
+        }
+      }
+    });
+  };
+  setResponsiveTable();
+  $window.on("resize", function () {
+    setResponsiveTable();
+  });
+
+  //box
+  $(".card-wrap").each(function () {
+    var $this = $(this),
+      thisTitleWidth = $this.attr("data-title-width"),
+      $thisList = $this.find(".card-list");
+    $thisItem = $this.find(".card-item");
+    $thisItem.find(".title").css("width", thisTitleWidth + "px");
+    $thisItem.find(".con").css("width", `calc(100% - ${thisTitleWidth}px`);
   });
 
   //테이블.responsive 반응형
-  $("table.table.responsive").each(function () {
+  /*$("table.table.responsive").each(function () {
     var RowSpanExist = $(this).find("td, th").is("[rowspan]"),
       TheadExist = $(this).find("thead").length;
     if (RowSpanExist == false && TheadExist != 0) {
@@ -140,27 +164,10 @@ $(function () {
           $(this).attr("data-content", TheadText);
         });
     }
-  });
-
-  /* 탬플릿 전체보기 */
-  var $tab = $container.find(".tab.template"),
-    $tabAll = $tab.find(".tab-all"),
-    $tabContent = $tab.find(".tab-content");
-
-  $tabContent.addClass("active");
-  $tabAll.click(function (event) {
-    var $this = $(this);
-
-    $this
-      .closest(".tab-item")
-      .addClass("active")
-      .siblings()
-      .removeClass("active");
-    $tabContent.addClass("active");
-  });
+  });*/
 
   //ol.num
-  $("ol.num").each(function () {
+  /*$("ol.num").each(function () {
     var $this = $(this),
       $ThisLi = $this.find(">li");
     $ThisLi.each(function () {
@@ -168,10 +175,10 @@ $(function () {
         ThisIndex = $this.index() + 1;
       $this.prepend('<i class="count">' + ThisIndex + "</i>");
     });
-  });
+  });*/
 
   //img mobile - 모바일에서 확대 아이콘 추가
-  var $imgMobile = $(".img-mobile");
+  /*var $imgMobile = $(".img-mobile");
   $(window).on("load resize", function () {
     $imgMobile.each(function () {
       var $this = $(this),
@@ -189,10 +196,10 @@ $(function () {
         $zoom.css("left", imgRight - $this.offset().left - $zoom.width());
       }
     });
-  });
+  });*/
 
   //셀렉트박스 디자인
-  var $select = $container.find(".select-box"),
+  /*  var $select = $container.find(".select-box"),
     $selectAllButton = $select.find("button", "a"),
     $selectAnchor = $select.find(".select-anchor"),
     $selectList = $select.find(".search-list");
@@ -226,10 +233,10 @@ $(function () {
       $parentmenu.find(".search-list").stop().slideUp("250", "easeOutExpo");
       $parentmenu.removeClass("active");
     }
-  });
+  });*/
 
   // password input
-  $(".password .show-hide").on("click", function () {
+  /*$(".password .show-hide").on("click", function () {
     var $this = $(this),
       $thisInput = $this.siblings("input"),
       $thisParent = $this.closest(".password");
@@ -239,7 +246,7 @@ $(function () {
     } else {
       $thisInput.attr("type", "password");
     }
-  });
+  });*/
 
   //datepicker
   $(".input.date>input").datepicker({

@@ -948,6 +948,19 @@ var PubLists = [
     title: "사용자(KOR)",
     elem: [
       {
+        id: "-",
+        breadcrumb: " 가이드",
+        type: "page",
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/service/guide.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
         id: "F_MAI_01_00_00_00",
         breadcrumb: "MAIN",
         type: "page",
@@ -955,7 +968,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/main/index.html",
+        pubAddress: "./pages/service/main.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1048,9 +1061,9 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
+        pubAddress: "./pages/service/INV_01_01_01_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-02-24",
         etc: [""],
       },
       {
@@ -1061,9 +1074,9 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
+        pubAddress: "./pages/service/INV_01_01_02_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-02-24",
         etc: [""],
       },
       {
@@ -1074,9 +1087,9 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
+        pubAddress: "./pages/service/INV_01_02_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
+        completeDate: "2025-02-24",
         etc: [""],
       },
       {
@@ -1122,12 +1135,12 @@ var PubLists = [
         id: "F_INV_01_04_00_00",
         breadcrumb: "Investors > 주주환원",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/INV_01_04_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
