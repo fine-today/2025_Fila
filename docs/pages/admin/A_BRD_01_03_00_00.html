@@ -79,56 +79,49 @@
     </li>
     <li class="depth-item depth1-item">
       <a class="depth-anchor depth1-anchor" href="#n">
-        <span>IR 자료 관리</span>
+        <span>IR자료 관리</span>
       </a>
+      <button type="button" class="more-btn">
+        <i class="more"></i>신규 연도 추가
+      </button>
       <div class="depth depth2">
-        <div class="more-btn-wrap">
-          <button type="button" class="more-btn btn">
-            <i class="more"></i>신규 연도 추가
-          </button>
-        </div>
+        <div class="more-btn-wrap"></div>
         <ul class="depth-list depth2-list">
-          <li class="depth-item depth2-item">
-            <a href="#n" class="depth-anchor depth2-anchor">
-              <span>2024 IR 자료</span>
-              <span class="label">노출</span>
-            </a>
-            <button
-              type="button"
-              class="setting"
-              data-pop="open1"
-              data-pop-id="1"
-            >
-              노출여부
-            </button>
+          <li class="depth-item depth2-item ir-header">
+            <span class="depth-anchor depth2-anchor">아코디언명</span>
+            <span class="setting">노출설정</span>
           </li>
           <li class="depth-item depth2-item">
             <a href="#n" class="depth-anchor depth2-anchor">
-              <span>2023 IR 자료</span>
-              <span class="label label-false">미노출</span>
+              <span>2024 실적자료</span>
             </a>
-            <button
-              type="button"
-              class="setting"
-              data-pop="open1"
-              data-pop-id="2"
-            >
-              노출여부
-            </button>
+            <span class="setting switch">
+              <input type="checkbox" id="check199" /><label for="check199"
+                >노출</label
+              >
+            </span>
           </li>
           <li class="depth-item depth2-item">
             <a href="#n" class="depth-anchor depth2-anchor">
-              <span>2022 IR 자료</span>
-              <span class="label">노출</span>
+              <span>2023 실적자료</span>
             </a>
-            <button
-              type="button"
-              class="setting"
-              data-pop="open1"
-              data-pop-id="3"
-            >
-              노출여부
-            </button>
+
+            <span class="setting switch">
+              <input type="checkbox" id="check198" /><label for="check198"
+                >노출</label
+              >
+            </span>
+          </li>
+          <li class="depth-item depth2-item">
+            <a href="#n" class="depth-anchor depth2-anchor">
+              <span>2022 실적자료</span>
+            </a>
+
+            <span class="setting switch">
+              <input type="checkbox" id="check197" /><label for="check197"
+                >노출</label
+              >
+            </span>
           </li>
         </ul>
       </div>
@@ -221,27 +214,6 @@
         }
       });
     });
-
-    // 노출/미노출 상태 추가
-    $("[data-pop]:not('.popup')").on("click", function () {
-      var $thisBtn = $(`[data-pop-id="${popId}"]:not('.popup')`);
-      var $thisLabel = $thisBtn
-        .closest(".depth-item")
-        .find(">.depth-anchor .label");
-    });
-    $('[name="show1"]').on("change", function () {
-      var popId = $(this).closest(".popup").attr("data-pop-id");
-      var value = $('input:radio[name="show1"]:checked').val();
-      var $thisBtn = $(`[data-pop-id="${popId}"]:not('.popup')`);
-      var $thisLabel = $thisBtn
-        .closest(".depth-item")
-        .find(">.depth-anchor .label");
-      if (value === "미노출") {
-        $thisLabel.addClass("label-false").text(value);
-      } else {
-        $thisLabel.removeClass("label-false").text(value);
-      }
-    });
   });
 </script>
 </aside>
@@ -291,59 +263,145 @@
                 <div class="pop-inner">
                   <div class="popup-title-wrap">
                     <h3 class="popup-title h0">브랜드 정렬 순서 설정</h3>
-                    <!-- <div class="sub-title">
-                      브랜드는 PC는 최대 9개, 모바일은 6개에 한해 노출됩니다.
-                    </div> -->
                   </div>
                   <div class="popup-con">
-                    <div class="table-wrap">
-                      <table class="table">
-                        <caption>
-                          브랜드 정렬 순서 설정
-                        </caption>
-                        <colgroup>
-                          <col style="width: auto" />
-                          <col style="width: 15%" />
-                          <col style="width: 15%" />
-                          <col style="width: 150px" />
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th scope="col">브랜드명</th>
-                            <th scope="col">화보 이미지</th>
-                            <th scope="col">로고 이미지</th>
-                            <th scope="col">순서</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="subject">
-                              3회 5대 샤또 와인 시음회 안내
-                            </td>
+                    <div class="tab">
+                      <div class="tab-menu">
+                        <div class="tab-panel">
+                          <ul class="tab-list clearfix">
+                            <li class="tab-item active">
+                              <button type="button" class="tab-button">
+                                <span>Owned</span>
+                              </button>
+                            </li>
+                            <li class="tab-item">
+                              <button type="button" class="tab-button">
+                                <span>Licensing</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tab-content active">
+                          <div class="table-wrap">
+                            <table class="table">
+                              <caption>
+                                브랜드 정렬 순서 설정
+                              </caption>
+                              <colgroup>
+                                <col style="width: auto" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 150px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">브랜드명</th>
+                                  <th scope="col">화보 이미지</th>
+                                  <th scope="col">로고 이미지</th>
+                                  <th scope="col">순서</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="subject">
+                                    Owned 3회 5대 샤또 와인 시음회 안내
+                                  </td>
 
-                            <td>
-                              <div class="img-mask">
-                                <img src="../../images/admin/dumy.png" alt="" />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="img-mask">
-                                <img src="../../images/admin/dumy.png" alt="" />
-                              </div>
-                            </td>
-                            <td>
-                              <span class="input">
-                                <select name="" id="">
-                                  <option value="">1</option>
-                                  <option value="">2</option>
-                                  <option value="">3</option>
-                                  <option value="">4</option>
-                                </select>
-                              </span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                                  <td>
+                                    <div class="img-mask">
+                                      <img
+                                        src="../../images/admin/dumy.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="img-mask">
+                                      <img
+                                        src="../../images/admin/dumy.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span class="input">
+                                      <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                      </select>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="tab-content">
+                          <div class="table-wrap">
+                            <table class="table">
+                              <caption>
+                                브랜드 정렬 순서 설정
+                              </caption>
+                              <colgroup>
+                                <col style="width: auto" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 150px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col">브랜드명</th>
+                                  <th scope="col">화보 이미지</th>
+                                  <th scope="col">로고 이미지</th>
+                                  <th scope="col">순서</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="subject">
+                                    Licensing 3회 5대 샤또 와인 시음회 안내
+                                  </td>
+
+                                  <td>
+                                    <div class="img-mask">
+                                      <img
+                                        src="../../images/admin/dumy.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="img-mask">
+                                      <img
+                                        src="../../images/admin/dumy.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span class="input">
+                                      <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                      </select>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="tab-content">3</div>
+                        <div class="tab-content">4</div>
+                        <div class="tab-content">5</div>
+                        <div class="tab-content">6</div>
+                        <div class="tab-content">7</div>
+                      </div>
                     </div>
                     <div class="bottom-btns">
                       <div class="left"></div>
