@@ -54,24 +54,6 @@ $(function () {
     );
   }, 0);
 
-  /* 아코디언 열고 닫기*/
-  $(".qna-item .question .qna-btn").on("click", function () {
-    var $this = $(this),
-      $Title = $this.parent(".question"),
-      $Item = $Title.parent(".qna-item"),
-      $Layer = $Title.siblings(".answer"),
-      IsActive = $Item.is(".active");
-    if (!IsActive) {
-      $this.addClass("active").attr("title", "답변 닫기");
-      $Item.addClass("active");
-      $Layer.slideDown();
-    } else {
-      $this.removeClass("actvie").attr("title", "답변 열기");
-      $Item.removeClass("active");
-      $Layer.slideUp();
-    }
-  });
-
   /* 탭 */
   $(".tab-btn").click(function () {
     var $this = $(this),
