@@ -417,10 +417,10 @@
       }
       .accordion-btn {
         display: block;
+        position: relative;
         width: 100%;
         background: none;
         border-color: transparent;
-        position: relative;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -432,23 +432,90 @@
           color: var(--c-black);
         }
         .accordion-icon {
+          position: absolute;
+          right: 0;
+          top: calc(50% - 12px);
           display: flex;
           align-items: center;
           justify-content: center;
           width: 24px;
           height: 24px;
+          border-color: transparent;
+          background-color: transparent;
+          &::before {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(../images/service/sub/accordion-more.svg) no-repeat
+              center center;
+          }
         }
       }
       .accordion-con {
         .h5 {
+          margin-top: 10px;
+          margin-bottom: 15px;
+          &:not(:first-child) {
+            margin-top: 50px;
+          }
         }
         .down-list {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          gap: 10px;
         }
         .down-item {
+          width: 100%;
           .down-anchor {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            min-height: 79px;
+            padding: 25px 64px 25px 25px;
+            transition: all 0.2s;
+            gap: 5px;
             .down-title {
+              font-size: 16px;
+              line-height: 1.8;
+              font-weight: 600;
+              color: #000;
+            }
+            .date {
+              color: #70737c;
+              font-size: 14px;
+              line-height: 1.5;
+              font-weight: 400;
             }
             .down-icon {
+              display: flex;
+              position: absolute;
+              right: 25px;
+              top: calc(50% - 12px);
+              width: 24px;
+              height: 24px;
+              justify-content: center;
+              align-items: center;
+              border-color: transparent;
+              background-color: transparent;
+              &::before {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/service/sub/down-round-icon.svg)
+                  no-repeat center center;
+              }
+            }
+          }
+          &:hover {
+            .down-anchor {
+              border-color: var(--c-brand);
+              .down-icon::before {
+                background: url(../images/service/sub/down-round-icon-brand.svg)
+                  no-repeat center center;
+              }
             }
           }
         }
@@ -462,6 +529,10 @@
             color: var(--c-brand);
           }
           .accordion-icon {
+            &::before {
+              background: url(../images/service/sub/accordion-reduce.svg)
+                no-repeat center center;
+            }
           }
         }
         .accordion-con {
@@ -475,6 +546,20 @@
               }
               .down-icon {
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include md {
+    .accordion-box {
+      .accordion {
+        .accordion-con {
+          .h5 {
+            margin-top: 10px;
+            &:not(:first-child) {
+              margin-top: 30px;
             }
           }
         }
