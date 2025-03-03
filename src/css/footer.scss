@@ -97,6 +97,13 @@
     }
   }
   @include md {
+    #footer-menu.all-close {
+      .depth1-item {
+        .depth1-anchor {
+          color: #fff;
+        }
+      }
+    }
     .depth1-list {
       height: auto !important;
       display: flex;

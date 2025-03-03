@@ -75,6 +75,7 @@
       }
       .depth2 {
         position: absolute;
+        z-index: 100;
       }
       .depth2-list {
         display: flex;
@@ -155,7 +156,7 @@
       &::before {
         display: block;
         position: fixed;
-        z-index: 10;
+        z-index: 100;
         left: 0;
         top: 0;
         width: 100%;
@@ -194,7 +195,7 @@
           font-size: 18px;
           line-height: 1.6;
           font-weight: 600;
-          color: #bfbfc7;
+          color: #70737c;
           &:not(:last-child)::after {
             display: inline-block;
             width: 1px;
@@ -247,7 +248,7 @@
       &.all-close {
         .depth1-item {
           .depth1-anchor {
-            color: #bfbfc7;
+            color: #70737c;
           }
         }
       }
@@ -273,7 +274,7 @@
           font-size: 32px;
           line-height: 1.4;
           font-weight: 600;
-          color: #bfbfc7;
+          color: #70737c;
           transition: all 0.2s;
         }
         &.active {
@@ -310,6 +311,16 @@
     overflow: hidden;
     .menu-wrap {
       transform: translateX(0);
+    }
+  }
+}
+@include sm {
+  .header {
+    h1.logo {
+      left: 25px;
+    }
+    .menu-btn {
+      right: 25px;
     }
   }
 }

@@ -14,6 +14,7 @@
   grid-area: content;
   position: relative;
   padding-bottom: 200px;
+  z-index: 10;
   @include xs {
     padding-bottom: 120px;
   }
@@ -46,20 +47,40 @@
 
 /* content-header */
 .content-header {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  margin-top: 100px;
+  margin-bottom: 80px;
   .header-title {
     @include h1;
   }
+  .banner {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+    height: 560px;
+    background-color: #ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+    .text {
+      font-size: 24px;
+      color: #fff;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+  }
   @include sm {
-    padding-top: 80px;
+    margin-top: 80px;
     .header-title {
       @include h1(sm);
     }
   }
   @include xs {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     .header-title {
       @include h1(xs);
     }
@@ -80,7 +101,7 @@
     padding: 10px 20px;
     @include h6;
     border-radius: 50px;
-    color: #bfbfc7;
+    color: #70737c;
     background-color: transparent;
     border-color: transparent;
     span {

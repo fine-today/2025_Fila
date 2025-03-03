@@ -105,8 +105,8 @@ $(function () {
   $(".card-wrap").each(function () {
     var $this = $(this),
       thisTitleWidth = $this.attr("data-title-width"),
-      $thisList = $this.find(".card-list");
-    $thisItem = $this.find(".card-item");
+      $thisList = $this.find(".card-list"),
+      $thisItem = $this.find(".card-item");
     $thisItem.find(".title").css("width", thisTitleWidth + "px");
     $thisItem.find(".con").css("width", `calc(100% - ${thisTitleWidth}px`);
   });
