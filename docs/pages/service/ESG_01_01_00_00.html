@@ -293,19 +293,6 @@
                 $conBox = $anchorUI.find(".con-box"),
                 $eachCon = $conBox.find(".con-wrap");
 
-              $eachCon.each(function () {
-                var $this = $(this);
-                $this.attr("data-top", $this.offset().top);
-                $anchorBtn.each(function () {
-                  if ($(this).attr("data-anchor") === $this.attr("id")) {
-                    $(this).attr("data-top", $this.offset().top);
-                    $(this).attr(
-                      "data-bottom",
-                      $this.offset().top + $this.height()
-                    );
-                  }
-                });
-              });
               $(window).on("scroll", function () {
                 var winScrollTop = $(window).scrollTop(),
                   anchorOffsetTop = $anchorUI.offset().top;

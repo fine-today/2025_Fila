@@ -1088,7 +1088,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/INV_01_02_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-02-24",
         etc: [""],
       },
@@ -1231,7 +1231,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/INV_01_06_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["다운로드 : 정관, 공시정보관리지침, 기업지배구조헌장"],
       },
@@ -1261,6 +1261,19 @@ var PubLists = [
         address: "/",
         pubAddress: "./pages/service/",
         complete: "대기", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
+      {
+        id: "F_ESG_01_01_00_00",
+        breadcrumb: "Sustainability > ESG Highlights",
+        type: "page",
+        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/service/ESG_01_01_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
