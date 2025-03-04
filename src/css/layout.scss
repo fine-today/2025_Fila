@@ -59,17 +59,22 @@
     justify-content: center;
     margin-left: calc(50% - 50vw);
     width: 100vw;
-    height: 560px;
+    height: 480px;
+    text-align: center;
     background-color: #ddd;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 120px;
+    padding: 10px 100px;
     .text {
       font-size: 24px;
       color: #fff;
       line-height: 1.5;
       font-weight: 600;
+      br {
+        display: none;
+      }
     }
   }
   @include sm {
@@ -86,6 +91,9 @@
     }
     .depth-tab {
       margin-top: 20px;
+    }
+    .banner br {
+      display: inline;
     }
   }
 }

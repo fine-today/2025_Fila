@@ -647,6 +647,7 @@ p.blt.type3:before {
 .depth-tab,
 .tab {
   margin-top: 30px;
+  overflow: auto;
   .tab-list {
     display: flex;
   }
@@ -656,6 +657,7 @@ p.blt.type3:before {
     border-radius: 50px;
     color: #70737c;
     span {
+      white-space: pre;
     }
     &.active {
       background-color: var(--c-brand);
@@ -2071,6 +2073,140 @@ html.popup-open body {
     .down-icon::before {
       background: url(../images/service/sub/down-round-icon-brand.svg) no-repeat
         center center;
+    }
+  }
+}
+
+/* accordion */
+.accordion-box {
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    .accordion-btn-wrap {
+      border-top: 1px solid #eee;
+    }
+    .accordion-btn {
+      display: block;
+      position: relative;
+      width: 100%;
+      background: none;
+      border-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 30px 42px 30px 0;
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: var(--c-black);
+      }
+      .accordion-icon {
+        position: absolute;
+        right: 0;
+        top: calc(50% - 12px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-color: transparent;
+        background-color: transparent;
+        &::before {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url(../images/service/sub/accordion-more.svg) no-repeat
+            center center;
+        }
+      }
+    }
+    .accordion-con {
+      .h5 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        &:not(:first-child) {
+          margin-top: 50px;
+        }
+      }
+      .down-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        gap: 10px;
+      }
+      .down-item {
+        width: 100%;
+        .down-anchor {
+          border: 1px solid #eee;
+          border-radius: 10px;
+          .down-title {
+          }
+          .date {
+          }
+          .down-icon {
+          }
+        }
+        &:hover {
+          .down-anchor {
+            border-color: var(--c-brand);
+            .down-title {
+              color: var(--c-brand);
+            }
+            .date {
+              color: var(--c-brand);
+            }
+            .down-icon::before {
+              background: url(../images/service/sub/down-round-icon-brand.svg)
+                no-repeat center center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .accordion.active {
+    .accordion-btn-wrap {
+      border-top: 2px solid var(--c-brand);
+    }
+    .accordion-btn {
+      .title {
+        color: var(--c-brand);
+      }
+      .accordion-icon {
+        &::before {
+          background: url(../images/service/sub/accordion-reduce.svg) no-repeat
+            center center;
+        }
+      }
+    }
+    .accordion-con {
+      .h5 {
+      }
+      .down-list {
+      }
+      .down-item {
+        .down-anchor {
+          .down-title {
+          }
+          .down-icon {
+          }
+        }
+      }
+    }
+  }
+}
+@include md {
+  .accordion-box {
+    .accordion {
+      .accordion-con {
+        .h5 {
+          margin-top: 10px;
+          &:not(:first-child) {
+            margin-top: 30px;
+          }
+        }
+      }
     }
   }
 }

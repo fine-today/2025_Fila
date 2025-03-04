@@ -515,44 +515,6 @@
         </div>
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
-      <script>
-        var $accordionBox = $(".accordion-box"),
-          $accordion = $accordionBox.find(".accordion"),
-          $accordionBtn = $accordionBox.find(".accordion-btn");
-        $(window).on("load", function () {
-          $accordion.each(function () {
-            var $this = $(this),
-              $thisBtn = $this.find(".accordion-btn"),
-              $thisCon = $this.find(".accordion-con");
-
-            if ($this.hasClass("active")) {
-              $this.attr("title", "열림");
-              $thisBtn.attr("title", "열림");
-              $thisCon.slideDown(100);
-            } else {
-              $this.removeAttr("title");
-              $thisBtn.removeAttr("title");
-              $thisCon.slideUp(100);
-            }
-          });
-        });
-
-        $accordionBtn.on("click", function () {
-          var $this = $(this),
-            $thisAccordion = $this.closest(".accordion"),
-            $thisCon = $thisAccordion.find(".accordion-con");
-          $thisAccordion.toggleClass("active");
-          if ($thisAccordion.hasClass("active")) {
-            $thisAccordion.attr("title", "열림");
-            $this.attr("title", "열림");
-            $thisCon.slideDown(100);
-          } else {
-            $thisAccordion.removeAttr("title");
-            $this.removeAttr("title");
-            $thisCon.slideUp(100);
-          }
-        });
-      </script>
     </div>
   </body>
 </html>
