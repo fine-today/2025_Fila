@@ -699,7 +699,7 @@
 }
 [data-page="ESG_01_01_00_00"] {
   .content-header .banner {
-    background-image: url(../images/service/content/esg01_01_00_00-banner.png);
+    background-image: url(../images/service/content/esg_01_01_00_00-banner.png);
   }
   .anchor-ui {
     position: relative;
@@ -783,13 +783,13 @@
         }
       }
       #con1 .con-img {
-        background-image: url(../images/service/content/esg01_01_00_00-img1.png);
+        background-image: url(../images/service/content/esg_01_01_00_00-img1.png);
       }
       #con2 .con-img {
-        background-image: url(../images/service/content/esg01_01_00_00-img2.png);
+        background-image: url(../images/service/content/esg_01_01_00_00-img2.png);
       }
       #con3 .con-img {
-        background-image: url(../images/service/content/esg01_01_00_00-img3.png);
+        background-image: url(../images/service/content/esg_01_01_00_00-img3.png);
       }
       * + .heading-line {
         margin-top: 69px;
@@ -838,6 +838,7 @@
       text-align: center;
     }
     .anchor-ui {
+      &,
       &[data-anchor="fixed"],
       &[data-anchor="absolute"] {
         .anchor-box {
@@ -892,13 +893,18 @@
       }
     }
     &.active {
-      &:first-child {
-        .accordion-btn-wrap {
-        }
+      .accordion-btn-wrap {
+        border-top: 2px solid #000;
       }
       .accordion-btn {
         .title {
           color: var(--c-black);
+        }
+        .accordion-icon {
+          &::before {
+            background: url(../images/service/sub/accordion-reduce-black.svg)
+              no-repeat center center;
+          }
         }
       }
     }
@@ -943,6 +949,132 @@
         line-height: 1.6;
         font-weight: 600;
         color: #000;
+      }
+    }
+    .accordion-con {
+      padding: 10px 0 30px;
+    }
+  }
+  .table {
+    .img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @include xs {
+    .accordion {
+      .accordion-btn {
+        padding-left: 90px;
+        flex-direction: column;
+        align-items: flex-start;
+        .title-wrap {
+        }
+        .organ {
+          left: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 80px;
+          height: 40px;
+          padding: 5px;
+          margin-right: 10px;
+        }
+        .sub-title {
+          display: none;
+        }
+        .grade {
+          display: block;
+          position: relative;
+          font-size: 14px;
+          line-height: 1.5;
+          font-weight: 400;
+          color: #70737c;
+        }
+      }
+    }
+    .table {
+      th,
+      td {
+        padding-left: 0;
+      }
+      .img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+[data-page="ESG_01_03_00_00"] {
+  .top-con {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    .img {
+      img {
+      }
+    }
+    .con-wrap {
+      position: relative;
+      padding: 30px 185px 30px 30px;
+      h3 {
+      }
+      p {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: #70737c;
+      }
+      .anchor-item {
+        &:not(:last-child)::after {
+          display: block;
+          margin: 0 10px;
+          width: 1px;
+          height: 16px;
+          background-color: #eee;
+        }
+      }
+    }
+    .anchor-list {
+      position: absolute;
+      right: 30px;
+      display: flex;
+      align-items: center;
+      bottom: 30px;
+    }
+    .anchor-item {
+      display: flex;
+      align-items: center;
+      .anchor-box {
+        position: relative;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: #000;
+        display: flex;
+        align-items: center;
+        &::after {
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin-left: 5px;
+          background: url(../images/service/sub/anchor-icon.svg) no-repeat
+            center center;
+          background-size: 24px 24px;
+        }
+        span {
+        }
+      }
+      &:not(:last-child)::after {
+        display: block;
+        margin: 0 10px;
+        width: 1px;
+        height: 16px;
+        background-color: #eee;
       }
     }
   }
