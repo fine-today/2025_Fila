@@ -219,7 +219,7 @@ $(function () {
   });*/
 
   //셀렉트박스 디자인
-  /*  var $select = $container.find(".select-box"),
+  var $select = $container.find(".select-box"),
     $selectAllButton = $select.find("button", "a"),
     $selectAnchor = $select.find(".select-anchor"),
     $selectList = $select.find(".search-list");
@@ -253,7 +253,7 @@ $(function () {
       $parentmenu.find(".search-list").stop().slideUp("250", "easeOutExpo");
       $parentmenu.removeClass("active");
     }
-  });*/
+  });
 
   // password input
   /*$(".password .show-hide").on("click", function () {

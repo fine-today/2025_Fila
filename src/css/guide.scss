@@ -702,7 +702,11 @@ p.blt.type3:before {
   .con {
   }
 }
+.heading-line + .table-wrap {
+  border-top: 0;
+}
 .table-wrap {
+  border-top: 2px solid #000;
   margin-bottom: 23px;
   &[data-break="xs"] {
     max-width: 100%;
@@ -922,65 +926,6 @@ table.table {
 .select-box {
   position: relative;
   z-index: 10;
-  width: 180px;
-}
-.select-box .search-select {
-  display: block;
-  position: relative;
-  width: 180px;
-  height: 36px;
-  padding: 4px 35px 4px 8px;
-  border: 1px solid #c5c9d6;
-  border-radius: 3px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #414a73;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  text-align: left;
-}
-.select-box.active .search-select {
-  border-color: #414a73;
-}
-.select-box .search-select:before {
-  display: block;
-  position: absolute;
-  top: 17px;
-  right: 15px;
-  width: 11px;
-  height: 7px;
-  content: "";
-  transition: all 0.3s;
-}
-.select-box.active .search-select:before {
-  transform: rotate(180deg);
-}
-.select-box .search-list {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #c5c9d6;
-  border-top: none;
-  border-radius: 3px;
-}
-.select-box .search-list ul {
-}
-.select-box .search-list ul li {
-  font-size: 16px;
-  color: #888da6;
-}
-.select-box .search-list ul li:hover {
-  background-color: #f4f5f9;
-  color: #414a73;
-}
-
-.select-box .search-list ul li .select-anchor {
-  padding: 8px 15px;
-  width: 100%;
-  text-align: left;
 }
 
 /*박스*/
@@ -1244,31 +1189,30 @@ html.popup-open body {
 .select-box {
   position: relative;
   z-index: 10;
-  width: 180px;
   .search-select {
     display: block;
     position: relative;
-    width: 180px;
-    height: 40px;
-    padding: 7px 35px 7px 16px;
+    height: 44px;
+    padding: 7px 33px 7px 15px;
     border: 1px solid #c5c9d6;
-    border-radius: 3px;
+    border-radius: 10px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     color: #414a73;
-    line-height: 24px;
+    line-height: 1.8;
     letter-spacing: -0.02em;
     text-align: left;
+    background-color: transparent;
     &:before {
       display: block;
       position: absolute;
-      top: 17px;
-      right: 15px;
-      width: 11px;
-      height: 7px;
-      background: url("../images/template/temp_icon_sprite.png") no-repeat -2px -120px;
+      top: 14px;
+      right: 12px;
+      width: 16px;
+      height: 16px;
+      background: url("../images/service/sub/select-icon.svg") no-repeat center
+        center;
       content: "";
-      transition: all 0.3s;
     }
   }
   &.active .search-select {
@@ -1280,12 +1224,12 @@ html.popup-open body {
   .search-list {
     display: none;
     position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
+    top: 48px;
+    right: 0;
+    width: auto;
+    border-radius: 8px;
     background-color: #fff;
-    border: 1px solid #c5c9d6;
-    border-top: none;
+    border: 1px solid #eee;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     ul {
@@ -1297,21 +1241,24 @@ html.popup-open body {
           color: #414a73;
         }
         .select-anchor {
+          white-space: nowrap;
           padding: 8px 15px;
+          background-color: transparent;
+          border: 0;
         }
       }
     }
   }
 }
 
-@media all and (max-width: 640px) {
+@include xs {
   .select-box {
     .search-select {
-      height: 36px;
-      padding: 5px 35px 5px 16px;
-      font-size: 14px;
+      border: 0;
+      padding: 0 21px 0 0;
       &:before {
         top: 13px;
+        right: 0;
       }
     }
     .search-list {
@@ -2206,6 +2153,40 @@ html.popup-open body {
           }
         }
       }
+    }
+  }
+}
+
+.anchor-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+.anchor-item {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+  .anchor-box {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+      background: url(../images/service/sub/anchor-icon.svg) no-repeat center
+        center;
+      background-size: 24px 24px;
+    }
+    span {
     }
   }
 }

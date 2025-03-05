@@ -52,6 +52,12 @@
   .header-title {
     @include h1;
   }
+  .sub-title {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
   .banner {
     margin-top: 80px;
     display: flex;
@@ -88,6 +94,10 @@
     margin-bottom: 60px;
     .header-title {
       @include h1(xs);
+    }
+    .sub-title {
+      font-size: 17px;
+      margin-top: 20px;
     }
     .depth-tab {
       margin-top: 20px;

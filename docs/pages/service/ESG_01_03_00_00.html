@@ -116,7 +116,7 @@
           <div class="top-con">
             <div class="img">
               <img
-                src="../../images/service/content/esg01_03_00_00-img1.png"
+                src="../../images/service/content/esg_01_03_00_00-img1.png"
                 alt="FILA Holdings Corp Your Fila Impact Fila Integrated report 2023 volume5"
               />
             </div>
@@ -138,8 +138,8 @@
             </div>
           </div>
 
-          <div class="table-wrap">
-            <table class="table">
+          <div class="table-wrap resize-colgroup">
+            <table class="table resize-column">
               <caption>
                 2024 지속가능경영보고서 - 구분, 자료에 대한 정보 제공
               </caption>
@@ -147,6 +147,7 @@
                 <col />
                 <col style="width: 200px" />
               </colgroup>
+
               <thead>
                 <tr>
                   <th scope="col">구분</th>
@@ -255,6 +256,21 @@
 </div>
 </div>
         </div>
+        <script>
+          // 반응형에서 col 너비 조절을 위한 script...
+          var $thisColgroup = $(".table-wrap.resize-colgroup colgroup");
+          $(window).on("resize load", function () {
+            if ($(window).outerWidth() <= 800) {
+              $thisColgroup.html(`
+                <col />
+                <col style="width: 100px" />`);
+            } else {
+              $thisColgroup.html(`
+                <col />
+                <col style="width: 200px" />`);
+            }
+          });
+        </script>
       </div>
       <footer class="footer"><div class="footer-menu-wrap">
   <div class="depth depth1 wrap" id="footer-menu">
