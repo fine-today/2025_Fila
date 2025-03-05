@@ -112,13 +112,16 @@ p.type2,
 }
 
 .em-red {
-  color: var(--c-red-10);
+  color: var(--c-red-10) !important;
+}
+.em-brand {
+  color: var(--c-brand) !important;
 }
 .em-black {
-  color: var(--c-black);
+  color: var(--c-black) !important;
 }
 .em-white {
-  color: var(--c-white);
+  color: var(--c-white) !important;
 }
 
 /* 버튼/링크 */
@@ -1194,7 +1197,7 @@ html.popup-open body {
     position: relative;
     height: 44px;
     padding: 7px 33px 7px 15px;
-    border: 1px solid #c5c9d6;
+    border: 1px solid #eee;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 700;
@@ -1308,16 +1311,23 @@ html.popup-open body {
   }
 }
 .input {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 15px;
   position: relative;
-  .limit {
-    position: absolute;
-    right: 10px;
-    bottom: 15px;
-    font-size: 16px;
-    color: #999;
+  border: 1px solid #eee;
+  min-width: 240px;
+  &.search {
+    border-radius: 10px;
+    padding: 7px 12px 7px 40px;
+    &::before {
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      width: 20px;
+      height: 20px;
+      background: url(../../images/service/sub/search-icon.svg) no-repeat center
+        center;
+      background-size: 20px 20px;
+    }
   }
   &.full-width {
     width: 100%;
@@ -1330,26 +1340,11 @@ html.popup-open body {
   input[type="text"],
   input[type="password"],
   input[type="number"] {
+    border: 0;
+    height: 29px;
+    padding: 0;
     &.full-width {
       width: 100%;
-    }
-  }
-  &.date {
-    input {
-    }
-    .ui-datepicker-trigger {
-      font-size: 0;
-      line-height: 0;
-      position: absolute;
-      top: calc(50% - 15px);
-      right: 5px;
-      width: 30px;
-      height: 30px;
-      background: url(../images/common/calendar.svg) no-repeat center center;
-      background-size: 24px 24px;
-    }
-    .date-icon {
-      display: none;
     }
   }
   label {
@@ -1433,16 +1428,12 @@ html.popup-open body {
   input {
     &[type="text"],
     &[type="password"] {
-      height: 50px;
-      padding: 4px 8px;
-      border: 1px solid #4e5968;
-      border-radius: 3px;
-      font-size: 16px;
-      color: #333d4b;
-      background-color: transparent;
+      color: #000;
       &::placeholder {
         font-size: 16px;
-        letter-spacing: -0.3px;
+        line-height: 1.8;
+        font-weight: 600;
+        color: #bfbfc7;
       }
       &:focus {
         border-color: #414a73;

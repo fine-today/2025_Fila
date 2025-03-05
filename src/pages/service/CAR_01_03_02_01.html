@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kr" class="main">
+  <head>
+    @@include('./include/head.html',{'title':"채용공고"})
+  </head>
+  <body>
+    <div class="accessibility">
+      <a href="#content">본문 바로가기</a>
+    </div>
+    <div id="container" data-page="CAR_01_03_02_01">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content" class="content">
+        <div class="wrap">
+          <div class="anchor-group">
+            <div class="content-header car">
+              <p class="sub-title">
+                <span class="label">마감까지 D-10</span>
+                <span class="status">접수마감</span>
+              </p>
+              <h2 class="header-title">PR담당 경력사원 채용</h2>
+            </div>
+            <aside class="sticky box">
+              <h4>Misto Holdings</h4>
+              <ul class="list">
+                <li>
+                  <span class="title">담당부서</span>
+                  <span class="con">전략기획팀</span>
+                </li>
+                <li>
+                  <span class="title">담당업무</span>
+                  <span class="con">PR담당</span>
+                </li>
+                <li>
+                  <span class="title">고용형태</span>
+                  <span class="con">정규직</span>
+                </li>
+                <li>
+                  <span class="title">모집인원</span>
+                  <span class="con">0명</span>
+                </li>
+                <li>
+                  <span class="title">모집기간</span>
+                  <span class="con">YYYY.MM.DD~YYYY.MM.DD</span>
+                </li>
+                <li>
+                  <span class="title">첨부파일</span>
+                  <span class="con"
+                    ><a href="" target="_blank" title="새창"
+                      >mistoholdings.pdf</a
+                    ></span
+                  >
+                </li>
+              </ul>
+              <div class="bottom-btn" id="fixed-btn">
+                <a href="#n" class="btn large">지원서 다운로드</a>
+              </div>
+            </aside>
+            <div class="con-box">
+              <div class="con-wrap">
+                <h3>채용절차</h3>
+                <p>
+                  서류전형 ▶︎ 인성검사 & 1차 면접 & 2차 면접 ▶︎ 최종 면접
+                  (임원면접) ▶︎ 처우협의 ▶︎ 최종합격(1차면접과 2차면접은 하루에
+                  이어서 진행되며, 합격자에 한해 최종 면접 진행)
+                </p>
+
+                <h3>채용 세부내용</h3>
+                <h4>1.채용 포지션</h4>
+                <p>PR (홍보)</p>
+
+                <h4>2.담당업무</h4>
+                <h5>1. 기업홍보</h5>
+                <ul class="bu type2">
+                  <li>- 대/내외 언론 홍보</li>
+                  <li>- 국내외 언론사 응대 관리</li>
+                  <li>- 회사소개서 작성</li>
+                </ul>
+                <h5>2. 행사 의전 및 지원</h5>
+                <h5>3. SNS 및 홈페이지 운영관리</h5>
+                <ul class="bu type2">
+                  <li>- 링크드인 기업페이지/자사홈페이지 media 부문 관리</li>
+                  <li>- 자사홈페이지 콘텐츠 기획 및 개발</li>
+                </ul>
+
+                <h5>4. 대내/외 커뮤니케이션</h5>
+                <ul class="bu type2">
+                  <li>- 외부기관 소통</li>
+                  <li>- 미디어 동향분석 보고</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+
+                <h5>5. 위기관리</h5>
+                <p class="bu type2">- 부정이슈 사전감지 및 실시간 응대</p>
+
+                <h4>3.자격요건</h4>
+                <ul class="bu type1">
+                  <li>1. 기업 홍보 경력 3년 이상</li>
+                  <li>2. 해외출장에 결격 사유가 없는 자</li>
+                </ul>
+
+                <h4>4.우대사항</h4>
+                <ul class="bu">
+                  <li>1. 지주사 기업홍보 경력자</li>
+                  <li>
+                    2. MS Office 문서 활용 및 경영진 대상 보고문서 작성 능력
+                    우수자
+                  </li>
+                  <li>3. 영어 사용이 원활한 자(writing/speaking)</li>
+                  <li>4. 소비재 혹은 물류 관련 현업 경험자</li>
+                </ul>
+
+                <p>
+                  입사지원서는 아래 이메일 주소로 접수 바랍니다.<br />
+                  <a href="#n" class="em-brand" target="_blank" title="새창"
+                    >hr@mistobrand.com</a
+                  >
+                </p>
+              </div>
+
+              <div class="bottom-btn" id="fixed-anchor">
+                <a href="#n" class="btn large">목록보기</a>
+              </div>
+            </div>
+            <!-- column 끝-->
+          </div>
+        </div>
+        <script>
+          var $anchorGroup = $(".anchor-group"),
+            $anchorBox = $anchorGroup.find(".sticky"),
+            $conBox = $anchorGroup.find(".con-box"),
+            $eachCon = $conBox.find(".con-wrap"),
+            $fixedBtn = $anchorGroup.find("#fixed-btn"),
+            $fixedAnchor = $anchorGroup.find("#fixed-anchor");
+
+          $(window).on("scroll", function () {
+            var winScrollTop = $(window).scrollTop(),
+              anchorOffsetTop = $anchorGroup.offset().top - 20;
+            if (winScrollTop >= anchorOffsetTop) {
+              $anchorGroup.attr("data-anchor", "fixed");
+            } else {
+              $anchorGroup.attr("data-anchor", "absolute");
+            }
+            if ($(window).outerWidth() <= 800) {
+              if (
+                winScrollTop + $(window).outerHeight() >
+                $fixedAnchor.offset().top
+              ) {
+                $fixedBtn.addClass("fade");
+              } else {
+                $fixedBtn.removeClass("fade");
+              }
+            }
+          });
+        </script>
+      </div>
+      <footer class="footer">@@include('./include/footer.html')</footer>
+    </div>
+  </body>
+</html>

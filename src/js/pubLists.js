@@ -1279,7 +1279,7 @@ var PubLists = [
       },
       {
         id: "F_ESG_01_02_00_00",
-        breadcrumb: "Sustainability > ESG Highlights > Environment",
+        breadcrumb: "지속가능경영 > ESG Highlights > Environment",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
@@ -1291,67 +1291,28 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "F_ESG_01_01_02_00",
-        breadcrumb: "Sustainability > ESG Highlights > Social",
+        id: "F_ESG_01_03_00_00",
+        breadcrumb: "지속가능경영 > 지속가능경영보고서",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/ESG_01_03_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-ESG-01-03-00-00",
-        breadcrumb: "Sustainability > ESG Highlights > Governance",
+        id: "F_ESG_01_04_00_00",
+        breadcrumb: "지속가능경영 > ESG 정책 ",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "F-ESG-01-04-00-00",
-        breadcrumb: "Sustainability > ESG 평가정보",
-        type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "F-ESG-01-04-00-00",
-        breadcrumb: "Sustainability > 지속가능경영보고서",
-        type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
-        completeDate: "2025-01-00",
-        etc: [""],
-      },
-      {
-        id: "F-ESG-01-04-00-00",
-        breadcrumb: "Sustainability > ESG 정책 ",
-        type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
-        designDate: "2025-01-00",
-        designAnchor: "",
-        address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/ESG_01_04_00_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1397,20 +1358,20 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "F_CAR_01_03_00_00",
+        id: "F_CAR_01_03_02_00",
         breadcrumb: "Careers > 채용공고",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/CAR_01_03_02_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F_CAR_01_03_01_00",
+        id: "F_CAR_01_03_00_00",
         breadcrumb: "Careers > 채용공고 > 채용 공고",
         type: "TAB",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
@@ -1436,15 +1397,15 @@ var PubLists = [
         etc: [""],
       },
       {
-        id: "F_CAR_01_03_02_00",
+        id: "F_CAR_01_03_03_00",
         breadcrumb: "Careers > 채용공고 > 상시 인력풀",
         type: "TAB",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/CAR_01_03_03_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
