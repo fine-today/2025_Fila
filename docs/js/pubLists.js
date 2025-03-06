@@ -974,7 +974,7 @@ var PubLists = [
         etc: [""],
       },
       /*=============== Misto ===============*/
-      {
+      /*{
         id: "F_ABO_01_00_00_00",
         breadcrumb: "Misto",
         type: "page",
@@ -1025,9 +1025,9 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       /*=============== Investors ===============*/
-      {
+      /*{
         id: "F_INV_01_00_00_00",
         breadcrumb: "Investors",
         type: "page",
@@ -1052,7 +1052,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_INV_01_01_01_00",
         breadcrumb: "Investors > 재무정보 > 연결 재무상태표",
@@ -1092,7 +1092,7 @@ var PubLists = [
         completeDate: "2025-02-24",
         etc: [""],
       },
-      {
+      /*{
         id: "F_INV_01_03_00_00",
         breadcrumb: "Investors > 주주총회",
         type: "page",
@@ -1130,7 +1130,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["IA 없음"],
-      },
+      },*/
       {
         id: "F_INV_01_04_00_00",
         breadcrumb: "Investors > 주주환원",
@@ -1144,7 +1144,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F_INV_01_05_00_00",
         breadcrumb: "Investors > IR자료",
         type: "page",
@@ -1221,7 +1221,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_INV_01_06_00_00",
         breadcrumb: "Investors > 기업지배구조",
@@ -1251,7 +1251,7 @@ var PubLists = [
       },*/
 
       /*=============== Sustainability ===============*/
-      {
+      /*{
         id: "F_ESG_01_00_00_00",
         breadcrumb: "Sustainability",
         type: "page",
@@ -1263,7 +1263,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_ESG_01_01_00_00",
         breadcrumb: "Sustainability > ESG Highlights",
@@ -1318,7 +1318,7 @@ var PubLists = [
       },
 
       /*=============== Careers ===============*/
-      {
+      /*  {
         id: "F_CAR_01_00_00_00",
         breadcrumb: "Careers",
         type: "page",
@@ -1356,7 +1356,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_CAR_01_03_02_00",
         breadcrumb: "Careers > 채용공고",
@@ -1370,7 +1370,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F_CAR_01_03_00_00",
         breadcrumb: "Careers > 채용공고 > 채용 공고",
         type: "TAB",
@@ -1382,7 +1382,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "CAR_01_03_02_01",
         breadcrumb: "Careers > 채용공고 > 채용 공고 > 채용공고 상세",
@@ -1411,7 +1411,7 @@ var PubLists = [
       },
 
       /*=============== Newsroom ===============*/
-      {
+      /*{
         id: "F_MED_01_00_00_00",
         breadcrumb: "Newsroom",
         type: "page",
@@ -1423,7 +1423,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_MED_01_01_00_00",
         breadcrumb: "Newsroom > 보도자료",
@@ -1437,7 +1437,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F_MED_01_01_01_00",
         breadcrumb: "Newsroom > 보도자료 > 전체",
         type: "TAB",
@@ -1501,7 +1501,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_MED_01_01_01_01",
         breadcrumb: "Newsroom > 보도자료 > [Sorting] 연도 > 보도자료 상세",
@@ -1528,7 +1528,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F_MED_01_02_01_00",
         breadcrumb: "Newsroom > 아카이브 > 전체",
         type: "TAB",
@@ -1553,7 +1553,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_MED_01_02_02_01",
         breadcrumb: "Newsroom > 아카이브 > 영상 > 아카이브 상세 (영상)",
@@ -1567,7 +1567,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F_MED_01_02_03_00",
         breadcrumb: "Newsroom > 아카이브 > 이미지",
         type: "TAB",
@@ -1579,7 +1579,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_MED_01_02_03_01",
         breadcrumb: "Newsroom > 아카이브 > 이미지 > 아카이브 상세 (이미지)",
@@ -1593,7 +1593,7 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F_MED_01_02_04_01",
         breadcrumb: "Newsroom > 아카이브 > 검색",
         type: "TAB",
@@ -1618,10 +1618,10 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
 
       /*=============== Contact ===============*/
-      {
+      /*{
         id: "F_CTT_01_00_00_00",
         breadcrumb: "Contact",
         type: "page",
@@ -1646,7 +1646,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_CTT_01_02_00_00",
         breadcrumb: "Contact > 오시는길",
