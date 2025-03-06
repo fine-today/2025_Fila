@@ -99,7 +99,8 @@ p.type2,
   }
   @include xs {
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
+    padding-bottom: 10px;
     gap: 5px;
   }
 }
@@ -360,7 +361,7 @@ a.btn {
   padding: 25px;
   border-radius: 10px;
   p.bu {
-    color: #a0a2a8;
+    color: #70737c;
     padding-left: 11px;
     position: relative;
     font-size: 14px;
@@ -386,7 +387,7 @@ a.btn {
     flex-direction: column;
     gap: 5px;
     > li {
-      color: #a0a2a8;
+      color: #70737c;
       padding-left: 11px;
       position: relative;
       font-size: 14px;
@@ -687,7 +688,7 @@ p.blt.type3:before {
   position: relative;
   text-align: right;
   color: #a0a2a8;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   .title {
@@ -704,6 +705,9 @@ p.blt.type3:before {
   }
   .con {
   }
+  @include xs {
+    font-size: 15px;
+  }
 }
 .heading-line + .table-wrap {
   border-top: 0;
@@ -711,12 +715,20 @@ p.blt.type3:before {
 .table-wrap {
   border-top: 2px solid #000;
   margin-bottom: 23px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &[data-break="xs"] {
     max-width: 100%;
     position: relative;
     overflow-x: auto;
     width: calc(100vw - 40px);
     @include xs {
+      max-width: calc(100% + 20px);
+      width: calc(100vw - 20px);
+      margin-right: -20px;
+      border-top: 2px solid var(--c-black);
+      margin-top: -2px;
       .table {
         min-width: 800px;
         width: 100%;

@@ -168,10 +168,12 @@
 }
 @include md {
   .header {
+    height: 74px;
+    border-top: 4px solid var(--c-brand);
     h1.logo {
       z-index: 50;
       position: absolute;
-      height: 9rem;
+      height: 70px;
       left: 40px;
       a {
         display: inline-flex;
@@ -195,7 +197,7 @@
           font-size: 18px;
           line-height: 1.6;
           font-weight: 600;
-          color: #70737c;
+          color: var(--c-black);
           &:not(:last-child)::after {
             display: inline-block;
             width: 1px;
@@ -204,7 +206,7 @@
             margin: 0 10px;
           }
           &.active {
-            color: var(--c-black);
+            color: var(--c-brand);
           }
         }
       }
@@ -248,7 +250,7 @@
       &.all-close {
         .depth1-item {
           .depth1-anchor {
-            color: #70737c;
+            color: var(--c-black);
           }
         }
       }
@@ -274,7 +276,7 @@
           font-size: 32px;
           line-height: 1.4;
           font-weight: 600;
-          color: #70737c;
+          color: #bfbfc7;
           transition: all 0.2s;
         }
         &.active {
@@ -282,7 +284,7 @@
             color: var(--c-brand);
           }
         }
-        &.actived {
+        /*&.actived {
           .depth1-anchor {
             color: var(--c-brand);
           }
@@ -292,7 +294,7 @@
           .depth2-item {
             display: flex;
           }
-        }
+        }*/
       }
       .depth2-item {
         gap: 10px;
@@ -317,10 +319,10 @@
 @include sm {
   .header {
     h1.logo {
-      left: 25px;
+      left: 20px;
     }
     .menu-btn {
-      right: 25px;
+      right: 20px;
     }
   }
 }

@@ -45,7 +45,7 @@ $(function () {
           id: "0-3",
           title: "브랜드",
           anchor: "#n",
-          active: true,
+          active: false,
         },
       ],
     },
@@ -341,9 +341,9 @@ $(function () {
         }
       });
       if (openFlag) {
-        $menu.addClass("all-close");
-      } else {
         $menu.removeClass("all-close");
+      } else {
+        $menu.addClass("all-close");
       }
     }
   });
@@ -393,6 +393,17 @@ $(function () {
       $this.removeAttr("title");
       $this.find("i").html($openIcon);
     }
+    var openFlag = false;
+    $("#menu .depth-item").each(function () {
+      if ($(this).hasClass("active")) {
+        openFlag = true;
+      }
+      if (openFlag) {
+        $menu.removeClass("all-close");
+      } else {
+        $menu.addClass("all-close");
+      }
+    });
   });
 
   //logo focus 문제해결

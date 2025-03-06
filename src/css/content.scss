@@ -1,5 +1,7 @@
 @use "./_mixin" as *;
 
+[data-page="INV_01_01_01_00"] {
+}
 [data-page="INV_01_02_00_00"] {
   .table-unit {
     color: #a0a2a8;
@@ -78,6 +80,16 @@
               display: flex;
               flex: 1;
               overflow: auto;
+              &::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+              }
+              &::-webkit-scrollbar-thumb {
+                background-color: #ddd;
+              }
+              &::-webkit-scrollbar-track {
+                background-color: #f2f2f2;
+              }
               &[data-vehavior="scroll"] {
                 mask-image: linear-gradient(
                   to right,
@@ -90,6 +102,9 @@
                 gap: 10px;
                 flex-wrap: nowrap;
               }
+            }
+            .input {
+              min-width: 0;
             }
             .date-wrap {
               display: flex;
@@ -104,6 +119,8 @@
                 line-height: 1.6;
                 font-weight: 600;
                 word-break: keep-all;
+                width: auto;
+                border: 0;
                 input {
                   font-size: inherit;
                   line-height: inherit;
@@ -151,21 +168,21 @@
   @include lg {
     .sheet-box {
       .sheet-body-wrap {
-        width: calc(100vw - 200px);
+        width: 100%;
       }
     }
   }
   @include md {
     .sheet-box {
       .sheet-body-wrap {
-        width: calc(100vw - 80px);
+        width: 100%;
       }
     }
   }
   @include sm {
     .sheet-box {
       .sheet-body-wrap {
-        width: calc(100vw - 40px);
+        width: calc(100vw - 60px);
       }
     }
   }
@@ -409,6 +426,11 @@
 [data-page="INV_01_05_00_00"] {
   .accordion-box {
     .accordion {
+      &:first-child {
+        .accordion-btn-wrap {
+          border-top: 2px solid #000;
+        }
+      }
       .accordion-con {
         .h5 {
           margin-top: 10px;
@@ -459,6 +481,9 @@
         .down-list {
         }
         .down-item {
+          &:hover .down-anchor {
+            border-color: var(--c-brand);
+          }
           .down-anchor {
             .down-title {
             }
@@ -2141,6 +2166,14 @@
           }
         }
       }
+    }
+  }
+}
+
+[data-page="INV_01_04_00_00"] {
+  @include xs {
+    .heading-line {
+      flex-direction: column;
     }
   }
 }
