@@ -102,28 +102,13 @@ $(function () {
   });
 
   //box
-  const setCardTitle = () => {
-    $(".card-wrap").each(function () {
-      var $this = $(this),
-        thisTitleWidth = $this.attr("data-title-width"),
-        thisMobileWidth = $this.attr("data-mobile-width"),
-        $thisList = $this.find(".card-list"),
-        $thisItem = $this.find(".card-item");
-      if (thisMobileWidth === undefined) {
-        thisMobileWidth = thisTitleWidth;
-      }
-      if ($window.outerWidth() > 800) {
-        $thisItem.find(".title").css("width", thisTitleWidth + "px");
-        $thisItem.find(".con").css("width", `calc(100% - ${thisTitleWidth}px`);
-      } else {
-        $thisItem.find(".title").css("width", thisMobileWidth + "px");
-        $thisItem.find(".con").css("width", `calc(100% - ${thisMobileWidth}px`);
-      }
-    });
-  };
-  setCardTitle();
-  $window.on("resize", function () {
-    setCardTitle();
+  $(".card-wrap").each(function () {
+    var $this = $(this),
+      thisTitleWidth = $this.attr("data-title-width"),
+      $thisList = $this.find(".card-list"),
+      $thisItem = $this.find(".card-item");
+    $thisItem.find(".title").css("width", thisTitleWidth + "px");
+    $thisItem.find(".con").css("width", `calc(100% - ${thisTitleWidth}px`);
   });
 
   /* accordion */

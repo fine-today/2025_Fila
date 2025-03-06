@@ -2602,6 +2602,7 @@ i.required {
   gap: 15px;
   position: relative;
   .limit {
+    display: none;
     position: absolute;
     right: 10px;
     bottom: 15px;
@@ -2689,8 +2690,8 @@ i.required {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(../images/service/sub/input-select-arrow.svg) no-repeat
-      center right 10px;
+    background: url(../images/service/sub/select-icon.svg) no-repeat center
+      right 10px;
     &::-ms-expand {
       display: none; /* 화살표 없애기 for IE10, 11*/
     }

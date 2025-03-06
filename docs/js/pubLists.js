@@ -193,10 +193,10 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/admin/A_MAI_03_02_00_00.html",
+        pubAddress: "",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: ["2/24 게시 언어 추가, en table 삭제"],
+        etc: ["2/24 게시 언어 추가, en table 삭제", "화면 삭제"],
       },
       {
         id: "A_MAI_03_03_00_00",
