@@ -717,6 +717,10 @@ p.blt.type3:before {
 }
 .heading-line + .table-wrap {
   border-top: 0;
+
+  @include xs {
+    margin-top: -32px;
+  }
 }
 .table-wrap {
   border-top: 2px solid #000;

@@ -1,6 +1,18 @@
 @use "./_mixin" as *;
 
 [data-page="INV_01_01_01_00"] {
+  @include xs {
+    .heading-line + .table-wrap {
+      margin-top: -32px;
+    }
+  }
+}
+[data-page="INV_01_01_02_00"] {
+  @include xs {
+    .heading-line + .table-wrap {
+      margin-top: -32px;
+    }
+  }
 }
 [data-page="INV_01_02_00_00"] {
   .table-unit {
@@ -188,6 +200,16 @@
     }
   }
   @include xs {
+    .heading-line {
+      border-bottom: 0;
+      margin-bottom: 15px;
+      padding-bottom: 0;
+    }
+    .heading-line:not(:first-child) {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 10px;
+    }
     .sheet-box {
       .heading-line .table-unit {
         display: none;
@@ -2439,6 +2461,9 @@
   @include xs {
     .heading-line {
       flex-direction: column;
+      & + .table-wrap {
+        margin-top: -32px;
+      }
     }
   }
 }
