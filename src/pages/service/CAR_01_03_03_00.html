@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr" class="main">
+<html lang="kr" class="sub">
   <head>
     @@include('./include/head.html',{'title':"채용공고"})
   </head>
@@ -46,35 +46,12 @@
               </div>
 
               <div class="heading-line">
-                <h3 class="h5">전체 N건</h3>
+                <h3 class="p">전체 N건</h3>
                 <span class="unit">
-                  <div class="select-box">
-                    <button
-                      type="button"
-                      title="하위메뉴 열기"
-                      class="search-select"
-                    >
-                      전체
-                    </button>
-                    <div class="search-list">
-                      <ul>
-                        <li class="select-item">
-                          <button type="button" class="select-anchor">
-                            셀렉트1
-                          </button>
-                        </li>
-                        <li class="select-item">
-                          <button type="button" class="select-anchor">
-                            셀렉트2
-                          </button>
-                        </li>
-                        <li class="select-item">
-                          <button type="button" class="select-anchor">
-                            셀렉트3
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="input">
+                    <select name="" id="">
+                      <option value="">전체</option>
+                    </select>
                   </div>
                 </span>
               </div>
@@ -168,7 +145,6 @@
                   </li>
                 </ul>
               </div>
-
               <div class="pagination">
                 @@include('./include/pagination.html')
               </div>

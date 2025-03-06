@@ -175,6 +175,9 @@
       position: absolute;
       height: 70px;
       left: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       a {
         display: inline-flex;
         align-items: center;

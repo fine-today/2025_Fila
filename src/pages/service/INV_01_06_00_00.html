@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr" class="main">
+<html lang="kr" class="sub">
   <head>
     <meta charset="UTF-8" />
     @@include('./include/head.html',{'title' : '기업지배구조'})
@@ -63,7 +63,7 @@
 
                 var options = {
                   tooltip: { isHtml: true },
-                  pieHole: 0.8,
+                  pieHole: 0.85,
                   pieSliceText: "none",
                   slices: {
                     0: { color: "#DC0014" },
@@ -85,7 +85,7 @@
                 if (mq.matches) {
                   var options = {
                     tooltip: { isHtml: true },
-                    pieHole: 0.8,
+                    pieHole: 0.87,
                     pieSliceText: "none",
                     slices: {
                       0: { color: "#DC0014" },
@@ -162,11 +162,11 @@
             </div>
           </div>
 
-          <div class="box">
+          <div class="box status-box">
             <h4 class="h5">5%이상 주주 현황</h4>
 
             <div class="table-wrap resize-colgroup">
-              <table>
+              <table class="vertical-top">
                 <caption>
                   5%이상 주주 현황 - 주주명, 주식수, 비율에 대한 정보 제공
                 </caption>
@@ -214,8 +214,8 @@
               }
             });
           </script>
-          <div class="heading-line">
-            <h3 class="h5">이사회 구성 현황</h3>
+          <div class="heading-line margin-b-40">
+            <h3 class="h4">이사회 구성 현황</h3>
           </div>
 
           <h4 class="h5">사내이사</h4>
@@ -285,7 +285,8 @@
               <h5>박상기</h5>
               <ul class="list">
                 <li>
-                  <span class="title">기간</span><span class="con">박상기</span>
+                  <span class="title">기간</span
+                  ><span class="con">2025.03 ~ 2027.03</span>
                 </li>
               </ul>
             </div>
@@ -303,7 +304,7 @@
               <ul class="list">
                 <li>
                   <span class="title">기간</span
-                  ><span class="con">2024.03 ~ 2027.03</span>
+                  ><span class="con">2025.03 ~ 2028.03</span>
                 </li>
               </ul>
             </div>
@@ -330,7 +331,7 @@
           </div>
 
           <div class="heading-line">
-            <h3 class="h5">이사회 역량 구성표</h3>
+            <h3 class="h4">이사회 역량 구성표</h3>
           </div>
 
           <div class="table-wrap" data-break="xs" data-width="760">
@@ -342,14 +343,20 @@
                 지속가능경영에 대한 정보 제공
               </caption>
               <colgroup>
-                <col style="width: 140px" />
-                <col span="7" />
+                <col style="width: 200px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+                <col style="width: 200px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
               </colgroup>
               <thead>
                 <tr>
                   <th scope="col"></th>
                   <th scope="col" colspan="3">사내이사</th>
-                  <th scope="col">사내이사</th>
+                  <th scope="col">기타 비상무이사</th>
                   <th scope="col" colspan="3">사외이사</th>
                 </tr>
                 <tr>
@@ -463,7 +470,7 @@
           </div>
 
           <div class="heading-line">
-            <h3 class="h5">2024년 이사회 운영 요약</h3>
+            <h3 class="h4">2024년 이사회 운영 요약</h3>
           </div>
 
           <div class="card-wrap type2" data-column="4">
@@ -505,11 +512,11 @@
           </div>
 
           <div class="heading-line">
-            <h3 class="h5">2024년 이사회 운영 현황</h3>
+            <h3 class="h4">2024년 이사회 운영 현황</h3>
           </div>
 
           <div class="table-wrap" data-break="xs" data-width="760">
-            <table class="table align-center">
+            <table class="table align-center vertical-top">
               <caption>
                 2024년 이사회 운영 현황 - 회차, 의안내용, 개최일자, 가결여부에
                 대한 정보 제공
@@ -714,7 +721,7 @@
           </div>
 
           <div class="heading-line">
-            <h3 class="h5">기업지배구조 자료</h3>
+            <h3 class="h4">기업지배구조 자료</h3>
           </div>
 
           <div class="card-wrap type2 down-list">

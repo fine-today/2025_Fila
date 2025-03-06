@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="kr" class="main">
+<html lang="kr" class="sub">
   <head>
-    @@include('./include/head.html')
+    @@include('./include/head.html',{'title':'공시정보'})
   </head>
   <body>
     <div class="accessibility">
@@ -96,6 +96,14 @@
                           <input type="radio" id="radio1-6" name="radio1" />
                           <label for="radio1-6">10년</label>
                         </span>
+                        <span class="input btn">
+                          <input type="radio" id="radio1-7" name="radio1" />
+                          <label for="radio1-7">20년 전~10년 전</label>
+                        </span>
+                        <span class="input btn">
+                          <input type="radio" id="radio1-8" name="radio1" />
+                          <label for="radio1-8">DART개시~20년 전</label>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -141,11 +149,11 @@
                         </span>
                         <span class="input btn">
                           <input type="checkbox" id="check1-10" name="check1" />
-                          <label for="check1-10">발행공시</label>
+                          <label for="check1-10">거래소공시</label>
                         </span>
                         <span class="input btn">
                           <input type="checkbox" id="check1-11" name="check1" />
-                          <label for="check1-11">발행공시</label>
+                          <label for="check1-11">공정위공시</label>
                         </span>
                       </div>
                     </div>
@@ -153,7 +161,7 @@
                 </div>
                 <div class="body-bottom-wrap">
                   <button type="button" class="close btn">닫기</button>
-                  <button type="button" class="btn type2">조건 검색</button>
+                  <button type="button" class="btn type2">조건검색</button>
                 </div>
               </div>
             </div>
@@ -251,7 +259,9 @@
             <div class="warning-box">
               <p class="bu">
                 본 자료는 금융감독원 전자공시시스템
-                <a>(https://dart.fss.or.kr)</a>의 검색결과입니다.
+                <a href="#n" target="_blank" title="새창"
+                  >(https://dart.fss.or.kr)</a
+                >의 검색결과입니다.
               </p>
             </div>
             <div class="pagination">@@include('./include/pagination.html')</div>
@@ -354,6 +364,8 @@
           $bodyBtn.removeClass("active").removeAttr("title");
           $thisBodyBtn.addClass("active").attr("title", "열림");
 
+          $(".header").css("zIndex", "10");
+
           if (!activeFlag) {
             // position-animation
             setTimeout(() => {
@@ -372,6 +384,7 @@
             $sheetCon.removeClass("active").removeAttr("title");
             $bodyBtn.removeClass("active").removeAttr("title");
             // position-animation
+            $(".header").removeAttr("style");
             setTimeout(() => {
               $sheetBody.attr("data-delay", "delay");
               setTimeout(() => {

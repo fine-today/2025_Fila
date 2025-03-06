@@ -947,7 +947,7 @@ var PubLists = [
     category: "KOR",
     title: "사용자(KOR)",
     elem: [
-      {
+      /*{
         id: "-",
         breadcrumb: " 가이드",
         type: "page",
@@ -956,10 +956,10 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/guide.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_MAI_01_00_00_00",
         breadcrumb: "MAIN",
@@ -1231,7 +1231,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/INV_01_06_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["다운로드 : 정관, 공시정보관리지침, 기업지배구조헌장"],
       },
@@ -1273,7 +1273,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/ESG_01_01_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1286,7 +1286,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/ESG_01_02_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1299,7 +1299,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/ESG_01_03_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1312,7 +1312,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/ESG_01_04_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1366,7 +1366,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/CAR_01_03_02_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1392,7 +1392,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/CAR_01_03_02_01.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1405,7 +1405,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/CAR_01_03_03_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1459,7 +1459,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1511,7 +1511,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/MED_01_01_01_01.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1524,7 +1524,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/MED_01_02_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1563,7 +1563,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/MED_01_02_02_01.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1589,7 +1589,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/MED_01_02_03_01.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1656,7 +1656,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/CTT_01_02_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
