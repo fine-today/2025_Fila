@@ -964,7 +964,7 @@ var PubLists = [
         id: "F_MAI_01_00_00_00",
         breadcrumb: "MAIN",
         type: "page",
-        design: "완료", //"대기 | 진행중 | 완료 | 없음"
+        design: "진행중", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
@@ -999,17 +999,17 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_ABO_01_02_00_00",
         breadcrumb: "Misto > 연혁",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/ABO_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1017,15 +1017,15 @@ var PubLists = [
         id: "F_COM_01_03_00_00",
         breadcrumb: "Misto > 브랜드",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/COM_01_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
       /*=============== Investors ===============*/
       /*{
         id: "F_INV_01_00_00_00",
@@ -1330,17 +1330,17 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_CAR_01_01_00_00",
         breadcrumb: "Careers > 문화",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "진행중", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/CAR_01_01_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1348,15 +1348,15 @@ var PubLists = [
         id: "F_CAR_01_02_00_00",
         breadcrumb: "Careers > 인사제도와 복지",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/CAR_01_02_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
       {
         id: "F_CAR_01_03_02_00",
         breadcrumb: "Careers > 채용공고",

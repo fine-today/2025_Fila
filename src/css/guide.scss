@@ -1066,7 +1066,7 @@ html.popup-open body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 500;
+  z-index: 1000;
   text-align: center;
   .dim {
     position: absolute;
@@ -1147,6 +1147,17 @@ html.popup-open body {
   &.archive-pop {
     background-color: var(--c-white);
     padding: 40px 0;
+    &::after {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--c-brand);
+    }
+
     .dim {
       position: absolute;
       width: 24px;
@@ -1168,6 +1179,8 @@ html.popup-open body {
       width: 100%;
       height: 100%;
       padding: 0;
+      max-width: none;
+      position: relative;
       .pop-slide-wrap {
         height: 100%;
       }
@@ -1202,9 +1215,56 @@ html.popup-open body {
         a {
         }
       }
+      .pop-ctrl {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        .arrow-wrap {
+        }
+        .arrow {
+          font-size: 0;
+          line-height: 0;
+          border: 0;
+          background-color: transparent;
+          width: 30px;
+          height: 30px;
+          &.prev {
+            position: absolute;
+            right: 30vw;
+            background: url(../images/service/sub/prev-icon.svg) no-repeat
+              center center;
+          }
+          &.next {
+            position: absolute;
+            left: 30vw;
+            background: url(../images/service/sub/next-icon.svg) no-repeat
+              center center;
+          }
+        }
+      }
+      .pop-close {
+        display: none;
+      }
     }
-    .pop-close {
-      display: none;
+    @include xs {
+      .pop-wrap {
+        .pop-ctrl {
+          left: 0;
+        }
+        .pop-ctrl {
+          width: 100%;
+          .arrow {
+            &.prev {
+              left: 10px;
+              right: auto;
+            }
+            &.next {
+              right: 10px;
+              left: auto;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -2224,6 +2284,74 @@ html.popup-open body {
       background-size: 24px 24px;
     }
     span {
+    }
+  }
+}
+
+/* search pop */
+.search-pop {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  border-top: 4px solid var(--c-brand);
+  &.active {
+    display: block;
+  }
+  .placeholder {
+    display: none;
+  }
+  .search-pop-wrap {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .input {
+    position: relative;
+    height: 27px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    width: 100%;
+    gap: 20px;
+    input {
+      flex: 1;
+      height: 27px;
+      font-size: 15px;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+    .search-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../images/service/sub/search-icon.svg) no-repeat center
+        center;
+      background-size: 20px 20px;
+    }
+    .delete {
+      border: 0;
+      width: 20px;
+      height: 20px;
+      background: url(../images/service/sub/delete-circle.svg) no-repeat center
+        center;
+      background-size: 20px 20px;
+    }
+    &[data-delete="true"] {
+      .delete {
+        display: block;
+      }
+    }
+    &[data-delete="false"] {
+      .delete {
+        display: none;
+      }
     }
   }
 }

@@ -316,6 +316,15 @@ $(function () {
     }
   });
 
+  // scroll event
+  $window.on("scroll", function () {
+    if ($window.scrollTop() > 10) {
+      $(".header").addClass("scroll");
+    } else {
+      $(".header").removeClass("scroll");
+    }
+  });
+
   // 반응형 클릭 설정
   $document.on("click", "#menu .depth-anchor", function (e) {
     var $this = $(this),
@@ -407,7 +416,7 @@ $(function () {
   });
 
   //logo focus 문제해결
-  $(".header > .logo").on("focusin", function () {
+  $(".header  h1.logo").on("focusin", function () {
     $(".depth1 .logo > a").attr("tab-index", 0).focus();
   });
   $document.on("keydown", function (e) {

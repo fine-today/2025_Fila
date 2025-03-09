@@ -33,7 +33,7 @@
               <span class="input search">
                 <input type="text" placeholder="보도자료 검색하기" />
               </span>
-              <button type="button" class="search-btn"></button>
+              <button type="button" class="search-btn">검색하기</button>
               <div class="select-box">
                 <button
                   type="button"
@@ -219,5 +219,11 @@
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
     </div>
+    <script>
+      $(".search-btn").on("click", function () {
+        $(".search-pop").addClass("active");
+      });
+    </script>
+    @@include('./include/search-pop.html',{'placeholder':'보도자료 검색하기'})
   </body>
 </html>

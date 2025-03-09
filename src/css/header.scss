@@ -1,11 +1,27 @@
 @use "./_mixin" as *;
 
 .header {
+  top: 0;
   grid-area: header;
-  position: relative;
+  position: fixed;
   z-index: 110;
   height: 100px;
-  background-color: #fff;
+  width: 100%;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--c-brand);
+    z-index: 10;
+  }
+  .header-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
   .menu-wrap {
     position: absolute;
     padding: 0 100px;
@@ -33,7 +49,16 @@
 }
 @include only-lg {
   .header {
-    > .logo {
+    &.scroll {
+      .header-wrap {
+        transform: translateY(-100%);
+      }
+    }
+    .header-wrap {
+      transition: transform 0.5s;
+      transform: translateY(0);
+    }
+    h1.logo {
       position: absolute;
       width: 0;
       height: 0;
@@ -169,7 +194,9 @@
 @include md {
   .header {
     height: 74px;
-    border-top: 4px solid var(--c-brand);
+    .header-wrap {
+      margin-top: 4px;
+    }
     h1.logo {
       z-index: 50;
       position: absolute;

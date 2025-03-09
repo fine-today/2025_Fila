@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="kr" class="sub">
+  <head>
+    @@include('./include/head.html',{'title':"지속가능경영"})
+  </head>
+  <body>
+    <div class="accessibility">
+      <a href="#content">본문 바로가기</a>
+    </div>
+    <div id="container" data-page="ABO_01_01_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content" class="content">
+        <div class="wrap">
+          <div class="content-header">
+            <h2 class="header-title">연혁</h2>
+            <p class="sub-title">
+              미스토의 시작부터 현재까지, 끊임없이 이어온 도전과 혁신의 발자취를
+              담았습니다.
+            </p>
+            <div class="banner">
+              <p class="text"></p>
+            </div>
+          </div>
+
+          <div class="anchor-group">
+            <section class="anchor-box">
+              <ul class="anchor-list">
+                <li class="anchor-item">
+                  <button type="button" class="anchor-btn" data-anchor="con1">
+                    2025~2020
+                  </button>
+                </li>
+                <li class="anchor-item">
+                  <button type="button" class="anchor-btn" data-anchor="con2">
+                    2019~2008
+                  </button>
+                </li>
+                <li class="anchor-item">
+                  <button type="button" class="anchor-btn" data-anchor="con3">
+                    2007~1911
+                  </button>
+                </li>
+              </ul>
+            </section>
+
+            <section class="con-box">
+              <article class="con-wrap" id="con1">
+                <h3>2025~2020</h3>
+                <div class="con-img"></div>
+
+                <div class="con-list-wrap">
+                  <ul class="con-list">
+                    <li class="con-item">
+                      <h4>2025</h4>
+                      <p>미스토홀딩스(Misto Holdings Corp.)로 사명 변경</p>
+                    </li>
+                    <li class="con-item">
+                      <h4>2024</h4>
+                      <p>글로벌 ESG지수 'FTSE4Good' 최초 편입</p>
+                    </li>
+                    <li class="con-item">
+                      <h4>2023</h4>
+                      <ul class="list">
+                        <li>
+                          - 중국 미스토 홍콩 설립, Licensing/Distribution
+                          사업영역 확장
+                        </li>
+                        <li>
+                          - 국내 패션 업계 최초 글로벌 ESG 평가기관
+                          Sustainalytics 아시아·태평양 지역 섬유 및 의류 기업 중
+                          우수 기업(Top-Rated Company) 선정
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="con-item">
+                      <h4>2020</h4>
+                      <p>
+                        휠라홀딩스(현 미스토홀딩스)로 사명 변경 및 지주회사 전환
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="con-wrap" id="con2">
+                <h3>2019~2008</h3>
+                <div class="con-img"></div>
+
+                <div class="con-list-wrap">
+                  <ul class="con-list">
+                    <li class="con-item">
+                      <h4>2016</h4>
+                      <p>
+                        아쿠쉬네트 홀딩스 뉴욕 증권거래소 상장 (Ticker : GOLF),
+                        휠라 그룹 자회사로 편입
+                      </p>
+                    </li>
+                    <li class="con-item">
+                      <h4>2011</h4>
+                      <p>
+                        골프용품 전문기업 아쿠쉬네트 홀딩스 (Acushnet Holdings
+                        Corp.) 인수
+                      </p>
+                    </li>
+                    <li class="con-item">
+                      <h4>2010</h4>
+                      <p>
+                        휠라코리아(현 미스토홀딩스) 한국거래소 유가증권시장 상장
+                        (종목코드 : 081660)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="con-wrap" id="con3">
+                <h3>2007~1911</h3>
+                <div class="con-img"></div>
+
+                <div class="con-list-wrap">
+                  <ul class="con-list">
+                    <li class="con-item">
+                      <h4>2007</h4>
+                      <p>휠라 글로벌 브랜드 인수</p>
+                    </li>
+                    <li class="con-item">
+                      <h4>2005</h4>
+                      <p>
+                        휠라코리아(현 미스토홀딩스) MBO(Management Buyout)통해
+                        휠라 글로벌로부터 독립 운영
+                      </p>
+                    </li>
+                    <li class="con-item">
+                      <h4>1991</h4>
+                      <p>휠라코리아(FILA KOREA) 설립</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="con-img img2"></div>
+
+                <div class="con-list-wrap">
+                  <ul class="con-list">
+                    <li class="con-item">
+                      <h4>1911</h4>
+                      <p>이탈리아 비엘라(Biella)에서 브랜드 탄생</p>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </section>
+
+            <script>
+              var $anchorUI = $(".anchor-group"),
+                $anchorBox = $anchorUI.find(".anchor-box"),
+                $anchorBtn = $anchorBox.find(".anchor-btn"),
+                $conBox = $anchorUI.find(".con-box"),
+                $eachCon = $conBox.find(".con-wrap");
+
+              $anchorBox.find(".anchor-item:first-child").addClass("active");
+              $(window).on("scroll", function () {
+                var winScrollTop = $(window).scrollTop(),
+                  anchorOffsetTop = $anchorUI.offset().top;
+                if (winScrollTop >= anchorOffsetTop) {
+                  $anchorUI.attr("data-anchor", "fixed");
+                  $anchorBtn
+                    .removeAttr("title")
+                    .closest(".anchor-item")
+                    .removeClass("active");
+                  $eachCon.each(function () {
+                    var $this = $(this),
+                      thisTop = $this.offset().top,
+                      thisBottom = thisTop + $this.height();
+                    if (winScrollTop >= thisTop && winScrollTop < thisBottom) {
+                      $anchorBox
+                        .find(`.anchor-btn[data-anchor="${$this.attr("id")}"]`)
+                        .attr("title", "활성화")
+                        .closest(".anchor-item")
+                        .addClass("active");
+                    }
+                  });
+                } else {
+                  $anchorUI.attr("data-anchor", "absolute");
+                  $anchorBtn
+                    .removeAttr("title")
+                    .closest(".anchor-item")
+                    .removeClass("active");
+                  $anchorBox
+                    .find(".anchor-item:first-child")
+                    .addClass("active");
+                }
+              });
+              $anchorBtn.on("click", function () {
+                var $this = $(this),
+                  thisAnchor = $this.attr("data-anchor"),
+                  $thisCon = $(`#${thisAnchor}`);
+
+                $("html,body").animate(
+                  {
+                    scrollTop: $thisCon.offset().top + 1,
+                  },
+                  {
+                    duration: 350,
+                    easing: "easeOutExpo",
+                  }
+                );
+                event.preventDefault();
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">@@include('./include/footer.html')</footer>
+    </div>
+  </body>
+</html>
