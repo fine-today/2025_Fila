@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="kr" class="sub">
+  <head>
+    <meta charset="UTF-8" />
+    @@include('./include/head.html',{'title' : '기업지배구조'})
+  </head>
+  <body>
+    <div class="accessibility">
+      <a href="#content">본문 바로가기</a>
+    </div>
+    <div id="container" data-page="INV_01_06_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content" class="content">
+        <div class="wrap">
+          <div class="content-header">
+            <h2 class="header-title">기업지배구조</h2>
+          </div>
+          <div class="heading-line">
+            <h3 class="h4">주주현황</h3>
+            <span class="date"> 2024.12.31 기준 </span>
+          </div>
+
+          <div class="chart-box box">
+            <div class="title-box">
+              <h4 class="h5">주주구성</h4>
+              <p>상기 주주현황은 2024년 4분기말 기준</p>
+            </div>
+            <script
+              type="text/javascript"
+              src="https://www.gstatic.com/charts/loader.js"
+            ></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              var chart;
+              // tooltip
+              function setChartOption(stockCount) {
+                return `<div class="chart-tooltip" style="border:1px solid #000;padding:10px 15px;box-shadow:none;">
+                                        <span style="white-space:pre;font-size:14px;line-height:1.5;font-weight:400;">${stockCount}</span>
+                                      </div>`;
+              }
+              function drawChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn("string", "총 발행 주식 수");
+                data.addColumn("number", 100);
+                // A column for custom tooltip content
+                data.addColumn({
+                  type: "string",
+                  role: "tooltip",
+                  p: { html: true },
+                });
+                data.addRows([
+                  [
+                    "최대주주 및 특관자",
+                    35.9,
+                    setChartOption("최대주주 및 특관자 35.9%"),
+                  ],
+                  ["외국인", 42.4, setChartOption("외국인 42.4%")],
+                  ["국내기관", 12.7, setChartOption("국내기관 12.7%")],
+                  ["국내개인", 5.8, setChartOption("국내개인 5.8%")],
+                  ["자사주", 3.1, setChartOption("자사주 3.1%")],
+                ]);
+
+                var options = {
+                  tooltip: { isHtml: true },
+                  pieHole: 0.85,
+                  pieSliceText: "none",
+                  slices: {
+                    0: { color: "#DC0014" },
+                    1: { color: "#ea6672" },
+                    2: { color: "#f5b3b9" },
+                    3: { color: "#fce6e8" },
+                    4: { color: "#fdf2f3" },
+                  },
+                  chartArea: { width: "260px", height: "260px" },
+                  pieSliceBorder: "",
+                  pieSliceBorderColor: "#fff",
+                  legend: "none",
+                  animation: {
+                    duration: 1000,
+                    easing: "out",
+                  },
+                };
+                var mq = window.matchMedia("(max-width: 800px)");
+                if (mq.matches) {
+                  var options = {
+                    tooltip: { isHtml: true },
+                    pieHole: 0.87,
+                    pieSliceText: "none",
+                    slices: {
+                      0: { color: "#DC0014" },
+                      1: { color: "#ea6672" },
+                      2: { color: "#f5b3b9" },
+                      3: { color: "#fce6e8" },
+                      4: { color: "#fdf2f3" },
+                    },
+                    chartArea: { width: "220px", height: "220px" },
+                    pieSliceBorderColor: "#fff",
+                    legend: "none",
+                  };
+                }
+
+                chart = new google.visualization.PieChart(
+                  document.getElementById("chart")
+                );
+                chart.draw(data, options);
+              }
+              function highlightSlice(index) {
+                console.log("click");
+                chart.setSelection([{ row: index }]);
+              }
+            </script>
+
+            <div class="chart">
+              <div class="chart-title-wrap">
+                <h3>총 발행 주식 수</h3>
+                <p class="sub">60,095,839주</p>
+              </div>
+              <div id="chart"></div>
+              <div class="custom-legend">
+                <div
+                  class="legend-item"
+                  onclick="highlightSlice(0)"
+                  data-index="0"
+                >
+                  <div class="legend-color"></div>
+                  최대주주 및 특관자 35.9%
+                </div>
+                <div
+                  class="legend-item"
+                  onclick="highlightSlice(1)"
+                  data-index="1"
+                >
+                  <div class="legend-color"></div>
+                  외국인 42.4%
+                </div>
+                <div
+                  class="legend-item"
+                  onclick="highlightSlice(2)"
+                  data-index="2"
+                >
+                  <div class="legend-color"></div>
+                  국내기관 12.7%
+                </div>
+                <div
+                  class="legend-item"
+                  onclick="highlightSlice(3)"
+                  data-index="3"
+                >
+                  <div class="legend-color"></div>
+                  국내개인 5.8%
+                </div>
+                <div
+                  class="legend-item"
+                  onclick="highlightSlice(4)"
+                  data-index="4"
+                >
+                  <div class="legend-color"></div>
+                  자사주 3.1%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box status-box">
+            <h4 class="h5">5%이상 주주 현황</h4>
+
+            <div class="table-wrap resize-colgroup">
+              <table class="vertical-top">
+                <caption>
+                  5%이상 주주 현황 - 주주명, 주식수, 비율에 대한 정보 제공
+                </caption>
+                <colgroup>
+                  <col style="width: auto" />
+                  <col style="width: 120px" />
+                  <col style="width: 80px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">주주명</th>
+                    <th scope="col" class="align-right">주식수</th>
+                    <th scope="col" class="align-right">비율</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>주식회사 피에몬테 외 4인</td>
+                    <td class="align-right">21,575,314주</td>
+                    <td class="align-right">35.9%</td>
+                  </tr>
+                  <tr>
+                    <td>국민연금공단</td>
+                    <td class="align-right">4,074,787주</td>
+                    <td class="align-right">6.8%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <script>
+            // 반응형에서 col 너비 조절을 위한 script...
+            var $thisColgroup = $(".table-wrap.resize-colgroup colgroup");
+            $(window).on("resize load", function () {
+              if ($(window).outerWidth() <= 800) {
+                $thisColgroup.html(`
+                  <col style="width: auto" />
+                  <col style="width: 100px" />
+                  <col style="width: 55px" />`);
+              } else {
+                $thisColgroup.html(`
+                  <col style="width: auto" />
+                  <col style="width: 120px" />
+                  <col style="width: 80px" />`);
+              }
+            });
+          </script>
+          <div class="heading-line margin-b-40">
+            <h3 class="h4">이사회 구성 현황</h3>
+          </div>
+
+          <h4 class="h5">사내이사</h4>
+          <div class="card-wrap type2">
+            <div class="card-item box">
+              <h5>윤윤수 의장</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2023.03~2026.03</span>
+                </li>
+                <li>
+                  <span class="title">담당업무</span
+                  ><span class="con">이사회 의장</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-item box">
+              <h5>윤근창</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2025.03 ~ 2028.03</span>
+                </li>
+                <li>
+                  <span class="title">담당업무</span
+                  ><span class="con">운영총괄</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-item box">
+              <h5>윤명진</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2024.03 ~ 2027.03</span>
+                </li>
+                <li>
+                  <span class="title">담당업무</span
+                  ><span class="con">글로벌 기획</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="h5">기타비상무이사</h4>
+
+          <div class="card-wrap type2">
+            <div class="card-item box">
+              <h5>이학우</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2025.03 ~ 2028.03</span>
+                </li>
+                <li>
+                  <span class="title">담당업무</span
+                  ><span class="con">Digital Business</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="h5">사외이사</h4>
+          <div class="card-wrap type2">
+            <div class="card-item box">
+              <h5>박상기</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2025.03 ~ 2027.03</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-item box">
+              <h5>권수영</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2025.03 ~ 2028.03</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-item box">
+              <h5>윤영미</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2025.03 ~ 2028.03</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="h5">상근감사</h4>
+
+          <div class="card-wrap type2">
+            <div class="card-item box">
+              <h5>정재준</h5>
+              <ul class="list">
+                <li>
+                  <span class="title">기간</span
+                  ><span class="con">2024.03 ~ 2027.03</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="warning-box">
+            <p class="bu">
+              임원배상책임보험 가입 (최초가입일 2021.09.11, 매년 갱신)
+            </p>
+          </div>
+
+          <div class="heading-line">
+            <h3 class="h4">이사회 역량 구성표</h3>
+          </div>
+
+          <div class="table-wrap" data-break="xs" data-width="760">
+            <table class="table type2 align-center">
+              <caption>
+                이사회 역량 구성표 - 사내이사(윤윤수, 윤근창, 윤명진), 기타
+                비상무이사(이학우), 사외이사(박상기, 권수영, 윤영미), 기업운영,
+                글로벌 비즈니스, 재무/회계, 리스크 관리, 세일즈/마케팅,
+                지속가능경영에 대한 정보 제공
+              </caption>
+              <colgroup>
+                <col style="width: 200px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+                <col style="width: 200px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" colspan="3">사내이사</th>
+                  <th scope="col">기타 비상무이사</th>
+                  <th scope="col" colspan="3">사외이사</th>
+                </tr>
+                <tr>
+                  <th scope="col" class="align-left"></th>
+                  <th scope="col">윤윤수</th>
+                  <th scope="col">윤근창</th>
+                  <th scope="col">윤명진</th>
+                  <th scope="col">이학우</th>
+                  <th scope="col">박상기</th>
+                  <th scope="col">권수영</th>
+                  <th scope="col">윤영미</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="align-left">기업운영</th>
+                  <td><span class="checked" title="기업운영 역량">○</span></td>
+                  <td><span class="checked" title="기업운영 역량">○</span></td>
+                  <td><span class="checked" title="기업운영 역량">○</span></td>
+                  <td><span class="checked" title="기업운영 역량">○</span></td>
+                  <td><span class="checked" title="기업운영 역량">○</span></td>
+                  <td><span class="checked" title="기업운영 역량">○</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="align-left">글로벌 비즈니스</th>
+                  <td>
+                    <span class="checked" title="글로벌 비즈니스 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="글로벌 비즈니스 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="글로벌 비즈니스 역량">○</span>
+                  </td>
+                  <td></td>
+                  <td>
+                    <span class="checked" title="글로벌 비즈니스 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="글로벌 비즈니스 역량">○</span>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="align-left">재무/회계</th>
+                  <td><span class="checked" title="재무/회계 역량">○</span></td>
+                  <td><span class="checked" title="재무/회계 역량">○</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span class="checked" title="재무/회계 역량">○</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="align-left">리스크 관리</th>
+                  <td>
+                    <span class="checked" title="리스크 관리 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="리스크 관리 역량">○</span>
+                  </td>
+                  <td></td>
+                  <td>
+                    <span class="checked" title="리스크 관리 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="리스크 관리 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="리스크 관리 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="리스크 관리 역량">○</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="align-left">세일즈/마케팅</th>
+                  <td>
+                    <span class="checked" title="세일즈/마케팅 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="세일즈/마케팅 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="세일즈/마케팅 역량">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="세일즈/마케팅 역량">○</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="align-left">지속가능경영</th>
+                  <td></td>
+                  <td>
+                    <span class="checked" title="지속가능경영 역량">○</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <span class="checked" title="지속가능경영 역량">○</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="heading-line">
+            <h3 class="h4">2024년 이사회 운영 요약</h3>
+          </div>
+
+          <div class="card-wrap type2" data-column="4">
+            <div class="card-item box">
+              <ul class="list">
+                <li>
+                  <span class="title">이사회 개최</span
+                  ><span class="con">11회</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-item box">
+              <ul class="list">
+                <li>
+                  <span class="title">평균 참석률</span
+                  ><span class="con">100%</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-item box">
+              <ul class="list">
+                <li>
+                  <span class="title">의결 안건</span
+                  ><span class="con">36건</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-item box">
+              <ul class="list">
+                <li>
+                  <span class="title">보고 안건</span
+                  ><span class="con">9건</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="heading-line">
+            <h3 class="h4">2024년 이사회 운영 현황</h3>
+          </div>
+
+          <div class="table-wrap" data-break="xs" data-width="760">
+            <table class="table align-center vertical-top">
+              <caption>
+                2024년 이사회 운영 현황 - 회차, 의안내용, 개최일자, 가결여부에
+                대한 정보 제공
+              </caption>
+              <colgroup>
+                <col style="width: 10%" />
+                <col style="width: auto" />
+                <col style="width: 20%" />
+                <col style="width: 100px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">회차</th>
+                  <th scope="col">의안내용</th>
+                  <th scope="col">개최일자</th>
+                  <th scope="col">가결여부</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <ul class="list">
+                      <li>(1) 본점 이전 승인의 건</li>
+                      <li>(2) 감사인 선임위원회 구성 승인의 건</li>
+                    </ul>
+                  </td>
+                  <td>2024.01.26</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <ul class="list">
+                      <li>(1) 내부회계관리제도 운영실태 보고의 건</li>
+                      <li>(2) 준법통제제도 운영결과 보고의 건</li>
+                      <li>
+                        (3) 휠라 그룹 지속가능경영 현황 및 리스크 보고의 건
+                      </li>
+                      <li>(4) 이사회 자가평가 결과 보고의 건</li>
+                      <li>(5) 제34기 회계연도 내부결산 승인의 건</li>
+                      <li>(6) 제34기 회계연도 현금배당 결정의 건</li>
+                      <li>
+                        (7) 제34기 정기주주총회 소집결의 및 총회 목적사항 승인의
+                        건
+                      </li>
+                      <li>(8) 정관 변경의 건</li>
+                      <li>(9) 이사 후보 추천의 건</li>
+                      <li>(10) 상근감사 후보 추천의 건</li>
+                      <li>
+                        (11) 제34기 정기주주총회 전자투표제 도입 승인의 건
+                      </li>
+                    </ul>
+                  </td>
+                  <td>2024.02.14</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <ul class="list">
+                      <li>
+                        (1) 제34기 내부회계관리제도 운영실태평가 보고의 건
+                      </li>
+                      <li>(2) 제34기 회계연도 확정 재무제표 승인의 건</li>
+                      <li>(3) 2024년 확정 예산운용 결의의 건</li>
+                      <li>(4) 제34기 영업보고서 승인의 건</li>
+                      <li>(5) 자기주식 취득 계획 승인의 건</li>
+                      <li>(6) 자기주식 취득 신탁계약 체결 결정의 건</li>
+                      <li>(7) 자기주식 소각 승인의 건</li>
+                      <li>(8) 취업규칙 개정의 건</li>
+                    </ul>
+                  </td>
+                  <td>2024.03.20</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <ul class="list">
+                      <li>
+                        (1) 주식회사 휠라홀딩스 신한은행 신규 일반대 승인의 건
+                      </li>
+                      <li>
+                        (2) 주식회사 휠라홀딩스 신한은행 신규 일반대 승인의 건
+                      </li>
+                      <li>
+                        (3) 주식회사 휠라홀딩스 하나은행 신규 일반대 승인의 건
+                      </li>
+                    </ul>
+                  </td>
+                  <td>2024.04.09</td>
+                  <td>가결</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <ul class="list">
+                      <li>(1) 2024년 1분기 영업실적 보고의 건</li>
+                      <li>
+                        (2) 계열회사의 KEB Hana NY Financial Corp. 차입 채무보증
+                        기간 연장의 건
+                      </li>
+                      <li>
+                        (3) 계열회사의Standard Chartered Bank, USA 차입 채무보증
+                        기간 연장의 건
+                      </li>
+                    </ul>
+                  </td>
+                  <td>2024.05.13</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>
+                    <ul class="list">
+                      <li>
+                        (1) 휠라 그룹 FY2023 지속가능경영보고서 발간 보고의 건
+                      </li>
+                      <li>(2) 자기주식 취득 신탁계약 체결 승인의 건</li>
+                      <li>
+                        (3) 주식회사 휠라홀딩스 하나은행 신규 일반대출 승인의 건
+                      </li>
+                      <li>
+                        (4) 주식회사 휠라홀딩스 국민은행 신규 일반대출 승인의 건
+                      </li>
+                      <li>
+                        (5) 주식회사 휠라홀딩스 우리은행 신규 일반대출 승인의 건
+                      </li>
+                      <li>
+                        (6) 주식회사 휠라홀딩스 하나은행 신규 파생상품보증금면제
+                        한도 약정 승인의 건
+                      </li>
+                    </ul>
+                  </td>
+                  <td>2024.06.13</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>
+                    <p class="align-left">(1) 영업 양도 승인의 건</p>
+                  </td>
+                  <td>2024.07.01</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>
+                    <ul class="list">
+                      <li>(1) 2024년 2분기 영업실적 보고의 건</li>
+                      <li>
+                        (2) 휠라 그룹 지속가능경영 공시 고도화 계획 보고의 건
+                      </li>
+                      <li>
+                        (3) 주식회사 휠라홀딩스 국민은행 신규 일반대출 승인의 건
+                      </li>
+                      <li>
+                        (4) 주식회사 휠라홀딩스 우리은행 신규 일반대출 승인의 건
+                      </li>
+                    </ul>
+                  </td>
+                  <td>2024.08.12</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>
+                    <ul class="list">
+                      <li>(1) 2024년 3분기 분기배당 기준일 결정의 건</li>
+                      <li>(2) 자기주식 취득 신탁계약 체결 결정의 건</li>
+                      <li>(3) 자기주식 취득 신탁계약 연장 결정의 건</li>
+                    </ul>
+                  </td>
+                  <td>2024.09.12</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>
+                    <ul class="list">
+                      <li>(1) 2024년 3분기 영업실적 보고의 건</li>
+                      <li>(2) 2024년 3분기 분기 배당 승인의 건</li>
+                      <li>(3) 자기주식 취득 신탁계약 체결 결정의 건</li>
+                      <li>(4) 주식회사 휠라홀딩스 투자 심의 규정 제정의 건</li>
+                    </ul>
+                  </td>
+                  <td>2024.11.12</td>
+                  <td>가결</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    <p class="align-left">(1) 내부회계관리규정 개정의 건</p>
+                  </td>
+                  <td>2024.12.30</td>
+                  <td>가결</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="heading-line">
+            <h3 class="h4">기업지배구조 자료</h3>
+          </div>
+
+          <div class="card-wrap type2 down-list">
+            <div class="card-item">
+              <a href="#n" class="down-anchor box" target="_blank" title="새창">
+                <span class="down-title">기업지배구조헌장</span>
+                <i class="down-icon"></i>
+              </a>
+            </div>
+            <div class="card-item">
+              <a href="#n" class="down-anchor box" target="_blank" title="새창">
+                <span class="down-title">정관</span>
+                <i class="down-icon"></i>
+              </a>
+            </div>
+            <div class="card-item">
+              <a href="#n" class="down-anchor box" target="_blank" title="새창">
+                <span class="down-title">이사회 운영규정</span>
+                <i class="down-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">@@include('./include/footer.html')</footer>
+    </div>
+  </body>
+</html>

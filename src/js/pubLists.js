@@ -1092,19 +1092,19 @@ var PubLists = [
         completeDate: "2025-02-24",
         etc: [""],
       },
-      /*{
+      {
         id: "F_INV_01_03_00_00",
         breadcrumb: "Investors > 주주총회",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/INV_01_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      } /*
       {
         id: "F_INV_01_03_01_00",
         breadcrumb: "Investors > 주주총회 > 제35기 정기주주총회",
@@ -1130,7 +1130,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["IA 없음"],
-      },*/
+      },*/,
       {
         id: "F_INV_01_04_00_00",
         breadcrumb: "Investors > 주주환원",
@@ -1144,19 +1144,19 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      /*{
+      {
         id: "F_INV_01_05_00_00",
         breadcrumb: "Investors > IR자료",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/INV_01_05_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      } /*
       {
         id: "F_INV_01_05_01_00",
         breadcrumb: "Investors > IR자료 > 2020",
@@ -1221,7 +1221,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },*/,
       {
         id: "F_INV_01_06_00_00",
         breadcrumb: "Investors > 기업지배구조",

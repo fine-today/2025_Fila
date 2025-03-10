@@ -1,0 +1,15 @@
+<div class="search-pop">
+  <span class="placeholder">@@placeholder</span>
+  <div class="search-pop-wrap">
+    <div class="input">
+      <i class="search-icon"></i>
+      <input type="text" placeholder="" />
+      <button type="button" class="delete"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var $input = $(".search-pop .input input");
+  $input.attr("placeholder", $(".placeholder").text());
+</script>
