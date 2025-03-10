@@ -194,7 +194,8 @@ h6,
       top: calc(50% - 8px);
       width: 16px;
       height: 16px;
-      background: url(../images/common/close-icon.svg) no-repeat center center;
+      background: url(../images/common/close-white-icon.svg) no-repeat center
+        center;
       width: 16px;
       height: 16px;
     }
@@ -2602,7 +2603,7 @@ i.required {
   gap: 15px;
   position: relative;
   .limit {
-    display: none;
+    display: block;
     position: absolute;
     right: 10px;
     bottom: 15px;

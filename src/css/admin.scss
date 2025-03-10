@@ -379,6 +379,9 @@ p {
   padding: 20px 30px;
   margin-bottom: 30px;
   gap: 20px;
+  .limit {
+    display: none;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
