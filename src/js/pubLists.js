@@ -1668,19 +1668,19 @@ var PubLists = [
     title: "사용자(ENG)",
     elem: [
       {
-        id: "F-MAI-01-00-00-00",
+        id: "F-MAI_01_00_00_00",
         breadcrumb: "MAIN",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng//main.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-ABO-01-00-00-00",
         breadcrumb: "Misto",
         type: "page",
@@ -1688,7 +1688,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1701,38 +1701,38 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-ABO-01-02-00-00",
+        id: "F_ABO_01_02_00_00",
         breadcrumb: "Misto > History",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/ABO_01_01_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-COM-01-03-00-00",
+        id: "F_COM_01_03_00_00",
         breadcrumb: "Misto > Brand",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/COM_01_03_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-COM-01-04-00-00",
         breadcrumb: "Misto > CI/BI",
         type: "page",
@@ -1740,12 +1740,14 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
-      {
+      },*/
+
+      /*=============== Investors ===============*/
+      /*{
         id: "F-INV-01-00-00-00",
         breadcrumb: "Investors",
         type: "page",
@@ -1753,7 +1755,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1766,13 +1768,13 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-INV-01-01-01-00",
+        id: "F_INV_01_01_01_00",
         breadcrumb:
           "Investors > Financial Information > Consolidated Balance Sheet",
         type: "TAB",
@@ -1780,13 +1782,13 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_01_01_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-INV-01-01-02-00",
+        id: "F_INV_01_01_02_00",
         breadcrumb:
           "Investors > Financial Information > Consolidated Income Statement",
         type: "TAB",
@@ -1794,38 +1796,38 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_01_02_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-INV-01-02-00-00",
+        id: "F_INV_01_02_00_00",
         breadcrumb: "Investors > Disclosure",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_02_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-INV-01-03-00-00",
+        id: "F_INV_01_03_00_00",
         breadcrumb: "Investors > Shareholders' Meeting",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_03_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-INV-01-03-01-00",
         breadcrumb:
           "Investors > Shareholders' Meeting > The 35th General Shareholders' Meeting",
@@ -1834,7 +1836,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1848,38 +1850,38 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-INV-01-04-00-00",
+        id: "F_INV_01_04_00_00",
         breadcrumb: "Investors > Shareholder Return",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_04_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-INV-01-05-00-00",
+        id: "F_INV_01_05_00_00",
         breadcrumb: "Investors > IR Board",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_05_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-INV-01-05-01-00",
         breadcrumb: "Investors > IR Board > 2020",
         type: "TAB",
@@ -1887,7 +1889,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1900,7 +1902,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1913,7 +1915,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1926,7 +1928,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1939,25 +1941,25 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-INV-01-06-00-00",
+        id: "F_INV_01_06_00_00",
         breadcrumb: "Investors > Corporate Governance",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/INV_01_06_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-INV-01-06-01-00",
         breadcrumb:
           "Investors > Corporate Governance > Outstanding Shares / Ownership Structure / List of Shareholders with the Ownership of 5% or above / Board of Directors",
@@ -1966,12 +1968,14 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
-      {
+      },*/
+
+      /*=============== Sustainability ===============*/
+      /*{
         id: "F-ESG-01-00-00-00",
         breadcrumb: "Sustainability",
         type: "page",
@@ -1979,63 +1983,66 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-ESG-01-01-00-00",
-        breadcrumb: "Sustainability > Sustainability Strategy",
+        id: "F_ESG_01_01_00_00",
+        breadcrumb: "Sustainability > ESG Highlights",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/ESG_01_01_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-ESG-01-02-00-00",
-        breadcrumb: "Sustainability > ESG Ratings",
+        id: "F_ESG_01_02_00_00",
+        breadcrumb: "Sustainability > ESG Highlights > Environment",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/ESG_01_02_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-ESG-01-03-00-00",
+        id: "F_ESG_01_03_00_00",
         breadcrumb: "Sustainability > Sustainability Report",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/ESG_01_03_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-ESG-01-04-00-00",
+        id: "F_ESG_01_04_00_00",
         breadcrumb: "Sustainability > ESG Policy",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/ESG_01_04_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
+
+      /*=============== Careers ===============*/
+      /* 
       {
         id: "F-CAR-01-00-00-00",
         breadcrumb: "Careers",
@@ -2044,37 +2051,40 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-CAR-01-01-00-00",
+        id: "F_CAR_01_01_00_00",
         breadcrumb: "Careers > Culture",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/CAR_01_01_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
       {
-        id: "F-CAR-01-02-00-00",
+        id: "F_CAR_01_02_00_00",
         breadcrumb: "Careers > Employee Benefits",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/CAR_01_02_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
+
+      /*=============== Newsroom ===============*/
+      /*
       {
         id: "F-MED-01-00-00-00",
         breadcrumb: "Newsroom",
@@ -2083,25 +2093,25 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-MED-01-01-00-00",
+        id: "F_MED_01_01_00_00",
         breadcrumb: "Newsroom > Press Release",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/MED_01_01_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-MED-01-01-01-00",
         breadcrumb: "Newsroom > Press Release > ALL",
         type: "TAB",
@@ -2109,24 +2119,24 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-MED-01-01-01-01",
+        id: "F_MED_01_01_01_01",
         breadcrumb: "Newsroom > Press Release > ALL > Contents View",
         type: "TAB",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/MED_01_01_01_01.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      } /*
       {
         id: "F-MED-01-01-02-00",
         breadcrumb: "Newsroom > Press Release > Corporate",
@@ -2135,7 +2145,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -2148,7 +2158,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -2161,25 +2171,25 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/,
       {
-        id: "F-MED-01-02-00-00",
+        id: "F_MED_01_02_00_00",
         breadcrumb: "Newsroom > Archive",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/MED_01_02_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-MED-01-02-01-00",
         breadcrumb: "Newsroom > Archive > ALL",
         type: "page",
@@ -2187,7 +2197,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -2200,25 +2210,25 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-MED-01-02-02-01",
+        id: "F_MED_01_02_02_01",
         breadcrumb: "Newsroom > Archive > Video Clips > view",
         type: "TAB",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/MED_01_02_02_01.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-MED-01-02-03-00",
         breadcrumb: "Newsroom > Archive > Image",
         type: "TAB",
@@ -2226,25 +2236,25 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-MED-01-02-03-01",
+        id: "F_MED_01_02_03_01",
         breadcrumb: "Newsroom > Archive > Image > view",
         type: "TAB",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/MED_01_02_03_01.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
-      {
+      /*{
         id: "F-MED-01-02-04-00",
         breadcrumb: "Newsroom > Archive > CI/BI",
         type: "TAB",
@@ -2252,11 +2262,14 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
+
+      /*=============== Contact ===============*/
+      /*
       {
         id: "F-CTT-01-00-00-00",
         breadcrumb: "Contact",
@@ -2265,7 +2278,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -2278,20 +2291,20 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-CTT-01-02-00-00",
+        id: "F_CTT_01_02_00_00",
         breadcrumb: "Contact > IR Contact",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
+        pubAddress: "./pages/eng/CTT_01_02_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
