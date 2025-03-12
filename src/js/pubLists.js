@@ -1266,7 +1266,7 @@ var PubLists = [
       },*/
       {
         id: "F_ESG_01_01_00_00",
-        breadcrumb: "Sustainability > ESG Highlights",
+        breadcrumb: "지속가능경영 > ESG Highlights",
         type: "page",
         design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",

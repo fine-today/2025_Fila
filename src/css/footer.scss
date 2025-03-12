@@ -70,6 +70,12 @@
     }
     .footer-info-wrap {
       padding-top: 101px;
+      .footer-logo-wrap {
+        svg {
+          width: 110px;
+          height: 20px;
+        }
+      }
     }
   }
   .footer-info-box {
@@ -153,6 +159,12 @@
     }
     .footer-info-wrap {
       padding-top: 81px;
+      .footer-logo-wrap {
+        svg {
+          width: 110px;
+          height: 20px;
+        }
+      }
     }
     .footer-info-box {
       position: relative;
