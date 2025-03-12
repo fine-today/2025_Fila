@@ -6,7 +6,7 @@
 #container {
   display: grid;
   height: 100%;
-  grid-template-rows: 90px 1fr auto;
+  grid-template-rows: 104px 1fr auto;
   grid-template-areas: "header" "content" "footer";
   background-color: var(--c-white);
 }

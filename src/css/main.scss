@@ -1,2 +1,150 @@
 @use "./_mixin" as *;
 @use "./layout" as *;
+
+@keyframes VisualAni {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes FirstAni {
+  0% {
+    transform: scale(1.1);
+  }
+
+  99% {
+    transform: scale(1);
+    z-index: 1000;
+  }
+  100% {
+    transform: scale(1);
+    z-index: -1;
+  }
+}
+.main[data-menu-open="true"] {
+  .header-wrap {
+    background: #fff;
+  }
+}
+.main[data-header-mode="white"] {
+  .header #menu .depth1-item .depth1-anchor {
+    color: #fff;
+  }
+  .header #menu .depth1-item.logo svg {
+    path,
+    rect {
+      fill: #fff;
+    }
+  }
+  .header .lang {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+.main[data-header-mode="white"][data-menu-open="true"] {
+  .header-wrap {
+    background: #fff;
+  }
+  .header #menu .depth1-item .depth1-anchor {
+    color: #000;
+  }
+  .header #menu .depth1-item.logo svg {
+    path,
+    rect {
+      fill: var(--c-brand);
+    }
+  }
+}
+.main {
+  #content {
+    margin-top: -104px;
+  }
+  .header-wrap {
+    background: transparent;
+  }
+  .sec1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .visual-slide-wrap {
+    height: 100%;
+  }
+  .visual-con,
+  .visual-slide,
+  .slide-list,
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+  .visual-slide {
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      transform: scale(1);
+    }
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+    }
+  }
+  .slide-list {
+  }
+  .slide-item {
+    width: 100%;
+    height: 100%;
+    &.slick-active {
+      .img {
+        animation: VisualAni 3s forwards;
+      }
+    }
+  }
+}
+
+.main {
+  .header {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  &.start {
+    .header {
+      transform: translateY(0);
+      transition: transform 1s;
+      transition-delay: 0.5s;
+      opacity: 1;
+      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .sec1 {
+      .first-ani {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        animation: FirstAni 10s forwards;
+        .img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
