@@ -106,27 +106,21 @@
                       <th scope="row">시작일시 ~ 종료일시</th>
                       <td>
                         <span class="date-wrap">
-                          <span class="input date">
+                          <span class="input date-notice">
                             <input
                               type="text"
                               title=""
                               placeholder="YYYY.MM.DD"
                               id="input1-1"
                             />
-                            <button type="button" class="date-icon">
-                              달력열기
-                            </button>
                           </span>
                           <span class="hypen">~</span>
-                          <span class="input date">
+                          <span class="input date-notice">
                             <input
                               type="text"
                               title=""
                               placeholder="YYYY.MM.DD"
                             />
-                            <button type="button" class="date-icon">
-                              달력열기
-                            </button>
                           </span>
                         </span>
                       </td>
@@ -142,6 +136,70 @@
                 <button type="button" class="btn">등록</button>
               </div>
             </section>
+            <script>
+              $(".input.date-notice>input").datepicker({
+                dateFormat: "yy-mm-dd",
+                showOn: "both",
+                buttonImageOnly: false,
+                buttonText: "선택",
+                showMonthAfterYear: true,
+                monthNamesShort: [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                ],
+                monthNames: [
+                  "1월",
+                  "2월",
+                  "3월",
+                  "4월",
+                  "5월",
+                  "6월",
+                  "7월",
+                  "8월",
+                  "9월",
+                  "10월",
+                  "11월",
+                  "12월",
+                ],
+                yearSuffix: "년",
+                dayNamesMin: ["일", "월", "화", "수", "목", "금", "토", "일"],
+                dayNames: ["일", "월", "화", "수", "목", "금", "토", "일"],
+                minDate: 0,
+              });
+            </script>
+            <style>
+              .ui-datepicker-trigger {
+                font-size: 0;
+                line-height: 0;
+                position: absolute;
+                top: calc(50% - 15px);
+                right: 5px;
+                width: 30px;
+                height: 30px;
+                background: url(../../images/common/calendar.svg) no-repeat
+                  center center;
+                background-size: 24px 24px;
+              }
+              .ui-datepicker {
+                z-index: 10 !important;
+              }
+              .ui-datepicker td span {
+                color: #666;
+              }
+              .ui-datepicker td a {
+                color: #000;
+              }
+            </style>
           </div>
         </div>
       </div>
