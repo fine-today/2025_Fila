@@ -322,4 +322,10 @@ $(function () {
     dayNamesMin: ["일", "월", "화", "수", "목", "금", "토", "일"],
     dayNames: ["일", "월", "화", "수", "목", "금", "토", "일"],
   });
+
+  //content-header
+  $(".content-header .banner").outerWidth($(window).width());
+  $window.on("resize", function () {
+    $(".content-header .banner").outerWidth($(window).width());
+  });
 });

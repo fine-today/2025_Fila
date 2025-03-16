@@ -1008,7 +1008,7 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/ABO_01_01_00_00.html",
+        pubAddress: "./pages/service/ABO_01_02_00_00.html",
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
@@ -1411,19 +1411,19 @@ var PubLists = [
       },
 
       /*=============== Newsroom ===============*/
-      /*{
-        id: "F_MED_01_00_00_00",
+      {
+        id: "MED_01_02_04_00",
         breadcrumb: "Newsroom",
         type: "page",
-        design: "대기", //"대기 | 진행중 | 완료 | 없음"
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/MED_01_02_04_00.html",
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
       {
         id: "F_MED_01_01_00_00",
         breadcrumb: "Newsroom > 보도자료",
