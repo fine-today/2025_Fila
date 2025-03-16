@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr" class="sub">
+  <head>
+    @@include('./include/head.html',{'title':"지속가능경영"})
+  </head>
+  <body>
+    <div class="accessibility">
+      <a href="#content">본문 바로가기</a>
+    </div>
+    <div id="container" data-page="ABO_01_01_00_00">
+      <header class="header">@@include('./include/header.html')</header>
+      <div id="content" class="content">
+        <div class="wrap">
+          <div class="content-header">
+            <h2 class="header-title">We are Misto</h2>
+
+            <div class="banner">
+              <p class="text"></p>
+            </div>
+          </div>
+
+          <section class="con-section vision">
+            <div class="section-wrap">
+              <h3>vision</h3>
+              <p class="text">
+                We empower brands to bring their energy and potential to life,
+                enriching lives and communities.
+              </p>
+            </div>
+          </section>
+
+          <section class="con-section Mission">
+            <div class="section-wrap">
+              <h3>Mission</h3>
+              <p class="text">
+                We empower a collective of dynamic brands to connect, inspire,
+                and create meaningful experiences for people and communities.
+              </p>
+            </div>
+          </section>
+
+          <section class="con-section value">
+            <div class="section-wrap">
+              <h3>Core Value</h3>
+            </div>
+            <ul class="value-list">
+              <li>
+                <h4>01</h4>
+                <h5>Synergetic</h5>
+              </li>
+
+              <li>
+                <h4>02</h4>
+                <h5>Empowering</h5>
+              </li>
+
+              <li>
+                <h4>03</h4>
+                <h5>Resilient</h5>
+              </li>
+
+              <li>
+                <h4>04</h4>
+                <h5>Responsible</h5>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <footer class="footer">@@include('./include/footer.html')</footer>
+      <script>
+        $(".con-section.value").outerWidth($(window).width());
+      </script>
+    </div>
+  </body>
+</html>
