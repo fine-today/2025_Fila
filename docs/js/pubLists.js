@@ -1692,20 +1692,20 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
-        id: "F-ABO-01-01-00-00",
+        id: "F_ABO_01_01_00_00",
         breadcrumb: "Misto > We are Misto",
         type: "page",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/eng/",
+        pubAddress: "./pages/eng/ABO_01_01_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
       {
         id: "F_ABO_01_02_00_00",
         breadcrumb: "Misto > History",
