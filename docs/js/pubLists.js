@@ -1715,7 +1715,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/ABO_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1783,9 +1783,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_01_01_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["css 변경 필요"],
       },
       {
         id: "F_INV_01_01_02_00",
@@ -1797,9 +1797,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_01_02_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["table 간격 조절 필요"],
       },
       {
         id: "F_INV_01_02_00_00",
@@ -1810,9 +1810,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["table 간격 조절 필요"],
       },
       {
         id: "F_INV_01_03_00_00",
@@ -1823,9 +1823,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_03_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["table 간격 조절 필요"],
       },
       /*{
         id: "F-INV-01-03-01-00",
@@ -1864,9 +1864,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_04_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["번역 대기", "테이블 간격조정 필요"],
       },
       {
         id: "F_INV_01_05_00_00",
@@ -1877,9 +1877,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_05_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["번역 대기"],
       },
       /*{
         id: "F-INV-01-05-01-00",
@@ -1955,9 +1955,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_06_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["테이블 간격 조정 필요"],
       },
       /*{
         id: "F-INV-01-06-01-00",
@@ -1997,7 +1997,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/ESG_01_01_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -2010,9 +2010,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/ESG_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["번역 대기"],
       },
       {
         id: "F_ESG_01_03_00_00",
@@ -2023,7 +2023,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/ESG_01_03_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -2038,7 +2038,7 @@ var PubLists = [
         pubAddress: "./pages/eng/ESG_01_04_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["번역 대기"],
       },
 
       /*=============== Careers ===============*/
@@ -2065,7 +2065,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/CAR_01_01_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -2078,7 +2078,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/CAR_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -2107,9 +2107,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/MED_01_01_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["번역 대기"],
       },
       /*{
         id: "F-MED-01-01-01-00",
@@ -2133,7 +2133,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/MED_01_01_01_01.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       } /*
@@ -2187,7 +2187,7 @@ var PubLists = [
         pubAddress: "./pages/eng/MED_01_02_00_00.html",
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["번역 대기"],
       },
       /*{
         id: "F-MED-01-02-01-00",
@@ -2224,7 +2224,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/MED_01_02_02_01.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -2305,9 +2305,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/CTT_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "진행중", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: [""],
+        etc: ["column 너비 조정"],
       },
     ],
   },
