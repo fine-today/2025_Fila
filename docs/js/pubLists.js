@@ -1877,9 +1877,9 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/INV_01_05_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
-        etc: ["번역 대기"],
+        etc: [""],
       },
       /*{
         id: "F-INV-01-05-01-00",
@@ -2010,7 +2010,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/ESG_01_02_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["번역 대기"],
       },
@@ -2036,7 +2036,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/ESG_01_04_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["번역 대기"],
       },
@@ -2107,7 +2107,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/MED_01_01_00_00.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["번역 대기"],
       },
@@ -2185,7 +2185,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/MED_01_02_00_00.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: ["번역 대기"],
       },
@@ -2250,7 +2250,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/MED_01_02_03_01.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },

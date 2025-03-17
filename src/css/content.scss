@@ -2530,7 +2530,11 @@
     }
   }
 }
-
+.eng [data-page="CTT_01_02_00_00"] {
+  .con-wrap ul.list > li .title {
+    width: 100px;
+  }
+}
 [data-page="CTT_01_02_00_00"] {
   .map-wrap {
     margin-bottom: 80px;
