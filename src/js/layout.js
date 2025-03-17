@@ -199,14 +199,186 @@ $(function () {
       ],
     },
   ];
+  var ENG_MENU = [
+    {
+      id: "0",
+      title: "Group",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "We Are Misto",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "History",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "Brand",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "1",
+      title: "Investors",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "Financial Information",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "Disclosure",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "Shareholders' Meeting",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "Shareholder Return",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "IR Board",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "Corporate Governance",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "2",
+      title: "Sustainability",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "ESG Highlights",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "ESG Ratings & Initiatives",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "Sustainability Report",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "ESG Policy",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    { id: "logo", title: "logo", anchor: "#n", active: false },
+    {
+      id: "3",
+      title: "Careers",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "Culture",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "Benefits",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "4",
+      title: "Newsroom",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "Press Release",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "Archive",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-3",
+          title: "Corporate Identity",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+    {
+      id: "5",
+      title: "Contact",
+      anchor: "#n",
+      active: false,
+      sub: [
+        {
+          id: "0-1",
+          title: "Hotline",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
+          title: "IR Contact",
+          anchor: "#n",
+          active: false,
+        },
+      ],
+    },
+  ];
 
   //menu 생성
   var $menu = $("#menu");
   var $menuList = $menu.find(">.depth-list");
   var $footerMenuList = $("#footer-menu > .depth-list");
-  MENU.forEach(function (elem, i) {
-    var { id, title, anchor, sub, active } = elem;
-    var $depth1 = $(`
+  const setMENU = (menu) => {
+    menu.forEach(function (elem, i) {
+      var { id, title, anchor, sub, active } = elem;
+      var $depth1 = $(`
       <li class="depth-item depth1-item ${id === "logo" ? "logo" : ""}">
         
           ${
@@ -220,50 +392,57 @@ $(function () {
           }
         </a>
       </li>`);
-    if (!!sub) {
-      $depth1.addClass("has");
-      var activeFlag = false;
-      var $depth2 = $(`<div class="depth depth2"></div>`);
-      var $depth2List = $(`<ul class="depth-list depth2-list"></ul>`);
-      sub.forEach(function (subElem, index) {
-        var { id, title, anchor, active } = subElem;
-        var $depth2 = $(`
+      if (!!sub) {
+        $depth1.addClass("has");
+        var activeFlag = false;
+        var $depth2 = $(`<div class="depth depth2"></div>`);
+        var $depth2List = $(`<ul class="depth-list depth2-list"></ul>`);
+        sub.forEach(function (subElem, index) {
+          var { id, title, anchor, active } = subElem;
+          var $depth2 = $(`
           <li class="depth-item depth2-item${active ? " actived" : ""}">
             <a class="depth-anchor depth2-anchor" href="${anchor}" ${`title="${
-          active ? "현재 위치" : ""
-        }"`}>
+            active ? "현재 위치" : ""
+          }"`}>
               <span>${title}</span>
             </a>
           </li>`);
-        if (active) activeFlag = true;
-        $depth2List.append($depth2);
-      });
-      if (activeFlag) $depth1.addClass("actived");
-      $depth2.append($depth2List);
-      $depth1.append($depth2);
-    }
-    var cloneDepth1 = $depth1.clone();
-    $menuList.append($depth1);
-    $footerMenuList.append(cloneDepth1);
+          if (active) activeFlag = true;
+          $depth2List.append($depth2);
+        });
+        if (activeFlag) $depth1.addClass("actived");
+        $depth2.append($depth2List);
+        $depth1.append($depth2);
+      }
+      var cloneDepth1 = $depth1.clone();
+      $menuList.append($depth1);
+      $footerMenuList.append(cloneDepth1);
 
-    //footer menu-height
-    const setFooterHeight = () => {
-      var $depth1 = $footerMenuList.find(".depth1-item");
-      var menuHeight = 0;
-      $depth1.each(function () {
-        var $this = $(this);
-        var $thisAnchor = $this.find(">.depth1-anchor");
-        if ($this.hasClass("has")) {
-          var depth2Height = $this.find(".depth2").outerHeight();
-          if (menuHeight < depth2Height) {
-            menuHeight = depth2Height + 47;
+      //footer menu-height
+      const setFooterHeight = () => {
+        var $depth1 = $footerMenuList.find(".depth1-item");
+        var menuHeight = 0;
+        $depth1.each(function () {
+          var $this = $(this);
+          var $thisAnchor = $this.find(">.depth1-anchor");
+          if ($this.hasClass("has")) {
+            var depth2Height = $this.find(".depth2").outerHeight();
+            if (menuHeight < depth2Height) {
+              menuHeight = depth2Height + 47;
+            }
           }
-        }
-      });
-      $footerMenuList.height(menuHeight);
-    };
-    setFooterHeight();
-  });
+        });
+        $footerMenuList.height(menuHeight);
+      };
+      setFooterHeight();
+    });
+  };
+  if (window.location.href.includes("service")) {
+    setMENU(MENU);
+  } else if (window.location.href.includes("eng")) {
+    setMENU(ENG_MENU);
+    $html.addClass("eng");
+  }
 
   // mouseover event
   $document.on("mouseover focusin", "#menu", function () {

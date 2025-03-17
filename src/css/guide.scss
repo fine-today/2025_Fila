@@ -745,8 +745,10 @@ p.blt.type3:before {
         width: 100%;
       }
     }
-    table.table {
-      margin-right: 20px;
+    @include xs {
+      table.table {
+        margin-right: 20px;
+      }
     }
   }
   table {
