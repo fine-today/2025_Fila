@@ -1605,7 +1605,7 @@ var PubLists = [
         complete: "대기", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },
+      },*/
       {
         id: "F_MED_01_03_00_00",
         breadcrumb: "Newsroom > 아카이브 > CI/BI",
@@ -1614,11 +1614,11 @@ var PubLists = [
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/service/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/service/MED_01_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
 
       /*=============== Contact ===============*/
       /*{
@@ -2254,19 +2254,19 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },
-      /*{
-        id: "F-MED-01-02-04-00",
+      {
+        id: "F_MED_01_03_00_00",
         breadcrumb: "Newsroom > Archive > CI/BI",
         type: "TAB",
         design: "대기", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
         designAnchor: "",
         address: "/",
-        pubAddress: "./pages/eng/",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        pubAddress: "./pages/eng/MED_01_03_00_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
 
       /*=============== Contact ===============*/
       /*

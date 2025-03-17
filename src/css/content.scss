@@ -597,6 +597,17 @@
         margin-bottom: 20px;
       }
     }
+    &.Activities {
+      .card-item {
+        ul.list > li {
+          flex-wrap: wrap;
+        }
+        .title {
+          width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
   }
   .chart-box {
     position: relative;
@@ -3588,7 +3599,7 @@
   }
 }
 
-[data-page="MED_01_02_04_00"] {
+[data-page="MED_01_03_00_00"] {
   .content-header {
     margin-bottom: 0;
   }

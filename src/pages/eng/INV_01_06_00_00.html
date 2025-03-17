@@ -113,8 +113,8 @@
 
             <div class="chart">
               <div class="chart-title-wrap">
-                <h3>총 발행 주식 수</h3>
-                <p class="sub">60,095,839주</p>
+                <h3>Outstanding Shares</h3>
+                <p class="sub">60,095,839</p>
               </div>
               <div id="chart"></div>
               <div class="custom-legend">
@@ -175,8 +175,8 @@
                 </caption>
                 <colgroup>
                   <col style="width: auto" />
+                  <col style="width: 250px" />
                   <col style="width: 120px" />
-                  <col style="width: 80px" />
                 </colgroup>
                 <thead>
                   <tr>
@@ -188,12 +188,12 @@
                 <tbody>
                   <tr>
                     <td>Piemonte Co.,Ltd and 5 others</td>
-                    <td class="align-right">21,575,314주</td>
+                    <td class="align-right">21,575,314</td>
                     <td class="align-right">35.9%</td>
                   </tr>
                   <tr>
                     <td>National Pension Service</td>
-                    <td class="align-right">4,074,787주</td>
+                    <td class="align-right">4,074,787</td>
                     <td class="align-right">6.8%</td>
                   </tr>
                 </tbody>
@@ -207,13 +207,13 @@
               if ($(window).outerWidth() <= 800) {
                 $thisColgroup.html(`
                   <col style="width: auto" />
-                  <col style="width: 100px" />
-                  <col style="width: 55px" />`);
+                  <col style="width: 80px" />
+                  <col style="width: 80px" />`);
               } else {
                 $thisColgroup.html(`
                   <col style="width: auto" />
-                  <col style="width: 120px" />
-                  <col style="width: 80px" />`);
+                  <col style="width: 250px" />
+                  <col style="width: 120px" />`);
               }
             });
           </script>
@@ -361,36 +361,46 @@
               <thead>
                 <tr>
                   <th scope="col"></th>
-                  <th scope="col" colspan="3">Executive Director​</th>
-                  <th scope="col">Non-Executive Director​</th>
-                  <th scope="col" colspan="3">Independent Director​</th>
+                  <th scope="col" colspan="3">Executive Director</th>
+                  <th scope="col">Non-Executive Director</th>
+                  <th scope="col" colspan="3">Independent Director</th>
                 </tr>
                 <tr>
                   <th scope="col" class="align-left"></th>
-                  <th scope="col">Yoon-Soo Yoon​</th>
-                  <th scope="col">Keun-Chang Yoon​</th>
-                  <th scope="col">Myoung-Jin Yun​</th>
-                  <th scope="col">Hak Woo Lee​</th>
-                  <th scope="col">Sang Ki Park​</th>
-                  <th scope="col">Soo Young Kwon​</th>
-                  <th scope="col">Young-Mi Yun​</th>
+                  <th scope="col">Yoon-Soo Yoon</th>
+                  <th scope="col">Keun-Chang Yoon</th>
+                  <th scope="col">Myoung-Jin Yun</th>
+                  <th scope="col">Hak Woo Lee</th>
+                  <th scope="col">Sang Ki Park</th>
+                  <th scope="col">Soo Young Kwon</th>
+                  <th scope="col">Young-Mi Yun</th>
                 </tr>
               </thead>
               <tbody>
-
-     
                 <tr>
-                  <th scope="row" class="align-left">Business Operations​</th>
-                  <td><span class="checked" title="Business Operations">○</span></td>
-                  <td><span class="checked" title="Business Operations">○</span></td>
-                  <td><span class="checked" title="Business Operations">○</span></td>
-                  <td><span class="checked" title="Business Operations">○</span></td>
-                  <td><span class="checked" title="Business Operations">○</span></td>
-                  <td><span class="checked" title="Business Operations">○</span></td>
+                  <th scope="row" class="align-left">Business Operations</th>
+                  <td>
+                    <span class="checked" title="Business Operations">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="Business Operations">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="Business Operations">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="Business Operations">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="Business Operations">○</span>
+                  </td>
+                  <td>
+                    <span class="checked" title="Business Operations">○</span>
+                  </td>
                   <td></td>
                 </tr>
                 <tr>
-                  <h scope="row" class="align-left">Global Business">
+                  <th scope="row" class="align-left">Global Business</th>
                   <td>
                     <span class="checked" title="Global Business">○</span>
                   </td>
@@ -409,19 +419,35 @@
                   </td>
                   <td></td>
                 </tr>
-                <tr>           
-
-                  <th scope="row" class="align-left"> Finance 
-                  / Accounting</th>
-                  <td><span class="checked" title=" Finance 
-                  / Accounting">○</span></td>
-                  <td><span class="checked" title=" Finance 
-                  / Accounting">○</span></td>
+                <tr>
+                  <th scope="row" class="align-left">Finance / Accounting</th>
+                  <td>
+                    <span
+                      class="checked"
+                      title=" Finance 
+                  / Accounting"
+                      >○</span
+                    >
+                  </td>
+                  <td>
+                    <span
+                      class="checked"
+                      title=" Finance 
+                  / Accounting"
+                      >○</span
+                    >
+                  </td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td><span class="checked" title="Finance 
-                    / Accounting">○</span></td>
+                  <td>
+                    <span
+                      class="checked"
+                      title="Finance 
+                    / Accounting"
+                      >○</span
+                    >
+                  </td>
                   <td></td>
                 </tr>
                 <tr>
@@ -447,23 +473,38 @@
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="align-left">Sales 
-          / Marketing</th>
+                  <th scope="row" class="align-left">Sales / Marketing</th>
                   <td>
-                    <span class="checked" title="Sales 
-          / Marketing">○</span>
+                    <span
+                      class="checked"
+                      title="Sales 
+          / Marketing"
+                      >○</span
+                    >
                   </td>
                   <td>
-                    <span class="checked" title="Sales 
-          / Marketing">○</span>
+                    <span
+                      class="checked"
+                      title="Sales 
+          / Marketing"
+                      >○</span
+                    >
                   </td>
                   <td>
-                    <span class="checked" title="Sales 
-          / Marketing">○</span>
+                    <span
+                      class="checked"
+                      title="Sales 
+          / Marketing"
+                      >○</span
+                    >
                   </td>
                   <td>
-                    <span class="checked" title="Sales 
-          / Marketing">○</span>
+                    <span
+                      class="checked"
+                      title="Sales 
+          / Marketing"
+                      >○</span
+                    >
                   </td>
                   <td></td>
                   <td></td>
@@ -487,15 +528,11 @@
             </table>
           </div>
 
-                 
-                  
-          
-          
           <div class="heading-line">
             <h3 class="h4">2024 Board Activities</h3>
           </div>
 
-          <div class="card-wrap type2" data-column="4">
+          <div class="card-wrap type2 Activities" data-column="4">
             <div class="card-item box">
               <ul class="list">
                 <li>
@@ -547,14 +584,14 @@
                 <col style="width: 10%" />
                 <col style="width: auto" />
                 <col style="width: 20%" />
-                <col style="width: 100px" />
+                <col style="width: 150px" />
               </colgroup>
               <thead>
                 <tr>
-                  <th scope="col">회차</th>
-                  <th scope="col">의안내용</th>
-                  <th scope="col">개최일자</th>
-                  <th scope="col">Approved여부</th>
+                  <th scope="col">Session</th>
+                  <th scope="col">Agenda</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Results</th>
                 </tr>
               </thead>
               <tbody>
