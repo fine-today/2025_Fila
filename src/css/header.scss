@@ -58,7 +58,7 @@
       transition: transform 0.5s;
       transform: translateY(0);
     }
-    h1.logo {
+    h1.misto-logo {
       position: absolute;
       width: 0;
       height: 0;
@@ -80,7 +80,7 @@
         justify-content: space-between;
       }
       .depth1-item {
-        &.logo {
+        &.misto-logo {
           position: static;
           display: flex;
           align-items: center;
@@ -199,7 +199,7 @@
     .header-wrap {
       margin-top: 4px;
     }
-    h1.logo {
+    h1.misto-logo {
       z-index: 50;
       position: absolute;
       height: 70px;
@@ -304,7 +304,7 @@
         flex-wrap: wrap;
         gap: 10px;
         width: 100%;
-        &.logo {
+        &.misto-logo {
           display: none;
         }
         .depth1-anchor {
@@ -354,7 +354,7 @@
 }
 @include sm {
   .header {
-    h1.logo {
+    h1.misto-logo {
       left: 20px;
     }
     .menu-btn {

@@ -379,7 +379,7 @@ $(function () {
     menu.forEach(function (elem, i) {
       var { id, title, anchor, sub, active } = elem;
       var $depth1 = $(`
-      <li class="depth-item depth1-item ${id === "logo" ? "logo" : ""}">
+      <li class="depth-item depth1-item ${id === "logo" ? "misto-logo" : ""}">
         
           ${
             id === "logo"
@@ -595,13 +595,16 @@ $(function () {
   });
 
   //logo focus 문제해결
-  $(".header  h1.logo").on("focusin", function () {
-    $(".depth1 .logo > a").attr("tab-index", 0).focus();
+  $(".header  h1.misto-logo").on("focusin", function () {
+    $(".depth1 .misto-logo > a").attr("tab-index", 0).focus();
   });
   $document.on("keydown", function (e) {
     if (e.key === "Tab") {
       var $focusElem = $(":focus");
-      if ($focusElem.hasClass("logo-anchor") || $focusElem.hasClass("logo")) {
+      if (
+        $focusElem.hasClass("logo-anchor") ||
+        $focusElem.hasClass("misto-logo")
+      ) {
         $focusElem.attr("tabindex", -1);
         setTimeout(() => {
           $(
