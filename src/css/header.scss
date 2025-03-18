@@ -98,6 +98,7 @@
           font-weight: 700;
           line-height: 1.8;
           color: var(--c-primary);
+          text-transform: uppercase;
         }
       }
       .depth2 {
@@ -314,6 +315,7 @@
           font-weight: 600;
           color: #bfbfc7;
           transition: all 0.2s;
+          text-transform: uppercase;
         }
         &.active {
           .depth1-anchor {

@@ -323,50 +323,38 @@
                 $conBox = $anchorUI.find(".con-box"),
                 $eachCon = $conBox.find(".con-wrap");
 
-              $(window).on("scroll", function () {
-                var winScrollTop = $(window).scrollTop(),
-                  anchorOffsetTop = $anchorUI.offset().top;
-                if (winScrollTop >= anchorOffsetTop) {
-                  $anchorUI.attr("data-anchor", "fixed");
-                  $anchorBtn
-                    .removeAttr("title")
-                    .closest(".anchor-item")
-                    .removeClass("active");
-                  $eachCon.each(function () {
-                    var $this = $(this),
-                      thisTop = $this.offset().top,
-                      thisBottom = thisTop + $this.height();
-                    if (winScrollTop >= thisTop && winScrollTop < thisBottom) {
-                      $anchorBox
-                        .find(`.anchor-btn[data-anchor="${$this.attr("id")}"]`)
-                        .attr("title", "활성화")
-                        .closest(".anchor-item")
-                        .addClass("active");
-                    }
-                  });
-                } else {
-                  $anchorUI.attr("data-anchor", "absolute");
-                  $anchorBtn
-                    .removeAttr("title")
-                    .closest(".anchor-item")
-                    .removeClass("active");
-                }
-              });
-              $anchorBtn.on("click", function () {
-                var $this = $(this),
-                  thisAnchor = $this.attr("data-anchor"),
-                  $thisCon = $(`#${thisAnchor}`);
-
-                $("html,body").animate(
-                  {
-                    scrollTop: $thisCon.offset().top + 1,
-                  },
-                  {
-                    duration: 350,
-                    easing: "easeOutExpo",
+              $anchorBtn
+                .on("click", function () {
+                  var $this = $(this),
+                    thisAnchor = $this.attr("data-anchor"),
+                    $thisCon = $(`#${thisAnchor}`);
+                  $anchorBox.find(".anchor-item").removeClass("active");
+                  $this.closest(".anchor-item").addClass("active");
+                  $eachCon.removeClass("active");
+                  $thisCon.addClass("active");
+                  if ($(window).width() < 801) {
+                    $("html,body").animate(
+                      {
+                        scrollTop:
+                          $anchorUI.scrollTop() + $(window).height() - 150,
+                      },
+                      200
+                    );
                   }
-                );
-                event.preventDefault();
+                })
+                .triggerHandler("click");
+              $(window).on("scroll", function () {
+                var footerTop = $(".footer").offset().top,
+                  winWidth = $(window).width(),
+                  winHeight = $(window).height(),
+                  winScrollTop = $(window).scrollTop();
+                if (winWidth < 801) {
+                  if (winScrollTop + winHeight > footerTop) {
+                    $anchorBox.hide();
+                  } else {
+                    $anchorBox.show();
+                  }
+                }
               });
             </script>
           </div>

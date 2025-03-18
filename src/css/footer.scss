@@ -4,6 +4,9 @@
   grid-area: footer;
   background-color: var(--c-black);
   padding: 60px 0;
+  .depth1-anchor {
+    text-transform: uppercase;
+  }
   @include only-lg {
     .depth1 {
     }
@@ -83,7 +86,7 @@
     flex-wrap: wrap;
     margin-top: 1.5rem;
     .footer-info {
-      color: #70737c;
+      color: #bfbfc7;
       font-size: 13px;
       line-height: 1.5;
       font-weight: 500;
@@ -97,7 +100,7 @@
         display: inline-flex;
         width: 1px;
         height: 12px;
-        background-color: #70737c;
+        background-color: #bfbfc7;
         margin: 0 8px;
       }
     }
@@ -181,6 +184,28 @@
           position: absolute;
           right: 40px;
           bottom: 0;
+        }
+      }
+    }
+  }
+  @include xs {
+    padding: 40px 0;
+    .footer-info-box {
+      margin-top: 20px;
+      gap: 2px 8px;
+      .footer-info {
+        &:not(:last-child):not(.no-divider)::after {
+          display: none;
+        }
+        &:first-child {
+          width: 100%;
+        }
+        &:not(:last-child):nth-child(2) {
+          width: auto;
+        }
+        &.copy {
+          width: 100%;
+          position: static;
         }
       }
     }

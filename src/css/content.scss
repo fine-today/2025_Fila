@@ -877,8 +877,10 @@
       padding-left: 50%;
       z-index: 10;
       .con-wrap {
-        & + .con-wrap {
-          margin-top: 80px;
+        display: none;
+
+        &.active {
+          display: block;
         }
       }
       .con-img {
@@ -1025,9 +1027,6 @@
       }
       .con-box {
         padding-left: 0;
-        .con-wrap + .con-wrap {
-          margin-top: 60px;
-        }
         * + .heading-line {
           margin-top: 0;
           margin-bottom: 0;
@@ -3230,7 +3229,17 @@
     }
   }
 }
-
+.eng {
+  [data-page="CAR_01_01_00_00"] {
+    .diagram .depth2-box {
+      padding-top: 0;
+      margin-top: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
 [data-page="CAR_01_01_00_00"] {
   .content-header .banner {
     background-image: url(../images/service/content/car_01_01_00_00-banner.png);
