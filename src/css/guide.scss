@@ -1225,7 +1225,7 @@ html.popup-open body {
       }
       .pop-ctrl {
         position: absolute;
-        left: 50%;
+        width: 100%;
         top: 50%;
         .arrow-wrap {
         }
@@ -1238,13 +1238,13 @@ html.popup-open body {
           height: 30px;
           &.prev {
             position: absolute;
-            right: 30vw;
+            left: 50px;
             background: url(../images/service/sub/prev-icon.svg) no-repeat
               center center;
           }
           &.next {
             position: absolute;
-            left: 30vw;
+            right: 50px;
             background: url(../images/service/sub/next-icon.svg) no-repeat
               center center;
           }
