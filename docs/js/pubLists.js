@@ -947,7 +947,7 @@ var PubLists = [
     category: "KOR",
     title: "사용자(KOR)",
     elem: [
-      /*{
+      {
         id: "-",
         breadcrumb: " 가이드",
         type: "page",
@@ -959,7 +959,7 @@ var PubLists = [
         complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
-      },*/
+      },
       {
         id: "F_MAI_01_00_00_00",
         breadcrumb: "MAIN",
