@@ -238,6 +238,9 @@
 </footer>
       <script>
         $(".con-section.value").outerWidth($(window).width());
+        $(window).on("resize", function () {
+          $(".con-section.value").outerWidth($(window).width());
+        });
       </script>
     </div>
   </body>
