@@ -2619,7 +2619,113 @@
 
 [data-page="ABO_01_02_00_00"] {
   .content-header .banner {
-    // background-image: url(../images/service/content/esg_01_01_00_00-banner.png);
+    height: 480px;
+    padding: 40px 0;
+    background-color: #fff;
+    .wrap {
+      position: relative;
+      max-width: 1600px;
+      width: 100%;
+      margin: 40px auto;
+      height: 100%;
+      font-size: 0;
+      line-height: 0;
+      &::before {
+        display: block;
+        position: absolute;
+        left: 100px;
+        height: 100%;
+        width: calc(100% - 200px);
+        border-top: 2px solid var(--c-brand);
+        border-right: 2px solid var(--c-brand);
+        border-top-right-radius: 20px;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        height: calc(100% - 10px);
+        width: calc(100% - 480px);
+        border-top: 2px solid var(--c-brand);
+        border-right: 2px solid var(--c-brand);
+        border-top-right-radius: 20px;
+      }
+      .title {
+        position: absolute;
+        left: 100px;
+        top: 43px;
+        width: 267px;
+        height: 77px;
+        background: url(../images/service/content/ABO_01_02_00_00-banner1.png)
+          no-repeat center center;
+        background-size: contain;
+      }
+      .banner-logo {
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 112px;
+        height: 20px;
+        background: url(../images/service/content/ABO_01_02_00_00-banner2.png)
+          no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+  @include lg {
+    .content-header .banner {
+      padding: 40px 100px;
+      .wrap {
+        width: 100%;
+        &::before {
+          left: 0;
+          width: 100%;
+        }
+        &::after {
+          left: 0;
+          width: 80%;
+        }
+        .title {
+          left: 0;
+        }
+        .banner-logo {
+          left: 0;
+        }
+      }
+    }
+  }
+  @include md {
+    .content-header .banner {
+      padding: 40px;
+    }
+  }
+  @include xs {
+    .content-header .banner {
+      height: 100vw;
+      padding: 40px 40px 0 40px;
+      .wrap {
+        &::before {
+          width: 100%;
+          height: 100%;
+        }
+        &::after {
+          height: 40vw;
+          width: calc(98vw - 80px);
+          bottom: 0;
+          top: auto;
+        }
+        .title {
+          top: 4vw;
+          width: 44vw;
+          height: 13vw;
+          background-size: contain;
+        }
+        .banner-logo {
+          bottom: 5vw;
+        }
+      }
+    }
   }
   .anchor-group {
     margin-top: -120px;
@@ -2760,16 +2866,6 @@
   @include sm {
   }
   @include xs {
-    .content-header .banner {
-      padding: 10px 50px;
-      margin-top: 60px;
-      margin-bottom: 60px;
-      .text {
-        padding: 20px;
-        word-break: keep-all;
-        text-align: center;
-      }
-    }
     .anchor-group {
       margin-top: 0;
       &,
@@ -3469,6 +3565,117 @@
 }
 
 [data-page="ABO_01_01_00_00"] {
+  .content-header .banner {
+    height: 480px;
+    padding: 40px 0;
+    background-color: #460014;
+    .wrap {
+      position: relative;
+      max-width: 1600px;
+      width: 100%;
+      margin: 40px auto;
+      height: 100%;
+      font-size: 0;
+      line-height: 0;
+      &::before {
+        display: block;
+        position: absolute;
+        left: 100px;
+        height: 100%;
+        width: calc(100% - 200px);
+        border-top: 2px solid var(--c-brand);
+        border-right: 2px solid var(--c-brand);
+        border-top-right-radius: 20px;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        height: calc(100% - 10px);
+        width: calc(100% - 480px);
+        border-top: 2px solid var(--c-brand);
+        border-right: 2px solid var(--c-brand);
+        border-top-right-radius: 20px;
+      }
+      .title {
+        position: absolute;
+        left: 100px;
+        top: 43px;
+        width: 427px;
+        height: 150px;
+        background: url(../images/service/content/ABO_01_01_00_00-banner1.png)
+          no-repeat center center;
+        background-size: contain;
+      }
+      .banner-logo {
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 112px;
+        height: 20px;
+        background: url(../images/service/content/ABO_01_02_00_00-banner2.png)
+          no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+  @include lg {
+    .content-header .banner {
+      padding: 40px 100px;
+      .wrap {
+        width: 100%;
+        &::before {
+          left: 0;
+          width: 100%;
+        }
+        &::after {
+          left: 0;
+          width: 80%;
+        }
+        .title {
+          left: 0;
+        }
+        .banner-logo {
+          left: 0;
+        }
+      }
+    }
+  }
+  @include md {
+    .content-header .banner {
+      padding: 40px;
+    }
+  }
+  @include xs {
+    .content-header .banner {
+      height: 100vw;
+      padding: 40px 40px 0 40px;
+      .wrap {
+        &::before {
+          width: 100%;
+          height: 100%;
+        }
+        &::after {
+          height: 40vw;
+          width: calc(98vw - 80px);
+          bottom: 0;
+          top: auto;
+        }
+        .title {
+          top: 4vw;
+          width: 71vw;
+          height: 25vw;
+          background-size: contain;
+        }
+        .banner-logo {
+          width: 20vw;
+          height: 5vw;
+          bottom: 5vw;
+        }
+      }
+    }
+  }
   .con-section {
     height: auto;
     padding: 200px 40px;
