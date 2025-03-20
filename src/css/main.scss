@@ -58,6 +58,7 @@
   }
 }
 .main {
+  font-family: "HafferSQ";
   .header {
     transform: translateY(-100%);
     opacity: 0;
@@ -88,6 +89,29 @@
           background-repeat: no-repeat;
           background-position: center center;
           background-size: cover;
+        }
+        .title-wrap {
+          position: relative;
+          z-index: 10;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .title {
+            font-size: 160px;
+            line-height: 1;
+            font-weight: 500;
+            color: #fff;
+          }
+          p {
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 500;
+            color: #fff;
+          }
         }
       }
     }
@@ -453,7 +477,7 @@
   .sec4 {
     position: relative;
     .section-top {
-      padding: 120px 60px 200px 60px;
+      padding: 120px 60px 40px 60px;
       .title-wrap {
         display: flex;
         flex-wrap: Wrap;
@@ -489,6 +513,8 @@
     }
     .board-list {
       display: block;
+      font-size: 0;
+      line-height: 0;
     }
     .board-item {
       display: inline-block;
@@ -497,11 +523,44 @@
       vertical-align: top;
       &:nth-child(3n) {
         margin-right: 0;
-        .board-anchor {
-          display: block;
+      }
+      .board-anchor {
+        display: block;
+        width: 100%;
+        position: relative;
+        .img {
           background-color: #eee;
           width: 100%;
           height: 391px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .title-wrap {
+          display: flex;
+          gap: 5px;
+          flex-wrap: wrap;
+          color: #000;
+          padding: 15px 0 20px;
+          .category {
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 600;
+            width: 100%;
+          }
+          .title {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 600;
+            width: 100%;
+          }
+          .date {
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #70737c;
+            width: 100%;
+          }
         }
       }
     }
