@@ -496,11 +496,17 @@ $(function () {
   });
 
   // scroll event
-  $window.on("scroll", function () {
+  $window.on("mousewheel DOMMouseScroll", function (e) {
+    var delta = e.originalEvent.deltaY;
     if ($window.scrollTop() > 10) {
       $(".header").addClass("scroll");
     } else {
       $(".header").removeClass("scroll");
+    }
+    if (delta < 0) {
+      $(".header").attr("data-scroll-direction", "top");
+    } else {
+      $(".header").attr("data-scroll-direction", "bottom");
     }
   });
 

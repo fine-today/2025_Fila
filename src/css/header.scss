@@ -48,12 +48,24 @@
   }
 }
 @include only-lg {
+  [data-header-mode="white"] .header.scroll[data-scroll-direction="top"] {
+    .header-wrap {
+      background-color: transparent;
+    }
+  }
   .header {
     &.scroll {
       .header-wrap {
         transform: translateY(-100%);
       }
+      &[data-scroll-direction="top"] {
+        .header-wrap {
+          transform: translateY(0);
+          background-color: #fff;
+        }
+      }
     }
+
     .header-wrap {
       transition: transform 0.5s;
       transform: translateY(0);
