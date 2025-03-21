@@ -26,7 +26,7 @@
 }
 @keyframes textAni {
   0% {
-    transform: translateY(200px);
+    transform: translateY(100px);
     opacity: 0;
   }
   50% {
@@ -79,7 +79,13 @@
       }
     }
   }
-  font-family: "HafferSQ";
+  &.eng {
+    font-family: "HafferSQ";
+    body #content {
+      font-family: "HafferSQ";
+    }
+  }
+
   .header {
     transform: translateY(-100%);
     opacity: 0;
@@ -114,6 +120,7 @@
       }
 
       .title-wrap {
+        font-family: "HafferSQ";
         z-index: 1010;
         position: absolute;
         width: 100%;
@@ -126,7 +133,7 @@
         flex-wrap: wrap;
         left: 0;
         top: calc(50% - 200px);
-        animation: textAni 2s forwards;
+        animation: textAni 4s forwards;
         gap: 10px;
         .title {
           width: 100%;
@@ -827,6 +834,60 @@
     }
   }
   @include xs {
+    &[data-menu-open="true"] {
+      .header-wrap {
+        background: #fff;
+      }
+    }
+    &[data-header-mode="white"] {
+      .header {
+        #menu {
+          .depth1-item .depth1-anchor {
+            color: #fff;
+          }
+          .depth1-item.misto-logo svg {
+            path,
+            rect {
+              fill: #fff;
+            }
+          }
+        }
+        .lang {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+      .header[data-scroll-direction="top"] {
+        .header-wrap {
+          transform: translateY(0);
+          background: transparent;
+        }
+      }
+    }
+    .header[data-scroll-direction="bottom"] {
+      .header-wrap {
+        transform: translateY(-100%);
+      }
+    }
+    .header[data-scroll-direction="top"] {
+      .header-wrap {
+        transform: translateY(0);
+        background: #fff;
+      }
+    }
+    /*&[data-header-mode="white"][data-menu-open="true"] {
+      .header-wrap {
+        background: #fff;
+      }
+      .header #menu .depth1-item .depth1-anchor {
+        color: #000;
+      }
+      .header #menu .depth1-item.logo svg {
+        path,
+        rect {
+          fill: var(--c-brand);
+        }
+      }
+    }*/
     &.start {
       .sec1 {
         .title-wrap {
