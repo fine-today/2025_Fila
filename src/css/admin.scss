@@ -494,6 +494,19 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .left {
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      font-size: 14px;
+    }
+    .input input {
+      height: 46px;
+      border-radius: 4px;
+    }
+  }
 }
 /*==== 메인배너 정렬순서 설정 팝업 ====*/
 [data-page="A_MAI_01_00_00_00_pop1"] {
