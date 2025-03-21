@@ -5,6 +5,12 @@ p {
   font-size: 16px;
   line-height: 1.4;
 }
+em {
+  &.blue {
+    color: #4078c7;
+    font-weight: 700;
+  }
+}
 .flex-between {
   display: flex;
   align-items: center;
