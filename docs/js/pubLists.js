@@ -969,7 +969,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/service/main.html",
-        complete: "진행중", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
@@ -1715,7 +1715,7 @@ var PubLists = [
         designAnchor: "",
         address: "/",
         pubAddress: "./pages/eng/main.html",
-        complete: "대기", //"대기 | 진행중 | 완료"
+        complete: "완료", //"대기 | 진행중 | 완료"
         completeDate: "2025-01-00",
         etc: [""],
       },
