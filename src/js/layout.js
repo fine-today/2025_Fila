@@ -172,7 +172,7 @@ $(function () {
         },
         {
           id: "0-3",
-          title: "CI / BI",
+          title: "Corporate Identity",
           anchor: "#n",
           active: false,
         },
@@ -186,12 +186,6 @@ $(function () {
       sub: [
         {
           id: "0-1",
-          title: "제보채널",
-          anchor: "#n",
-          active: false,
-        },
-        {
-          id: "0-2",
           title: "오시는길",
           anchor: "#n",
           active: false,
