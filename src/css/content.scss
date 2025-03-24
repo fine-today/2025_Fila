@@ -558,6 +558,13 @@
     }
   }
 }
+.eng [data-page="INV_01_06_00_00"] .chart #chart {
+  height: 500px;
+  margin-bottom: 20px;
+  @include xs {
+    height: 360px;
+  }
+}
 
 [data-page="INV_01_06_00_00"] {
   *:not(.heading-line) + .h5 {
@@ -687,19 +694,19 @@
           background-color: var(--c-brand);
         }
         &[data-index="0"] .legend-color {
-          background-color:#460014;
+          background-color: #460014;
         }
         &[data-index="1"] .legend-color {
-          background-color:#820014;
+          background-color: #820014;
         }
         &[data-index="2"] .legend-color {
-          background-color:#DC0014;
+          background-color: #dc0014;
         }
         &[data-index="3"] .legend-color {
-          background-color:#F0828C;
+          background-color: #f0828c;
         }
         &[data-index="4"] .legend-color {
-          background-color:#F5BEC3;
+          background-color: #f5bec3;
         }
       }
     }
