@@ -245,6 +245,33 @@
   </div>
 </div>
 </footer>
+      <script>
+        $(".zoom-wrap .minus").on("click", function () {
+          $(".board-detail *,.bottom-btn .btn").each(function () {
+            var $this = $(this),
+              thisFontSize = parseInt($this.css("fontSize"));
+            $this.css("fontSize", thisFontSize - 5 + "px");
+          });
+        });
+        $(".zoom-wrap .plus").on("click", function () {
+          $(".board-detail *,.bottom-btn .btn").each(function () {
+            var $this = $(this),
+              thisFontSize = parseInt($this.css("fontSize"));
+            $this.css("fontSize", thisFontSize + 5 + "px");
+          });
+        });
+        $(".copy .copy-btn").on("click", function () {
+          var url = "";
+          var textarea = document.createElement("textarea");
+          document.body.appendChild(textarea);
+          url = window.document.location.href;
+          textarea.value = url;
+          textarea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textarea);
+          alert("URL이 복사되었습니다.");
+        });
+      </script>
     </div>
   </body>
 </html>

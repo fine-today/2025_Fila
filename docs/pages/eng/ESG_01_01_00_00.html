@@ -323,20 +323,32 @@
                 $conBox = $anchorUI.find(".con-box"),
                 $eachCon = $conBox.find(".con-wrap");
 
+              $anchorBox.find(".anchor-item:first-child").addClass("active");
               $anchorBtn
                 .on("click", function () {
                   var $this = $(this),
                     thisAnchor = $this.attr("data-anchor"),
                     $thisCon = $(`#${thisAnchor}`);
+                  $anchorUI.attr("data-anchor", "fixed");
+                  $(".header").attr("data-scroll-direction", "bottom");
                   $anchorBox.find(".anchor-item").removeClass("active");
-                  $this.closest(".anchor-item").addClass("active");
+                  $this
+                    .closest(".anchor-item")
+                    .addClass("active")
+                    .attr("title", "활성화");
                   $eachCon.removeClass("active");
                   $thisCon.addClass("active");
                   if ($(window).width() < 801) {
                     $("html,body").animate(
                       {
-                        scrollTop:
-                          $anchorUI.scrollTop() + $(window).height() - 150,
+                        scrollTop: $anchorUI.offset().top - 100,
+                      },
+                      200
+                    );
+                  } else {
+                    $("html,body").animate(
+                      {
+                        scrollTop: $anchorUI.offset().top - 120,
                       },
                       200
                     );
@@ -353,6 +365,22 @@
                     $anchorBox.hide();
                   } else {
                     $anchorBox.show();
+                  }
+                }
+
+                var winScrollTop = $(window).scrollTop(),
+                  anchorOffsetTop = $anchorUI.offset().top;
+                if ($(window).width() < 801) {
+                  if (winScrollTop >= anchorOffsetTop - 60) {
+                    $anchorUI.attr("data-anchor", "fixed");
+                  } else {
+                    $anchorUI.attr("data-anchor", "absolute");
+                  }
+                } else {
+                  if (winScrollTop >= anchorOffsetTop - 120) {
+                    $anchorUI.attr("data-anchor", "fixed");
+                  } else {
+                    $anchorUI.attr("data-anchor", "absolute");
                   }
                 }
               });
