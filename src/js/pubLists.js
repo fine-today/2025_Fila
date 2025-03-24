@@ -1385,7 +1385,7 @@ var PubLists = [
       },
       {
         id: "F_CAR_01_02_00_00",
-        breadcrumb: "Careers > 인사제도와 복지",
+        breadcrumb: "Careers > 복지",
         type: "page",
         design: "완료", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
