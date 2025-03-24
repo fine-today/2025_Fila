@@ -140,7 +140,7 @@ $(function () {
         },
         {
           id: "0-2",
-          title: "인사제도와 복지",
+          title: "복지",
           anchor: "#n",
           active: false,
         },

@@ -9,6 +9,11 @@ $(function () {
     $html.addClass("start");
   }, 0);
 
+  $(".main .sec1, .main .sec2").outerWidth($(window).width());
+  $(window).on("resize", function () {
+    $(".main .sec1, .main .sec2").outerWidth($(window).width());
+  });
+
   var win = {
     width: $window.outerWidth(),
     height: $window.outerHeight(),

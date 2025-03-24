@@ -56,7 +56,7 @@
         .depth1-item.misto-logo svg {
           path,
           rect {
-            fill: #fff;
+            fill: var(--c-brand);
           }
         }
       }
@@ -836,10 +836,26 @@
   @include xs {
     &[data-menu-open="true"] {
       .header-wrap {
+        transition: all 0.2s;
         background: #fff;
       }
     }
     &[data-header-mode="white"] {
+      &[data-menu-open="true"] {
+        .header {
+          h1.misto-logo {
+            a {
+              svg {
+                path,
+                rect {
+                  fill: var(--c-brand);
+                }
+              }
+            }
+          }
+        }
+      }
+
       .header {
         #menu {
           .depth1-item .depth1-anchor {

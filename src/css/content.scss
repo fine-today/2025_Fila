@@ -687,18 +687,19 @@
           background-color: var(--c-brand);
         }
         &[data-index="0"] .legend-color {
+          background-color:#460014;
         }
         &[data-index="1"] .legend-color {
-          opacity: 0.8;
+          background-color:#820014;
         }
         &[data-index="2"] .legend-color {
-          opacity: 0.6;
+          background-color:#DC0014;
         }
         &[data-index="3"] .legend-color {
-          opacity: 0.4;
+          background-color:#F0828C;
         }
         &[data-index="4"] .legend-color {
-          opacity: 0.2;
+          background-color:#F5BEC3;
         }
       }
     }
