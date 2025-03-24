@@ -521,11 +521,12 @@
 </div>
 </footer>
     </div>
-    <script>
-      $(".main .sec1, .main .sec2").outerWidth($(window).width());
-      $(window).on("resize", function () {
-        $(".main .sec1, .main .sec2").outerWidth($(window).width());
-      });
-    </script>
+
+    <div class="popup notice-pop active" data-pop="pop3">
+      <div class="pop-wrap">
+        <div class="pop-con"></div>
+        <button type="button" class="pop-close" title="닫기"></button>
+      </div>
+    </div>
   </body>
 </html>

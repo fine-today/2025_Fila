@@ -6,54 +6,6 @@ $(function () {
     $container = $("#container"),
     $footer = $("#footer");
 
-  //레이어팝업
-  $("[data-pop]:not('.popup')").on("click", function () {
-    var $this = $(this),
-      thisId = $this.attr("data-pop"),
-      $thisPop = $(`.popup[data-pop="${thisId}"]`);
-    $html.addClass("popup-open");
-    $thisPop.addClass("active");
-    if ($thisPop.find(".dim").length < 1) {
-      $thisPop.prepend('<button type="button" class="dim">닫기</button>');
-    }
-    if ($thisPop.hasClass("following-pop")) {
-      $html.removeClass("popup-open");
-      $thisPop.attr("data-pop-id", $this.attr("data-pop-id"));
-      var thisOffsetTop = $this.offset().top,
-        thisOffsetRight = $this.offset().left + $this.outerWidth(),
-        thisOffsetBottom = $(window).innerHeight() - thisOffsetTop;
-      if ($(window).innerHeight() < thisOffsetTop + $thisPop.outerHeight()) {
-        $thisPop
-          .find(".popup-wrap")
-          .css({ left: thisOffsetRight, bottom: thisOffsetBottom });
-      } else {
-        $thisPop
-          .find(".popup-wrap")
-          .css({ left: thisOffsetRight, top: thisOffsetTop });
-      }
-    }
-  });
-
-  setTimeout(function () {
-    $(".popup.active").prepend(
-      '<button type="button" class="dim">닫기</button>'
-    );
-    $(document).on(
-      "click",
-      ".popup.active .dim,.pop-close,[data-close]",
-      function () {
-        var $this = $(this),
-          $thisPop = $this.closest("[data-pop]"),
-          thisId = $thisPop.attr("data-pop"),
-          $thisBtn = $(`[data-pop="${thisId}"]:not(.popup)`);
-        $thisPop.removeClass("active");
-        $thisPop.find(".dim").remove();
-        $thisBtn.focus();
-        $html.removeClass("popup-open");
-      }
-    );
-  }, 0);
-
   /* 탭 */
   $(".tab-btn").click(function () {
     var $this = $(this),

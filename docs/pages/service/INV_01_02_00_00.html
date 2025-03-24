@@ -150,14 +150,12 @@
                     <div class="con-wrap">
                       <div class="scroll-wrap">
                         <div class="date-wrap">
-                          <span class="input"
-                            >2024.11.31
-                            <!-- <input type="text" /> -->
+                          <span class="input date">
+                            <input type="text" placeholder="YYYY.MM.DD" />
                           </span>
                           <span class="hypen">-</span>
-                          <span class="input"
-                            >2024.11.31
-                            <!-- <input type="text" /> -->
+                          <span class="input date">
+                            <input type="text" placeholder="YYYY.MM.DD" />
                           </span>
                         </div>
                         <span class="input btn">
@@ -451,6 +449,7 @@
 </footer>
 
       <script>
+        //check
         $('[name="check1"]:not(#check1-1)').on("change", function () {
           var allCheck = 0;
           $('[name="check1"]:not(#check1-1)').each(function () {
@@ -471,8 +470,7 @@
             $('[name="check1"]').prop("checked", false);
           }
         });
-      </script>
-      <script>
+
         //scroll event(xs 이상)
         var $sheet = $(".sheet-box"),
           $sheetBody = $sheet.find(".sheet-body-wrap"),
@@ -572,6 +570,46 @@
               }, 300);
             }, 0);
           });
+
+        // datepicker
+        $(".input.date>input").datepicker({
+          dateFormat: "yy.mm.dd",
+          showOn: "both",
+          buttonImageOnly: false,
+          buttonText: "선택",
+          showMonthAfterYear: true,
+          monthNamesShort: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+          ],
+          monthNames: [
+            "1월",
+            "2월",
+            "3월",
+            "4월",
+            "5월",
+            "6월",
+            "7월",
+            "8월",
+            "9월",
+            "10월",
+            "11월",
+            "12월",
+          ],
+          yearSuffix: "년",
+          dayNamesMin: ["일", "월", "화", "수", "목", "금", "토", "일"],
+          dayNames: ["일", "월", "화", "수", "목", "금", "토", "일"],
+        });
       </script>
     </div>
   </body>

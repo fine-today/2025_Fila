@@ -703,7 +703,7 @@ html.popup-open body {
     height: 100%;
     font-size: 0;
     line-height: 0;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.2);
   }
   &.active {
     display: flex;
