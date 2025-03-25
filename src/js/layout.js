@@ -531,6 +531,7 @@ $(function () {
       if (openFlag) {
         $menu.removeClass("all-close");
       } else {
+        console.log(1);
         $menu.addClass("all-close");
       }
     }

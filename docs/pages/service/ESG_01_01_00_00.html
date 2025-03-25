@@ -131,7 +131,7 @@
             <section class="anchor-box">
               <h3>ESG 하이라이트</h3>
               <ul class="anchor-list">
-                <li class="anchor-item">
+                <li class="anchor-item active">
                   <button type="button" class="anchor-btn" data-anchor="con1">
                     E<span>nvironment</span>
                   </button>
@@ -150,7 +150,7 @@
             </section>
 
             <section class="con-box">
-              <article class="con-wrap" id="con1">
+              <article class="con-wrap active" id="con1">
                 <div class="con-img">
                   <div class="text-box">
                     <h4>Actions for the Planet</h4>
@@ -304,37 +304,36 @@
                 $eachCon = $conBox.find(".con-wrap");
 
               $anchorBox.find(".anchor-item:first-child").addClass("active");
-              $anchorBtn
-                .on("click", function () {
-                  var $this = $(this),
-                    thisAnchor = $this.attr("data-anchor"),
-                    $thisCon = $(`#${thisAnchor}`);
-                  $anchorUI.attr("data-anchor", "fixed");
-                  $(".header").attr("data-scroll-direction", "bottom");
-                  $anchorBox.find(".anchor-item").removeClass("active");
-                  $this
-                    .closest(".anchor-item")
-                    .addClass("active")
-                    .attr("title", "활성화");
-                  $eachCon.removeClass("active");
-                  $thisCon.addClass("active");
-                  if ($(window).width() < 801) {
-                    $("html,body").animate(
-                      {
-                        scrollTop: $anchorUI.offset().top - 100,
-                      },
-                      200
-                    );
-                  } else {
-                    $("html,body").animate(
-                      {
-                        scrollTop: $anchorUI.offset().top - 120,
-                      },
-                      200
-                    );
-                  }
-                })
-                .triggerHandler("click");
+
+              $anchorBtn.on("click", function () {
+                var $this = $(this),
+                  thisAnchor = $this.attr("data-anchor"),
+                  $thisCon = $(`#${thisAnchor}`);
+                $anchorUI.attr("data-anchor", "fixed");
+                $(".header").attr("data-scroll-direction", "bottom");
+                $anchorBox.find(".anchor-item").removeClass("active");
+                $this
+                  .closest(".anchor-item")
+                  .addClass("active")
+                  .attr("title", "활성화");
+                $eachCon.removeClass("active");
+                $thisCon.addClass("active");
+                if ($(window).width() < 801) {
+                  $("html,body").animate(
+                    {
+                      scrollTop: $anchorUI.offset().top - 100,
+                    },
+                    200
+                  );
+                } else {
+                  $("html,body").animate(
+                    {
+                      scrollTop: $anchorUI.offset().top - 120,
+                    },
+                    200
+                  );
+                }
+              });
               $(window).on("scroll", function () {
                 var footerTop = $(".footer").offset().top,
                   winWidth = $(window).width(),

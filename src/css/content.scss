@@ -2633,7 +2633,7 @@
   .content-header .banner {
     height: 480px;
     padding: 40px 0;
-    background-color: #fff;
+    background-color: #dce1dc;
     .wrap {
       position: relative;
       max-width: 1600px;
@@ -2651,6 +2651,7 @@
         border-top: 2px solid var(--c-brand);
         border-right: 2px solid var(--c-brand);
         border-top-right-radius: 20px;
+        box-sizing: border-box;
       }
       &::after {
         display: block;
@@ -3004,6 +3005,7 @@
             justify-content: center;
             color: #fff;
             text-align: center;
+            padding: 0 40px;
           }
         }
       }
@@ -3579,58 +3581,65 @@
 }
 
 [data-page="ABO_01_01_00_00"] {
-  .content-header .banner {
-    height: 480px;
-    padding: 40px 0;
-    background-color: #460014;
-    .wrap {
-      position: relative;
-      max-width: 1600px;
-      width: 100%;
-      margin: 40px auto;
-      height: 100%;
-      font-size: 0;
-      line-height: 0;
-      &::before {
-        display: block;
-        position: absolute;
-        left: 100px;
+  #content > .wrap {
+    max-width: 100%;
+  }
+  .content-header {
+    margin-bottom: 0;
+    .banner {
+      height: 480px;
+      padding: 40px 0;
+      margin-bottom: 0;
+      background-color: #460014;
+      .wrap {
+        position: relative;
+        max-width: 1600px;
+        width: 100%;
+        margin: 40px auto;
         height: 100%;
-        width: calc(100% - 200px);
-        border-top: 2px solid var(--c-brand);
-        border-right: 2px solid var(--c-brand);
-        border-top-right-radius: 20px;
-      }
-      &::after {
-        display: block;
-        position: absolute;
-        left: 100px;
-        bottom: 0;
-        height: calc(100% - 10px);
-        width: calc(100% - 480px);
-        border-top: 2px solid var(--c-brand);
-        border-right: 2px solid var(--c-brand);
-        border-top-right-radius: 20px;
-      }
-      .title {
-        position: absolute;
-        left: 100px;
-        top: 43px;
-        width: 427px;
-        height: 150px;
-        background: url(../images/service/content/ABO_01_01_00_00-banner1.png)
-          no-repeat center center;
-        background-size: contain;
-      }
-      .banner-logo {
-        position: absolute;
-        left: 100px;
-        bottom: 0;
-        width: 112px;
-        height: 20px;
-        background: url(../images/service/content/ABO_01_02_00_00-banner2.png)
-          no-repeat center center;
-        background-size: contain;
+        font-size: 0;
+        line-height: 0;
+        &::before {
+          display: block;
+          position: absolute;
+          left: 100px;
+          height: 100%;
+          width: calc(100% - 200px);
+          border-top: 2px solid var(--c-brand);
+          border-right: 2px solid var(--c-brand);
+          border-top-right-radius: 20px;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          left: 100px;
+          bottom: 0;
+          height: calc(100% - 10px);
+          width: calc(100% - 480px);
+          border-top: 2px solid var(--c-brand);
+          border-right: 2px solid var(--c-brand);
+          border-top-right-radius: 20px;
+        }
+        .title {
+          position: absolute;
+          left: 100px;
+          top: 43px;
+          width: 427px;
+          height: 150px;
+          background: url(../images/service/content/ABO_01_01_00_00-banner1.png)
+            no-repeat center center;
+          background-size: contain;
+        }
+        .banner-logo {
+          position: absolute;
+          left: 100px;
+          bottom: 0;
+          width: 112px;
+          height: 20px;
+          background: url(../images/service/content/ABO_01_02_00_00-banner2.png)
+            no-repeat center center;
+          background-size: contain;
+        }
       }
     }
   }
@@ -3694,6 +3703,9 @@
     height: auto;
     padding: 200px 40px;
     position: relative;
+    &.Mission {
+      background-color: #fafafa;
+    }
   }
   .section-wrap {
     width: 100%;
