@@ -400,7 +400,9 @@
     </div>
     <script>
       $(".search-btn").on("click", function () {
-        $(".search-pop").addClass("active");
+        if ($(window).width() < 801) {
+          $(".search-pop").addClass("active");
+        }
       });
     </script>
     <div class="search-pop">

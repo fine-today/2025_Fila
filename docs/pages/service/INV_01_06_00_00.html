@@ -154,26 +154,6 @@
                   ["자사주", 3.1, setChartOption("자사주 3.1%")],
                 ]);
 
-                var options = {
-                  tooltip: { isHtml: true },
-                  pieHole: 0.85,
-                  pieSliceText: "none",
-                  slices: {
-                    0: { color: "#460014" },
-                    1: { color: "#820014" },
-                    2: { color: "#DC0014" },
-                    3: { color: "#F0828C" },
-                    4: { color: "#F5BEC3" },
-                  },
-                  chartArea: { width: "260px", height: "260px" },
-                  pieSliceBorder: "",
-                  pieSliceBorderColor: "#fff",
-                  legend: "none",
-                  animation: {
-                    duration: 1000,
-                    easing: "out",
-                  },
-                };
                 var mq = window.matchMedia("(max-width: 800px)");
                 if (mq.matches) {
                   var options = {
@@ -190,6 +170,30 @@
                     chartArea: { width: "220px", height: "220px" },
                     pieSliceBorderColor: "#fff",
                     legend: "none",
+                    animation: {
+                      duration: 1000,
+                      easing: "out",
+                    },
+                  };
+                } else {
+                  var options = {
+                    tooltip: { isHtml: true },
+                    pieHole: 0.85,
+                    pieSliceText: "none",
+                    slices: {
+                      0: { color: "#460014" },
+                      1: { color: "#820014" },
+                      2: { color: "#DC0014" },
+                      3: { color: "#F0828C" },
+                      4: { color: "#F5BEC3" },
+                    },
+                    chartArea: { width: "260px", height: "260px" },
+                    pieSliceBorderColor: "#fff",
+                    legend: "none",
+                    animation: {
+                      duration: 1000,
+                      easing: "out",
+                    },
                   };
                 }
 
@@ -199,7 +203,6 @@
                 chart.draw(data, options);
               }
               function highlightSlice(index) {
-                console.log("click");
                 chart.setSelection([{ row: index }]);
               }
             </script>

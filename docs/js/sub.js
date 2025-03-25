@@ -34,7 +34,6 @@ $(function () {
         thisTableWidth = $this.attr("data-width");
       if (thisBreakPoint === "xs") {
         if ($window.outerWidth() <= 800) {
-          console.log(thisTableWidth);
           $thisTable.css("minWidth", thisTableWidth + "px");
         } else {
           $thisTable.removeAttr("style");

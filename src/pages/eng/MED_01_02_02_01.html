@@ -78,6 +78,18 @@
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
       <script>
+        var $window = $(window);
+        $window.on("scroll", function () {
+          var scrollTop = $window.scrollTop(),
+            winHeight = $window.height(),
+            conHeight = $("#content").outerHeight();
+          if (scrollTop + winHeight > conHeight - 20) {
+            $(".copy-wrap").attr("data-mode", "absolute");
+          } else {
+            $(".copy-wrap").attr("data-mode", "fixed");
+          }
+        });
+
         $(".zoom-wrap .minus").on("click", function () {
           $(".board-detail *,.bottom-btn .btn").each(function () {
             var $this = $(this),

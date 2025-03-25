@@ -126,5 +126,13 @@
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
     </div>
+    <script>
+      $(".search-btn").on("click", function () {
+        if ($(window).width() < 801) {
+          $(".search-pop").addClass("active");
+        }
+      });
+    </script>
+    @@include('./include/search-pop.html',{'placeholder':'아카이브 검색하기'})
   </body>
 </html>

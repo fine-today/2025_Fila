@@ -309,5 +309,28 @@
 </div>
 </footer>
     </div>
+    <script>
+      $(".search-btn").on("click", function () {
+        if ($(window).width() < 801) {
+          $(".search-pop").addClass("active");
+        }
+      });
+    </script>
+    <div class="search-pop">
+  <span class="placeholder">아카이브 검색하기</span>
+  <div class="search-pop-wrap">
+    <div class="input">
+      <i class="search-icon"></i>
+      <input type="text" placeholder="" />
+      <button type="button" class="delete"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var $input = $(".search-pop .input input");
+  $input.attr("placeholder", $(".placeholder").text());
+</script>
+
   </body>
 </html>
