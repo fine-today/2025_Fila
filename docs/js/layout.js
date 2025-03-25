@@ -31,7 +31,7 @@ $(function () {
       sub: [
         {
           id: "0-1",
-          title: "We Are Misto",
+          title: "We are Misto",
           anchor: "#n",
           active: false,
         },
@@ -202,7 +202,7 @@ $(function () {
       sub: [
         {
           id: "0-1",
-          title: "We Are Misto",
+          title: "We are Misto",
           anchor: "#n",
           active: false,
         },
