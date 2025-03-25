@@ -258,6 +258,20 @@ $(function () {
     }
   });
 
+  //input limit
+  $(".input:has(.limit) input").each(function () {
+    var $this = $(this),
+      limitWidth = $this.find("+.limit").outerWidth();
+    $this.css("paddingRight", limitWidth + 10 + "px");
+  });
+  $(window).on("resize", function () {
+    $(".input:has(.limit) input").each(function () {
+      var $this = $(this),
+        limitWidth = $this.find("+.limit").outerWidth();
+      $this.css("paddingRight", limitWidth + 10 + "px");
+    });
+  });
+
   // password input
   $(".password .show-hide").on("click", function () {
     var $this = $(this),
