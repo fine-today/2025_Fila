@@ -2685,6 +2685,19 @@
     }
   }
 }
+.eng [data-page="INV_01_04_00_00"] {
+  @include xs {
+    .card-wrap .card-item {
+      .title {
+        width: 100% !important;
+        margin-bottom: 10px;
+      }
+      .con {
+        width: 100% !important;
+      }
+    }
+  }
+}
 
 [data-page="ABO_01_02_00_00"] {
   .content-header .banner {
@@ -3428,9 +3441,9 @@
   }
   .diagram {
     .depth1-box {
+      display: none;
       position: relative;
       padding: 50px;
-      display: flex;
       align-items: center;
       justify-content: center;
       .depth1 {
@@ -3473,10 +3486,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-top: 100px;
+      padding-top: 0;
       position: relative;
-      margin-top: 40px;
-      &::after {
+      margin-top: 0;
+      /*&::after {
         display: block;
         position: absolute;
         height: 80px;
@@ -3484,7 +3497,7 @@
         width: 1px;
         top: 0;
         border-left: 1px dashed var(--c-brand);
-      }
+      }*/
       .depth2 {
         width: 160px;
         height: 160px;

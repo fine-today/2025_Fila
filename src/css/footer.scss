@@ -182,9 +182,8 @@
         &:nth-child(3) {
         }
         &.copy {
-          position: absolute;
-          right: 40px;
-          bottom: 0;
+          width: 100%;
+          position: static;
         }
       }
     }
