@@ -173,6 +173,49 @@
             </div>
           </div>
         </div>
+        <script>
+          var $window = $(window);
+          $window.on("scroll", function () {
+            var scrollTop = $window.scrollTop(),
+              winHeight = $window.height(),
+              conHeight = $("#content").outerHeight();
+            if (scrollTop + winHeight > conHeight - 20) {
+              $(".copy-wrap").attr("data-mode", "absolute");
+            } else {
+              $(".copy-wrap").attr("data-mode", "fixed");
+            }
+          });
+
+          $(".zoom-wrap .minus").on("click", function () {
+            $(".board-detail *,.bottom-btn .btn").each(function () {
+              var $this = $(this),
+                thisFontSize = parseInt($this.css("fontSize"));
+              $this.css("fontSize", thisFontSize - 5 + "px");
+            });
+          });
+          $(".zoom-wrap .plus").on("click", function () {
+            $(".board-detail *,.bottom-btn .btn").each(function () {
+              var $this = $(this),
+                thisFontSize = parseInt($this.css("fontSize"));
+              $this.css("fontSize", thisFontSize + 5 + "px");
+            });
+          });
+          $(".copy .copy-btn").on("click", function () {
+            var url = "";
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            url = window.document.location.href;
+            textarea.value = url;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+          });
+
+          $(".top-img").outerWidth($(window).width());
+          $(window).on("resize", function () {
+            $(".top-img").outerWidth($(window).width());
+          });
+        </script>
       </div>
       <footer class="footer"><div class="footer-menu-wrap">
   <div class="depth depth1 wrap" id="footer-menu">

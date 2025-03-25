@@ -74,6 +74,16 @@
           <div class="bottom-btn">
             <a href="#n" class="btn large">List</a>
           </div>
+          <div class="copy-wrap">
+            <div class="copy">
+              <div class="zoom-wrap">
+                <button type="button" class="minus">글자크기 축소</button>
+                <span>Adjust font size</span>
+                <button type="button" class="plus">글자크기 확대</button>
+              </div>
+              <button type="button" class="copy-btn">보도자료 복사</button>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="footer">@@include('./include/footer.html')</footer>
@@ -113,7 +123,6 @@
           textarea.select();
           document.execCommand("copy");
           document.body.removeChild(textarea);
-          alert("URL이 복사되었습니다.");
         });
       </script>
     </div>
