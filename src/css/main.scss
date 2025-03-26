@@ -183,16 +183,16 @@
   .slick-track {
     height: 100%;
   }
-  @keyframes slideOpacity {
+  /*@keyframes slideOpacity {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-  }
+  }*/
   .visual-slide {
-    animation: slideOpacity 5s forwards;
+    //animation: slideOpacity 5s forwards;
     .img {
       display: flex;
       align-items: center;

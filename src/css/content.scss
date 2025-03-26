@@ -1961,14 +1961,14 @@
       gap: 10px;
       .input.search {
         padding-left: 12px;
-        padding-right: 40px;
+        padding-right: 12px;
         position: relative;
         &::before {
-          display: none;
         }
         input {
           box-sizing: border-box;
-          width: 204px;
+          width: 214px;
+          padding-left: 28px;
           &:focus {
             padding-right: 30px;
             & + .clear {
@@ -1986,7 +1986,7 @@
           align-items: center;
           justify-content: center;
           position: absolute;
-          right: 44px;
+          right: 12px;
           top: 10px;
           border-radius: 50%;
           border: 0;
@@ -2014,7 +2014,7 @@
         border: 0;
         font-size: 0;
         line-height: 0;
-        display: block;
+        display: none;
         position: absolute;
         left: 220px;
         top: 8px;
@@ -2370,15 +2370,16 @@
       gap: 10px;
       .input.search {
         padding-left: 12px;
-        padding-right: 40px;
+        padding-right: 12px;
         min-width: 260px;
         position: relative;
         &::before {
-          display: none;
+          //display: none;
         }
         input {
           box-sizing: border-box;
-          width: 204px;
+          width: 214px;
+          padding-left: 28px;
           &:focus {
             padding-right: 30px;
             & + .clear {
@@ -2396,7 +2397,7 @@
           align-items: center;
           justify-content: center;
           position: absolute;
-          right: 44px;
+          right: 12px;
           top: 10px;
           border-radius: 50%;
           border: 0;
@@ -2425,7 +2426,7 @@
         border: 0;
         font-size: 0;
         line-height: 0;
-        display: block;
+        display: none;
         position: absolute;
         left: 220px;
         top: 8px;
