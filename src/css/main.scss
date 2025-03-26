@@ -141,7 +141,7 @@
         flex-wrap: wrap;
         left: 0;
         top: calc(50% - 200px);
-        animation: textAni 8s forwards;
+        animation: textAni 10s forwards;
         gap: 10px;
         .title {
           width: 100%;
@@ -183,7 +183,16 @@
   .slick-track {
     height: 100%;
   }
+  @keyframes slideOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .visual-slide {
+    animation: slideOpacity 5s forwards;
     .img {
       display: flex;
       align-items: center;
