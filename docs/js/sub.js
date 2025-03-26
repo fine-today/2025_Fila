@@ -279,4 +279,16 @@ $(function () {
   $window.on("resize", function () {
     $(".content-header .banner").outerWidth($(window).width());
   });
+
+  //input(clear btn 추가)
+  $('.input input[type="text"]').on("focus", function () {
+    var $this = $(this),
+      $thisParent = $this.closest(".input");
+    var $clearIcon = $(
+      '<button type="button" class="clear">내용 지움</button>'
+    );
+    if ($thisParent.find(".clear").length <= 0) {
+      $thisParent.append($clearIcon);
+    }
+  });
 });

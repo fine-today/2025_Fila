@@ -1962,8 +1962,52 @@
       .input.search {
         padding-left: 12px;
         padding-right: 40px;
+        position: relative;
         &::before {
           display: none;
+        }
+        input {
+          box-sizing: border-box;
+          width: 204px;
+          &:focus {
+            padding-right: 30px;
+            & + .clear {
+              opacity: 1;
+            }
+          }
+        }
+        .clear {
+          opacity: 0;
+          font-size: 0;
+          line-height: 0;
+          width: 21px;
+          height: 21px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 44px;
+          top: 10px;
+          border-radius: 50%;
+          border: 0;
+          background-color: #999;
+          &::before,
+          &::after {
+            display: block;
+            position: relative;
+            width: 2px;
+            height: 11px;
+            background-color: #fff;
+            transform-origin: center center;
+          }
+          &::before {
+            left: 1px;
+            transform: rotate(45deg);
+          }
+          &::after {
+            right: 1px;
+            transform: rotate(-45deg);
+          }
         }
       }
       .search-btn {
@@ -2328,8 +2372,52 @@
         padding-left: 12px;
         padding-right: 40px;
         min-width: 260px;
+        position: relative;
         &::before {
           display: none;
+        }
+        input {
+          box-sizing: border-box;
+          width: 204px;
+          &:focus {
+            padding-right: 30px;
+            & + .clear {
+              opacity: 1;
+            }
+          }
+        }
+        .clear {
+          opacity: 0;
+          font-size: 0;
+          line-height: 0;
+          width: 21px;
+          height: 21px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 44px;
+          top: 10px;
+          border-radius: 50%;
+          border: 0;
+          background-color: #999;
+          &::before,
+          &::after {
+            display: block;
+            position: relative;
+            width: 2px;
+            height: 11px;
+            background-color: #fff;
+            transform-origin: center center;
+          }
+          &::before {
+            left: 1px;
+            transform: rotate(45deg);
+          }
+          &::after {
+            right: 1px;
+            transform: rotate(-45deg);
+          }
         }
       }
 
