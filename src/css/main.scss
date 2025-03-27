@@ -140,7 +140,7 @@
         text-align: center;
         flex-wrap: wrap;
         left: 0;
-        top: calc(50% - 200px);
+        top: calc(50% - 80px);
         animation: textAni 10s forwards;
         gap: 10px;
         .title {
@@ -151,6 +151,9 @@
           color: #fff;
         }
         p {
+          position: absolute;
+          left: 0;
+          top: calc(100% + 10px);
           width: 100%;
           font-size: 20px;
           line-height: 1;
@@ -257,6 +260,13 @@
           span {
             display: block;
           }
+        }
+        .eng {
+          margin-top: 10px;
+          color: #70737c;
+          font-size: 20px;
+          line-height: 1.5;
+          font-weight: 400;
         }
       }
     }

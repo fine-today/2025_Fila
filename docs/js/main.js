@@ -46,7 +46,7 @@ $(function () {
       $visualSlide.slick({
         autoplay: true,
         dots: false,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
         speed: 1000,
         cssEase: "linear",
         slidesToShow: 1,
