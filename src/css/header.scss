@@ -127,6 +127,7 @@
       }
       .depth2-item {
         width: 100%;
+        display: block;
         .depth2-anchor {
           position: relative;
           height: 40px;
@@ -347,6 +348,9 @@
             display: flex;
           }
         }*/
+      }
+      .depth2 {
+        width: 100%;
       }
       .depth2-list {
         display: flex;
