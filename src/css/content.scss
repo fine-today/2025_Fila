@@ -2122,6 +2122,9 @@
         .input.search {
           display: none;
         }
+        .clear {
+          display: none;
+        }
         .search-btn {
           position: static;
           display: flex;
@@ -2570,6 +2573,9 @@
         display: flex;
         align-items: center;
         .input.search {
+          display: none;
+        }
+        .clear {
           display: none;
         }
         .search-btn {

@@ -2169,4 +2169,11 @@ table.table {
       }
     }
   }
+  @include xs {
+    .search-pop-wrap {
+      .clear {
+        display: none;
+      }
+    }
+  }
 }
