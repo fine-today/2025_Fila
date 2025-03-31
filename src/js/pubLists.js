@@ -2179,7 +2179,7 @@ var PubLists = [
       },
       {
         id: "F_CAR_01_02_00_00",
-        breadcrumb: "Careers > Employee Benefits",
+        breadcrumb: "Careers > Benefits",
         type: "page",
         design: "없음", //"대기 | 진행중 | 완료 | 없음"
         designDate: "2025-01-00",
