@@ -1106,6 +1106,19 @@ var PubLists = [
         etc: [""],
       } */
       {
+        id: "F_INV_01_03_05_00",
+        breadcrumb: "Investors > 주주총회 > 제35기 정기주주총회",
+        type: "page",
+        design: "완료", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/service/INV_01_03_05_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [],
+      },
+      {
         id: "F_INV_01_03_01_00",
         breadcrumb: "Investors > 주주총회 > 제34기 정기주주총회",
         type: "page",
@@ -1866,6 +1879,20 @@ var PubLists = [
         completeDate: "2025-01-00",
         etc: [""],
       },*/
+      {
+        id: "F_INV_01_03_05_00",
+        breadcrumb:
+          "Investors > Shareholders' Meeting > The 35th General Shareholders' Meeting",
+        type: "TAB",
+        design: "없음", //"대기 | 진행중 | 완료 | 없음"
+        designDate: "2025-01-00",
+        designAnchor: "",
+        address: "/",
+        pubAddress: "./pages/eng/INV_01_03_05_00.html",
+        complete: "완료", //"대기 | 진행중 | 완료"
+        completeDate: "2025-01-00",
+        etc: [""],
+      },
       {
         id: "F_INV_01_03_01_00",
         breadcrumb:
