@@ -452,7 +452,7 @@ $(function () {
         }
       });
       var headerHeight = $(".header").outerHeight();
-      $(".header .menu-wrap").height(headerHeight + depth2Height);
+      $(".header .menu-wrap").height(headerHeight + depth2Height + 20);
     }
   });
 
