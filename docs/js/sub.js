@@ -281,7 +281,7 @@ $(function () {
   });
 
   //input(clear btn 추가)
-  $('.input input[type="text"]').on("focus", function () {
+  $('.input:not(.date) input[type="text"]').on("focus", function () {
     var $this = $(this),
       $thisParent = $this.closest(".input");
     var $clearIcon = $(
