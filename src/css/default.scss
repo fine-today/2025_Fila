@@ -212,6 +212,16 @@ a:active {
   color: #6b7684;
   text-decoration: none;
 }
+.header a,
+.content a,
+.footer a {
+  &:visited,
+  &:focus,
+  &:active {
+    color: #6b7684;
+    text-decoration: none;
+  }
+}
 b,
 strong {
   font-weight: 600;
@@ -480,34 +490,34 @@ body {
 
 @for $i from 0 through 10 {
   .padding#{$i*4} {
-    padding: 0.4rem * $i !important;
+    padding: 4px * $i !important;
   }
   .padding-l-#{$i*4} {
-    padding-left: 0.4rem * $i !important;
+    padding-left: 4px * $i !important;
   }
   .padding-t-#{$i*4} {
-    padding-top: 0.4rem * $i !important;
+    padding-top: 4px * $i !important;
   }
   .padding-b-#{$i*4} {
-    padding-bottom: 0.4rem * $i !important;
+    padding-bottom: 4px * $i !important;
   }
   .padding-r-#{$i*4} {
-    padding-right: 0.4rem * $i !important;
+    padding-right: 4px * $i !important;
   }
   .margin#{$i*4} {
-    margin: 0.4rem * $i !important;
+    margin: 4px * $i !important;
   }
   .margin-l-#{$i*4} {
-    margin-left: 0.4rem * $i !important;
+    margin-left: 4px * $i !important;
   }
   .margin-t-#{$i*4} {
-    margin-top: 0.4rem * $i !important;
+    margin-top: 4px * $i !important;
   }
   .margin-b-#{$i*4} {
-    margin-bottom: 0.4rem * $i !important;
+    margin-bottom: 4px * $i !important;
   }
   .margin-r-#{$i*4} {
-    margin-right: 0.4rem * $i !important;
+    margin-right: 4px * $i !important;
   }
 }
 
