@@ -1175,7 +1175,8 @@
     }
     .card {
       vertical-align: middle;
-      display: inline-block;
+      display: inline-flex;
+      justify-content: center;
       flex: 1;
       position: relative;
       &:not(:last-child) {
@@ -1193,6 +1194,15 @@
       img {
         vertical-align: middle;
         display: inline-block;
+      }
+    }
+  }
+  @include md {
+    .card-wrap {
+      flex-wrap: wrap;
+      .card {
+        flex-basis: 33.3333%;
+        flex-shrink: 2;
       }
     }
   }

@@ -291,4 +291,7 @@ $(function () {
       $thisParent.append($clearIcon);
     }
   });
+
+  // editor 수정
+  $(".mte_doc_style").remove();
 });
