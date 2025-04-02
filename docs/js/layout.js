@@ -186,6 +186,12 @@ $(function () {
       sub: [
         {
           id: "0-1",
+          title: "제보체널",
+          anchor: "#n",
+          active: false,
+        },
+        {
+          id: "0-2",
           title: "오시는길",
           anchor: "#n",
           active: false,
@@ -214,7 +220,7 @@ $(function () {
         },
         {
           id: "0-3",
-          title: "Brand",
+          title: "Brands",
           anchor: "#n",
           active: false,
         },
@@ -234,7 +240,7 @@ $(function () {
         },
         {
           id: "0-2",
-          title: "Disclosure",
+          title: "Public Disclosures",
           anchor: "#n",
           active: false,
         },

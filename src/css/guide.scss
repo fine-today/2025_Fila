@@ -703,9 +703,8 @@ p.blt.type3:before {
     position: relative;
     &::after {
       display: inline-block;
-      width: 1px;
-      height: 12px;
-      background-color: #eee;
+      content: ":";
+      color: #a0a2a8;
       margin: 0 8px;
     }
   }
