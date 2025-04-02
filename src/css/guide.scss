@@ -119,6 +119,14 @@ p.type2,
     }
   }
 }
+:focus {
+  outline: 2px dashed #999;
+}
+@include xs {
+  :focus {
+    outline: 0;
+  }
+}
 .content-header + .heading-line {
   margin-top: 0;
 }
@@ -212,9 +220,12 @@ p.type2,
   transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   white-space: nowrap;
   &.input {
-    &:has(:checked) {
-      border-color: var(--c-brand);
-      color: var(--c-brand);
+    &:has(input[type="checkbox"], input[type="radio"]) {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+    }
+    :checked + label {
     }
     input {
       &[type="checkbox"],
@@ -229,16 +240,23 @@ p.type2,
           font-size: 16px;
           font-weight: 700;
           line-height: 1.8;
-          padding: 0;
+          border: 1px solid #eee;
+          color: #70737c;
+          border-radius: 20px;
+          padding: 4px 15px;
           &::before {
             display: none;
           }
         }
         &:checked + label {
+          border-color: var(--c-brand);
           color: var(--c-brand);
           &::before {
             display: none;
           }
+        }
+        &:focus + label {
+          outline: 2px dashed #999;
         }
       }
     }
