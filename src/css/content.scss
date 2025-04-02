@@ -14,6 +14,24 @@
     }
   }
 }
+.eng [data-page="INV_01_02_00_00"] {
+  .sheet-body-wrap
+    .sheet-body-box
+    .sheet-body
+    .body-con-wrap
+    .body-con
+    .body-title {
+    flex-basis: 170px;
+  }
+  @include xs {
+    .sheet-body-wrap .sheet-body-box .sheet-body .body-btn-wrap {
+      flex-wrap: wrap;
+      .table-unit {
+        text-align: left;
+      }
+    }
+  }
+}
 [data-page="INV_01_02_00_00"] {
   .table-unit {
     color: #a0a2a8;

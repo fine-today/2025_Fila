@@ -128,138 +128,186 @@
                 <span class="desc">1 Month</span>
               </button>
               <button type="button" class="sheet-btn" data-id="2">
-                <span class="title">유형</span>
-                <span class="desc">전체</span>
+                <span class="title"> Type of Disclosure </span>
+                <span class="desc">ALL</span>
               </button>
             </div>
 
             <div class="sheet-body-wrap">
-              <button type="button" class="dimm"></button>
-              <div class="sheet-body">
-                <div class="body-btn-wrap">
-                  <div class="btn-inner">
-                    <button type="button" class="sheet-btn" data-id="1">
-                      Period
-                    </button>
-                    <button type="button" class="sheet-btn" data-id="2">
-                      Type of Disclosure
-                    </button>
+              <div class="sheet-body-box">
+                <button type="button" class="dimm"></button>
+                <div class="sheet-body">
+                  <div class="body-btn-wrap">
+                    <div class="btn-inner">
+                      <button type="button" class="sheet-btn" data-id="1">
+                        Period
+                      </button>
+                      <button type="button" class="sheet-btn" data-id="2">
+                        Type of Disclosure
+                      </button>
+                    </div>
+                    <div class="table-unit">
+                      * Provided by DART from Financial Supervisory Service(FSS)
+                    </div>
                   </div>
-                  <div class="table-unit">금융감독원 DART제공</div>
-                </div>
-                <div class="body-con-wrap">
-                  <div class="body-con" data-id="1">
-                    <span class="body-title"> Period </span>
-                    <div class="con-wrap">
-                      <div class="scroll-wrap">
-                        <div class="date-wrap">
-                          <span class="input date">
-                            <input type="text" placeholder="YYYY.MM.DD" />
+                  <div class="body-con-wrap">
+                    <div class="body-con" data-id="1">
+                      <span class="body-title"> Period </span>
+                      <div class="con-wrap">
+                        <div class="scroll-wrap">
+                          <div class="date-wrap">
+                            <span class="input date">
+                              <input type="text" placeholder="YYYY.MM.DD" />
+                            </span>
+                            <span class="hypen">-</span>
+                            <span class="input date">
+                              <input type="text" placeholder="YYYY.MM.DD" />
+                            </span>
+                          </div>
+                          <span class="input btn">
+                            <input
+                              type="radio"
+                              id="radio1-1"
+                              name="radio1"
+                              checked
+                            />
+                            <label for="radio1-1">1 Month</label>
                           </span>
-                          <span class="hypen">-</span>
-                          <span class="input date">
-                            <input type="text" placeholder="YYYY.MM.DD" />
+                          <span class="input btn">
+                            <input type="radio" id="radio1-2" name="radio1" />
+                            <label for="radio1-2">6 Months</label>
+                          </span>
+                          <span class="input btn">
+                            <input type="radio" id="radio1-3" name="radio1" />
+                            <label for="radio1-3">1 Year</label>
+                          </span>
+                          <span class="input btn">
+                            <input type="radio" id="radio1-4" name="radio1" />
+                            <label for="radio1-4">3 Years</label>
+                          </span>
+                          <span class="input btn">
+                            <input type="radio" id="radio1-5" name="radio1" />
+                            <label for="radio1-5">5 Years</label>
+                          </span>
+                          <span class="input btn">
+                            <input type="radio" id="radio1-6" name="radio1" />
+                            <label for="radio1-6">10 Years</label>
+                          </span>
+                          <span class="input btn">
+                            <input type="radio" id="radio1-7" name="radio1" />
+                            <label for="radio1-7">20~10 Years ago </label>
+                          </span>
+                          <span class="input btn">
+                            <input type="radio" id="radio1-8" name="radio1" />
+                            <label for="radio1-8">20 years ago</label>
                           </span>
                         </div>
-                        <span class="input btn">
-                          <input
-                            type="radio"
-                            id="radio1-1"
-                            name="radio1"
-                            checked
-                          />
-                          <label for="radio1-1">1 Month</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-2" name="radio1" />
-                          <label for="radio1-2">6 Months</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-3" name="radio1" />
-                          <label for="radio1-3">1 Year</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-4" name="radio1" />
-                          <label for="radio1-4">3 Years</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-5" name="radio1" />
-                          <label for="radio1-5">5 Years</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-6" name="radio1" />
-                          <label for="radio1-6">10 Years</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-7" name="radio1" />
-                          <label for="radio1-7">20~10 Years ago </label>
-                        </span>
-                        <span class="input btn">
-                          <input type="radio" id="radio1-8" name="radio1" />
-                          <label for="radio1-8">20 years ago</label>
-                        </span>
+                      </div>
+                    </div>
+                    <div class="body-con" data-id="2">
+                      <span class="body-title"> Type of Disclosure </span>
+                      <div class="con-wrap">
+                        <div class="scroll-wrap">
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-1"
+                              name="check1"
+                            />
+                            <label for="check1-1">ALL</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-2"
+                              name="check1"
+                            />
+                            <label for="check1-2">Periodic Disclosure</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-3"
+                              name="check1"
+                            />
+                            <label for="check1-3">Report on Major Issues</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-4"
+                              name="check1"
+                            />
+                            <label for="check1-4">Issuance Disclosure</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-5"
+                              name="check1"
+                            />
+                            <label for="check1-5">Equity Disclosure</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-6"
+                              name="check1"
+                            />
+                            <label for="check1-6"
+                              >Miscellaneous Disclosures</label
+                            >
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-7"
+                              name="check1"
+                            />
+                            <label for="check1-7">External Audit Matters</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-8"
+                              name="check1"
+                            />
+                            <label for="check1-8">Fund Disclosure</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-9"
+                              name="check1"
+                            />
+                            <label for="check1-9">Asset Securitization</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-10"
+                              name="check1"
+                            />
+                            <label for="check1-10">Exchange Disclosure</label>
+                          </span>
+                          <span class="input btn">
+                            <input
+                              type="checkbox"
+                              id="check1-11"
+                              name="check1"
+                            />
+                            <label for="check1-11"
+                              >Fair Trade Commission Disclosure</label
+                            >
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="body-con" data-id="2">
-                    <span class="body-title"> Type of Disclosure </span>
-                    <div class="con-wrap">
-                      <div class="scroll-wrap">
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-1" name="check1" />
-                          <label for="check1-1">ALL</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-2" name="check1" />
-                          <label for="check1-2">Periodic Disclosure</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-3" name="check1" />
-                          <label for="check1-3">Report on Major Issues</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-4" name="check1" />
-                          <label for="check1-4">Issuance Disclosure</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-5" name="check1" />
-                          <label for="check1-5">Equity Disclosure</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-6" name="check1" />
-                          <label for="check1-6"
-                            >Miscellaneous Disclosures</label
-                          >
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-7" name="check1" />
-                          <label for="check1-7">External Audit Matters</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-8" name="check1" />
-                          <label for="check1-8">Fund Disclosure</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-9" name="check1" />
-                          <label for="check1-9">Asset Securitization</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-10" name="check1" />
-                          <label for="check1-10">Exchange Disclosure</label>
-                        </span>
-                        <span class="input btn">
-                          <input type="checkbox" id="check1-11" name="check1" />
-                          <label for="check1-11"
-                            >Fair Trade Commission Disclosure</label
-                          >
-                        </span>
-                      </div>
-                    </div>
+                  <div class="body-bottom-wrap">
+                    <button type="button" class="close btn">close</button>
+                    <button type="button" class="btn type2">Search</button>
                   </div>
-                </div>
-                <div class="body-bottom-wrap">
-                  <button type="button" class="close btn">close</button>
-                  <button type="button" class="btn type2">Search</button>
                 </div>
               </div>
             </div>
@@ -466,7 +514,11 @@
 </div>
 </footer>
 
+      <!-- 반응형 마크업 추가 2025.04.02 -->
+      <div class="mobile-sheet-body sheet-body-wrap"></div>
       <script>
+        // 전체 변경 2025.04.02
+        //check
         $('[name="check1"]:not(#check1-1)').on("change", function () {
           var allCheck = 0;
           $('[name="check1"]:not(#check1-1)').each(function () {
@@ -487,107 +539,128 @@
             $('[name="check1"]').prop("checked", false);
           }
         });
-      </script>
-      <script>
+
         //scroll event(xs 이상)
         var $sheet = $(".sheet-box"),
-          $sheetBody = $sheet.find(".sheet-body-wrap"),
+          $sheetBody = $(".sheet-body-wrap"),
           $sheetBtn = $sheet.find(".sheet-btn"),
+          $sheetBodyMarkup = $sheet
+            .find(".sheet-body-wrap .sheet-body-box")
+            .clone(),
           $sheetOutBtn = $sheet.find(".sheet-btn-wrap .sheet-btn"),
-          $sheetConWrap = $sheetBody.find(".body-con-wrap"),
+          $sheetConWrap = $sheetBodyMarkup.find(".body-con-wrap"),
           $sheetCon = $sheetConWrap.find(".body-con"),
-          $bodyBtn = $sheetBody.find(".body-btn-wrap .sheet-btn"),
-          $sheetClose = $sheetBody.find(".body-bottom-wrap .close");
+          $bodyBtn = $sheetBodyMarkup.find(".body-btn-wrap .sheet-btn"),
+          $sheetClose = $sheetBodyMarkup.find(".body-bottom-wrap .close"),
+          $mobileSheetBody = $(".mobile-sheet-body");
 
-        $sheetCon.each(function () {
-          var $this = $(this),
-            $thisCon = $this.find(".con-wrap"),
-            $scrollWrap = $thisCon.find(".scroll-wrap"),
-            thisWidth = $thisCon.outerWidth(),
-            thisScrollWidth = $scrollWrap.outerWidth();
-          const setWidth = () => {
-            if (thisWidth >= thisScrollWidth) {
-              $thisCon.attr("data-vehavior", "static");
-            } else {
-              $thisCon.attr("data-vehavior", "scroll");
-            }
-          };
-          setWidth();
-          $(window).on("resize", function () {
-            thisWidth = $thisCon.outerWidth();
-            thisScrollWidth = $thisCon.find(".scroll-wrap").outerWidth();
-            setWidth();
-          });
+        const MoveSheetBody = () => {
+          if ($(window).width() < 801) {
+            $mobileSheetBody.html($sheetBodyMarkup);
+            $sheet.find(".sheet-body-wrap").html("");
 
-          $thisCon.on("scroll", function () {
-            var scrollLeft = $(this).scrollLeft();
-            thisWidth = $(this).outerWidth();
-            thisScrollWidth = $(this).find(".scroll-wrap").outerWidth();
-            console.log(scrollLeft + thisWidth, thisScrollWidth);
-            if (scrollLeft + thisWidth >= thisScrollWidth) {
-              $thisCon.attr("data-vehavior", "end");
-            } else {
-              $thisCon.attr("data-vehavior", "scroll");
-            }
-          });
-        });
+            //click event(xs 이하)
+            $(document).on("click", ".sheet-btn", function () {
+              var $this = $(this),
+                thisId = $this.attr("data-id"),
+                $thisOutBtn = $sheetBody.find(
+                  `.sheet-btn-wrap .sheet-btn[data-id="${thisId}"]`
+                ),
+                $thisBodyBtn = $sheetBody.find(
+                  `.body-btn-wrap .sheet-btn[data-id="${thisId}"]`
+                ),
+                $thisCon = $sheetConWrap.find(`.body-con[data-id="${thisId}"]`),
+                activeFlag = false;
 
-        //click event
-        $sheetBtn.on("click", function () {
-          var $this = $(this),
-            thisId = $this.attr("data-id"),
-            $thisOutBtn = $sheetBody.find(
-              `.sheet-btn-wrap .sheet-btn[data-id="${thisId}"]`
-            ),
-            $thisBodyBtn = $sheetBody.find(
-              `.body-btn-wrap .sheet-btn[data-id="${thisId}"]`
-            ),
-            $thisCon = $sheetConWrap.find(`.body-con[data-id="${thisId}"]`),
-            activeFlag = false;
+              $sheetCon.each(function () {
+                if ($(this).hasClass("active")) {
+                  activeFlag = true;
+                }
+              });
 
-          $sheetCon.each(function () {
-            if ($(this).hasClass("active")) {
-              activeFlag = true;
-            }
-          });
+              $sheetOutBtn.removeClass("active").removeAttr("title");
+              $thisOutBtn.addClass("active").attr("title", "열림");
 
-          $sheetOutBtn.removeClass("active").removeAttr("title");
-          $thisOutBtn.addClass("active").attr("title", "열림");
+              $sheetCon.removeClass("active").removeAttr("title");
+              $thisCon.addClass("active").attr("title", "열림");
 
-          $sheetCon.removeClass("active").removeAttr("title");
-          $thisCon.addClass("active").attr("title", "열림");
+              $bodyBtn.removeClass("active").removeAttr("title");
+              $thisBodyBtn.addClass("active").attr("title", "열림");
 
-          $bodyBtn.removeClass("active").removeAttr("title");
-          $thisBodyBtn.addClass("active").attr("title", "열림");
+              if (!activeFlag) {
+                // position-animation
+                setTimeout(() => {
+                  $sheetBody
+                    .find(".sheet-body-box")
+                    .addClass("active")
+                    .attr("data-delay", "delay");
+                  setTimeout(() => {
+                    $sheetBody
+                      .find(".sheet-body-box")
+                      .attr("data-delay", "end");
+                  }, 300);
+                }, 0);
+              }
+            });
 
-          $(".header").css("zIndex", "10");
+            $(document).on(
+              "click",
+              ".dimm, .body-bottom-wrap .btn",
+              function () {
+                $sheetOutBtn.removeClass("active").removeAttr("title");
+                $sheetCon.removeClass("active").removeAttr("title");
+                $bodyBtn.removeClass("active").removeAttr("title");
+                // position-animation
+                $(".header").removeAttr("style");
+                setTimeout(() => {
+                  $sheetBodyMarkup.attr("data-delay", "delay");
+                  setTimeout(() => {
+                    $sheetBodyMarkup
+                      .removeClass("active")
+                      .attr("data-delay", "end");
+                  }, 300);
+                }, 0);
+              }
+            );
+          } else {
+            $sheet.find(".sheet-body-wrap").html($sheetBodyMarkup);
+            $mobileSheetBody.html("");
+            $sheetBodyMarkup.find(".body-con").each(function () {
+              var $this = $(this),
+                $thisCon = $this.find(".con-wrap"),
+                $scrollWrap = $thisCon.find(".scroll-wrap"),
+                thisWidth = $thisCon.outerWidth(),
+                thisScrollWidth = $scrollWrap.outerWidth();
+              $this.width($(".wrap").width());
+              const setWidth = () => {
+                if (thisWidth >= thisScrollWidth) {
+                  $thisCon.attr("data-vehavior", "static");
+                } else {
+                  $thisCon.attr("data-vehavior", "scroll");
+                }
+              };
+              setWidth();
+              thisWidth = $thisCon.outerWidth();
+              thisScrollWidth = $thisCon.find(".scroll-wrap").outerWidth();
 
-          if (!activeFlag) {
-            // position-animation
-            setTimeout(() => {
-              $sheetBody.addClass("active").attr("data-delay", "delay");
-              setTimeout(() => {
-                $sheetBody.attr("data-delay", "end");
-              }, 300);
-            }, 0);
+              $thisCon.on("scroll", function () {
+                var scrollLeft = $(this).scrollLeft();
+                thisWidth = $(this).outerWidth();
+                thisScrollWidth = $(this).find(".scroll-wrap").outerWidth();
+                if (scrollLeft + thisWidth >= thisScrollWidth) {
+                  $thisCon.attr("data-vehavior", "end");
+                } else {
+                  $thisCon.attr("data-vehavior", "scroll");
+                }
+              });
+            });
           }
-        });
+        };
+        MoveSheetBody();
 
-        $sheetBody
-          .find(".dimm, .body-bottom-wrap .btn")
-          .on("click", function () {
-            $sheetOutBtn.removeClass("active").removeAttr("title");
-            $sheetCon.removeClass("active").removeAttr("title");
-            $bodyBtn.removeClass("active").removeAttr("title");
-            // position-animation
-            $(".header").removeAttr("style");
-            setTimeout(() => {
-              $sheetBody.attr("data-delay", "delay");
-              setTimeout(() => {
-                $sheetBody.removeClass("active").attr("data-delay", "end");
-              }, 300);
-            }, 0);
-          });
+        $(window).on("resize", function () {
+          MoveSheetBody();
+        });
 
         // datepicker
         $(".input.date>input").datepicker({
