@@ -580,6 +580,8 @@ $(function () {
       $this.attr("title", "메뉴 열림");
       $this.find("i").html($closeIcon);
       $menu.addClass("delay");
+      console.log($window.height());
+      $(".menu-wrap").outerHeight($window.height());
       setTimeout(() => {
         $menu.removeClass("delay");
       }, 300);

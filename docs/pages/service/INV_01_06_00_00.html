@@ -118,7 +118,165 @@
               <h4 class="h5">주주구성</h4>
               <p>상기 주주현황은 2024년 4분기말 기준</p>
             </div>
-            <script
+            <div class="chart">
+              <canvas id="myChart" width="300" height="100"></canvas>
+              <div class="chart-title-wrap">
+                <h3>총 발행 주식 수</h3>
+                <p class="sub">60,095,839주</p>
+              </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+            <script>
+              let myCt = document.getElementById("myChart");
+              const data = {
+                labels: [
+                  "최대주주 및 특관자 35.9%",
+                  "외국인 42.4%",
+                  "국내기관 12.7%",
+                  "국내개인 5.8%",
+                  "자사주 3.1%",
+                ],
+                datasets: [
+                  {
+                    label: "Dataset",
+                    data: [35.9, 42.4, 12.7, 5.8, 3.1],
+                    backgroundColor: [
+                      "#460014",
+                      "#820014",
+                      "#DC0014",
+                      "#F0828C",
+                      "#F5BEC3",
+                    ],
+                    cutout: "80%",
+                  },
+                ],
+              };
+              let myChart = new Chart(myCt, {
+                type: "doughnut",
+                data: data,
+                options: {
+                  responsive: true,
+                  cutoutPercentage: "100px",
+                  plugins: {
+                    legend: {
+                      position: "bottom",
+                    },
+                    title: {
+                      display: false,
+                      text: "총 발행 주식 수",
+                    },
+                    tooltip: {
+                      enabled: false,
+                      external: function (context) {
+                        let tooltipEl =
+                          document.getElementById("chartjs-tooltip");
+                        if (!tooltipEl) {
+                          tooltipEl = document.createElement("div");
+                          tooltipEl.id = "chartjs-tooltip";
+                          //tooltipEl.innerHTML = "<table></table>";
+                          document.body.appendChild(tooltipEl);
+                        }
+                        const tooltipModel = context.tooltip;
+                        if (tooltipModel.opacity === 0) {
+                          tooltipEl.style.opacity = 0;
+                          return;
+                        }
+
+                        // Set caret Position
+                        tooltipEl.classList.remove(
+                          "above",
+                          "below",
+                          "no-transform"
+                        );
+                        if (tooltipModel.yAlign) {
+                          tooltipEl.classList.add(tooltipModel.yAlign);
+                        } else {
+                          tooltipEl.classList.add("no-transform");
+                        }
+
+                        function getBody(bodyItem) {
+                          return bodyItem.lines;
+                        }
+
+                        // Set Text
+                        if (tooltipModel.body) {
+                          const titleLines = tooltipModel.title || [];
+                          const bodyLines = tooltipModel.body.map(getBody);
+
+                          let innerHtml = "";
+
+                          titleLines.forEach(function (title) {
+                            innerHtml +=
+                              "<div class='title'>" + title + "</div>";
+                          });
+                          innerHtml += "";
+
+                          /*bodyLines.forEach(function (body, i) {
+                            const colors = tooltipModel.labelColors[i];
+                            let style = "background:" + colors.backgroundColor;
+                            style += "; border-color:" + colors.borderColor;
+                            style += "; border-width: 2px";
+                            const span =
+                              '<span style="' + style + '">' + body + "</span>";
+                            innerHtml += "" + span + "";
+                          });
+                          innerHtml += "";*/
+
+                          //let tableRoot = tooltipEl.querySelector("table");
+                          tooltipEl.innerHTML = innerHtml;
+                        }
+
+                        const position =
+                          context.chart.canvas.getBoundingClientRect();
+                        const bodyFont = Chart.helpers.toFont(
+                          tooltipModel.options.bodyFont
+                        );
+
+                        // Display, position, and set styles for font
+                        tooltipEl.style.opacity = 1;
+                        tooltipEl.style.position = "absolute";
+                        tooltipEl.style.backgroundColor = "#fff";
+                        //tooltipEl.style.border = "1px solid #000";
+                        //tooltipEl.style.padding = "10px 15px";
+                        //tooltipEl.style.fontSize = '14px';
+                        tooltipEl.style.left =
+                          position.left +
+                          window.pageXOffset +
+                          tooltipModel.caretX +
+                          "px";
+                        tooltipEl.style.top =
+                          position.top +
+                          window.pageYOffset +
+                          tooltipModel.caretY +
+                          "px";
+                        tooltipEl.style.font = bodyFont.string;
+                        tooltipEl.style.padding =
+                          tooltipModel.padding +
+                          "px " +
+                          tooltipModel.padding +
+                          "px";
+                        tooltipEl.style.fontFamily = "pretendard";
+                        tooltipEl.style.pointerEvents = "none";
+                        console.log(tooltipEl);
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+            <style>
+              #chartjs-tooltip {
+                border: 1px solid #000;
+                font-size: 14px !important;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #000;
+                padding: 10px 15px;
+                z-index: 9999;
+              }
+            </style>
+            <!--<script
               type="text/javascript"
               src="https://www.gstatic.com/charts/loader.js"
             ></script>
@@ -255,7 +413,7 @@
                   자사주 3.1%
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
 
           <div class="box status-box">
