@@ -763,4 +763,24 @@ $(function () {
       }
     );
   }, 0);
+
+  //language
+  $(".lang .lang-btn").on("click", function () {
+    var $this = $(this),
+      $thisParent = $this.closest(".lang"),
+      $thisPanel = $thisParent.find(".lang-wrap");
+    $thisParent.toggleClass("active");
+    if ($thisParent.hasClass("active")) {
+      setTimeout(() => {
+        $thisPanel.slideDown(50);
+      }, 100);
+    } else {
+      $thisPanel.slideUp(100);
+    }
+  });
+  $(".lang .lang-wrap > a").on("click", function () {
+    console.log("click");
+    $(".lang").removeClass("active");
+    $thisPanel.slideUp(100);
+  });
 });
