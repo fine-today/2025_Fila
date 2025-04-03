@@ -119,6 +119,7 @@ p.type2,
     }
   }
 }
+/*
 :focus {
   outline: 2px dashed #999;
 }
@@ -126,7 +127,7 @@ p.type2,
   :focus {
     outline: 0;
   }
-}
+}*/
 .content-header + .heading-line {
   margin-top: 0;
 }
@@ -255,9 +256,9 @@ p.type2,
             display: none;
           }
         }
-        &:focus + label {
+        /*&:focus + label {
           outline: 2px dashed #999;
-        }
+        }*/
       }
     }
     &:hover input {
