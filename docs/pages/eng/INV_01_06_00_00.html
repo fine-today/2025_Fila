@@ -118,6 +118,178 @@
               <h4 class="h5">Shareholders by type</h4>
               <p>As of Dec. 31st, 2024</p>
             </div>
+
+            <div class="chart">
+              <div class="chart-wrap">
+                <canvas id="chart"></canvas>
+                <div class="chart-title-wrap">
+                  <h3>Outstanding Shares</h3>
+                  <p class="sub">60,095,839</p>
+                </div>
+              </div>
+              <div id="customLegend" class="custom-legend"></div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+            <script>
+              let myCt = document.getElementById("chart");
+              const data = {
+                labels: [
+                  "Major Sharehoder & Related Parties 35.9%",
+                  "Overseas Shareholders 42.4%",
+                  "Domestic Institutional Shareholders 12.7%",
+                  "Domestic Individual Shareholders 5.8%",
+                  "Treasury Stock 3.1%",
+                ],
+                datasets: [
+                  {
+                    label: "Dataset",
+                    data: [35.9, 42.4, 12.7, 5.8, 3.1],
+                    backgroundColor: [
+                      "#460014",
+                      "#820014",
+                      "#DC0014",
+                      "#F0828C",
+                      "#F5BEC3",
+                    ],
+                    cutout: "85%",
+                  },
+                ],
+              };
+
+              let myChart = new Chart(myCt, {
+                type: "doughnut",
+                data: data,
+                options: {
+                  responsive: true,
+                  plugins: {
+                    legend: { display: false },
+                    title: {
+                      display: false,
+                      text: "총 발행 주식 수",
+                    },
+                    tooltip: {
+                      enabled: false,
+                      external: function (context) {
+                        let tooltipEl =
+                          document.getElementById("chartjs-tooltip");
+                        if (!tooltipEl) {
+                          tooltipEl = document.createElement("div");
+                          tooltipEl.id = "chartjs-tooltip";
+                          //tooltipEl.innerHTML = "<table></table>";
+                          document.body.appendChild(tooltipEl);
+                        }
+                        const tooltipModel = context.tooltip;
+                        if (tooltipModel.opacity === 0) {
+                          tooltipEl.style.opacity = 0;
+                          return;
+                        }
+
+                        // Set caret Position
+                        tooltipEl.classList.remove(
+                          "above",
+                          "below",
+                          "no-transform"
+                        );
+                        if (tooltipModel.yAlign) {
+                          tooltipEl.classList.add(tooltipModel.yAlign);
+                        } else {
+                          tooltipEl.classList.add("no-transform");
+                        }
+
+                        function getBody(bodyItem) {
+                          return bodyItem.lines;
+                        }
+
+                        // Set Text
+                        if (tooltipModel.body) {
+                          const titleLines = tooltipModel.title || [];
+                          const bodyLines = tooltipModel.body.map(getBody);
+
+                          let innerHtml = "";
+
+                          titleLines.forEach(function (title) {
+                            innerHtml +=
+                              "<div class='title'>" + title + "</div>";
+                          });
+                          innerHtml += "";
+
+                          tooltipEl.innerHTML = innerHtml;
+                        }
+
+                        const position =
+                          context.chart.canvas.getBoundingClientRect();
+                        const bodyFont = Chart.helpers.toFont(
+                          tooltipModel.options.bodyFont
+                        );
+
+                        tooltipEl.style.opacity = 1;
+                        tooltipEl.style.position = "absolute";
+                        tooltipEl.style.backgroundColor = "#fff";
+                        tooltipEl.style.left =
+                          position.left +
+                          window.pageXOffset +
+                          tooltipModel.caretX +
+                          "px";
+                        tooltipEl.style.top =
+                          position.top +
+                          window.pageYOffset +
+                          tooltipModel.caretY +
+                          "px";
+                        tooltipEl.style.font = bodyFont.string;
+                        tooltipEl.style.padding =
+                          tooltipModel.padding +
+                          "px " +
+                          tooltipModel.padding +
+                          "px";
+                        tooltipEl.style.fontFamily = "pretendard";
+                        tooltipEl.style.pointerEvents = "none";
+                      },
+                    },
+                  },
+                },
+              });
+
+              function createCustomLegend(chart) {
+                const legendContainer = document.getElementById("customLegend");
+                legendContainer.innerHTML = ""; // 기존 내용 삭제
+
+                chart.data.labels.forEach((label, index) => {
+                  const color = chart.data.datasets[0].backgroundColor[index];
+                  const legendItem = document.createElement("div");
+                  legendItem.classList.add("legend-item");
+
+                  legendItem.innerHTML = `
+                    <div class="legend-color" style="background-color: ${color}"></div>
+                    <span>${label}</span>
+                `;
+
+                  legendItem.addEventListener("click", () => {
+                    // 클릭하면 데이터 보이기/숨기기
+                    const meta = chart.getDatasetMeta(0);
+                    meta.data[index].hidden = !meta.data[index].hidden;
+                    chart.update();
+                  });
+
+                  legendContainer.appendChild(legendItem);
+                });
+              }
+
+              createCustomLegend(myChart);
+            </script>
+            <style>
+              #chartjs-tooltip {
+                border: 1px solid #000;
+                font-size: 14px !important;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #000;
+                padding: 10px 15px;
+                z-index: 9999;
+              }
+            </style>
+            <!--
+
             <script
               type="text/javascript"
               src="https://www.gstatic.com/charts/loader.js"
@@ -218,57 +390,7 @@
                 console.log("click");
                 chart.setSelection([{ row: index }]);
               }
-            </script>
-
-            <div class="chart">
-              <div class="chart-title-wrap">
-                <h3>Outstanding Shares</h3>
-                <p class="sub">60,095,839</p>
-              </div>
-              <div id="chart"></div>
-              <div class="custom-legend">
-                <div
-                  class="legend-item"
-                  onclick="highlightSlice(0)"
-                  data-index="0"
-                >
-                  <div class="legend-color"></div>
-                  Major Sharehoder & Related Parties 35.9%
-                </div>
-                <div
-                  class="legend-item"
-                  onclick="highlightSlice(1)"
-                  data-index="1"
-                >
-                  <div class="legend-color"></div>
-                  Overseas Shareholders 42.4%
-                </div>
-                <div
-                  class="legend-item"
-                  onclick="highlightSlice(2)"
-                  data-index="2"
-                >
-                  <div class="legend-color"></div>
-                  Domestic Institutional Shareholders 12.7%
-                </div>
-                <div
-                  class="legend-item"
-                  onclick="highlightSlice(3)"
-                  data-index="3"
-                >
-                  <div class="legend-color"></div>
-                  Domestic Individual Shareholders 5.8%
-                </div>
-                <div
-                  class="legend-item"
-                  onclick="highlightSlice(4)"
-                  data-index="4"
-                >
-                  <div class="legend-color"></div>
-                  Treasury Stock 3.1%
-                </div>
-              </div>
-            </div>
+            </script>-->
           </div>
 
           <div class="box status-box">
@@ -316,8 +438,8 @@
               if ($(window).outerWidth() <= 800) {
                 $thisColgroup.html(`
                   <col style="width: auto" />
-                  <col style="width: 80px" />
-                  <col style="width: 80px" />`);
+                  <col style="width: 120px" />
+                  <col style="width: 90px" />`);
               } else {
                 $thisColgroup.html(`
                   <col style="width: auto" />

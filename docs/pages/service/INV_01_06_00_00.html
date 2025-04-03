@@ -119,16 +119,19 @@
               <p>상기 주주현황은 2024년 4분기말 기준</p>
             </div>
             <div class="chart">
-              <canvas id="myChart" width="300" height="100"></canvas>
-              <div class="chart-title-wrap">
-                <h3>총 발행 주식 수</h3>
-                <p class="sub">60,095,839주</p>
+              <div class="chart-wrap">
+                <canvas id="chart"></canvas>
+                <div class="chart-title-wrap">
+                  <h3>총 발행 주식 수</h3>
+                  <p class="sub">60,095,839주</p>
+                </div>
               </div>
+              <div id="customLegend" class="custom-legend"></div>
             </div>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
             <script>
-              let myCt = document.getElementById("myChart");
+              let myCt = document.getElementById("chart");
               const data = {
                 labels: [
                   "최대주주 및 특관자 35.9%",
@@ -148,20 +151,18 @@
                       "#F0828C",
                       "#F5BEC3",
                     ],
-                    cutout: "80%",
+                    cutout: "85%",
                   },
                 ],
               };
+
               let myChart = new Chart(myCt, {
                 type: "doughnut",
                 data: data,
                 options: {
                   responsive: true,
-                  cutoutPercentage: "100px",
                   plugins: {
-                    legend: {
-                      position: "bottom",
-                    },
+                    legend: { display: false },
                     title: {
                       display: false,
                       text: "총 발행 주식 수",
@@ -213,15 +214,15 @@
                           innerHtml += "";
 
                           /*bodyLines.forEach(function (body, i) {
-                            const colors = tooltipModel.labelColors[i];
-                            let style = "background:" + colors.backgroundColor;
-                            style += "; border-color:" + colors.borderColor;
-                            style += "; border-width: 2px";
-                            const span =
-                              '<span style="' + style + '">' + body + "</span>";
-                            innerHtml += "" + span + "";
-                          });
-                          innerHtml += "";*/
+                                          const colors = tooltipModel.labelColors[i];
+                                          let style = "background:" + colors.backgroundColor;
+                                          style += "; border-color:" + colors.borderColor;
+                                          style += "; border-width: 2px";
+                                          const span =
+                                            '<span style="' + style + '">' + body + "</span>";
+                                          innerHtml += "" + span + "";
+                                        });
+                                        innerHtml += "";*/
 
                           //let tableRoot = tooltipEl.querySelector("table");
                           tooltipEl.innerHTML = innerHtml;
@@ -258,12 +259,38 @@
                           "px";
                         tooltipEl.style.fontFamily = "pretendard";
                         tooltipEl.style.pointerEvents = "none";
-                        console.log(tooltipEl);
                       },
                     },
                   },
                 },
               });
+
+              function createCustomLegend(chart) {
+                const legendContainer = document.getElementById("customLegend");
+                legendContainer.innerHTML = ""; // 기존 내용 삭제
+
+                chart.data.labels.forEach((label, index) => {
+                  const color = chart.data.datasets[0].backgroundColor[index];
+                  const legendItem = document.createElement("div");
+                  legendItem.classList.add("legend-item");
+
+                  legendItem.innerHTML = `
+                    <div class="legend-color" style="background-color: ${color}"></div>
+                    <span>${label}</span>
+                `;
+
+                  legendItem.addEventListener("click", () => {
+                    // 클릭하면 데이터 보이기/숨기기
+                    const meta = chart.getDatasetMeta(0);
+                    meta.data[index].hidden = !meta.data[index].hidden;
+                    chart.update();
+                  });
+
+                  legendContainer.appendChild(legendItem);
+                });
+              }
+
+              createCustomLegend(myChart);
             </script>
             <style>
               #chartjs-tooltip {

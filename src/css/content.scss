@@ -587,15 +587,24 @@
     }
   }
 }
-.eng [data-page="INV_01_06_00_00"] .chart #chart {
-  height: 500px;
-  margin-bottom: 20px;
+.eng [data-page="INV_01_06_00_00"] {
   @include xs {
-    height: 360px;
+    .chart-box .custom-legend {
+      width: 320px;
+    }
   }
 }
 
 [data-page="INV_01_06_00_00"] {
+  #chartjs-tooltip {
+    border: 1px solid #000;
+    font-size: 14px !important;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 15px;
+    z-index: 9999;
+  }
   *:not(.heading-line) + .h5 {
     margin-top: 40px;
   }
@@ -679,6 +688,7 @@
     z-index: 10;
     .chart-title-wrap {
       position: absolute;
+      width: 100%;
       z-index: 100;
       left: 50%;
       top: 50%;
@@ -695,11 +705,13 @@
         font-weight: 600;
       }
     }
+    .chart-wrap {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin: 0 auto;
+    }
     #chart {
-      width: 100%;
-      height: 500px;
-      margin-top: -95px;
-      margin-bottom: -30px;
     }
     .custom-legend {
       display: flex;
@@ -707,10 +719,11 @@
       align-items: center;
       justify-content: center;
       gap: 5px 20px;
-      position: absolute;
+      position: relative;
       top: calc(100% - 60px);
       left: 0;
       width: 100%;
+      padding-top: 30px;
       .legend-item {
         display: flex;
         align-items: center;
@@ -780,15 +793,11 @@
       }
     }
     .chart-box {
-      height: 524px;
       .title-box .h5 + p {
         font-size: 15px;
       }
       .chart {
         .chart-title-wrap {
-          top: 100px;
-
-          transform: translateX(-50%);
           h3 {
             font-size: 15px;
           }
@@ -798,20 +807,18 @@
           }
         }
       }
+      .chart-wrap {
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
+      }
       #chart {
-        position: absolute;
-        height: 360px;
-        margin-top: -53px;
-        margin-bottom: 100px;
-        width: 360px;
-        left: calc(50% - 180px);
       }
       .custom-legend {
         position: relative;
-        padding-top: 260px;
         left: 50%;
         transform: translateX(-50%);
-        width: 330px;
+        width: 280px;
         max-width: 100%;
         flex-direction: column;
         align-items: flex-start;
