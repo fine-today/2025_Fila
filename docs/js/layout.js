@@ -498,6 +498,8 @@ $(function () {
   // scroll event
   $window.on("mousewheel DOMMouseScroll", function (e) {
     var delta = e.originalEvent.deltaY;
+    $(".lang").removeClass("active");
+    $(".lang .lang-wrap").slideUp(100);
     if ($window.scrollTop() > 10) {
       $(".header").addClass("scroll");
     } else {
