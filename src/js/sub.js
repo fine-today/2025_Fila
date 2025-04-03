@@ -294,4 +294,14 @@ $(function () {
 
   // editor 수정
   $(".mte_doc_style").remove();
+
+  // 상단 탭 link에 따라 left 이동
+  var tab_idx = 0;
+  $(".tab-list  a").each(function (index) {
+    if ($(this).hasClass("active")) tab_idx = index;
+  });
+  if (tab_idx > 0) {
+    var tab_left = $(".tab-list  a").eq(tab_idx).offset().left;
+    $(".depth-tab").scrollLeft(tab_left - 35);
+  }
 });
