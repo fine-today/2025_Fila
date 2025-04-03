@@ -781,8 +781,7 @@ $(function () {
     }
   });
   $(".lang .lang-wrap > a").on("click", function () {
-    console.log("click");
     $(".lang").removeClass("active");
-    $thisPanel.slideUp(100);
+    $(".lang .lang-wrap").slideUp(100);
   });
 });
