@@ -523,9 +523,12 @@ $(function () {
     if ($window.outerWidth() < 1201) {
       if ($thisItem.hasClass("has")) {
         e.preventDefault();
-        $("#menu .depth-item").removeClass("active actived");
-        $thisItem.toggleClass("active");
-        $thisDepth1Item.addClass("active");
+        if ($thisDepth1Item.hasClass("active")) {
+          $("#menu .depth-item").removeClass("active actived");
+        } else {
+          $("#menu .depth-item").removeClass("active actived");
+          $thisItem.toggleClass("active");
+        }
         $thisDepth1Item.siblings().removeClass("active actived");
       }
       $slblingItem.each(function () {
@@ -539,7 +542,6 @@ $(function () {
       if (openFlag) {
         $menu.removeClass("all-close");
       } else {
-        console.log(1);
         $menu.addClass("all-close");
       }
     }
@@ -582,7 +584,6 @@ $(function () {
       $this.attr("title", "메뉴 열림");
       $this.find("i").html($closeIcon);
       $menu.addClass("delay");
-      console.log($window.height());
       $(".menu-wrap").outerHeight($window.height());
       setTimeout(() => {
         $menu.removeClass("delay");

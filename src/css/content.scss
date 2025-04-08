@@ -32,6 +32,24 @@
     }
   }
 }
+.eng [data-page="INV_01_02_00_00"] {
+  .sheet-body-wrap .sheet-body-box .sheet-body .body-con-wrap .body-con {
+    align-items: flex-start;
+    .body-title {
+      padding-top: 5px;
+      &::after {
+        display: none;
+      }
+    }
+    .con-wrap {
+      // width: 100%;
+      // overflow: visible;
+      .scroll-wrap {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
 [data-page="INV_01_02_00_00"] {
   .table-unit {
     color: #a0a2a8;
