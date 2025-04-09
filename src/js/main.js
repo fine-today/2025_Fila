@@ -4,11 +4,6 @@ var $document = $(document),
   $html = $("html");
 
 $(function () {
-  //첫 화면 animation
-  setTimeout(() => {
-    $html.addClass("start");
-  }, 0);
-
   $(".main .sec1, .main .sec2").outerWidth($(window).width());
   $(window).on("resize", function () {
     $(".main .sec1, .main .sec2").outerWidth($(window).width());
@@ -40,6 +35,9 @@ $(function () {
     setHeaderMode();
   });
   $window.on("load", function () {
+    //첫 화면 animation
+    $html.addClass("start");
+    //visual-slide
     var $visualSlideWrap = $(".visual-slide-wrap"),
       $visualSlide = $visualSlideWrap.find(".visual-slide .slide-list");
     setTimeout(function () {
@@ -78,7 +76,7 @@ $(function () {
           },
         ],
       });
-    }, 7000);
+    }, 6000);
   });
 
   //sec2
