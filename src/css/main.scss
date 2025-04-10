@@ -72,14 +72,26 @@
     .header-wrap {
       background: #fff;
     }
-    .header #menu .depth1-item {
-      .depth1-anchor {
-        color: #000;
+    .header #menu {
+      .depth1-item {
+        .depth1-anchor {
+          color: #bfbfc7;
+        }
+        &.active .depth1-anchor {
+          color: var(--c-brand);
+        }
+        &.misto-logo svg {
+          path,
+          rect {
+            fill: var(--c-brand);
+          }
+        }
       }
-      &.misto-logo svg {
-        path,
-        rect {
-          fill: var(--c-brand);
+      &.all-close {
+        .depth1-item {
+          .depth1-anchor {
+            color: #000;
+          }
         }
       }
     }
@@ -168,7 +180,7 @@
   }
 
   .header-wrap {
-    background: transparent;
+    background: #fff;
   }
   .sec1 {
     position: relative;
@@ -867,7 +879,7 @@
       }
     }
   }
-  @include xs {
+  @include md {
     &[data-menu-open="true"] {
       .header-wrap {
         transition: all 0.2s;
